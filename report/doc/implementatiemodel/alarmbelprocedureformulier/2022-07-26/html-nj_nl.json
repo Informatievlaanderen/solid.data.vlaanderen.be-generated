@@ -1,0 +1,1622 @@
+{
+  "metadata": {
+    "title": "Alarmbelprocedureformulier",
+    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure",
+    "issued": "2022-11-21",
+    "baseURI": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#",
+    "filename": "alarmbelprocedureformulier-ap",
+    "navigation": {
+      "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-07-26"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "ap",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/d04652a44940c005a39ce7ce0ef8cae8e6b2499b",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/d04652a44940c005a39ce7ce0ef8cae8e6b2499b/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/issues",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
+      "name": "Alarmbelformulier",
+      "label": {
+        "nl": "Alarmbelformulier"
+      },
+      "sort": "Alarmbelformulier",
+      "description": {
+        "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "VerifieerbareCredential",
+          "name": "VerifieerbareCredential",
+          "package": "Alarmbelprocedure",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+          "scoped_uri": "#VerifieerbareCredential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://w3.org/2018/credentials#credentialSubject",
+          "name": "eigenaar",
+          "sort": "eigenaar",
+          "label": {
+            "nl": "eigenaar"
+          },
+          "description": {
+            "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Alarmbelformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Persoon",
+              "range_uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Persoon",
+              "range_puri": "http://www.w3.org/ns/person#Person",
+              "range_label": {
+                "nl": "Persoon"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/modified",
+          "name": "wijzigingsdatum",
+          "sort": "wijzigingsdatum",
+          "label": {
+            "nl": "wijzigingsdatum"
+          },
+          "description": {
+            "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Alarmbelformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/dateSubmitted",
+          "name": "indieningsdatum",
+          "sort": "indieningsdatum",
+          "label": {
+            "nl": "indieningsdatum"
+          },
+          "description": {
+            "nl": "Datum waarop het Alarmbelformulier werd ingediend."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Alarmbelformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/created",
+          "name": "creatiedatum",
+          "sort": "creatiedatum",
+          "label": {
+            "nl": "creatiedatum"
+          },
+          "description": {
+            "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Alarmbelformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten",
+      "name": "Maandelijkse Inkomsten",
+      "label": {
+        "nl": "Maandelijkse Inkomsten"
+      },
+      "sort": "Maandelijkse Inkomsten",
+      "description": {
+        "nl": "De beroepsinkomsten en/of uitkeringen in binnen- en buitenland van de Persoon."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "MaandelijkseInkomstenOfUitgaven",
+          "name": "MaandelijkseInkomstenOfUitgaven",
+          "package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
+          "scoped_uri": "#MaandelijkseInkomstenOfUitgaven"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#vervangingsinkomen",
+          "name": "vervangingsinkomen",
+          "sort": "vervangingsinkomen",
+          "label": {
+            "nl": "vervangingsinkomen"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#pensioenen",
+          "name": "pensioenen",
+          "sort": "pensioenen",
+          "label": {
+            "nl": "pensioenen"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#ontvangenOnderhoudsgelden",
+          "name": "ontvangen onderhoudsgelden",
+          "sort": "ontvangen onderhoudsgelden",
+          "label": {
+            "nl": "ontvangen onderhoudsgelden"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#leefloonOfEquivalentLeefloon",
+          "name": "leefloon of equivalent leefloon",
+          "sort": "leefloon of equivalent leefloon",
+          "label": {
+            "nl": "leefloon of equivalent leefloon"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomstenAlsInternationaleAmbtenaar",
+          "name": "inkomsten als internationale ambtenaar",
+          "sort": "inkomsten als internationale ambtenaar",
+          "label": {
+            "nl": "inkomsten als internationale ambtenaar"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomensvervangendeTegemoetkoming",
+          "name": "inkomensvervangende tegemoetkoming",
+          "sort": "inkomensvervangende tegemoetkoming",
+          "label": {
+            "nl": "inkomensvervangende tegemoetkoming"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#geenInkomen",
+          "name": "geen inkomen",
+          "sort": "geen inkomen",
+          "label": {
+            "nl": "geen inkomen"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#beroepsinkomstenAlsZelfstandige",
+          "name": "beroepsinkomsten als zelfstandige",
+          "sort": "beroepsinkomsten als zelfstandige",
+          "label": {
+            "nl": "beroepsinkomsten als zelfstandige"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#belastbareBeroepsinkomstenAlsWerknemer",
+          "name": "belastbare beroepsinkomsten",
+          "sort": "belastbare beroepsinkomsten",
+          "label": {
+            "nl": "belastbare beroepsinkomsten"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#andereUitkeringen",
+          "name": "andere uitkeringen",
+          "sort": "andere uitkeringen",
+          "label": {
+            "nl": "andere uitkeringen"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomsten",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
+      "name": "MaandelijkseInkomstenOfUitgaven",
+      "label": {
+        "nl": "MaandelijkseInkomstenOfUitgaven"
+      },
+      "sort": "MaandelijkseInkomstenOfUitgaven",
+      "description": {
+        "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode",
+          "name": "periode",
+          "sort": "periode",
+          "label": {
+            "nl": "periode"
+          },
+          "description": {
+            "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomstenOfUitgaven",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Periode",
+              "range_uri": "http://data.europa.eu/m8g/PeriodOfTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Periode",
+              "range_puri": "http://data.europa.eu/m8g/PeriodOfTime",
+              "range_label": {
+                "nl": "Periode"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential",
+          "name": "bewijsstuk verifieerbare credential",
+          "sort": "bewijsstuk verifieerbare credential",
+          "label": {
+            "nl": "bewijsstuk verifieerbare credential"
+          },
+          "description": {
+            "nl": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomstenOfUitgaven",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "VerifieerbareCredential",
+              "range_uri": "https://w3.org/2018/credentials#VerifiableCredential"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#VerifieerbareCredential",
+              "range_puri": "https://w3.org/2018/credentials#VerifiableCredential",
+              "range_label": {
+                "nl": "VerifieerbareCredential"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument",
+          "name": "bewijsstuk document",
+          "sort": "bewijsstuk document",
+          "label": {
+            "nl": "bewijsstuk document"
+          },
+          "description": {
+            "nl": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseInkomstenOfUitgaven",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Document",
+              "range_uri": "http://xmlns.com/foaf/0.1/Document"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Document",
+              "range_puri": "http://xmlns.com/foaf/0.1/Document",
+              "range_label": {
+                "nl": "Document"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven",
+      "name": "Maandelijkse Uitgaven",
+      "label": {
+        "nl": "Maandelijkse Uitgaven"
+      },
+      "sort": "Maandelijkse Uitgaven",
+      "description": {
+        "nl": "Uitstroom in geld van de Persoon."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "MaandelijkseInkomstenOfUitgaven",
+          "name": "MaandelijkseInkomstenOfUitgaven",
+          "package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
+          "scoped_uri": "#MaandelijkseInkomstenOfUitgaven"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#betaaldeOnderhoudsgelden",
+          "name": "betaalde onderhoudsgelden",
+          "sort": "betaalde onderhoudsgelden",
+          "label": {
+            "nl": "betaalde onderhoudsgelden"
+          },
+          "description": {
+            "nl": "TODO"
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "MaandelijkseUitgaven",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed",
+      "name": "Onroerend Goed",
+      "label": {
+        "nl": "Onroerend Goed"
+      },
+      "sort": "Onroerend Goed",
+      "description": {
+        "nl": "Goederen die onroerend zijn door hun aard, bestemming of het voorwerp waarop ze betrekking hebben."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kadastraalInkomen",
+          "name": "kadastraal inkomen",
+          "sort": "kadastraal inkomen",
+          "label": {
+            "nl": "kadastraal inkomen"
+          },
+          "description": {
+            "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "OnroerendGoed",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geldbedrag",
+              "range_uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geldbedrag",
+              "range_puri": "https://schema.org/MonetaryAmount",
+              "range_label": {
+                "nl": "Geldbedrag"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#doel",
+          "name": "doel",
+          "sort": "doel",
+          "label": {
+            "nl": "doel"
+          },
+          "description": {
+            "nl": "Het doel van het Onroerend Goed."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "OnroerendGoed",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DoelOnroerendGoed",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#DoelOnroerendGoed",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "DoelOnroerendGoed"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/person#Person",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {
+        "nl": "Natuurlijk persoon."
+      },
+      "usage": {
+        "nl": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc)."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht",
+          "name": "verkocht",
+          "sort": "verkocht",
+          "label": {
+            "nl": "verkocht"
+          },
+          "description": {
+            "nl": "Onroerend Goed verkocht door de Persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "OnroerendGoed",
+              "range_uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Onroerend Goed",
+              "range_puri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed",
+              "range_label": {
+                "nl": "Onroerend Goed"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven",
+          "name": "uitgaven",
+          "sort": "uitgaven",
+          "label": {
+            "nl": "uitgaven"
+          },
+          "description": {
+            "nl": "Uitstroom van gelden van de Persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "MaandelijkseUitgaven",
+              "range_uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Maandelijkse Uitgaven",
+              "range_puri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven",
+              "range_label": {
+                "nl": "Maandelijkse Uitgaven"
+              }
+            }
+          ],
+          "cardinality": "0..6",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid",
+          "name": "situationele omstandigheid",
+          "sort": "situationele omstandigheid",
+          "label": {
+            "nl": "situationele omstandigheid"
+          },
+          "description": {
+            "nl": "Situatie waarin de Persoon zich bevindt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "SituationeleOmstandigheid",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#SituationeleOmstandigheid",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "SituationeleOmstandigheid"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht",
+          "name": "kocht",
+          "sort": "kocht",
+          "label": {
+            "nl": "kocht"
+          },
+          "description": {
+            "nl": "Onroerend Goed aangekocht door de Persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "OnroerendGoed",
+              "range_uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Onroerend Goed",
+              "range_puri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed",
+              "range_label": {
+                "nl": "Onroerend Goed"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid",
+          "name": "financiële omstandigheid",
+          "sort": "financiële omstandigheid",
+          "label": {
+            "nl": "financiële omstandigheid"
+          },
+          "description": {
+            "nl": "Financiële toestand waarin de Persoon zich bevindt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "FinancieleOmstandigheid",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#FinancieleOmstandigheid",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "FinancieleOmstandigheid"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/loongegevens#inkomsten",
+          "name": "inkomsten",
+          "sort": "inkomsten",
+          "label": {
+            "nl": "inkomsten"
+          },
+          "description": {
+            "nl": "Instroom van gelden van de Persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "MaandelijkseInkomsten",
+              "range_uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Maandelijkse Inkomsten",
+              "range_puri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten",
+              "range_label": {
+                "nl": "Maandelijkse Inkomsten"
+              }
+            }
+          ],
+          "cardinality": "6",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://xmlns.com/foaf/0.1/Document",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {
+        "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "name": "opmerking",
+          "sort": "opmerking",
+          "label": {
+            "nl": "opmerking"
+          },
+          "description": {
+            "nl": "Een vrij tekstveld als nota bij het Document."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Document",
+              "uri": "http://xmlns.com/foaf/0.1/Document"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "De aard van het Document."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Document",
+              "uri": "http://xmlns.com/foaf/0.1/Document"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DocumentType",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#DocumentType",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "DocumentType"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {
+        "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
+    }
+  ],
+  "properties": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#vervangingsinkomen",
+      "name": {
+        "nl": "vervangingsinkomen",
+        "undefined": "vervangingsinkomen"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht",
+      "name": {
+        "nl": "verkocht",
+        "undefined": "verkocht"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven",
+      "name": {
+        "nl": "uitgaven",
+        "undefined": "uitgaven"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid",
+      "name": {
+        "nl": "situationele omstandigheid",
+        "undefined": "situationele omstandigheid"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode",
+      "name": {
+        "nl": "periode",
+        "undefined": "periode"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#pensioenen",
+      "name": {
+        "nl": "pensioenen",
+        "undefined": "pensioenen"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#ontvangenOnderhoudsgelden",
+      "name": {
+        "nl": "ontvangen onderhoudsgelden",
+        "undefined": "ontvangen onderhoudsgelden"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht",
+      "name": {
+        "nl": "kocht",
+        "undefined": "kocht"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kadastraalInkomen",
+      "name": {
+        "nl": "kadastraal inkomen",
+        "undefined": "kadastraal inkomen"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomstenAlsInternationaleAmbtenaar",
+      "name": {
+        "nl": "inkomsten als internationale ambtenaar",
+        "undefined": "inkomsten als internationale ambtenaar"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid",
+      "name": {
+        "nl": "financiële omstandigheid",
+        "undefined": "financiële omstandigheid"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#doel",
+      "name": {
+        "nl": "doel",
+        "undefined": "doel"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential",
+      "name": {
+        "nl": "bewijsstuk verifieerbare credential",
+        "undefined": "bewijsstuk verifieerbare credential"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument",
+      "name": {
+        "nl": "bewijsstuk document",
+        "undefined": "bewijsstuk document"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#betaaldeOnderhoudsgelden",
+      "name": {
+        "nl": "betaalde onderhoudsgelden",
+        "undefined": "betaalde onderhoudsgelden"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#beroepsinkomstenAlsZelfstandige",
+      "name": {
+        "nl": "beroepsinkomsten als zelfstandige",
+        "undefined": "beroepsinkomsten als zelfstandige"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#belastbareBeroepsinkomstenAlsWerknemer",
+      "name": {
+        "nl": "belastbare beroepsinkomsten",
+        "undefined": "belastbare beroepsinkomsten"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#andereUitkeringen",
+      "name": {
+        "nl": "andere uitkeringen",
+        "undefined": "andere uitkeringen"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    }
+  ],
+  "contributors": [
+    {
+      "role": "A",
+      "first_name": "AuteurVoornaam",
+      "last_name": "AuteurNaam",
+      "affiliation": {
+        "name": "AuteurAffiliatie",
+        "website": "https://auteurwebsiteurl"
+      },
+      "email": "auteurvoornaam.auteurnaam@auteurdomein"
+    },
+    {
+      "role": "E",
+      "first_name": "EditorVoornaam",
+      "last_name": "EditorNaam",
+      "affiliation": {
+        "name": "EditorAffiliatie",
+        "website": "https://editorwebsiteurl"
+      },
+      "email": "editorvoornaam.editornaam@editordomein"
+    },
+    {
+      "role": "C",
+      "first_name": "MedewerkerVoornaam",
+      "last_name": "MedewerkerNaam",
+      "affiliation": {
+        "name": "MedewerkerAffiliatie",
+        "website": "https://medewerkerwebsiteurl"
+      },
+      "email": "medewerkervoornaam.medewerkernaam@medewerkerdomein"
+    }
+  ],
+  "datatypes": [
+    {
+      "uri": "http://data.europa.eu/m8g/PeriodOfTime",
+      "name": "Periode",
+      "label": {
+        "nl": "Periode"
+      },
+      "sort": "Periode",
+      "description": {
+        "nl": "Min of meer afgebakende tijdsduur."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/m8g/startTime",
+          "name": "begin",
+          "sort": "begin",
+          "label": {
+            "nl": "begin"
+          },
+          "description": {
+            "nl": "Aanvang van de tijdsduur."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Periode",
+              "uri": "http://data.europa.eu/m8g/PeriodOfTime"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/endTime",
+          "name": "einde",
+          "sort": "einde",
+          "label": {
+            "nl": "einde"
+          },
+          "description": {
+            "nl": "Einde van de tijdsduur."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Periode",
+              "uri": "http://data.europa.eu/m8g/PeriodOfTime"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://schema.org/MonetaryAmount",
+      "name": "Geldbedrag",
+      "label": {
+        "nl": "Geldbedrag"
+      },
+      "sort": "Geldbedrag",
+      "description": {
+        "nl": "Een geldwaarde of -bereik."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://schema.org/value",
+          "name": "waarde",
+          "sort": "waarde",
+          "label": {
+            "nl": "waarde"
+          },
+          "description": {
+            "nl": "De kwantitatieve waarde."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Geldbedrag",
+              "uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Double",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#double"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#double",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#double",
+              "range_label": {
+                "nl": "Double"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://schema.org/currency",
+          "name": "valuta",
+          "sort": "valuta",
+          "label": {
+            "nl": "valuta"
+          },
+          "description": {
+            "nl": "De munteenheid."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Geldbedrag",
+              "uri": "https://schema.org/MonetaryAmount"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Valuta",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Valuta"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "http://publications.europa.eu/mdr/authority/currency/"
+        }
+      ]
+    }
+  ],
+  "parents": [],
+  "documentroot": "/doc/implementatiemodel/alarmbelprocedureformulier/2022-07-26"
+}
