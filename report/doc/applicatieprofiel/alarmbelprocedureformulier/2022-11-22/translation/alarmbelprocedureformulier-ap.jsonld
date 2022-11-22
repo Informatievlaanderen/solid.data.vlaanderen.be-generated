@@ -3554,12 +3554,12 @@
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "config": "config/config-ap.json",
     "branchtag": "master",
-    "dummy": "dimi-1",
+    "dummy": "dimi-2",
     "filename": "config/alarmbelprocedureformulier.json",
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/SolidThema-looncredential",
-    "urlref": "/doc/implementatiemodel/alarmbelprocedureformulier/2022-07-26",
+    "urlref": "/doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22",
     "documentcommit": "d04652a44940c005a39ce7ce0ef8cae8e6b2499b",
-    "toolchaincommit": "9a4e97dd185ead5d9ec07fdf8b4ef36e6ba2ff62",
+    "toolchaincommit": "a49d77e3e08522e6ae8a25e016a6c48fbd723753",
     "hostname": "https://solid.data.vlaanderen.be/"
 }

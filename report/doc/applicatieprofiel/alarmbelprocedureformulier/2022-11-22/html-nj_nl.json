@@ -6,7 +6,7 @@
     "baseURI": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#",
     "filename": "alarmbelprocedureformulier-ap",
     "navigation": {
-      "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-07-26"
+      "self": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22"
     },
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "documenttype": "ap",
@@ -1618,5 +1618,5 @@
     }
   ],
   "parents": [],
-  "documentroot": "/doc/implementatiemodel/alarmbelprocedureformulier/2022-07-26"
+  "documentroot": "/doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22"
 }
