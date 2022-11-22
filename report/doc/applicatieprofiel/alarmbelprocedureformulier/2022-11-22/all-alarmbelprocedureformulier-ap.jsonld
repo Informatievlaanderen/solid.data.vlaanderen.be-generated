@@ -137,22 +137,22 @@
     ],
     "classes": [
         {
-            "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
+            "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
             "@type": "http://www.w3.org/2002/07/owl#Class",
             "definition": {
                 "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
             },
             "label": {
-                "nl": "Alarmbelformulier"
+                "nl": "Alarmbelprocedureformulier"
             },
             "ap-label-nl": {
-                "nl": "Alarmbelformulier"
+                "nl": "Alarmbelprocedureformulier"
             },
             "ap-definition-nl": {
                 "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
             },
             "extra": {
-                "EA-Name": "Alarmbelformulier",
+                "EA-Name": "Alarmbelprocedureformulier",
                 "EA-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
                 "EA-Package": "Alarmbelprocedure",
                 "EA-Type": "CLASS",
@@ -160,21 +160,21 @@
                 "EA-Parents2": [
                     {
                         "name": "VerifieerbareCredential",
-                        "label": "",
+                        "label": "Verifieerbare Credential",
                         "package": "Alarmbelprocedure",
                         "uri": "https://w3.org/2018/credentials#VerifiableCredential"
                     }
                 ],
                 "parentclasses": "https://w3.org/2018/credentials#VerifiableCredential",
                 "label": {
-                    "nl": "Alarmbelformulier"
+                    "nl": "Alarmbelprocedureformulier"
                 },
                 "definition": {
                     "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
                 },
                 "usage": "",
                 "ap-label-nl": {
-                    "nl": "Alarmbelformulier"
+                    "nl": "Alarmbelprocedureformulier"
                 },
                 "ap-definition-nl": {
                     "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
@@ -189,14 +189,14 @@
                     },
                     {
                         "key": "label-nl",
-                        "value": "Alarmbelformulier",
+                        "value": "Alarmbelprocedureformulier",
                         "note": "null"
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
             },
             "inpackage": "ACTIVE_PACKAGE",
-            "name": "Alarmbelformulier",
+            "name": "Alarmbelprocedureformulier",
             "parents": [
                 "https://w3.org/2018/credentials#VerifiableCredential"
             ]
@@ -225,7 +225,7 @@
                 "EA-Parents2": [
                     {
                         "name": "MaandelijkseInkomstenOfUitgaven",
-                        "label": "MaandelijkseInkomstenOfUitgaven",
+                        "label": "Maandelijkse Inkomsten of Uitgaven",
                         "package": "Alarmbelprocedure",
                         "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
                     }
@@ -273,10 +273,10 @@
                 "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
             },
             "label": {
-                "nl": "MaandelijkseInkomstenOfUitgaven"
+                "nl": "Maandelijkse Inkomsten of Uitgaven"
             },
             "ap-label-nl": {
-                "nl": "MaandelijkseInkomstenOfUitgaven"
+                "nl": "Maandelijkse Inkomsten of Uitgaven"
             },
             "ap-definition-nl": {
                 "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
@@ -290,14 +290,14 @@
                 "EA-Parents2": [],
                 "parentclasses": "",
                 "label": {
-                    "nl": "MaandelijkseInkomstenOfUitgaven"
+                    "nl": "Maandelijkse Inkomsten of Uitgaven"
                 },
                 "definition": {
                     "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
                 },
                 "usage": "",
                 "ap-label-nl": {
-                    "nl": "MaandelijkseInkomstenOfUitgaven"
+                    "nl": "Maandelijkse Inkomsten of Uitgaven"
                 },
                 "ap-definition-nl": {
                     "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
@@ -307,7 +307,7 @@
                 "RawTags": [
                     {
                         "key": "label-nl",
-                        "value": "MaandelijkseInkomstenOfUitgaven",
+                        "value": "Maandelijkse Inkomsten of Uitgaven",
                         "note": "null"
                     },
                     {
@@ -319,7 +319,7 @@
                 "Scope": "FULL_DEFINITON"
             },
             "inpackage": "ACTIVE_PACKAGE",
-            "name": "MaandelijkseInkomstenOfUitgaven",
+            "name": "Maandelijkse Inkomsten of Uitgaven",
             "parents": []
         },
         {
@@ -346,7 +346,7 @@
                 "EA-Parents2": [
                     {
                         "name": "MaandelijkseInkomstenOfUitgaven",
-                        "label": "MaandelijkseInkomstenOfUitgaven",
+                        "label": "Maandelijkse Inkomsten of Uitgaven",
                         "package": "Alarmbelprocedure",
                         "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
                     }
@@ -2385,6 +2385,12 @@
             "definition": {
                 "nl": "Natuurlijk persoon."
             },
+            "label": {
+                "nl": "Persoon"
+            },
+            "ap-label-nl": {
+                "nl": "Persoon"
+            },
             "ap-definition-nl": {
                 "nl": "Natuurlijk persoon."
             },
@@ -2396,14 +2402,18 @@
                 "EA-Parents": "",
                 "EA-Parents2": [],
                 "parentclasses": "",
-                "label": "",
+                "label": {
+                    "nl": "Persoon"
+                },
                 "definition": {
                     "nl": "Natuurlijk persoon."
                 },
                 "usage": {
                     "nl": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc)."
                 },
-                "ap-label-nl": "",
+                "ap-label-nl": {
+                    "nl": "Persoon"
+                },
                 "ap-definition-nl": {
                     "nl": "Natuurlijk persoon."
                 },
@@ -2424,11 +2434,16 @@
                         "key": "usageNote-nl",
                         "value": "NOTE",
                         "note": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc)."
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "Persoon",
+                        "note": "null"
                     }
                 ],
                 "Scope": "TRANSLATIONS_ONLY"
             },
-            "name": ""
+            "name": "Persoon"
         },
         {
             "@id": "http://xmlns.com/foaf/0.1/Document",
@@ -2436,6 +2451,12 @@
             "inpackage": "OTHER_PACKAGE",
             "definition": {
                 "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
+            },
+            "label": {
+                "nl": "Document"
+            },
+            "ap-label-nl": {
+                "nl": "Document"
             },
             "ap-definition-nl": {
                 "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
@@ -2448,12 +2469,16 @@
                 "EA-Parents": "",
                 "EA-Parents2": [],
                 "parentclasses": "",
-                "label": "",
+                "label": {
+                    "nl": "Document"
+                },
                 "definition": {
                     "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
                 },
                 "usage": "",
-                "ap-label-nl": "",
+                "ap-label-nl": {
+                    "nl": "Document"
+                },
                 "ap-definition-nl": {
                     "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
                 },
@@ -2469,11 +2494,16 @@
                         "key": "definition-nl",
                         "value": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...).",
                         "note": "null"
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "Document",
+                        "note": "null"
                     }
                 ],
                 "Scope": "TRANSLATIONS_ONLY"
             },
-            "name": ""
+            "name": "Document"
         },
         {
             "@id": "https://schema.org/MonetaryAmount",
@@ -2542,6 +2572,12 @@
             "definition": {
                 "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
             },
+            "label": {
+                "nl": "Verifieerbare Credential"
+            },
+            "ap-label-nl": {
+                "nl": "Verifieerbare Credential"
+            },
             "ap-definition-nl": {
                 "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
             },
@@ -2553,12 +2589,16 @@
                 "EA-Parents": "",
                 "EA-Parents2": [],
                 "parentclasses": "",
-                "label": "",
+                "label": {
+                    "nl": "Verifieerbare Credential"
+                },
                 "definition": {
                     "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
                 },
                 "usage": "",
-                "ap-label-nl": "",
+                "ap-label-nl": {
+                    "nl": "Verifieerbare Credential"
+                },
                 "ap-definition-nl": {
                     "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
                 },
@@ -2574,11 +2614,16 @@
                         "key": "definition-nl",
                         "value": "NOTE",
                         "note": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+                    },
+                    {
+                        "key": "label-nl",
+                        "value": "Verifieerbare Credential",
+                        "note": "null"
                     }
                 ],
                 "Scope": "TRANSLATIONS_ONLY"
             },
-            "name": ""
+            "name": "Verifieerbare Credential"
         }
     ],
     "externalproperties": [
@@ -2588,7 +2633,7 @@
             "name": "eigenaar",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+                "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
             },
             "label": {
                 "nl": "eigenaar"
@@ -2597,7 +2642,7 @@
                 "nl": "eigenaar"
             },
             "ap-definition-nl": {
-                "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+                "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
             },
             "extra": {
                 "EA-Name": "eigenaar",
@@ -2605,7 +2650,7 @@
                 "derived": "false",
                 "EA-Package": "",
                 "EA-Type": "connector",
-                "EA-Domain": "Alarmbelformulier",
+                "EA-Domain": "Alarmbelprocedureformulier",
                 "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
                 "EA-Range": "Persoon",
                 "RangeData": {
@@ -2620,14 +2665,14 @@
                     "nl": "eigenaar"
                 },
                 "definition": {
-                    "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+                    "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "eigenaar"
                 },
                 "ap-definition-nl": {
-                    "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+                    "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -2640,7 +2685,7 @@
                     {
                         "key": "definition-nl",
                         "value": "NOTE",
-                        "note": "NOTE$ea_notes=De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+                        "note": "NOTE$ea_notes=De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
                     },
                     {
                         "key": "uri",
@@ -2657,7 +2702,7 @@
                     {
                         "key": "definition-nl",
                         "value": "NOTE",
-                        "note": "NOTE$ea_notes=De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+                        "note": "NOTE$ea_notes=De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
                     },
                     {
                         "key": "uri",
@@ -2670,8 +2715,8 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
-                    "EA-Name": "Alarmbelformulier"
+                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+                    "EA-Name": "Alarmbelprocedureformulier"
                 }
             ],
             "range": [
@@ -3150,7 +3195,7 @@
                 "EA-Guid": "{7C7C1A09-F16D-4d54-A825-63C5A12939B6}",
                 "EA-Package": "Alarmbelprocedure",
                 "EA-Type": "attribute",
-                "EA-Domain": "Alarmbelformulier",
+                "EA-Domain": "Alarmbelprocedureformulier",
                 "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
                 "EA-Range": "DateTime",
                 "RangeData": {
@@ -3195,8 +3240,8 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
-                    "EA-Name": "Alarmbelformulier"
+                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+                    "EA-Name": "Alarmbelprocedureformulier"
                 }
             ],
             "range": [
@@ -3232,7 +3277,7 @@
                 "EA-Guid": "{32775CC9-91A0-4bfc-B00E-029348876A78}",
                 "EA-Package": "Alarmbelprocedure",
                 "EA-Type": "attribute",
-                "EA-Domain": "Alarmbelformulier",
+                "EA-Domain": "Alarmbelprocedureformulier",
                 "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
                 "EA-Range": "DateTime",
                 "RangeData": {
@@ -3277,8 +3322,8 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
-                    "EA-Name": "Alarmbelformulier"
+                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+                    "EA-Name": "Alarmbelprocedureformulier"
                 }
             ],
             "range": [
@@ -3314,7 +3359,7 @@
                 "EA-Guid": "{ACC38C08-0857-4ca2-B058-80891C389179}",
                 "EA-Package": "Alarmbelprocedure",
                 "EA-Type": "attribute",
-                "EA-Domain": "Alarmbelformulier",
+                "EA-Domain": "Alarmbelprocedureformulier",
                 "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
                 "EA-Range": "DateTime",
                 "RangeData": {
@@ -3359,8 +3404,8 @@
             "codelist": [],
             "domain": [
                 {
-                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
-                    "EA-Name": "Alarmbelformulier"
+                    "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+                    "EA-Name": "Alarmbelprocedureformulier"
                 }
             ],
             "range": [
@@ -3541,8 +3586,8 @@
     ],
     "name": "alarmbelprocedureformulier-ap",
     "type": "ap",
-    "eap": "AlarmbelprocedureFormulier.eap",
-    "diagram": "AlarmbelprocedureFormulier",
+    "eap": "Alarmbelprocedureformulier.eap",
+    "diagram": "Alarmbelprocedureformulier",
     "template": "alarmbelprocedureformulier-ap.j2",
     "title": "Alarmbelprocedureformulier",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
@@ -3554,12 +3599,12 @@
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "config": "config/config-ap.json",
     "branchtag": "master",
-    "dummy": "dimi-3",
+    "dummy": "dimi-4",
     "filename": "config/alarmbelprocedureformulier.json",
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/SolidThema-looncredential",
     "urlref": "/doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22",
-    "documentcommit": "c7358150a9dc2050560419932d053f13b432dd08",
-    "toolchaincommit": "1166a7dc94684094fbffa3f2b5678450e6d8f3d2",
+    "documentcommit": "f73b24e7f685ac0e2de100326b38e6a86d706455",
+    "toolchaincommit": "e8c06fdf4dbce0b3f97a7d65e2c995933fc30908",
     "hostname": "https://solid.data.vlaanderen.be/"
 }

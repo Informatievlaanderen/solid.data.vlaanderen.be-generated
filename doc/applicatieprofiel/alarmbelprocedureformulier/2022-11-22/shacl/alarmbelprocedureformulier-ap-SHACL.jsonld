@@ -92,13 +92,13 @@
   "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22",
   "shapes": [
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
           },
@@ -113,8 +113,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/6b0d5813153da700505d795c17d681878225c6d1",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6b0d5813153da700505d795c17d681878225c6d1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
           },
@@ -129,8 +129,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
           },
@@ -145,8 +145,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
@@ -161,11 +161,11 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/0addb769185db828aa4c44888f0aa906471c3d06",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/0addb769185db828aa4c44888f0aa906471c3d06",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:class": "http://www.w3.org/ns/person#Person",
           "sh:description": {
-            "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+            "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
           "sh:name": {
             "nl": "eigenaar"
@@ -177,10 +177,10 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:description": {
-            "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+            "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
           "sh:minCount": "1",
           "sh:name": {
@@ -193,10 +193,10 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:description": {
-            "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+            "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
           "sh:name": {
             "nl": "eigenaar"
@@ -209,10 +209,10 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:description": {
-            "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+            "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -225,8 +225,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
           },
@@ -241,8 +241,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
@@ -257,8 +257,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
           },
@@ -273,8 +273,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
           },
@@ -289,8 +289,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
           },
@@ -305,8 +305,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
           },
@@ -321,8 +321,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
@@ -337,8 +337,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
           },
@@ -353,7 +353,7 @@
           "vl:rule": ""
         }
       ],
-      "sh:targetClass": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+      "sh:targetClass": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
     },
     {
       "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape",

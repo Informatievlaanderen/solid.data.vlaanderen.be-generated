@@ -3,9 +3,9 @@
   "classes": [
     {
       "EA-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
-      "name": "Alarmbelformulier",
+      "name": "Alarmbelprocedureformulier",
       "label": {
-        "nl": "Alarmbelformulier",
+        "nl": "Alarmbelprocedureformulier",
         "en": "Enter your translation here"
       },
       "definition": {
@@ -27,9 +27,9 @@
     },
     {
       "EA-Guid": "{19A0BBCF-A72A-4578-AC92-E8F5E678310A}",
-      "name": "MaandelijkseInkomstenOfUitgaven",
+      "name": "Maandelijkse Inkomsten of Uitgaven",
       "label": {
-        "nl": "MaandelijkseInkomstenOfUitgaven",
+        "nl": "Maandelijkse Inkomsten of Uitgaven",
         "en": "Enter your translation here"
       },
       "definition": {
@@ -347,7 +347,11 @@
     },
     {
       "EA-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
-      "name": "",
+      "name": "Persoon",
+      "label": {
+        "nl": "Persoon",
+        "en": "Enter your translation here"
+      },
       "definition": {
         "nl": "Natuurlijk persoon.",
         "en": "Enter your translation here"
@@ -359,7 +363,11 @@
     },
     {
       "EA-Guid": "{FEBCB276-456D-456a-9947-00E3C5B91ADA}",
-      "name": "",
+      "name": "Document",
+      "label": {
+        "nl": "Document",
+        "en": "Enter your translation here"
+      },
       "definition": {
         "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...).",
         "en": "Enter your translation here"
@@ -379,7 +387,11 @@
     },
     {
       "EA-Guid": "{CC7C1A64-5645-4123-AE54-D5656BFB785A}",
-      "name": "",
+      "name": "Verifieerbare Credential",
+      "label": {
+        "nl": "Verifieerbare Credential",
+        "en": "Enter your translation here"
+      },
       "definition": {
         "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan.",
         "en": "Enter your translation here"
@@ -395,7 +407,7 @@
         "en": "Enter your translation here"
       },
       "definition": {
-        "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie.",
+        "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart.",
         "en": "Enter your translation here"
       }
     },

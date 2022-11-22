@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/c7358150a9dc2050560419932d053f13b432dd08",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/c7358150a9dc2050560419932d053f13b432dd08/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/f73b24e7f685ac0e2de100326b38e6a86d706455",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/f73b24e7f685ac0e2de100326b38e6a86d706455/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -22,23 +22,23 @@
   },
   "classes": [
     {
-      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
-      "name": "Alarmbelformulier",
+      "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+      "name": "Alarmbelprocedureformulier",
       "label": {
-        "nl": "Alarmbelformulier"
+        "nl": "Alarmbelprocedureformulier"
       },
-      "sort": "Alarmbelformulier",
+      "sort": "Alarmbelprocedureformulier",
       "description": {
         "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
       },
       "usage": {},
       "parents": [
         {
-          "label": "VerifieerbareCredential",
+          "label": "Verifieerbare Credential",
           "name": "VerifieerbareCredential",
           "package": "Alarmbelprocedure",
           "uri": "https://w3.org/2018/credentials#VerifiableCredential",
-          "scoped_uri": "#VerifieerbareCredential"
+          "scoped_uri": "#Verifieerbare Credential"
         }
       ],
       "properties": [
@@ -50,13 +50,13 @@
             "nl": "eigenaar"
           },
           "description": {
-            "nl": "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."
+            "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
           "usage": {},
           "domain": [
             {
-              "EA-Name": "Alarmbelformulier",
-              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+              "EA-Name": "Alarmbelprocedureformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
             }
           ],
           "range": [
@@ -90,8 +90,8 @@
           "usage": {},
           "domain": [
             {
-              "EA-Name": "Alarmbelformulier",
-              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+              "EA-Name": "Alarmbelprocedureformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
             }
           ],
           "range": [
@@ -125,8 +125,8 @@
           "usage": {},
           "domain": [
             {
-              "EA-Name": "Alarmbelformulier",
-              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+              "EA-Name": "Alarmbelprocedureformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
             }
           ],
           "range": [
@@ -160,8 +160,8 @@
           "usage": {},
           "domain": [
             {
-              "EA-Name": "Alarmbelformulier",
-              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier"
+              "EA-Name": "Alarmbelprocedureformulier",
+              "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
             }
           ],
           "range": [
@@ -197,11 +197,11 @@
       "usage": {},
       "parents": [
         {
-          "label": "MaandelijkseInkomstenOfUitgaven",
+          "label": "Maandelijkse Inkomsten of Uitgaven",
           "name": "MaandelijkseInkomstenOfUitgaven",
           "package": "Alarmbelprocedure",
           "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
-          "scoped_uri": "#MaandelijkseInkomstenOfUitgaven"
+          "scoped_uri": "#Maandelijkse Inkomsten of Uitgaven"
         }
       ],
       "properties": [
@@ -559,11 +559,11 @@
     },
     {
       "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
-      "name": "MaandelijkseInkomstenOfUitgaven",
+      "name": "Maandelijkse Inkomsten of Uitgaven",
       "label": {
-        "nl": "MaandelijkseInkomstenOfUitgaven"
+        "nl": "Maandelijkse Inkomsten of Uitgaven"
       },
-      "sort": "MaandelijkseInkomstenOfUitgaven",
+      "sort": "Maandelijkse Inkomsten of Uitgaven",
       "description": {
         "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
       },
@@ -630,10 +630,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#VerifieerbareCredential",
+              "range_uri": "#Verifieerbare Credential",
               "range_puri": "https://w3.org/2018/credentials#VerifiableCredential",
               "range_label": {
-                "nl": "VerifieerbareCredential"
+                "nl": "Verifieerbare Credential"
               }
             }
           ],
@@ -690,11 +690,11 @@
       "usage": {},
       "parents": [
         {
-          "label": "MaandelijkseInkomstenOfUitgaven",
+          "label": "Maandelijkse Inkomsten of Uitgaven",
           "name": "MaandelijkseInkomstenOfUitgaven",
           "package": "Alarmbelprocedure",
           "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
-          "scoped_uri": "#MaandelijkseInkomstenOfUitgaven"
+          "scoped_uri": "#Maandelijkse Inkomsten of Uitgaven"
         }
       ],
       "properties": [
@@ -822,9 +822,11 @@
     },
     {
       "uri": "http://www.w3.org/ns/person#Person",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "name": "Persoon",
+      "label": {
+        "nl": "Persoon"
+      },
+      "sort": "Persoon",
       "description": {
         "nl": "Natuurlijk persoon."
       },
@@ -1047,9 +1049,11 @@
     },
     {
       "uri": "http://xmlns.com/foaf/0.1/Document",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "name": "Document",
+      "label": {
+        "nl": "Document"
+      },
+      "sort": "Document",
       "description": {
         "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
       },
@@ -1130,9 +1134,11 @@
     },
     {
       "uri": "https://w3.org/2018/credentials#VerifiableCredential",
-      "name": "",
-      "label": {},
-      "sort": "",
+      "name": "Verifieerbare Credential",
+      "label": {
+        "nl": "Verifieerbare Credential"
+      },
+      "sort": "Verifieerbare Credential",
       "description": {
         "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
       },

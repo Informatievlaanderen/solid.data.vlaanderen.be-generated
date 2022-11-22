@@ -7,7 +7,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22> rdfs:member <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape>,
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22> rdfs:member <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape>,
     <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape>,
     <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape>,
     <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape>,
@@ -22,43 +22,43 @@
     <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape>,
     <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#VerifieerbareCredentialShape> .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape> a shacl:NodeShape;
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/6b0d5813153da700505d795c17d681878225c6d1>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/0addb769185db828aa4c44888f0aa906471c3d06>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0>,
-    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c>;
-  shacl:targetClass <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier> .
+  shacl:property <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6b0d5813153da700505d795c17d681878225c6d1>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/0addb769185db828aa4c44888f0aa906471c3d06>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0>,
+    <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c>;
+  shacl:targetClass <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier> .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/0addb769185db828aa4c44888f0aa906471c3d06> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/0addb769185db828aa4c44888f0aa906471c3d06> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar";
   shacl:class <http://www.w3.org/ns/person#Person>;
-  shacl:description "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."@nl;
+  shacl:description "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."@nl;
   shacl:name "eigenaar"@nl;
   shacl:path <https://w3.org/2018/credentials#credentialSubject>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van eigenaar moet van het type <http://www.w3.org/ns/person#Person> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar";
-  shacl:description "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."@nl;
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar";
+  shacl:description "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."@nl;
   shacl:minCount 1;
   shacl:name "eigenaar"@nl;
   shacl:path <https://w3.org/2018/credentials#credentialSubject>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Minimaal 1 waarden verwacht voor eigenaar"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum";
   shacl:description "Datum waarop het Alarmbelformulier werd ingediend."@nl;
   shacl:minCount 1;
   shacl:name "indieningsdatum"@nl;
@@ -66,7 +66,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Minimaal 1 waarden verwacht voor indieningsdatum"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum";
   shacl:description "Datum waarop het Alarmbelformulier werd gewijzigd."@nl;
   shacl:maxCount 1;
   shacl:name "wijzigingsdatum"@nl;
@@ -74,7 +74,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Maximaal 1 waarden toegelaten voor wijzigingsdatum"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum";
   shacl:description "Datum waarop het Alarmbelformulier werd aangemaakt."@nl;
   shacl:name "creatiedatum"@nl;
   shacl:nodekind "sh:Literal";
@@ -82,7 +82,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De verwachte waarde voor creatiedatum is een Literal"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum";
   shacl:datatype xsd:dateTime;
   shacl:description "Datum waarop het Alarmbelformulier werd ingediend."@nl;
   shacl:name "indieningsdatum"@nl;
@@ -90,7 +90,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van indieningsdatum moet van het type <http://www.w3.org/2001/XMLSchema#dateTime> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum";
   shacl:description "Datum waarop het Alarmbelformulier werd gewijzigd."@nl;
   shacl:minCount 1;
   shacl:name "wijzigingsdatum"@nl;
@@ -98,7 +98,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Minimaal 1 waarden verwacht voor wijzigingsdatum"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/6b0d5813153da700505d795c17d681878225c6d1> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6b0d5813153da700505d795c17d681878225c6d1> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum";
   shacl:description "Datum waarop het Alarmbelformulier werd aangemaakt."@nl;
   shacl:maxCount 1;
   shacl:name "creatiedatum"@nl;
@@ -106,7 +106,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Maximaal 1 waarden toegelaten voor creatiedatum"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum";
   shacl:description "Datum waarop het Alarmbelformulier werd aangemaakt."@nl;
   shacl:minCount 1;
   shacl:name "creatiedatum"@nl;
@@ -114,7 +114,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Minimaal 1 waarden verwacht voor creatiedatum"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum";
   shacl:datatype xsd:dateTime;
   shacl:description "Datum waarop het Alarmbelformulier werd gewijzigd."@nl;
   shacl:name "wijzigingsdatum"@nl;
@@ -122,7 +122,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van wijzigingsdatum moet van het type <http://www.w3.org/2001/XMLSchema#dateTime> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Acreatiedatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum";
   shacl:datatype xsd:dateTime;
   shacl:description "Datum waarop het Alarmbelformulier werd aangemaakt."@nl;
   shacl:name "creatiedatum"@nl;
@@ -130,7 +130,7 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van creatiedatum moet van het type <http://www.w3.org/2001/XMLSchema#dateTime> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum";
   shacl:description "Datum waarop het Alarmbelformulier werd ingediend."@nl;
   shacl:maxCount 1;
   shacl:name "indieningsdatum"@nl;
@@ -138,15 +138,15 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Maximaal 1 waarden toegelaten voor indieningsdatum"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar";
-  shacl:description "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."@nl;
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar";
+  shacl:description "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."@nl;
   shacl:name "eigenaar"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://w3.org/2018/credentials#credentialSubject>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De verwachte waarde voor eigenaar is een rdfs:Resource (URI of blank node)"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Awijzigingsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum";
   shacl:description "Datum waarop het Alarmbelformulier werd gewijzigd."@nl;
   shacl:name "wijzigingsdatum"@nl;
   shacl:nodekind "sh:Literal";
@@ -154,15 +154,15 @@
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De verwachte waarde voor wijzigingsdatum is een Literal"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aeigenaar";
-  shacl:description "De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie."@nl;
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar";
+  shacl:description "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."@nl;
   shacl:maxCount 1;
   shacl:name "eigenaar"@nl;
   shacl:path <https://w3.org/2018/credentials#credentialSubject>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "Maximaal 1 waarden toegelaten voor eigenaar"];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
-<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelformulier%3Aindieningsdatum";
+<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum";
   shacl:description "Datum waarop het Alarmbelformulier werd ingediend."@nl;
   shacl:name "indieningsdatum"@nl;
   shacl:nodekind "sh:Literal";

@@ -1,19 +1,19 @@
 {
   "@context": {
-    "Alarmbelformulier": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier",
-    "Alarmbelformulier.creatiedatum": {
+    "Alarmbelprocedureformulier": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+    "Alarmbelprocedureformulier.creatiedatum": {
       "@id": "http://purl.org/dc/terms/created",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "Alarmbelformulier.eigenaar": {
+    "Alarmbelprocedureformulier.eigenaar": {
       "@id": "https://w3.org/2018/credentials#credentialSubject",
       "@type": "@id"
     },
-    "Alarmbelformulier.indieningsdatum": {
+    "Alarmbelprocedureformulier.indieningsdatum": {
       "@id": "http://purl.org/dc/terms/dateSubmitted",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "Alarmbelformulier.wijzigingsdatum": {
+    "Alarmbelprocedureformulier.wijzigingsdatum": {
       "@id": "http://purl.org/dc/terms/modified",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },

@@ -124,8 +124,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/c7358150a9dc2050560419932d053f13b432dd08">https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/c7358150a9dc2050560419932d053f13b432dd08</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/c7358150a9dc2050560419932d053f13b432dd08/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/c7358150a9dc2050560419932d053f13b432dd08/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/f73b24e7f685ac0e2de100326b38e6a86d706455">https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/f73b24e7f685ac0e2de100326b38e6a86d706455</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/f73b24e7f685ac0e2de100326b38e6a86d706455/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/f73b24e7f685ac0e2de100326b38e6a86d706455/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-looncredential/issues">https://github.com/Informatievlaanderen/SolidThema-looncredential/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -196,14 +196,14 @@
                     <p>In dit document wordt correct gebruik van de volgende entiteiten toegelicht:
                       <br />
                       |
-                      <a href="#"></a> |
-                      <a href="#"></a> |
-                      <a href="#"></a> |
-                      <a href="#Alarmbelformulier">Alarmbelformulier</a> |
+                      <a href="#Alarmbelprocedureformulier">Alarmbelprocedureformulier</a> |
+                      <a href="#Document">Document</a> |
                       <a href="#Maandelijkse Inkomsten">Maandelijkse Inkomsten</a> |
+                      <a href="#Maandelijkse Inkomsten of Uitgaven">Maandelijkse Inkomsten of Uitgaven</a> |
                       <a href="#Maandelijkse Uitgaven">Maandelijkse Uitgaven</a> |
-                      <a href="#MaandelijkseInkomstenOfUitgaven">MaandelijkseInkomstenOfUitgaven</a> |
                       <a href="#Onroerend Goed">Onroerend Goed</a> |
+                      <a href="#Persoon">Persoon</a> |
+                      <a href="#Verifieerbare Credential">Verifieerbare Credential</a> |
                     </p>
                   </div>
                   
@@ -231,279 +231,23 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id=""><a href="http://www.w3.org/ns/person#Person" data-toggle="tooltip" data-content="http://www.w3.org/ns/person#Person" data-placement="right"></a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Natuurlijk persoon.</dd>
-                    
-                    <dt>Gebruik</dt><dd>In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc).</dd>
-                    
-		    
-                    <dt>Eigenschappen</dt>
-		     
-                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#%3Afinanci%C3%ABle%20omstandigheid">financiële omstandigheid</a>, 
-                      <a href="#%3Ainkomsten">inkomsten</a>, 
-                      <a href="#%3Akocht">kocht</a>, 
-                      <a href="#%3Asituationele%20omstandigheid">situationele omstandigheid</a>, 
-                      <a href="#%3Auitgaven">uitgaven</a>, 
-                      <a href="#%3Averkocht">verkocht</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
-                        <th class="data-table__header-title--sortable">Verwacht Type</th>
-                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
-                        <th class="data-table__header-title--sortable">Beschrijving</th>
-                        <th class="data-table__header-title--sortable">Gebruik</th>
-                        <th class="data-table__header-title--sortable">Codelijst</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                    
-                      <tr id="%3Afinanci%C3%ABle%20omstandigheid" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid" data-placement="right">
-                            financiële omstandigheid</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#FinancieleOmstandigheid" data-placement="right">FinancieleOmstandigheid</a>
-			    
-                          
-                        </td>
-                        <td>0..*</td>
-                        <td property="rdfs:comment">Financiële toestand waarin de Persoon zich bevindt.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="%3Ainkomsten" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/loongegevens#inkomsten">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/loongegevens#inkomsten" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/loongegevens#inkomsten" data-placement="right">
-                            inkomsten</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Maandelijkse Inkomsten" data-placement="right">Maandelijkse Inkomsten</a>
-			    
-                          
-                        </td>
-                        <td>6</td>
-                        <td property="rdfs:comment">Instroom van gelden van de Persoon.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="%3Akocht" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht" data-placement="right">
-                            kocht</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Onroerend Goed" data-placement="right">Onroerend Goed</a>
-			    
-                          
-                        </td>
-                        <td>0..*</td>
-                        <td property="rdfs:comment">Onroerend Goed aangekocht door de Persoon.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="%3Asituationele%20omstandigheid" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid" data-placement="right">
-                            situationele omstandigheid</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#SituationeleOmstandigheid" data-placement="right">SituationeleOmstandigheid</a>
-			    
-                          
-                        </td>
-                        <td>0..*</td>
-                        <td property="rdfs:comment">Situatie waarin de Persoon zich bevindt.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="%3Auitgaven" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven" data-placement="right">
-                            uitgaven</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Maandelijkse Uitgaven" data-placement="right">Maandelijkse Uitgaven</a>
-			    
-                          
-                        </td>
-                        <td>0..6</td>
-                        <td property="rdfs:comment">Uitstroom van gelden van de Persoon.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="%3Averkocht" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht" data-placement="right">
-                            verkocht</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Onroerend Goed" data-placement="right">Onroerend Goed</a>
-			    
-                          
-                        </td>
-                        <td>0..*</td>
-                        <td property="rdfs:comment">Onroerend Goed verkocht door de Persoon.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
-                </div>
-      			  
-            </div>
-            
-              <div class="region region--no-space-top">
-              <h3 class="h3" id=""><a href="http://xmlns.com/foaf/0.1/Document" data-toggle="tooltip" data-content="http://xmlns.com/foaf/0.1/Document" data-placement="right"></a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Een origineel werk in de brede zin (een verslag, een opname, een boek ...).</dd>
-                    
-		    
-                    <dt>Eigenschappen</dt>
-		     
-                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#%3Aopmerking">opmerking</a>, 
-                      <a href="#%3Atype">type</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
-                        <th class="data-table__header-title--sortable">Verwacht Type</th>
-                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
-                        <th class="data-table__header-title--sortable">Beschrijving</th>
-                        <th class="data-table__header-title--sortable">Gebruik</th>
-                        <th class="data-table__header-title--sortable">Codelijst</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                    
-                      <tr id="%3Aopmerking" typeof="rdfs:Property" resource="http://www.w3.org/2000/01/rdf-schema#comment">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.w3.org/2000/01/rdf-schema#comment" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#comment" data-placement="right">
-                            opmerking</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
-                          
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">Een vrij tekstveld als nota bij het Document.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="%3Atype" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://purl.org/dc/terms/type" data-toggle="tooltip" data-content="http://purl.org/dc/terms/type" data-placement="right">
-                            type</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#DocumentType" data-placement="right">DocumentType</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">De aard van het Document.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
-                </div>
-      			  
-            </div>
-            
-              <div class="region region--no-space-top">
-              <h3 class="h3" id=""><a href="https://w3.org/2018/credentials#VerifiableCredential" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#VerifiableCredential" data-placement="right"></a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan.</dd>
-                    
-		    
-                    <dt>Eigenschappen</dt>
-		    
-                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
-                    
-                  </dl>
-                </div>
-		
-            </div>
-            
-              <div class="region region--no-space-top">
-              <h3 class="h3" id="Alarmbelformulier"><a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelformulier" data-placement="right">Alarmbelformulier</a></h3>
+              <h3 class="h3" id="Alarmbelprocedureformulier"><a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier" data-placement="right">Alarmbelprocedureformulier</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
-                        <a href="#VerifieerbareCredential">VerifieerbareCredential</a>
+                        <a href="#Verifieerbare Credential">Verifieerbare Credential</a>
 		   </dd>
                     
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Alarmbelformulier%3Acreatiedatum">creatiedatum</a>, 
-                      <a href="#Alarmbelformulier%3Aeigenaar">eigenaar</a>, 
-                      <a href="#Alarmbelformulier%3Aindieningsdatum">indieningsdatum</a>, 
-                      <a href="#Alarmbelformulier%3Awijzigingsdatum">wijzigingsdatum</a>.</dd>
+                      <a href="#Alarmbelprocedureformulier%3Acreatiedatum">creatiedatum</a>, 
+                      <a href="#Alarmbelprocedureformulier%3Aeigenaar">eigenaar</a>, 
+                      <a href="#Alarmbelprocedureformulier%3Aindieningsdatum">indieningsdatum</a>, 
+                      <a href="#Alarmbelprocedureformulier%3Awijzigingsdatum">wijzigingsdatum</a>.</dd>
                     
                   </dl>
                 </div>
@@ -523,7 +267,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Alarmbelformulier%3Acreatiedatum" typeof="rdfs:Property" resource="http://purl.org/dc/terms/created">
+                      <tr id="Alarmbelprocedureformulier%3Acreatiedatum" typeof="rdfs:Property" resource="http://purl.org/dc/terms/created">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/dc/terms/created" data-toggle="tooltip" data-content="http://purl.org/dc/terms/created" data-placement="right">
@@ -543,7 +287,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Alarmbelformulier%3Aeigenaar" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
+                      <tr id="Alarmbelprocedureformulier%3Aeigenaar" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://w3.org/2018/credentials#credentialSubject" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#credentialSubject" data-placement="right">
@@ -558,12 +302,12 @@
                           
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">De persoon (onderwerp) over welke claims worden gedaan en wie de referentie bezit. Deze eigenschap is geërfd van verifieerbare referentie.</td>
+                        <td property="rdfs:comment">De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Alarmbelformulier%3Aindieningsdatum" typeof="rdfs:Property" resource="http://purl.org/dc/terms/dateSubmitted">
+                      <tr id="Alarmbelprocedureformulier%3Aindieningsdatum" typeof="rdfs:Property" resource="http://purl.org/dc/terms/dateSubmitted">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/dc/terms/dateSubmitted" data-toggle="tooltip" data-content="http://purl.org/dc/terms/dateSubmitted" data-placement="right">
@@ -583,7 +327,7 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Alarmbelformulier%3Awijzigingsdatum" typeof="rdfs:Property" resource="http://purl.org/dc/terms/modified">
+                      <tr id="Alarmbelprocedureformulier%3Awijzigingsdatum" typeof="rdfs:Property" resource="http://purl.org/dc/terms/modified">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://purl.org/dc/terms/modified" data-toggle="tooltip" data-content="http://purl.org/dc/terms/modified" data-placement="right">
@@ -610,6 +354,83 @@
             </div>
             
               <div class="region region--no-space-top">
+              <h3 class="h3" id="Document"><a href="http://xmlns.com/foaf/0.1/Document" data-toggle="tooltip" data-content="http://xmlns.com/foaf/0.1/Document" data-placement="right">Document</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Een origineel werk in de brede zin (een verslag, een opname, een boek ...).</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Document%3Aopmerking">opmerking</a>, 
+                      <a href="#Document%3Atype">type</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Document%3Aopmerking" typeof="rdfs:Property" resource="http://www.w3.org/2000/01/rdf-schema#comment">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/2000/01/rdf-schema#comment" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#comment" data-placement="right">
+                            opmerking</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">Een vrij tekstveld als nota bij het Document.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Document%3Atype" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/type" data-toggle="tooltip" data-content="http://purl.org/dc/terms/type" data-placement="right">
+                            type</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#DocumentType" data-placement="right">DocumentType</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">De aard van het Document.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
               <h3 class="h3" id="Maandelijkse Inkomsten"><a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten" data-placement="right">Maandelijkse Inkomsten</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
@@ -617,7 +438,7 @@
                     
 		     
 		    <dt>Subklasse van <dt><dd>
-                        <a href="#MaandelijkseInkomstenOfUitgaven">MaandelijkseInkomstenOfUitgaven</a>
+                        <a href="#Maandelijkse Inkomsten of Uitgaven">Maandelijkse Inkomsten of Uitgaven</a>
 		   </dd>
                     
                     <dt>Eigenschappen</dt>
@@ -859,6 +680,104 @@
             </div>
             
               <div class="region region--no-space-top">
+              <h3 class="h3" id="Maandelijkse Inkomsten of Uitgaven"><a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven" data-placement="right">Maandelijkse Inkomsten of Uitgaven</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen.</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Maandelijkse%20Inkomsten%20of%20Uitgaven%3Abewijsstuk%20document">bewijsstuk document</a>, 
+                      <a href="#Maandelijkse%20Inkomsten%20of%20Uitgaven%3Abewijsstuk%20verifieerbare%20credential">bewijsstuk verifieerbare credential</a>, 
+                      <a href="#Maandelijkse%20Inkomsten%20of%20Uitgaven%3Aperiode">periode</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Maandelijkse%20Inkomsten%20of%20Uitgaven%3Abewijsstuk%20document" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument" data-placement="right">
+                            bewijsstuk document</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Document" data-placement="right">Document</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Maandelijkse%20Inkomsten%20of%20Uitgaven%3Abewijsstuk%20verifieerbare%20credential" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential" data-placement="right">
+                            bewijsstuk verifieerbare credential</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Verifieerbare Credential" data-placement="right">Verifieerbare Credential</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Maandelijkse%20Inkomsten%20of%20Uitgaven%3Aperiode" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode" data-placement="right">
+                            periode</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Periode" data-placement="right">Periode</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
               <h3 class="h3" id="Maandelijkse Uitgaven"><a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven" data-placement="right">Maandelijkse Uitgaven</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
@@ -866,7 +785,7 @@
                     
 		     
 		    <dt>Subklasse van <dt><dd>
-                        <a href="#MaandelijkseInkomstenOfUitgaven">MaandelijkseInkomstenOfUitgaven</a>
+                        <a href="#Maandelijkse Inkomsten of Uitgaven">Maandelijkse Inkomsten of Uitgaven</a>
 		   </dd>
                     
                     <dt>Eigenschappen</dt>
@@ -908,104 +827,6 @@
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">TODO</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
-                </div>
-      			  
-            </div>
-            
-              <div class="region region--no-space-top">
-              <h3 class="h3" id="MaandelijkseInkomstenOfUitgaven"><a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven" data-placement="right">MaandelijkseInkomstenOfUitgaven</a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Beschrijving</dt><dd>Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen.</dd>
-                    
-		    
-                    <dt>Eigenschappen</dt>
-		     
-                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20document">bewijsstuk document</a>, 
-                      <a href="#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20verifieerbare%20credential">bewijsstuk verifieerbare credential</a>, 
-                      <a href="#MaandelijkseInkomstenOfUitgaven%3Aperiode">periode</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
-                        <th class="data-table__header-title--sortable">Verwacht Type</th>
-                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
-                        <th class="data-table__header-title--sortable">Beschrijving</th>
-                        <th class="data-table__header-title--sortable">Gebruik</th>
-                        <th class="data-table__header-title--sortable">Codelijst</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                    
-                      <tr id="MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20document" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument" data-placement="right">
-                            bewijsstuk document</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Document" data-placement="right">Document</a>
-			    
-                          
-                        </td>
-                        <td>0..*</td>
-                        <td property="rdfs:comment">Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20verifieerbare%20credential" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential" data-placement="right">
-                            bewijsstuk verifieerbare credential</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#VerifieerbareCredential" data-placement="right">VerifieerbareCredential</a>
-			    
-                          
-                        </td>
-                        <td>0..*</td>
-                        <td property="rdfs:comment">Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="MaandelijkseInkomstenOfUitgaven%3Aperiode" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode" data-placement="right">
-                            periode</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Periode" data-placement="right">Periode</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1091,6 +912,185 @@
                   </table>
                 </div>
       			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Persoon"><a href="http://www.w3.org/ns/person#Person" data-toggle="tooltip" data-content="http://www.w3.org/ns/person#Person" data-placement="right">Persoon</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Natuurlijk persoon.</dd>
+                    
+                    <dt>Gebruik</dt><dd>In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc).</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Persoon%3Afinanci%C3%ABle%20omstandigheid">financiële omstandigheid</a>, 
+                      <a href="#Persoon%3Ainkomsten">inkomsten</a>, 
+                      <a href="#Persoon%3Akocht">kocht</a>, 
+                      <a href="#Persoon%3Asituationele%20omstandigheid">situationele omstandigheid</a>, 
+                      <a href="#Persoon%3Auitgaven">uitgaven</a>, 
+                      <a href="#Persoon%3Averkocht">verkocht</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Persoon%3Afinanci%C3%ABle%20omstandigheid" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid" data-placement="right">
+                            financiële omstandigheid</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#FinancieleOmstandigheid" data-placement="right">FinancieleOmstandigheid</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Financiële toestand waarin de Persoon zich bevindt.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Persoon%3Ainkomsten" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/loongegevens#inkomsten">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/loongegevens#inkomsten" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/loongegevens#inkomsten" data-placement="right">
+                            inkomsten</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Maandelijkse Inkomsten" data-placement="right">Maandelijkse Inkomsten</a>
+			    
+                          
+                        </td>
+                        <td>6</td>
+                        <td property="rdfs:comment">Instroom van gelden van de Persoon.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Persoon%3Akocht" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht" data-placement="right">
+                            kocht</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Onroerend Goed" data-placement="right">Onroerend Goed</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Onroerend Goed aangekocht door de Persoon.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Persoon%3Asituationele%20omstandigheid" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid" data-placement="right">
+                            situationele omstandigheid</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#SituationeleOmstandigheid" data-placement="right">SituationeleOmstandigheid</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Situatie waarin de Persoon zich bevindt.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Persoon%3Auitgaven" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven" data-placement="right">
+                            uitgaven</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Maandelijkse Uitgaven" data-placement="right">Maandelijkse Uitgaven</a>
+			    
+                          
+                        </td>
+                        <td>0..6</td>
+                        <td property="rdfs:comment">Uitstroom van gelden van de Persoon.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Persoon%3Averkocht" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht" data-placement="right">
+                            verkocht</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Onroerend Goed" data-placement="right">Onroerend Goed</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Onroerend Goed verkocht door de Persoon.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Verifieerbare Credential"><a href="https://w3.org/2018/credentials#VerifiableCredential" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#VerifiableCredential" data-placement="right">Verifieerbare Credential</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan.</dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
             </div>
             
 
