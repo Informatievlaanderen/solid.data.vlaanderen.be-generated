@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/761cf3a23129168b9b6aef31d2a83101cf549855",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/761cf3a23129168b9b6aef31d2a83101cf549855/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/0a36485f569ba848369fc31142a60774796128be",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/0a36485f569ba848369fc31142a60774796128be/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -130,10 +130,10 @@
       "properties": [
         {
           "uri": "https://data.vlaanderen.be/ns/persoon#volledigeNaam",
-          "name": "volledigeNaam",
-          "sort": "volledigeNaam",
+          "name": "volledige naam",
+          "sort": "volledige naam",
           "label": {
-            "nl": "volledigeNaam"
+            "nl": "volledige naam"
           },
           "description": {
             "nl": "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."
@@ -200,10 +200,10 @@
         },
         {
           "uri": "https://data.vlaanderen.be/ns/persoon#isHoofdVan",
-          "name": "isHoofdVan",
-          "sort": "isHoofdVan",
+          "name": "is hoofd van",
+          "sort": "is hoofd van",
           "label": {
-            "nl": "isHoofdVan"
+            "nl": "is hoofd van"
           },
           "description": {
             "nl": "Gezin waarvan de persoon het gezinshoofd is."
@@ -447,11 +447,11 @@
     },
     {
       "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization",
-      "name": "GeregistreerdeOrganisatie",
+      "name": "Geregistreerde Organisatie",
       "label": {
-        "nl": "GeregistreerdeOrganisatie"
+        "nl": "Geregistreerde Organisatie"
       },
-      "sort": "GeregistreerdeOrganisatie",
+      "sort": "Geregistreerde Organisatie",
       "description": {
         "nl": "Organisatie met een juridisch statuut vastgelegd door registratie."
       },
@@ -1755,10 +1755,14 @@
     },
     {
       "uri": "https://solid.data.vlaanderen.be/ns/looncredential#Looncredential",
-      "name": "",
-      "label": {},
-      "sort": "",
-      "description": {},
+      "name": "Looncredential",
+      "label": {
+        "nl": "Looncredential"
+      },
+      "sort": "Looncredential",
+      "description": {
+        "nl": "Credential met claims over de inkomsten van een persoon."
+      },
       "usage": {},
       "parents": [
         {
