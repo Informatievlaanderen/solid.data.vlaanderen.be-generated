@@ -259,8 +259,8 @@
   "contributors-column": "skos",
   "contributors-file": "stakeholders.csv",
   "diagram": "skos",
-  "documentcommit": "8320cb840f49b374070458cbaf38d74c84a337b4",
-  "dummy": "dimi-2",
+  "documentcommit": "92afb5246ae38070ce6d82538936e414db734b95",
+  "dummy": "dimi-3",
   "eap": "SKOS.eap",
   "editors": [
     {
@@ -1544,7 +1544,7 @@
   "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
   "site": "site-skeleton/skos",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
-  "toolchaincommit": "a72ba93b9235cebbaca473f724f24c877f94e2c5",
+  "toolchaincommit": "b645869445bc11b4ebb21fc1c391f18921eb1dcb",
   "translation": [
     {
       "language": "en",

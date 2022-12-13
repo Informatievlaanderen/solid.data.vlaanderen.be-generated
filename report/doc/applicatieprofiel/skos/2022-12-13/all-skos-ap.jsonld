@@ -1539,12 +1539,12 @@
     ],
     "config": "config/config-ap.json",
     "branchtag": "master",
-    "dummy": "dimi-2",
+    "dummy": "dimi-3",
     "filename": "config/skos-ap.json",
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
     "urlref": "/doc/applicatieprofiel/skos/2022-12-13",
-    "documentcommit": "8320cb840f49b374070458cbaf38d74c84a337b4",
-    "toolchaincommit": "a72ba93b9235cebbaca473f724f24c877f94e2c5",
+    "documentcommit": "92afb5246ae38070ce6d82538936e414db734b95",
+    "toolchaincommit": "b645869445bc11b4ebb21fc1c391f18921eb1dcb",
     "hostname": "https://solid.data.vlaanderen.be/"
 }
