@@ -138,22 +138,6 @@
           "sh:name": {
             "en": "Enter your translation here"
           },
-          "sh:path": "http://www.w3.org/ns/adms#status",
-          "vl:message": {
-            "en": "Maximaal 1 waarden toegelaten voor Enter your translation here"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/143b59e100bd9b8ec5b6ccc4d1dba91b068510ff",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3AEnter%20your%20translation%20here",
-          "sh:description": {
-            "en": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "Enter your translation here"
-          },
           "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf",
           "vl:message": {
             "en": "Maximaal 1 waarden toegelaten voor Enter your translation here"
@@ -269,22 +253,6 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel",
           "vl:message": {
             "en": "De verwachte waarde voor Enter your translation here is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/199ea77e4bb49c0826ccf19746c292123a50ed37",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3AEnter%20your%20translation%20here",
-          "sh:description": {
-            "en": "Enter your translation here"
-          },
-          "sh:name": {
-            "en": "Enter your translation here"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/adms#status",
-          "vl:message": {
-            "en": "De verwachte waarde voor Enter your translation here is een rdfs:Resource (URI of blank node)"
           },
           "vl:rule": ""
         },
@@ -419,22 +387,6 @@
         {
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/91864a2c91c92773f84bc21c6d1b60e01000a4c4",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3AEnter%20your%20translation%20here",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:description": {
-            "en": "Enter your translation here"
-          },
-          "sh:name": {
-            "en": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/ns/adms#status",
-          "vl:message": {
-            "en": "De range van Enter your translation here moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/91864a2c91c92773f84bc21c6d1b60e01000a4c4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3AEnter%20your%20translation%20here",
           "sh:class": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
           "sh:description": {
             "en": "Enter your translation here"
@@ -537,22 +489,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/143b59e100bd9b8ec5b6ccc4d1dba91b068510ff",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3AEnter%20your%20translation%20here",
-          "sh:description": {
-            "en": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#status",
-          "vl:message": {
-            "en": "Maximaal 1 waarden toegelaten voor Enter your translation here"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/199ea77e4bb49c0826ccf19746c292123a50ed37",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3AEnter%20your%20translation%20here",
           "sh:description": {
@@ -569,22 +505,6 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/199ea77e4bb49c0826ccf19746c292123a50ed37",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3AEnter%20your%20translation%20here",
-          "sh:description": {
-            "en": "Enter your translation here"
-          },
-          "sh:name": {
-            "en": "Enter your translation here"
-          },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/2004/02/skos/core#status",
-          "vl:message": {
-            "en": "De verwachte waarde voor Enter your translation here is een rdfs:Resource (URI of blank node)"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/91864a2c91c92773f84bc21c6d1b60e01000a4c4",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3AEnter%20your%20translation%20here",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -595,22 +515,6 @@
             "en": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-          "vl:message": {
-            "en": "De range van Enter your translation here moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/91864a2c91c92773f84bc21c6d1b60e01000a4c4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3AEnter%20your%20translation%20here",
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:description": {
-            "en": "Enter your translation here"
-          },
-          "sh:name": {
-            "en": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#status",
           "vl:message": {
             "en": "De range van Enter your translation here moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },

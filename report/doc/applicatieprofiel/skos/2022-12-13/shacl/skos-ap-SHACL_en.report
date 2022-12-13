@@ -18,7 +18,5 @@ add uniqueLanguage constraint
 add nodeKind constraint
 add nodeKind constraint
 add nodeKind constraint
-add nodeKind constraint
-add nodeKind constraint
 start writing
 Write complete, file saved to: /tmp/workspace/target/doc/applicatieprofiel/skos/2022-12-13/shacl/skos-ap-SHACL_en.jsonld
