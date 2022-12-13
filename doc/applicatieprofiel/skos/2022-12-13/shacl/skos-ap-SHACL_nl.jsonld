@@ -1,0 +1,637 @@
+{
+  "@context": {
+    "@vocab": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13",
+    "qb": "http://purl.org/linked-data/cube#",
+    "qb:codeList": {
+      "@id": "qb:codeList",
+      "@type": "@id"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdfs:comment": {
+      "@id": "rdfs:comment"
+    },
+    "sh": "http://www.w3.org/ns/shacl#",
+    "sh:and": {
+      "@container": "@set",
+      "@id": "sh:and",
+      "@type": "@id"
+    },
+    "sh:class": {
+      "@id": "sh:class",
+      "@type": "@id"
+    },
+    "sh:datatype": {
+      "@id": "sh:datatype",
+      "@type": "@id"
+    },
+    "sh:description": {
+      "@container": "@language",
+      "@id": "sh:description"
+    },
+    "sh:hasValue": {
+      "@id": "sh:hasValue",
+      "@type": "@id"
+    },
+    "sh:in": {
+      "@container": "@set",
+      "@id": "sh:in",
+      "@type": "@id"
+    },
+    "sh:maxCount": {
+      "@id": "sh:maxCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:minCount": {
+      "@id": "sh:minCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:name": {
+      "@container": "@language",
+      "@id": "sh:name"
+    },
+    "sh:node": {
+      "@id": "sh:node",
+      "@type": "@id"
+    },
+    "sh:nodeKind": {
+      "@id": "sh:nodeKind",
+      "@type": "@id"
+    },
+    "sh:or": {
+      "@container": "@set",
+      "@id": "sh:or",
+      "@type": "@id"
+    },
+    "sh:path": {
+      "@id": "sh:path",
+      "@type": "@id"
+    },
+    "sh:property": {
+      "@id": "sh:property",
+      "@type": "@id"
+    },
+    "sh:severity": {
+      "@id": "sh:severity",
+      "@type": "@id"
+    },
+    "sh:targetClass": {
+      "@id": "sh:targetClass",
+      "@type": "@id"
+    },
+    "sh:uniqueLang": {
+      "@id": "sh:uniqueLang",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "shapes": {
+      "@id": "rdfs:member",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vl": "https://data.vlaanderen.be/ns/shacl#"
+  },
+  "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13",
+  "shapes": [
+    {
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/1636f92a95107b5fa419d4b4b079071700dd71b2",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Aalternatief%20label",
+          "sh:description": {
+            "nl": "Een alternatief lexicaal label voor een concept. Dit is vooral handig bij het toewijzen van labels die verder gaan dan het voorkeurslabel voor het concept, bijvoorbeeld wanneer synoniemen moeten worden weergegeven."
+          },
+          "sh:name": {
+            "nl": "alternatief label"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel",
+          "vl:message": {
+            "nl": "De verwachte waarde voor alternatief label is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/2fb3368271685998da9c40afb45996344abc0303",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Aalternatief%20label",
+          "sh:description": {
+            "nl": "Een alternatief lexicaal label voor een concept. Dit is vooral handig bij het toewijzen van labels die verder gaan dan het voorkeurslabel voor het concept, bijvoorbeeld wanneer synoniemen moeten worden weergegeven."
+          },
+          "sh:name": {
+            "nl": "alternatief label"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor alternatief label"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/e7066e55bcdf7396aa545695ce20829fb8ec1c98",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Aalternatief%20label",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een alternatief lexicaal label voor een concept. Dit is vooral handig bij het toewijzen van labels die verder gaan dan het voorkeurslabel voor het concept, bijvoorbeeld wanneer synoniemen moeten worden weergegeven."
+          },
+          "sh:name": {
+            "nl": "alternatief label"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel",
+          "vl:message": {
+            "nl": "De range van alternatief label moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/627fbccb9d158ae5a6b94b33fcc88991cb18e8e5",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Adefinitie",
+          "sh:description": {
+            "nl": "Geeft een volledige uitleg van de bedoelde betekenis van een concept."
+          },
+          "sh:name": {
+            "nl": "definitie"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#definition",
+          "vl:message": {
+            "nl": "De verwachte waarde voor definitie is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/66a7f0e093f521a35953ef60afd48c75cfc71e53",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Adefinitie",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Geeft een volledige uitleg van de bedoelde betekenis van een concept."
+          },
+          "sh:name": {
+            "nl": "definitie"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#definition",
+          "vl:message": {
+            "nl": "De range van definitie moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/b595eefeda247221dfe33a08d871e5c8b6d48b0c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Adefinitie",
+          "sh:description": {
+            "nl": "Geeft een volledige uitleg van de bedoelde betekenis van een concept."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "definitie"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#definition",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor definitie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/f99fd98069ea338367b96c51b093539d98c88582",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Adefinitie",
+          "sh:description": {
+            "nl": "Geeft een volledige uitleg van de bedoelde betekenis van een concept."
+          },
+          "sh:name": {
+            "nl": "definitie"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#definition",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor definitie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/17b254fda8f9b9776ed3edecdd2542eed66a4555",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Aenger",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "Deze eigenschap wordt gebruikt om aan te duiden dat het ene concept enger van betekenis is (d.w.z. specifieker) dan het andere."
+          },
+          "sh:name": {
+            "nl": "enger"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#narrower",
+          "vl:message": {
+            "nl": "De range van enger moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/36a658d3f957877b63c981c62d86593bb6b0a8bf",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Aenger",
+          "sh:description": {
+            "nl": "Deze eigenschap wordt gebruikt om aan te duiden dat het ene concept enger van betekenis is (d.w.z. specifieker) dan het andere."
+          },
+          "sh:name": {
+            "nl": "enger"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#narrower",
+          "vl:message": {
+            "nl": "De verwachte waarde voor enger is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/02131cf1c8b449174e7c3e54f95fe00d37170d96",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Ageprefereerd%20label",
+          "sh:description": {
+            "nl": "Geprefereerd lexicaal label voor de resource."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "geprefereerd label"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor geprefereerd label"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/3654cd25abcd2925ef1263c7a0e1bf073806eb86",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Ageprefereerd%20label",
+          "sh:description": {
+            "nl": "Geprefereerd lexicaal label voor de resource."
+          },
+          "sh:name": {
+            "nl": "geprefereerd label"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "vl:message": {
+            "nl": "De verwachte waarde voor geprefereerd label is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/4e2e61dda5676bfd2860164c6a3a39b4c17151c9",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Ageprefereerd%20label",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Geprefereerd lexicaal label voor de resource."
+          },
+          "sh:name": {
+            "nl": "geprefereerd label"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "vl:message": {
+            "nl": "De range van geprefereerd label moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/521e929809237926a254d7ff921c43d6830b793d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Ageprefereerd%20label",
+          "sh:description": {
+            "nl": "Geprefereerd lexicaal label voor de resource."
+          },
+          "sh:name": {
+            "nl": "geprefereerd label"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor geprefereerd label"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/40cc391e16565798da558f30343d8418d4e5794a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Ain%20schema",
+          "sh:description": {
+            "nl": "Link naar het conceptschema dat het concept bevat."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "in schema"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#inScheme",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor in schema"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/677d2ab8d1239327a776852e398bef8b68d5a76e",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Ain%20schema",
+          "sh:description": {
+            "nl": "Link naar het conceptschema dat het concept bevat."
+          },
+          "sh:name": {
+            "nl": "in schema"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#inScheme",
+          "vl:message": {
+            "nl": "De verwachte waarde voor in schema is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/91d04a30e936feae0756f8a037218d347ebe6990",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Ain%20schema",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+          "sh:description": {
+            "nl": "Link naar het conceptschema dat het concept bevat."
+          },
+          "sh:name": {
+            "nl": "in schema"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#inScheme",
+          "vl:message": {
+            "nl": "De range van in schema moet van het type <http://www.w3.org/2004/02/skos/core#ConceptScheme> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/3073c920efd960a5d9914dc057f8cb46063bedb1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Anota",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een eigenschap voor algemene documentatiedoeleinden."
+          },
+          "sh:name": {
+            "nl": "nota"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#note",
+          "vl:message": {
+            "nl": "De range van nota moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/5b9396232cc334471f7abb24a51272d3966cd76f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Anota",
+          "sh:description": {
+            "nl": "Een eigenschap voor algemene documentatiedoeleinden."
+          },
+          "sh:name": {
+            "nl": "nota"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#note",
+          "vl:message": {
+            "nl": "De verwachte waarde voor nota is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/a86adcb6f3ca1570fa53b2ad911a40f7d26c3610",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Anota",
+          "sh:description": {
+            "nl": "Een eigenschap voor algemene documentatiedoeleinden."
+          },
+          "sh:name": {
+            "nl": "nota"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#note",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor nota"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/6a0f43244bf0302a62b9fb4f92e1ae26a4e33604",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Anotatie",
+          "sh:description": {
+            "nl": "Met deze eigenschap kan een concept worden gekoppeld aan een RDF-getypeerde letterlijke waarde - een letterlijke waarde met een expliciet gegevenstype. Het gegevenstype van de letterlijke waarde specificeert een syntaxiscoderingsschema dat past bij het gebruik van notaties in de betreffende KOS. De waarde van de letterlijke waarde is de notatie zelf."
+          },
+          "sh:name": {
+            "nl": "notatie"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
+          "vl:message": {
+            "nl": "De verwachte waarde voor notatie is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/71a444ee0ec5b354586504464e5c6bffb69d78c8",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Anotatie",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "nl": "Met deze eigenschap kan een concept worden gekoppeld aan een RDF-getypeerde letterlijke waarde - een letterlijke waarde met een expliciet gegevenstype. Het gegevenstype van de letterlijke waarde specificeert een syntaxiscoderingsschema dat past bij het gebruik van notaties in de betreffende KOS. De waarde van de letterlijke waarde is de notatie zelf."
+          },
+          "sh:name": {
+            "nl": "notatie"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
+          "vl:message": {
+            "nl": "De range van notatie moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Astatus",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "De range van status moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Astatus",
+          "sh:description": {
+            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor status"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Astatus",
+          "sh:description": {
+            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "De verwachte waarde voor status is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/1cd31584309b13f871496c7ce84ba756c2059f21",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Atopconcept%20van",
+          "sh:description": {
+            "nl": "Geeft aan dat het concept het meest algemene concept van het conceptschema is."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "topconcept van"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor topconcept van"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/2a800282308683d9677e2ec423909a83637ef1eb",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Atopconcept%20van",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+          "sh:description": {
+            "nl": "Geeft aan dat het concept het meest algemene concept van het conceptschema is."
+          },
+          "sh:name": {
+            "nl": "topconcept van"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+          "vl:message": {
+            "nl": "De range van topconcept van moet van het type <http://www.w3.org/2004/02/skos/core#ConceptScheme> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/88a084f6d864d33d52296b9cca708e46a9b68a1c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Atopconcept%20van",
+          "sh:description": {
+            "nl": "Geeft aan dat het concept het meest algemene concept van het conceptschema is."
+          },
+          "sh:name": {
+            "nl": "topconcept van"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+          "vl:message": {
+            "nl": "De verwachte waarde voor topconcept van is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/b129ec0665dd67d81a6cebc1051998e483e6bdd3",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Aheeft%20topconcept",
+          "sh:description": {
+            "nl": "Deze eigenschap maakt het mogelijk om een ??conceptschema te koppelen aan de (mogelijk vele) meest algemene concepten die het bevat, om een ??efficiënte toegang te verschaffen tot de ingangspunten van bredere/engere concepthiërarchieën."
+          },
+          "sh:name": {
+            "nl": "heeft topconcept"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+          "vl:message": {
+            "nl": "De verwachte waarde voor heeft topconcept is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/b3bce53901d27798c4582dd1c0a4fa519b3b057c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Aheeft%20topconcept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "Deze eigenschap maakt het mogelijk om een ??conceptschema te koppelen aan de (mogelijk vele) meest algemene concepten die het bevat, om een ??efficiënte toegang te verschaffen tot de ingangspunten van bredere/engere concepthiërarchieën."
+          },
+          "sh:name": {
+            "nl": "heeft topconcept"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+          "vl:message": {
+            "nl": "De range van heeft topconcept moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Astatus",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#status",
+          "vl:message": {
+            "nl": "De range van status moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Astatus",
+          "sh:description": {
+            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#status",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor status"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Astatus",
+          "sh:description": {
+            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/2004/02/skos/core#status",
+          "vl:message": {
+            "nl": "De verwachte waarde voor status is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#LangStringShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#LiteralShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }
+  ]
+}
