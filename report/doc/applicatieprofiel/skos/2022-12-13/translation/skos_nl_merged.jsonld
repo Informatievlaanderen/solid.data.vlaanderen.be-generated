@@ -222,8 +222,8 @@
   "contributors-column": "skos",
   "contributors-file": "stakeholders.csv",
   "diagram": "skos",
-  "documentcommit": "5bc1fb11409ae35c3c77a2dfa938db56bae43bf6",
-  "dummy": "dimi-4",
+  "documentcommit": "71c268787efaec5426f2fb6000fbe5cd1592afce",
+  "dummy": "dimi-5",
   "eap": "SKOS.eap",
   "editors": [
     {
@@ -237,7 +237,258 @@
       "foaf:mbox": "magda-teamsolid@vlaanderen.be"
     }
   ],
-  "externalproperties": [],
+  "externalproperties": [
+    {
+      "@id": "http://www.w3.org/ns/adms#status",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
+      "ap-definition-nl": {
+        "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+      },
+      "ap-label-nl": {
+        "nl": "status"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+      },
+      "domain": [
+        {
+          "EA-Name": "ConceptScheme",
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-en",
+            "note": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/adms#status",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "ConceptScheme",
+        "EA-Domain-Guid": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+        "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
+        "EA-Name": "status",
+        "EA-Package": "",
+        "EA-Range": "Concept",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "definition-en",
+            "note": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/adms#status",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+        },
+        "ap-label-nl": {
+          "nl": "status"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+        },
+        "derived": "false",
+        "destRole": "status",
+        "label": {
+          "nl": "status"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "status"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "status",
+      "range": [
+        {
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#status",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
+      "ap-definition-nl": {
+        "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+      },
+      "ap-label-nl": {
+        "nl": "status"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+      },
+      "domain": [
+        {
+          "EA-Name": "Concept",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The status of the concept, e.g. 'in use' or 'deprecated'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "De status van het concept, bv. 'in gebruik' of 'verouderd'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/adms#status",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
+        "EA-Name": "status",
+        "EA-Package": "",
+        "EA-Range": "Concept",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-en",
+            "note": "status",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-en",
+            "note": "The status of the concept, e.g. 'in use' or 'deprecated'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "De status van het concept, bv. 'in gebruik' of 'verouderd'.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "http://www.w3.org/ns/adms#status",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+        },
+        "ap-label-nl": {
+          "nl": "status"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+        },
+        "derived": "false",
+        "destRole": "status",
+        "label": {
+          "nl": "status"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "status"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "status",
+      "range": [
+        {
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Name": "Concept",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    }
+  ],
   "externals": [
     {
       "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -1321,7 +1572,7 @@
   "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
   "site": "site-skeleton/skos",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
-  "toolchaincommit": "1e063b1b5306f79b5a48061f5b80f3e74379dd66",
+  "toolchaincommit": "5da308e987cdff30bdd1ac6803f78b0671a75cf9",
   "translation": [
     {
       "language": "en",

@@ -34,6 +34,10 @@
       "@id": "http://www.w3.org/2004/02/skos/core#notation",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
+    "Concept.status": {
+      "@id": "http://www.w3.org/ns/adms#status",
+      "@type": "@id"
+    },
     "Concept.topconceptVan": {
       "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
       "@type": "@id"
@@ -42,6 +46,10 @@
     "Conceptschema.heeftTopconcept": {
       "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type": "@id"
+    },
+    "Conceptschema.status": {
+      "@id": "http://www.w3.org/ns/adms#status",
       "@type": "@id"
     },
     "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",

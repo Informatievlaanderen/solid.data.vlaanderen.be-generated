@@ -82,8 +82,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/tree/5bc1fb11409ae35c3c77a2dfa938db56bae43bf6">https://github.com/Informatievlaanderen/SolidThema-generiek/tree/5bc1fb11409ae35c3c77a2dfa938db56bae43bf6</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/blob/5bc1fb11409ae35c3c77a2dfa938db56bae43bf6/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-generiek/blob/5bc1fb11409ae35c3c77a2dfa938db56bae43bf6/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/tree/71c268787efaec5426f2fb6000fbe5cd1592afce">https://github.com/Informatievlaanderen/SolidThema-generiek/tree/71c268787efaec5426f2fb6000fbe5cd1592afce</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/blob/71c268787efaec5426f2fb6000fbe5cd1592afce/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-generiek/blob/71c268787efaec5426f2fb6000fbe5cd1592afce/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/issues">https://github.com/Informatievlaanderen/SolidThema-generiek/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -198,6 +198,7 @@
                       <a href="#Concept%3Ain%20schema">in schema</a>, 
                       <a href="#Concept%3Anota">nota</a>, 
                       <a href="#Concept%3Anotatie">notatie</a>, 
+                      <a href="#Concept%3Astatus">status</a>, 
                       <a href="#Concept%3Atopconcept%20van">topconcept van</a>.</dd>
                     
                   </dl>
@@ -358,6 +359,26 @@
                         <td></td>
                       </tr>
                     
+                      <tr id="Concept%3Astatus" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#status">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/adms#status" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#status" data-placement="right">
+                            status</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Concept" data-placement="right">Concept</a>
+			    
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De status van het concept, bv. &#39;in gebruik&#39; of &#39;verouderd&#39;.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
                       <tr id="Concept%3Atopconcept%20van" typeof="rdfs:Property" resource="http://www.w3.org/2004/02/skos/core#topConceptOf">
                         <td>
                           <code property="rdfs:label">
@@ -394,7 +415,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Conceptschema%3Aheeft%20topconcept">heeft topconcept</a>.</dd>
+                      <a href="#Conceptschema%3Aheeft%20topconcept">heeft topconcept</a>, 
+                      <a href="#Conceptschema%3Astatus">status</a>.</dd>
                     
                   </dl>
                 </div>
@@ -430,6 +452,26 @@
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Deze eigenschap maakt het mogelijk om een conceptschema te koppelen aan de (mogelijk vele) meest algemene concepten die het bevat, om een efficiënte toegang te verschaffen tot de ingangspunten van bredere/engere concepthiërarchieën.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Conceptschema%3Astatus" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#status">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/adms#status" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#status" data-placement="right">
+                            status</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Concept" data-placement="right">Concept</a>
+			    
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De status van het conceptschema, bv. &#39;in gebruik&#39; of &#39;verouderd&#39;.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>

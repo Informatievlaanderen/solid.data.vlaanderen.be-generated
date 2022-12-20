@@ -433,6 +433,54 @@
           "vl:rule": ""
         },
         {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Astatus",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "De range van status moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Astatus",
+          "sh:description": {
+            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor status"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Astatus",
+          "sh:description": {
+            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "De verwachte waarde voor status is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptShape/1cd31584309b13f871496c7ce84ba756c2059f21",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#Concept%3Atopconcept%20van",
           "sh:description": {
@@ -517,6 +565,54 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
           "vl:message": {
             "nl": "De range van heeft topconcept moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Astatus",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "De range van status moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Astatus",
+          "sh:description": {
+            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor status"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptSchemeShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2022-12-13#ConceptScheme%3Astatus",
+          "sh:description": {
+            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+          },
+          "sh:name": {
+            "nl": "status"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#status",
+          "vl:message": {
+            "nl": "De verwachte waarde voor status is een rdfs:Resource (URI of blank node)"
           },
           "vl:rule": ""
         }

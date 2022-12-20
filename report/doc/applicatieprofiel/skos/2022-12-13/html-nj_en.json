@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/5bc1fb11409ae35c3c77a2dfa938db56bae43bf6",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/5bc1fb11409ae35c3c77a2dfa938db56bae43bf6/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/71c268787efaec5426f2fb6000fbe5cd1592afce",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/71c268787efaec5426f2fb6000fbe5cd1592afce/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -338,6 +338,44 @@
           ],
           "cardinality": "0..*",
           "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#status",
+          "name": "status",
+          "sort": "Enter your translation here",
+          "label": {
+            "en": "Enter your translation here",
+            "nl": "status"
+          },
+          "description": {
+            "en": "Enter your translation here",
+            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Concept",
+              "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Concept",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Enter your translation here",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Enter your translation here",
+                "nl": "Concept"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
         }
       ]
     },
@@ -392,6 +430,44 @@
             }
           ],
           "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#status",
+          "name": "status",
+          "sort": "Enter your translation here",
+          "label": {
+            "en": "Enter your translation here",
+            "nl": "status"
+          },
+          "description": {
+            "en": "Enter your translation here",
+            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ConceptScheme",
+              "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Concept",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Enter your translation here",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "en": "Enter your translation here",
+                "nl": "Concept"
+              }
+            }
+          ],
+          "cardinality": "0..1",
           "codelist_uri": ""
         }
       ]
