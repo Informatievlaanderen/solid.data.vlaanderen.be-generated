@@ -364,7 +364,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/2dceec85e711413e199f2310746fff51134c2f0b",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Andere uitkeringen die de persoon ontvangt."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -381,7 +381,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Andere uitkeringen die de persoon ontvangt."
           },
           "sh:name": {
             "nl": "andere uitkeringen"
@@ -396,7 +396,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/82953315a4e10723c6cfce539c6104d626aee380",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Andere uitkeringen die de persoon ontvangt."
           },
           "sh:name": {
             "nl": "andere uitkeringen"
@@ -413,7 +413,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
           },
           "sh:name": {
             "nl": "belastbare beroepsinkomsten"
@@ -428,7 +428,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/432230c8c439ce9268a4f67c451cfe047d40a4c6",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -444,7 +444,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/e665b4b8d4da5e8c7fe46beca7729973dd48b745",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
           },
           "sh:name": {
             "nl": "belastbare beroepsinkomsten"
@@ -460,7 +460,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/3f191e1bd2e887090a0b3cd4dbb82f465e9594f3",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
           },
           "sh:name": {
             "nl": "beroepsinkomsten als zelfstandige"
@@ -476,7 +476,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/4389a2a0bc01363636fcb3487fa77102f8fba00a",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -493,7 +493,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
           },
           "sh:name": {
             "nl": "beroepsinkomsten als zelfstandige"
@@ -508,7 +508,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/271c184975c88428fc8d7bbea035950bbcdfe06f",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
           },
           "sh:name": {
             "nl": "geen inkomen"
@@ -525,7 +525,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
           },
           "sh:name": {
             "nl": "geen inkomen"
@@ -540,7 +540,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/fe6d4e57a608c0ece5a7e7584db6d7bad57695c6",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -556,7 +556,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/6ab306ce085b18c4d8c251289128bd4b3d5ad12a",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -573,7 +573,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
           },
           "sh:name": {
             "nl": "inkomensvervangende tegemoetkoming"
@@ -588,7 +588,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/d12a7327feef6cb0f6b504bd4cfafb29238cb289",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
           },
           "sh:name": {
             "nl": "inkomensvervangende tegemoetkoming"
@@ -605,7 +605,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
           },
           "sh:name": {
             "nl": "inkomsten als internationale ambtenaar"
@@ -620,7 +620,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/b252ef61f7c40466866656589e78c0afaad6ec17",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
           },
           "sh:name": {
             "nl": "inkomsten als internationale ambtenaar"
@@ -636,7 +636,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/f65b1a720fffeb74f70e30cb40a46d7dc807f225",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -653,7 +653,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
           },
           "sh:name": {
             "nl": "leefloon of equivalent leefloon"
@@ -668,7 +668,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/62ddff51b7343ff8c86e356985856eab3edfcc51",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -684,7 +684,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/9e4f7937e6321890abd18617680ef863acbbef33",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
           },
           "sh:name": {
             "nl": "leefloon of equivalent leefloon"
@@ -700,7 +700,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/281c6ff5c79aa0653f20fde909eb4ef44df47be5",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
           },
           "sh:name": {
             "nl": "ontvangen onderhoudsgelden"
@@ -717,7 +717,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
           },
           "sh:name": {
             "nl": "ontvangen onderhoudsgelden"
@@ -732,7 +732,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/bbd6571978c7cf2cc4b93c183d54c748b469386f",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -748,7 +748,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/02b3c503abfa6e0252d8f6276b05b62bd66029a2",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
           },
           "sh:name": {
             "nl": "pensioenen"
@@ -764,7 +764,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/324ad6b915204eeff49449b90010fa6d42dc372e",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -781,7 +781,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
           },
           "sh:name": {
             "nl": "pensioenen"
@@ -796,7 +796,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/1b32c6dcf08745bcf56df3e438c8dfd7ac7d5086",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -812,7 +812,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/527c21ad4cff55ef1b9eb7f666b36d6a66f7a4f7",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
           },
           "sh:name": {
             "nl": "vervangingsinkomen"
@@ -829,7 +829,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
           },
           "sh:name": {
             "nl": "vervangingsinkomen"
@@ -989,7 +989,7 @@
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
           },
           "sh:name": {
             "nl": "betaalde onderhoudsgelden"
@@ -1004,7 +1004,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/6c66bb70c48197c6fb0b68e8fd3748b8c7ef17bd",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
           },
           "sh:name": {
             "nl": "betaalde onderhoudsgelden"
@@ -1020,7 +1020,7 @@
           "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/b9c5f83223ee8993b69b8d41ad6ec832a0022b74",
           "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
           "sh:description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
           },
           "sh:maxCount": "1",
           "sh:name": {

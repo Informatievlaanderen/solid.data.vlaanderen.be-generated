@@ -451,7 +451,7 @@
             "name": "vervangingsinkomen",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
             },
             "label": {
                 "nl": "vervangingsinkomen"
@@ -460,7 +460,7 @@
                 "nl": "vervangingsinkomen"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
             },
             "extra": {
                 "EA-Name": "vervangingsinkomen",
@@ -480,14 +480,14 @@
                     "nl": "vervangingsinkomen"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "vervangingsinkomen"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -499,8 +499,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -876,7 +876,7 @@
             "name": "pensioenen",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
             },
             "label": {
                 "nl": "pensioenen"
@@ -885,7 +885,7 @@
                 "nl": "pensioenen"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
             },
             "extra": {
                 "EA-Name": "pensioenen",
@@ -905,14 +905,14 @@
                     "nl": "pensioenen"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "pensioenen"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -924,8 +924,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -955,7 +955,7 @@
             "name": "ontvangen onderhoudsgelden",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
             },
             "label": {
                 "nl": "ontvangen onderhoudsgelden"
@@ -964,7 +964,7 @@
                 "nl": "ontvangen onderhoudsgelden"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
             },
             "extra": {
                 "EA-Name": "ontvangenOnderhoudsgelden",
@@ -984,14 +984,14 @@
                     "nl": "ontvangen onderhoudsgelden"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "ontvangen onderhoudsgelden"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -1003,8 +1003,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -1034,7 +1034,7 @@
             "name": "leefloon of equivalent leefloon",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
             },
             "label": {
                 "nl": "leefloon of equivalent leefloon"
@@ -1043,7 +1043,7 @@
                 "nl": "leefloon of equivalent leefloon"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
             },
             "extra": {
                 "EA-Name": "leefloonOfEquivalentLeefloon",
@@ -1062,14 +1062,14 @@
                     "nl": "leefloon of equivalent leefloon"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "leefloon of equivalent leefloon"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -1081,8 +1081,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -1284,7 +1284,7 @@
             "name": "inkomsten als internationale ambtenaar",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
             },
             "label": {
                 "nl": "inkomsten als internationale ambtenaar"
@@ -1293,7 +1293,7 @@
                 "nl": "inkomsten als internationale ambtenaar"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
             },
             "extra": {
                 "EA-Name": "inkomstenAlsInternationaleAmbtenaar",
@@ -1313,14 +1313,14 @@
                     "nl": "inkomsten als internationale ambtenaar"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "inkomsten als internationale ambtenaar"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -1332,8 +1332,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -1363,7 +1363,7 @@
             "name": "inkomensvervangende tegemoetkoming",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
             },
             "label": {
                 "nl": "inkomensvervangende tegemoetkoming"
@@ -1372,7 +1372,7 @@
                 "nl": "inkomensvervangende tegemoetkoming"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
             },
             "extra": {
                 "EA-Name": "inkomensvervangendeTegemoetkoming",
@@ -1391,14 +1391,14 @@
                     "nl": "inkomensvervangende tegemoetkoming"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "inkomensvervangende tegemoetkoming"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -1410,8 +1410,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -1440,7 +1440,7 @@
             "name": "geen inkomen",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
             },
             "label": {
                 "nl": "geen inkomen"
@@ -1449,7 +1449,7 @@
                 "nl": "geen inkomen"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
             },
             "extra": {
                 "EA-Name": "geenInkomen",
@@ -1468,14 +1468,14 @@
                     "nl": "geen inkomen"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "geen inkomen"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -1487,8 +1487,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -1863,7 +1863,7 @@
             "name": "betaalde onderhoudsgelden",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
             },
             "label": {
                 "nl": "betaalde onderhoudsgelden"
@@ -1872,7 +1872,7 @@
                 "nl": "betaalde onderhoudsgelden"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
             },
             "extra": {
                 "EA-Name": "betaaldeOnderhoudsgelden",
@@ -1892,14 +1892,14 @@
                     "nl": "betaalde onderhoudsgelden"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "betaalde onderhoudsgelden"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -1911,8 +1911,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -1942,7 +1942,7 @@
             "name": "beroepsinkomsten als zelfstandige",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
             },
             "label": {
                 "nl": "beroepsinkomsten als zelfstandige"
@@ -1951,7 +1951,7 @@
                 "nl": "beroepsinkomsten als zelfstandige"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
             },
             "extra": {
                 "EA-Name": "beroepsinkomstenAlsZelfstandige",
@@ -1971,14 +1971,14 @@
                     "nl": "beroepsinkomsten als zelfstandige"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "beroepsinkomsten als zelfstandige"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -1990,8 +1990,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -2021,7 +2021,7 @@
             "name": "belastbare beroepsinkomsten",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
             },
             "label": {
                 "nl": "belastbare beroepsinkomsten"
@@ -2030,7 +2030,7 @@
                 "nl": "belastbare beroepsinkomsten"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
             },
             "extra": {
                 "EA-Name": "belastbareBeroepsinkomstenAlsWerknemer",
@@ -2050,14 +2050,14 @@
                     "nl": "belastbare beroepsinkomsten"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "belastbare beroepsinkomsten"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -2069,8 +2069,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -2100,7 +2100,7 @@
             "name": "andere uitkeringen",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "TODO"
+                "nl": "Andere uitkeringen die de persoon ontvangt."
             },
             "label": {
                 "nl": "andere uitkeringen"
@@ -2109,7 +2109,7 @@
                 "nl": "andere uitkeringen"
             },
             "ap-definition-nl": {
-                "nl": "TODO"
+                "nl": "Andere uitkeringen die de persoon ontvangt."
             },
             "extra": {
                 "EA-Name": "andereUitkeringen",
@@ -2129,14 +2129,14 @@
                     "nl": "andere uitkeringen"
                 },
                 "definition": {
-                    "nl": "TODO"
+                    "nl": "Andere uitkeringen die de persoon ontvangt."
                 },
                 "usage": "",
                 "ap-label-nl": {
                     "nl": "andere uitkeringen"
                 },
                 "ap-definition-nl": {
-                    "nl": "TODO"
+                    "nl": "Andere uitkeringen die de persoon ontvangt."
                 },
                 "ap-usageNote-nl": "",
                 "ap-codelist": "",
@@ -2148,8 +2148,8 @@
                     },
                     {
                         "key": "definition-nl",
-                        "value": "TODO",
-                        "note": "null"
+                        "value": "NOTE",
+                        "note": "Andere uitkeringen die de persoon ontvangt."
                     }
                 ],
                 "Scope": "FULL_DEFINITON"
@@ -3604,7 +3604,7 @@
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/SolidThema-looncredential",
     "urlref": "/doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22",
-    "documentcommit": "f73b24e7f685ac0e2de100326b38e6a86d706455",
-    "toolchaincommit": "e8c06fdf4dbce0b3f97a7d65e2c995933fc30908",
+    "documentcommit": "0a36485f569ba848369fc31142a60774796128be",
+    "toolchaincommit": "326feaafedb6c395d19b501ad7c95041d1381a08",
     "hostname": "https://solid.data.vlaanderen.be/"
 }

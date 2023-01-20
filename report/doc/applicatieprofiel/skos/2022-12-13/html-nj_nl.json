@@ -1,5 +1,6 @@
 {
   "metadata": {
+    "title": "Simple Knowledge Organization System (SKOS)",
     "uri": "http://www.w3.org/2004/02/skos/core",
     "issued": "2022-12-13",
     "baseURI": "http://www.w3.org/2004/02/skos/core#",
