@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/f73b24e7f685ac0e2de100326b38e6a86d706455",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/f73b24e7f685ac0e2de100326b38e6a86d706455/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/tree/0a36485f569ba848369fc31142a60774796128be",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/blob/0a36485f569ba848369fc31142a60774796128be/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -213,7 +213,7 @@
             "nl": "vervangingsinkomen"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
           },
           "usage": {},
           "domain": [
@@ -248,7 +248,7 @@
             "nl": "pensioenen"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
           },
           "usage": {},
           "domain": [
@@ -283,7 +283,7 @@
             "nl": "ontvangen onderhoudsgelden"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
           },
           "usage": {},
           "domain": [
@@ -318,7 +318,7 @@
             "nl": "leefloon of equivalent leefloon"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
           },
           "usage": {},
           "domain": [
@@ -353,7 +353,7 @@
             "nl": "inkomsten als internationale ambtenaar"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
           },
           "usage": {},
           "domain": [
@@ -388,7 +388,7 @@
             "nl": "inkomensvervangende tegemoetkoming"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
           },
           "usage": {},
           "domain": [
@@ -423,7 +423,7 @@
             "nl": "geen inkomen"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
           },
           "usage": {},
           "domain": [
@@ -458,7 +458,7 @@
             "nl": "beroepsinkomsten als zelfstandige"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
           },
           "usage": {},
           "domain": [
@@ -493,7 +493,7 @@
             "nl": "belastbare beroepsinkomsten"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
           },
           "usage": {},
           "domain": [
@@ -528,7 +528,7 @@
             "nl": "andere uitkeringen"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Andere uitkeringen die de persoon ontvangt."
           },
           "usage": {},
           "domain": [
@@ -706,7 +706,7 @@
             "nl": "betaalde onderhoudsgelden"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
           },
           "usage": {},
           "domain": [

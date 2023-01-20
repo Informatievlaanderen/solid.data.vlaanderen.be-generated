@@ -457,7 +457,7 @@
   shacl:targetClass <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten> .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/02b3c503abfa6e0252d8f6276b05b62bd66029a2> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen";
-  shacl:description "TODO"@nl;
+  shacl:description "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."@nl;
   shacl:name "pensioenen"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#pensioenen>;
@@ -466,14 +466,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/0cd7973b4d47ba46e149826524b96018a9f55f42> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."@nl;
   shacl:name "belastbare beroepsinkomsten"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#belastbareBeroepsinkomstenAlsWerknemer>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van belastbare beroepsinkomsten moet van het type <https://schema.org/MonetaryAmount> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/1b32c6dcf08745bcf56df3e438c8dfd7ac7d5086> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen";
-  shacl:description "TODO"@nl;
+  shacl:description "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."@nl;
   shacl:maxCount 1;
   shacl:name "vervangingsinkomen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#vervangingsinkomen>;
@@ -481,7 +481,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/271c184975c88428fc8d7bbea035950bbcdfe06f> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen";
-  shacl:description "TODO"@nl;
+  shacl:description "Indicator die aangeeft dat de persoon geen inkomen ontvangt."@nl;
   shacl:name "geen inkomen"@nl;
   shacl:nodekind "sh:Literal";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#geenInkomen>;
@@ -489,7 +489,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/281c6ff5c79aa0653f20fde909eb4ef44df47be5> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden";
-  shacl:description "TODO"@nl;
+  shacl:description "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."@nl;
   shacl:name "ontvangen onderhoudsgelden"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#ontvangenOnderhoudsgelden>;
@@ -497,7 +497,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/2dceec85e711413e199f2310746fff51134c2f0b> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen";
-  shacl:description "TODO"@nl;
+  shacl:description "Andere uitkeringen die de persoon ontvangt."@nl;
   shacl:maxCount 1;
   shacl:name "andere uitkeringen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#andereUitkeringen>;
@@ -505,7 +505,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/324ad6b915204eeff49449b90010fa6d42dc372e> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen";
-  shacl:description "TODO"@nl;
+  shacl:description "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."@nl;
   shacl:maxCount 1;
   shacl:name "pensioenen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#pensioenen>;
@@ -514,14 +514,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/3e4e191946d81ac93ad76238ece32452a6f140ce> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "Andere uitkeringen die de persoon ontvangt."@nl;
   shacl:name "andere uitkeringen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#andereUitkeringen>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van andere uitkeringen moet van het type <https://schema.org/MonetaryAmount> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/3f191e1bd2e887090a0b3cd4dbb82f465e9594f3> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige";
-  shacl:description "TODO"@nl;
+  shacl:description "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"@nl;
   shacl:name "beroepsinkomsten als zelfstandige"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#beroepsinkomstenAlsZelfstandige>;
@@ -530,14 +530,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/42f3494f8df7e97d02e4f99730f13f31399bafd2> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon";
   shacl:datatype xsd:boolean;
-  shacl:description "TODO"@nl;
+  shacl:description "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."@nl;
   shacl:name "leefloon of equivalent leefloon"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#leefloonOfEquivalentLeefloon>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van leefloon of equivalent leefloon moet van het type <http://www.w3.org/2001/XMLSchema#boolean> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/432230c8c439ce9268a4f67c451cfe047d40a4c6> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten";
-  shacl:description "TODO"@nl;
+  shacl:description "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."@nl;
   shacl:maxCount 1;
   shacl:name "belastbare beroepsinkomsten"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#belastbareBeroepsinkomstenAlsWerknemer>;
@@ -545,7 +545,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/4389a2a0bc01363636fcb3487fa77102f8fba00a> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige";
-  shacl:description "TODO"@nl;
+  shacl:description "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"@nl;
   shacl:maxCount 1;
   shacl:name "beroepsinkomsten als zelfstandige"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#beroepsinkomstenAlsZelfstandige>;
@@ -553,7 +553,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/527c21ad4cff55ef1b9eb7f666b36d6a66f7a4f7> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen";
-  shacl:description "TODO"@nl;
+  shacl:description "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."@nl;
   shacl:name "vervangingsinkomen"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#vervangingsinkomen>;
@@ -562,14 +562,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/59dd564a5b5636da896c90de080a7b4f0e1fd82f> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."@nl;
   shacl:name "pensioenen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#pensioenen>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van pensioenen moet van het type <https://schema.org/MonetaryAmount> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/62ddff51b7343ff8c86e356985856eab3edfcc51> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon";
-  shacl:description "TODO"@nl;
+  shacl:description "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."@nl;
   shacl:maxCount 1;
   shacl:name "leefloon of equivalent leefloon"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#leefloonOfEquivalentLeefloon>;
@@ -577,7 +577,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/6ab306ce085b18c4d8c251289128bd4b3d5ad12a> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming";
-  shacl:description "TODO"@nl;
+  shacl:description "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."@nl;
   shacl:maxCount 1;
   shacl:name "inkomensvervangende tegemoetkoming"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomensvervangendeTegemoetkoming>;
@@ -586,7 +586,7 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7556e22de5c4a3e7eed66ec01ac1508191e611af> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."@nl;
   shacl:name "inkomsten als internationale ambtenaar"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomstenAlsInternationaleAmbtenaar>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van inkomsten als internationale ambtenaar moet van het type <https://schema.org/MonetaryAmount> zijn."];
@@ -594,7 +594,7 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7c47a7b8bd24fce5384f11943f22a79151fac91f> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."@nl;
   shacl:name "ontvangen onderhoudsgelden"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#ontvangenOnderhoudsgelden>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van ontvangen onderhoudsgelden moet van het type <https://schema.org/MonetaryAmount> zijn."];
@@ -602,14 +602,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7ffe7ea54091b24237d28db32cd077720a309c40> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming";
   shacl:datatype xsd:boolean;
-  shacl:description "TODO"@nl;
+  shacl:description "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."@nl;
   shacl:name "inkomensvervangende tegemoetkoming"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomensvervangendeTegemoetkoming>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van inkomensvervangende tegemoetkoming moet van het type <http://www.w3.org/2001/XMLSchema#boolean> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/82953315a4e10723c6cfce539c6104d626aee380> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen";
-  shacl:description "TODO"@nl;
+  shacl:description "Andere uitkeringen die de persoon ontvangt."@nl;
   shacl:name "andere uitkeringen"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#andereUitkeringen>;
@@ -618,14 +618,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/88e10d20cb07cc9213759a5da3817360b50a1f52> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen";
   shacl:datatype xsd:boolean;
-  shacl:description "TODO"@nl;
+  shacl:description "Indicator die aangeeft dat de persoon geen inkomen ontvangt."@nl;
   shacl:name "geen inkomen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#geenInkomen>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van geen inkomen moet van het type <http://www.w3.org/2001/XMLSchema#boolean> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/9e4f7937e6321890abd18617680ef863acbbef33> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon";
-  shacl:description "TODO"@nl;
+  shacl:description "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."@nl;
   shacl:name "leefloon of equivalent leefloon"@nl;
   shacl:nodekind "sh:Literal";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#leefloonOfEquivalentLeefloon>;
@@ -634,14 +634,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/abd03506fc9dc41f9a9ff983c6054ee7438a438b> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."@nl;
   shacl:name "vervangingsinkomen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#vervangingsinkomen>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van vervangingsinkomen moet van het type <https://schema.org/MonetaryAmount> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/b252ef61f7c40466866656589e78c0afaad6ec17> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar";
-  shacl:description "TODO"@nl;
+  shacl:description "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."@nl;
   shacl:name "inkomsten als internationale ambtenaar"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomstenAlsInternationaleAmbtenaar>;
@@ -649,7 +649,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/bbd6571978c7cf2cc4b93c183d54c748b469386f> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden";
-  shacl:description "TODO"@nl;
+  shacl:description "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."@nl;
   shacl:maxCount 1;
   shacl:name "ontvangen onderhoudsgelden"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#ontvangenOnderhoudsgelden>;
@@ -657,7 +657,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/d12a7327feef6cb0f6b504bd4cfafb29238cb289> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming";
-  shacl:description "TODO"@nl;
+  shacl:description "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."@nl;
   shacl:name "inkomensvervangende tegemoetkoming"@nl;
   shacl:nodekind "sh:Literal";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomensvervangendeTegemoetkoming>;
@@ -665,7 +665,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/e665b4b8d4da5e8c7fe46beca7729973dd48b745> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten";
-  shacl:description "TODO"@nl;
+  shacl:description "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."@nl;
   shacl:name "belastbare beroepsinkomsten"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#belastbareBeroepsinkomstenAlsWerknemer>;
@@ -673,7 +673,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/f65b1a720fffeb74f70e30cb40a46d7dc807f225> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar";
-  shacl:description "TODO"@nl;
+  shacl:description "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."@nl;
   shacl:maxCount 1;
   shacl:name "inkomsten als internationale ambtenaar"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomstenAlsInternationaleAmbtenaar>;
@@ -682,14 +682,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/fbfa8d5dffe65537b3deb02e321a9234ed8767e4> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"@nl;
   shacl:name "beroepsinkomsten als zelfstandige"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#beroepsinkomstenAlsZelfstandige>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van beroepsinkomsten als zelfstandige moet van het type <https://schema.org/MonetaryAmount> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/fe6d4e57a608c0ece5a7e7584db6d7bad57695c6> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen";
-  shacl:description "TODO"@nl;
+  shacl:description "Indicator die aangeeft dat de persoon geen inkomen ontvangt."@nl;
   shacl:maxCount 1;
   shacl:name "geen inkomen"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#geenInkomen>;
@@ -705,14 +705,14 @@
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/53ef4e0eca14dbdd2a9ab8235ce522b29ac33b02> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden";
   shacl:class schemas:MonetaryAmount;
-  shacl:description "TODO"@nl;
+  shacl:description "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."@nl;
   shacl:name "betaalde onderhoudsgelden"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#betaaldeOnderhoudsgelden>;
   <https://data.vlaanderen.be/ns/shacl#message> [<https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22nl> "De range van betaalde onderhoudsgelden moet van het type <https://schema.org/MonetaryAmount> zijn."];
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/6c66bb70c48197c6fb0b68e8fd3748b8c7ef17bd> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden";
-  shacl:description "TODO"@nl;
+  shacl:description "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."@nl;
   shacl:name "betaalde onderhoudsgelden"@nl;
   shacl:nodekind "sh:BlankNodeOrIRI";
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#betaaldeOnderhoudsgelden>;
@@ -720,7 +720,7 @@
   <https://data.vlaanderen.be/ns/shacl#rule> "" .
 
 <https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/b9c5f83223ee8993b69b8d41ad6ec832a0022b74> rdfs:seeAlso "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden";
-  shacl:description "TODO"@nl;
+  shacl:description "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."@nl;
   shacl:maxCount 1;
   shacl:name "betaalde onderhoudsgelden"@nl;
   shacl:path <https://solid.data.vlaanderen.be/loon/alarmbelprocedure#betaaldeOnderhoudsgelden>;

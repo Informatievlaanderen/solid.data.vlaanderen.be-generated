@@ -164,18 +164,6 @@
   ],
   "externalproperties": [
     {
-      "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
-      "name": "status",
-      "label": {
-        "nl": "status",
-        "en": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'.",
-        "en": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
       "name": "status",
       "label": {
@@ -184,6 +172,18 @@
       },
       "definition": {
         "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
+      "name": "status",
+      "label": {
+        "nl": "status",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'.",
         "en": "Enter your translation here"
       }
     }
