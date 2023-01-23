@@ -6,15 +6,15 @@
     "baseURI": "https://solid.data.vlaanderen.be/ns/leercredential#",
     "filename": "leercredential-ap",
     "navigation": {
-      "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-01-10"
+      "self": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/leercredential/2023-01-10"
     },
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "documenttype": "ap",
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/d9a1e900147cca9502125dec4faa5747d03c53f6",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/d9a1e900147cca9502125dec4faa5747d03c53f6/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0ee897d9f6a6b3f475c46ecbac4e038654530c56",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0ee897d9f6a6b3f475c46ecbac4e038654530c56/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -158,7 +158,7 @@
               }
             }
           ],
-          "cardinality": "0..1",
+          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -381,7 +381,7 @@
               }
             }
           ],
-          "cardinality": "0..1",
+          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -654,7 +654,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "1..*",
           "codelist_uri": ""
         },
         {
@@ -759,7 +759,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "1..*",
           "codelist_uri": ""
         }
       ]
@@ -791,7 +791,43 @@
           "scoped_uri": "#Verifieerbare Credential"
         }
       ],
-      "properties": []
+      "properties": [
+        {
+          "uri": "https://data.europa.eu/snb/model#displayParameter",
+          "name": "voorstelling",
+          "sort": "voorstelling",
+          "label": {
+            "nl": "voorstelling"
+          },
+          "description": {
+            "nl": "Voorstellingdetails van de Europese Digitale Credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EuropeesDigitaalCredential",
+              "uri": "https://data.europa.eu/snb/model#EuropeanDigitalCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Voorstelling",
+              "range_uri": "https://data.europa.eu/snb/model#DisplayParameter"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Voorstelling",
+              "range_puri": "https://data.europa.eu/snb/model#DisplayParameter",
+              "range_label": {
+                "nl": "Voorstelling"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
     },
     {
       "uri": "https://data.europa.eu/snb/model#LearningAchievement",
@@ -846,7 +882,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "0..1",
           "codelist_uri": ""
         }
       ]
@@ -1285,7 +1321,7 @@
               }
             }
           ],
-          "cardinality": "0..*",
+          "cardinality": "1..*",
           "codelist_uri": ""
         }
       ]
@@ -1553,41 +1589,6 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.europa.eu/snb/model#displayParameter",
-          "name": "voorstelling",
-          "sort": "voorstelling",
-          "label": {
-            "nl": "voorstelling"
-          },
-          "description": {
-            "nl": "TODO"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Voorstelling",
-              "range_uri": "https://data.europa.eu/snb/model#DisplayParameter"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Voorstelling",
-              "range_puri": "https://data.europa.eu/snb/model#DisplayParameter",
-              "range_label": {
-                "nl": "Voorstelling"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
           "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identificator",
           "sort": "identificator",
@@ -1620,41 +1621,6 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/title",
-          "name": "titel",
-          "sort": "titel",
-          "label": {
-            "nl": "titel"
-          },
-          "description": {
-            "nl": "Tekstuele beschrijving van de leercredential."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "TaalString",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Taalstring",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "nl": "Taalstring"
-              }
-            }
-          ],
-          "cardinality": "1",
           "codelist_uri": ""
         }
       ]
@@ -2356,7 +2322,7 @@
             "nl": "titel"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Tekstuele omschrijving van de credential."
           },
           "usage": {},
           "domain": [
@@ -2391,7 +2357,7 @@
             "nl": "taal"
           },
           "description": {
-            "nl": "De lijst van talen waarin de "
+            "nl": "De lijst van talen waarin de voorstelling beschikbaar is."
           },
           "usage": {},
           "domain": [
@@ -2422,5 +2388,5 @@
     }
   ],
   "parents": [],
-  "documentroot": "/doc/implementatiemodel/leercredential/2023-01-10"
+  "documentroot": "/doc/applicatieprofiel/leercredential/2023-01-10"
 }

@@ -47,7 +47,7 @@
               <dl>
               <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
               <dt>Uitgegeven op</dt><dd>2023-01-10</dd>
-              <dt>Deze versie</dt><dd><a href="https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-01-10">https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-01-10</a></dd>
+              <dt>Deze versie</dt><dd><a href="https://solid.data.vlaanderen.be//doc/applicatieprofiel/leercredential/2023-01-10">https://solid.data.vlaanderen.be//doc/applicatieprofiel/leercredential/2023-01-10</a></dd>
               
               
               </dl>
@@ -82,8 +82,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/d9a1e900147cca9502125dec4faa5747d03c53f6">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/d9a1e900147cca9502125dec4faa5747d03c53f6</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/d9a1e900147cca9502125dec4faa5747d03c53f6/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/d9a1e900147cca9502125dec4faa5747d03c53f6/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0ee897d9f6a6b3f475c46ecbac4e038654530c56">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0ee897d9f6a6b3f475c46ecbac4e038654530c56</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0ee897d9f6a6b3f475c46ecbac4e038654530c56/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0ee897d9f6a6b3f475c46ecbac4e038654530c56/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/issues">https://github.com/Informatievlaanderen/SolidThema-leercredential/issues</a></dd>
               <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
@@ -193,8 +193,8 @@
             </div>
 
             <div class="region region--no-space-top">
-              <a href="/doc/implementatiemodel/leercredential/2023-01-10/html/overview.jpg" target="_blank">
-                 <img src="/doc/implementatiemodel/leercredential/2023-01-10/html/overview.jpg" />
+              <a href="/doc/applicatieprofiel/leercredential/2023-01-10/html/overview.jpg" target="_blank">
+                 <img src="/doc/applicatieprofiel/leercredential/2023-01-10/html/overview.jpg" />
               </a>
             </div>
             <div class="region region--no-space-top">
@@ -344,12 +344,52 @@
 		   </dd>
                     
                     <dt>Eigenschappen</dt>
-		    
-                    <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Europees%20Digitaal%20Credential%3Avoorstelling">voorstelling</a>.</dd>
                     
                   </dl>
                 </div>
-		
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Europees%20Digitaal%20Credential%3Avoorstelling" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#displayParameter">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.europa.eu/snb/model#displayParameter" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#displayParameter" data-placement="right">
+                            voorstelling</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Voorstelling" data-placement="right">Voorstelling</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Voorstellingdetails van de Europese Digitale Credential.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
             </div>
             
               <div class="region region--no-space-top">
@@ -485,7 +525,7 @@
 			    
                           
                         </td>
-                        <td>0..1</td>
+                        <td>0..*</td>
                         <td property="rdfs:comment">Wettelijk geregistreerde naam vd organisatie.</td>
                         <td property="vann:usageNote">Evt in verschillende talen.</td>
                         <td></td>
@@ -646,7 +686,7 @@
 			    
                           
                         </td>
-                        <td>1</td>
+                        <td>1..*</td>
                         <td property="rdfs:comment"></td>
                         <td property="vann:usageNote"></td>
                         <td></td>
@@ -706,7 +746,7 @@
 			    
                           
                         </td>
-                        <td>1</td>
+                        <td>1..*</td>
                         <td property="rdfs:comment">De titel van de claim. Eén waarde per taal is toegestaan.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
@@ -756,9 +796,7 @@
                       <a href="#Leercredential%3Abewijs">bewijs</a>, 
                       <a href="#Leercredential%3Aeigenaar">eigenaar</a>, 
                       <a href="#Leercredential%3Aidentificator">identificator</a>, 
-                      <a href="#Leercredential%3Atitel">titel</a>, 
-                      <a href="#Leercredential%3Auitgever">uitgever</a>, 
-                      <a href="#Leercredential%3Avoorstelling">voorstelling</a>.</dd>
+                      <a href="#Leercredential%3Auitgever">uitgever</a>.</dd>
                     
                   </dl>
                 </div>
@@ -838,26 +876,6 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Leercredential%3Atitel" typeof="rdfs:Property" resource="http://purl.org/dc/terms/title">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://purl.org/dc/terms/title" data-toggle="tooltip" data-content="http://purl.org/dc/terms/title" data-placement="right">
-                            titel</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Taalstring" data-placement="right">Taalstring</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">Tekstuele beschrijving van de leercredential.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Leercredential%3Auitgever" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#issuer">
                         <td>
                           <code property="rdfs:label">
@@ -874,26 +892,6 @@
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De organisatie die de Credential heeft uitgegeven en heeft verzegeld met zijn digitale eSeal. Deze eigenschap is geërfd van verifieerbare credential.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Leercredential%3Avoorstelling" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#displayParameter">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#displayParameter" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#displayParameter" data-placement="right">
-                            voorstelling</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Voorstelling" data-placement="right">Voorstelling</a>
-			    
-                          
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">TODO</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -952,7 +950,7 @@
 			    
                           
                         </td>
-                        <td>0..*</td>
+                        <td>0..1</td>
                         <td property="rdfs:comment">Wat er is geleerd.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
@@ -1195,7 +1193,7 @@
 			    
                           
                         </td>
-                        <td>0..*</td>
+                        <td>1..*</td>
                         <td property="rdfs:comment">De titel van de specificatie. Eén waarde per taal is toegestaan.
 </td>
                         <td property="vann:usageNote"></td>
@@ -1298,7 +1296,7 @@
 			    
                           
                         </td>
-                        <td>0..1</td>
+                        <td>0..*</td>
                         <td property="rdfs:comment">Naam waarmee de organisatie bij voorkeur wordt aangeduid.</td>
                         <td property="vann:usageNote"> </td>
                         <td></td>
@@ -2101,7 +2099,7 @@
                           
                         </td>
                         <td>1..*</td>
-                        <td property="rdfs:comment">De lijst van talen waarin de </td>
+                        <td property="rdfs:comment">De lijst van talen waarin de voorstelling beschikbaar is.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -2120,7 +2118,7 @@
                           
                         </td>
                         <td>1..*</td>
-                        <td property="rdfs:comment">TODO</td>
+                        <td property="rdfs:comment">Tekstuele omschrijving van de credential.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -2136,14 +2134,14 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare JSON-LD context definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/implementatiemodel/leercredential/2023-01-10/context/leercredential-ap.jsonld" target="_blank">/doc/implementatiemodel/leercredential/2023-01-10/context/leercredential-ap.jsonld</a></p>
+                <p>Een herbruikbare JSON-LD context definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/applicatieprofiel/leercredential/2023-01-10/context/leercredential-ap.jsonld" target="_blank">/doc/applicatieprofiel/leercredential/2023-01-10/context/leercredential-ap.jsonld</a></p>
                 
             </div>
             <div class="region region--no-space-top" id="shacl">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare SHACL template definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/implementatiemodel/leercredential/2023-01-10/shacl/leercredential-ap-SHACL.ttl" target="_blank">/doc/implementatiemodel/leercredential/2023-01-10/shacl/leercredential-ap-SHACL.ttl</a></p>
+                <p>Een herbruikbare SHACL template definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/applicatieprofiel/leercredential/2023-01-10/shacl/leercredential-ap-SHACL.ttl" target="_blank">/doc/applicatieprofiel/leercredential/2023-01-10/shacl/leercredential-ap-SHACL.ttl</a></p>
                 
             </div>
           </div>
