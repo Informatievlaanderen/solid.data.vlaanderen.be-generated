@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0ee897d9f6a6b3f475c46ecbac4e038654530c56",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0ee897d9f6a6b3f475c46ecbac4e038654530c56/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/b53179a7ca46e9fcfa353c8deab3c94a5615a2c3",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/b53179a7ca46e9fcfa353c8deab3c94a5615a2c3/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -98,7 +98,9 @@
           "label": {
             "nl": "identificator"
           },
-          "description": {},
+          "description": {
+            "nl": "Identificator van de organisatie."
+          },
           "usage": {},
           "domain": [
             {
@@ -188,10 +190,14 @@
       "properties": [
         {
           "uri": "https://data.europa.eu/snb/model#hasCredential",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
+          "name": "heeft credential",
+          "sort": "heeft credential",
+          "label": {
+            "nl": "heeft credential"
+          },
+          "description": {
+            "nl": "Leercredential van de persoon."
+          },
           "usage": {},
           "domain": [
             {
@@ -219,13 +225,13 @@
         },
         {
           "uri": "https://data.europa.eu/snb/model#hasClaim",
-          "name": "een claim over de Persoon.",
-          "sort": "Een claim over de Persoon.",
+          "name": "heeft claim",
+          "sort": "heeft claim",
           "label": {
-            "nl": "Een claim over de Persoon."
+            "nl": "heeft claim"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "Een claim over de Persoon."
           },
           "usage": {},
           "domain": [
@@ -259,7 +265,9 @@
           "label": {
             "nl": "identificator"
           },
-          "description": {},
+          "description": {
+            "nl": "Identificator van de persoon."
+          },
           "usage": {},
           "domain": [
             {
@@ -289,11 +297,11 @@
     },
     {
       "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization",
-      "name": "GeregistreerdeOrganisatie",
+      "name": "Geregistreerde Organisatie",
       "label": {
-        "nl": "GeregistreerdeOrganisatie"
+        "nl": "Geregistreerde Organisatie"
       },
-      "sort": "GeregistreerdeOrganisatie",
+      "sort": "Geregistreerde Organisatie",
       "description": {
         "nl": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een formele organisatie waarbij dit statuut ook op een andere manier verkregen kan zijn."
       },
@@ -349,10 +357,10 @@
         },
         {
           "uri": "http://www.w3.org/ns/regorg#legalName",
-          "name": "wettelijkeNaam",
-          "sort": "wettelijkeNaam",
+          "name": "wettelijke naam",
+          "sort": "wettelijke naam",
           "label": {
-            "nl": "wettelijkeNaam"
+            "nl": "wettelijke naam"
           },
           "description": {
             "nl": "Wettelijk geregistreerde naam vd organisatie."
@@ -592,6 +600,41 @@
       "parents": [],
       "properties": [
         {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
+          "name": "uitgever",
+          "sort": "uitgever",
+          "label": {
+            "nl": "uitgever"
+          },
+          "description": {
+            "nl": "De Agent die de claim maakt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "https://data.europa.eu/snb/model#Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://purl.org/dc/terms/Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Agent",
+              "range_puri": "http://purl.org/dc/terms/Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "https://solid.data.vlaanderen.be/id/conceptscheme/Leercredential/Leverancier"
+        },
+        {
           "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
           "name": "authenticiteit",
           "sort": "authenticiteit",
@@ -599,7 +642,7 @@
             "nl": "authenticiteit"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De authenticiteit van de leerclaim."
           },
           "usage": {},
           "domain": [
@@ -624,38 +667,7 @@
             }
           ],
           "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#type",
-          "name": "",
-          "sort": "",
-          "label": {},
-          "description": {},
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerclaimtype",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerclaimtype"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerclaimtype",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerclaimtype",
-              "range_label": {
-                "nl": "Leerclaimtype"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
+          "codelist_uri": "https://solid.data.vlaanderen.be/id/conceptscheme/Leercredential/Authenticiteit"
         },
         {
           "uri": "https://data.europa.eu/snb/model#awardedBy",
@@ -700,7 +712,7 @@
             "nl": "identificator"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De identificator van de leerclaim."
           },
           "usage": {},
           "domain": [
@@ -725,6 +737,41 @@
             }
           ],
           "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Type van de leerclaim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "https://data.europa.eu/snb/model#Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerclaimtype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerclaimtype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Leerclaimtype"
+              }
+            }
+          ],
+          "cardinality": "1..*",
           "codelist_uri": ""
         },
         {
@@ -1327,20 +1374,6 @@
       ]
     },
     {
-      "uri": "https://data.vlaanderen.be/ns/leercredential#Bewijs",
-      "name": "Bewijs",
-      "label": {
-        "nl": "Bewijs"
-      },
-      "sort": "Bewijs",
-      "description": {
-        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": []
-    },
-    {
       "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
       "name": "Credential",
       "label": {
@@ -1501,13 +1534,13 @@
           "range": [
             {
               "range_label": "Bewijs",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Bewijs"
+              "range_uri": "https://w3id.org/security#Proof"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Bewijs",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Bewijs",
+              "range_puri": "https://w3id.org/security#Proof",
               "range_label": {
                 "nl": "Bewijs"
               }
@@ -1742,9 +1775,38 @@
           "codelist_uri": ""
         }
       ]
+    },
+    {
+      "uri": "https://w3id.org/security#Proof",
+      "name": "Bewijs",
+      "label": {
+        "nl": "Bewijs"
+      },
+      "sort": "Bewijs",
+      "description": {
+        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
     }
   ],
   "properties": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
+      "name": {
+        "nl": "uitgever",
+        "undefined": "uitgever"
+      },
+      "description": {},
+      "domain": [
+        null
+      ],
+      "range": [
+        null
+      ],
+      "parents": []
+    },
     {
       "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
       "name": {
@@ -1808,7 +1870,9 @@
           "label": {
             "nl": "string"
           },
-          "description": {},
+          "description": {
+            "nl": "De string."
+          },
           "usage": {},
           "domain": [
             {
@@ -1841,7 +1905,9 @@
           "label": {
             "nl": "type"
           },
-          "description": {},
+          "description": {
+            "nl": "Het type van de string."
+          },
           "usage": {},
           "domain": [
             {
@@ -1892,7 +1958,7 @@
             "nl": "uitgevende autoriteit naam"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De naam van de uitgevende autoriteit."
           },
           "usage": {},
           "domain": [
@@ -1927,7 +1993,7 @@
             "nl": "notatie"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De notatie."
           },
           "usage": {},
           "domain": [
@@ -1962,7 +2028,7 @@
             "nl": "schema naam"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De naam van het schema."
           },
           "usage": {},
           "domain": [
@@ -1997,7 +2063,7 @@
             "nl": "uitgiftedatum"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De datum van uitgifte."
           },
           "usage": {},
           "domain": [
@@ -2032,7 +2098,7 @@
             "nl": "schema URI"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De URI van het schema."
           },
           "usage": {},
           "domain": [
@@ -2067,7 +2133,7 @@
             "nl": "uitgevende autoriteit URI"
           },
           "description": {
-            "nl": "TODO"
+            "nl": "De URI van de uitgevende autoriteit."
           },
           "usage": {},
           "domain": [
@@ -2172,7 +2238,9 @@
           "label": {
             "nl": "naam"
           },
-          "description": {},
+          "description": {
+            "nl": "Geografische naam van de locatie."
+          },
           "usage": {},
           "domain": [
             {
@@ -2205,7 +2273,9 @@
           "label": {
             "nl": "plaats"
           },
-          "description": {},
+          "description": {
+            "nl": "Plaats van de locatie."
+          },
           "usage": {},
           "domain": [
             {
@@ -2238,7 +2308,9 @@
           "label": {
             "nl": "adres"
           },
-          "description": {},
+          "description": {
+            "nl": "Adres van de locatie."
+          },
           "usage": {},
           "domain": [
             {
