@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/9f5f0c55268b99d3f0f3237899ccafe6ea86c7fa",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/9f5f0c55268b99d3f0f3237899ccafe6ea86c7fa/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/6ad8e77908305022ee8f6ba0d73ed382afc07ecf",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/6ad8e77908305022ee8f6ba0d73ed382afc07ecf/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -98,7 +98,9 @@
           "label": {
             "nl": "identificator"
           },
-          "description": {},
+          "description": {
+            "nl": "Identificator van de organisatie."
+          },
           "usage": {},
           "domain": [
             {
@@ -757,13 +759,13 @@
           "range": [
             {
               "range_label": "Leerclaimtype",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerclaimtype"
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Leerclaimtype",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerclaimtype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
               "range_label": {
                 "nl": "Leerclaimtype"
               }
@@ -1372,20 +1374,6 @@
       ]
     },
     {
-      "uri": "https://data.vlaanderen.be/ns/leercredential#Bewijs",
-      "name": "Bewijs",
-      "label": {
-        "nl": "Bewijs"
-      },
-      "sort": "Bewijs",
-      "description": {
-        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": []
-    },
-    {
       "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
       "name": "Credential",
       "label": {
@@ -1546,13 +1534,13 @@
           "range": [
             {
               "range_label": "Bewijs",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Bewijs"
+              "range_uri": "https://w3id.org/security#Proof"
             }
           ],
           "scopedrange": [
             {
               "range_uri": "#Bewijs",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Bewijs",
+              "range_puri": "https://w3id.org/security#Proof",
               "range_label": {
                 "nl": "Bewijs"
               }
@@ -1787,6 +1775,20 @@
           "codelist_uri": ""
         }
       ]
+    },
+    {
+      "uri": "https://w3id.org/security#Proof",
+      "name": "Bewijs",
+      "label": {
+        "nl": "Bewijs"
+      },
+      "sort": "Bewijs",
+      "description": {
+        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
     }
   ],
   "properties": [
