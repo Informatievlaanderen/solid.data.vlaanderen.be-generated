@@ -1296,130 +1296,6 @@
             "name": "status",
             "inpackage": "ACTIVE_PACKAGE",
             "definition": {
-                "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
-            },
-            "label": {
-                "nl": "status"
-            },
-            "ap-label-nl": {
-                "nl": "status"
-            },
-            "ap-definition-nl": {
-                "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
-            },
-            "extra": {
-                "EA-Name": "status",
-                "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
-                "derived": "false",
-                "EA-Package": "",
-                "EA-Type": "connector",
-                "EA-Domain": "Concept",
-                "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
-                "EA-Range": "Concept",
-                "RangeData": {
-                    "EA-Name": "Concept",
-                    "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
-                    "EA-Package": "skos",
-                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-                },
-                "sourceRole": "null",
-                "destRole": "status",
-                "label": {
-                    "nl": "status"
-                },
-                "definition": {
-                    "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
-                },
-                "usage": "",
-                "ap-label-nl": {
-                    "nl": "status"
-                },
-                "ap-definition-nl": {
-                    "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
-                },
-                "ap-usageNote-nl": "",
-                "ap-codelist": "",
-                "RawTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "status"
-                    },
-                    {
-                        "key": "label-en",
-                        "value": "NOTE",
-                        "note": "status"
-                    },
-                    {
-                        "key": "definition-en",
-                        "value": "NOTE",
-                        "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/adms#status"
-                    }
-                ],
-                "DestRoleTags": [
-                    {
-                        "key": "label-nl",
-                        "value": "NOTE",
-                        "note": "status"
-                    },
-                    {
-                        "key": "label-en",
-                        "value": "NOTE",
-                        "note": "status"
-                    },
-                    {
-                        "key": "definition-en",
-                        "value": "NOTE",
-                        "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
-                    },
-                    {
-                        "key": "definition-nl",
-                        "value": "NOTE",
-                        "note": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
-                    },
-                    {
-                        "key": "uri",
-                        "value": "NOTE",
-                        "note": "http://www.w3.org/ns/adms#status"
-                    }
-                ],
-                "Scope": "TRANSLATIONS_ONLY"
-            },
-            "codelist": [],
-            "domain": [
-                {
-                    "uri": "http://www.w3.org/2004/02/skos/core#Concept",
-                    "EA-Name": "Concept"
-                }
-            ],
-            "range": [
-                {
-                    "EA-Name": "Concept",
-                    "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
-                    "EA-Package": "skos",
-                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-                }
-            ],
-            "generalization": [],
-            "minCardinality": "0",
-            "maxCardinality": "1"
-        },
-        {
-            "@id": "http://www.w3.org/ns/adms#status",
-            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-            "name": "status",
-            "inpackage": "ACTIVE_PACKAGE",
-            "definition": {
                 "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
             },
             "label": {
@@ -1524,6 +1400,130 @@
                 {
                     "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
                     "EA-Name": "ConceptScheme"
+                }
+            ],
+            "range": [
+                {
+                    "EA-Name": "Concept",
+                    "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+                    "EA-Package": "skos",
+                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+                }
+            ],
+            "generalization": [],
+            "minCardinality": "0",
+            "maxCardinality": "1"
+        },
+        {
+            "@id": "http://www.w3.org/ns/adms#status",
+            "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "name": "status",
+            "inpackage": "ACTIVE_PACKAGE",
+            "definition": {
+                "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+            },
+            "label": {
+                "nl": "status"
+            },
+            "ap-label-nl": {
+                "nl": "status"
+            },
+            "ap-definition-nl": {
+                "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+            },
+            "extra": {
+                "EA-Name": "status",
+                "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
+                "derived": "false",
+                "EA-Package": "",
+                "EA-Type": "connector",
+                "EA-Domain": "Concept",
+                "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+                "EA-Range": "Concept",
+                "RangeData": {
+                    "EA-Name": "Concept",
+                    "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+                    "EA-Package": "skos",
+                    "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+                },
+                "sourceRole": "null",
+                "destRole": "status",
+                "label": {
+                    "nl": "status"
+                },
+                "definition": {
+                    "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+                },
+                "usage": "",
+                "ap-label-nl": {
+                    "nl": "status"
+                },
+                "ap-definition-nl": {
+                    "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+                },
+                "ap-usageNote-nl": "",
+                "ap-codelist": "",
+                "RawTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "status"
+                    },
+                    {
+                        "key": "label-en",
+                        "value": "NOTE",
+                        "note": "status"
+                    },
+                    {
+                        "key": "definition-en",
+                        "value": "NOTE",
+                        "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/adms#status"
+                    }
+                ],
+                "DestRoleTags": [
+                    {
+                        "key": "label-nl",
+                        "value": "NOTE",
+                        "note": "status"
+                    },
+                    {
+                        "key": "label-en",
+                        "value": "NOTE",
+                        "note": "status"
+                    },
+                    {
+                        "key": "definition-en",
+                        "value": "NOTE",
+                        "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
+                    },
+                    {
+                        "key": "definition-nl",
+                        "value": "NOTE",
+                        "note": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+                    },
+                    {
+                        "key": "uri",
+                        "value": "NOTE",
+                        "note": "http://www.w3.org/ns/adms#status"
+                    }
+                ],
+                "Scope": "TRANSLATIONS_ONLY"
+            },
+            "codelist": [],
+            "domain": [
+                {
+                    "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "EA-Name": "Concept"
                 }
             ],
             "range": [
