@@ -1,0 +1,1362 @@
+{
+  "@context": {
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "person": "http://www.w3.org/ns/person#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "vann": "http://purl.org/vocab/vann/",
+    "sh": "http://w3.org/ns/shacl#",
+    "label": {
+      "@id": "rdfs:label",
+      "@container": "@language"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "authors": {
+      "@type": "foaf:Person",
+      "@id": "foaf:maker"
+    },
+    "editors": {
+      "@type": "foaf:Person",
+      "@id": "rec:editor"
+    },
+    "contributors": {
+      "@type": "foaf:Person",
+      "@id": "dcterms:contributor"
+    },
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "externals": {
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "@id": "rdfs:seeAlso"
+    }
+  },
+  "@id": "http://www.w3.org/2004/02/skos/core",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "label": {
+    "nl": "skos-ap",
+    "en": "skos-ap"
+  },
+  "baseURI": "http://www.w3.org/2004/02/skos/core#",
+  "issued": "TODO",
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "extra": {
+    "EA-Name": "skos",
+    "EA-Guid": "{6E0DA9DF-80FD-4c69-A01A-E62AD646BB02}",
+    "baseURI": "http://www.w3.org/2004/02/skos/core#",
+    "issued": "TODO",
+    "license": "TODO",
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "value": "http://www.w3.org/2004/02/skos/core#",
+        "note": "null"
+      }
+    ]
+  },
+  "authors": [],
+  "editors": [
+    {
+      "foaf:firstName": "Solid Team",
+      "foaf:lastName": "MAGDA",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen",
+        "foaf:homepage": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "foaf:mbox": "magda-teamsolid@vlaanderen.be",
+      "@type": "foaf:Person"
+    }
+  ],
+  "contributors": [],
+  "classes": [
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "nl": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them."
+      },
+      "label": {
+        "nl": "Concept"
+      },
+      "ap-label-nl": {
+        "nl": "Concept"
+      },
+      "ap-definition-nl": {
+        "nl": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them."
+      },
+      "extra": {
+        "EA-Name": "Concept",
+        "EA-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Package": "skos",
+        "EA-Type": "CLASS",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "parentclasses": "",
+        "label": {
+          "nl": "Concept"
+        },
+        "definition": {
+          "nl": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "Concept"
+        },
+        "ap-definition-nl": {
+          "nl": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "Concept",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "name": "Concept",
+      "parents": []
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "nl": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme."
+      },
+      "label": {
+        "nl": "Concept Scheme"
+      },
+      "ap-label-nl": {
+        "nl": "Concept Scheme"
+      },
+      "ap-definition-nl": {
+        "nl": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme."
+      },
+      "extra": {
+        "EA-Name": "ConceptScheme",
+        "EA-Guid": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+        "EA-Package": "skos",
+        "EA-Type": "CLASS",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "parentclasses": "",
+        "label": {
+          "nl": "Concept Scheme"
+        },
+        "definition": {
+          "nl": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "Concept Scheme"
+        },
+        "ap-definition-nl": {
+          "nl": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "Concept Scheme",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "name": "Concept Scheme",
+      "parents": []
+    }
+  ],
+  "properties": [
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "top concept of",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "Indicates that the concept is the most general concept of the concept scheme."
+      },
+      "label": {
+        "nl": "top concept of"
+      },
+      "ap-label-nl": {
+        "nl": "top concept of"
+      },
+      "ap-definition-nl": {
+        "nl": "Indicates that the concept is the most general concept of the concept scheme."
+      },
+      "extra": {
+        "EA-Name": "topConceptOf",
+        "EA-Guid": "{898187F0-E51D-4887-8255-A6EE3E292290}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "ConceptScheme",
+        "RangeData": {
+          "EA-Name": "ConceptScheme",
+          "EA-GUID": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        },
+        "sourceRole": "hasTopConcept",
+        "destRole": "topConceptOf",
+        "label": {
+          "nl": "top concept of"
+        },
+        "definition": {
+          "nl": "Indicates that the concept is the most general concept of the concept scheme."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "top concept of"
+        },
+        "ap-definition-nl": {
+          "nl": "Indicates that the concept is the most general concept of the concept scheme."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=Indicates that the concept is the most general concept of the concept scheme."
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "top concept of"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=Indicates that the concept is the most general concept of the concept scheme."
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "top concept of"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "ConceptScheme",
+          "EA-GUID": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "preferred label",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "A preferred lexical label for a resource."
+      },
+      "label": {
+        "nl": "preferred label"
+      },
+      "ap-label-nl": {
+        "nl": "preferred label"
+      },
+      "ap-definition-nl": {
+        "nl": "A preferred lexical label for a resource."
+      },
+      "extra": {
+        "EA-Name": "prefLabel",
+        "EA-Guid": "{3B8C39F1-B4E1-42ff-93DC-0ECF4FCFEBB7}",
+        "EA-Package": "skos",
+        "EA-Type": "attribute",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "LangString",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": {
+          "nl": "preferred label"
+        },
+        "definition": {
+          "nl": "A preferred lexical label for a resource."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "preferred label"
+        },
+        "ap-definition-nl": {
+          "nl": "A preferred lexical label for a resource."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "preferred label",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "A preferred lexical label for a resource."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "1",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#note",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "note",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "A property for general documentation purposes."
+      },
+      "label": {
+        "nl": "note"
+      },
+      "ap-label-nl": {
+        "nl": "note"
+      },
+      "ap-definition-nl": {
+        "nl": "A property for general documentation purposes."
+      },
+      "extra": {
+        "EA-Name": "note",
+        "EA-Guid": "{1F6DF8A7-7746-4a07-858B-4BB3650BB398}",
+        "EA-Package": "skos",
+        "EA-Type": "attribute",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "LangString",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": {
+          "nl": "note"
+        },
+        "definition": {
+          "nl": "A property for general documentation purposes."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "note"
+        },
+        "ap-definition-nl": {
+          "nl": "A property for general documentation purposes."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "note",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "A property for general documentation purposes.",
+            "note": "null"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "notation",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
+      },
+      "label": {
+        "nl": "notation"
+      },
+      "ap-label-nl": {
+        "nl": "notation"
+      },
+      "ap-definition-nl": {
+        "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
+      },
+      "extra": {
+        "EA-Name": "notation",
+        "EA-Guid": "{ED3C7374-C8AB-48e0-A433-336614BFC68D}",
+        "EA-Package": "skos",
+        "EA-Type": "attribute",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "Literal",
+        "RangeData": {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "label": {
+          "nl": "notation"
+        },
+        "definition": {
+          "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "notation"
+        },
+        "ap-definition-nl": {
+          "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "notation",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Literal",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "narrower",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
+      },
+      "label": {
+        "nl": "narrower"
+      },
+      "ap-label-nl": {
+        "nl": "narrower"
+      },
+      "ap-definition-nl": {
+        "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
+      },
+      "extra": {
+        "EA-Name": "narrower",
+        "EA-Guid": "{FCA9190D-1B1B-4239-A6DD-C6C418A0EC5A}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "Concept",
+        "RangeData": {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "sourceRole": "null",
+        "destRole": "narrower",
+        "label": {
+          "nl": "narrower"
+        },
+        "definition": {
+          "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "narrower"
+        },
+        "ap-definition-nl": {
+          "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "narrower"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "narrower"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "in scheme",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "Link to the concept scheme that contains the concept."
+      },
+      "label": {
+        "nl": "in scheme"
+      },
+      "ap-label-nl": {
+        "nl": "in scheme"
+      },
+      "ap-definition-nl": {
+        "nl": "Link to the concept scheme that contains the concept."
+      },
+      "extra": {
+        "EA-Name": "inScheme",
+        "EA-Guid": "{12149F9F-050D-4653-BD90-F7D68113E3D4}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "ConceptScheme",
+        "RangeData": {
+          "EA-Name": "ConceptScheme",
+          "EA-GUID": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        },
+        "sourceRole": "null",
+        "destRole": "inScheme",
+        "label": {
+          "nl": "in scheme"
+        },
+        "definition": {
+          "nl": "Link to the concept scheme that contains the concept."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "in scheme"
+        },
+        "ap-definition-nl": {
+          "nl": "Link to the concept scheme that contains the concept."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "in scheme"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "Link to the concept scheme that contains the concept."
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "in scheme"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "Link to the concept scheme that contains the concept."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "ConceptScheme",
+          "EA-GUID": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "has top concept",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
+      },
+      "label": {
+        "nl": "has top concept"
+      },
+      "ap-label-nl": {
+        "nl": "has top concept"
+      },
+      "ap-definition-nl": {
+        "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
+      },
+      "extra": {
+        "EA-Name": "hasTopConcept",
+        "EA-Guid": "{898187F0-E51D-4887-8255-A6EE3E292290}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "ConceptScheme",
+        "EA-Domain-Guid": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+        "EA-Range": "Concept",
+        "RangeData": {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "sourceRole": "topConceptOf",
+        "destRole": "hasTopConcept",
+        "label": {
+          "nl": "has top concept"
+        },
+        "definition": {
+          "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "has top concept"
+        },
+        "ap-definition-nl": {
+          "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "has top concept"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "has top concept"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "NOTE$ea_notes=This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+          "EA-Name": "ConceptScheme"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "definition",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "Supplies a complete explanation of the intended meaning of a concept."
+      },
+      "label": {
+        "nl": "definition"
+      },
+      "ap-label-nl": {
+        "nl": "definition"
+      },
+      "ap-definition-nl": {
+        "nl": "Supplies a complete explanation of the intended meaning of a concept."
+      },
+      "extra": {
+        "EA-Name": "definition",
+        "EA-Guid": "{C8224203-FC3F-40e8-8118-6E5945A1C2AC}",
+        "EA-Package": "skos",
+        "EA-Type": "attribute",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "LangString",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": {
+          "nl": "definition"
+        },
+        "definition": {
+          "nl": "Supplies a complete explanation of the intended meaning of a concept."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "definition"
+        },
+        "ap-definition-nl": {
+          "nl": "Supplies a complete explanation of the intended meaning of a concept."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "definition",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "Supplies a complete explanation of the intended meaning of a concept."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "name": "alternative label",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
+      },
+      "label": {
+        "nl": "alternative label"
+      },
+      "ap-label-nl": {
+        "nl": "alternative label"
+      },
+      "ap-definition-nl": {
+        "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
+      },
+      "extra": {
+        "EA-Name": "altLabel",
+        "EA-Guid": "{743E5BA1-DDFB-4167-A406-576C858D0370}",
+        "EA-Package": "skos",
+        "EA-Type": "attribute",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "LangString",
+        "RangeData": {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "label": {
+          "nl": "alternative label"
+        },
+        "definition": {
+          "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "alternative label"
+        },
+        "ap-definition-nl": {
+          "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "alternative label",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "LangString",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "*"
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "inpackage": "OTHER_PACKAGE",
+      "definition": {
+        "nl": "The datatype of language-tagged string values."
+      },
+      "label": {
+        "nl": "Language String"
+      },
+      "ap-label-nl": {
+        "nl": "Language String"
+      },
+      "ap-definition-nl": {
+        "nl": "The datatype of language-tagged string values."
+      },
+      "extra": {
+        "EA-Name": "LangString",
+        "EA-Guid": "{953A4149-2CF7-431e-8844-E01E51F0856D}",
+        "EA-Package": "skos",
+        "EA-Type": "DATATYPE",
+        "EA-Parents": "Literal",
+        "EA-Parents2": [
+          {
+            "name": "Literal",
+            "label": "Literal",
+            "package": "skos",
+            "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+          }
+        ],
+        "parentclasses": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "label": {
+          "nl": "Language String"
+        },
+        "definition": {
+          "nl": "The datatype of language-tagged string values."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "Language String"
+        },
+        "ap-definition-nl": {
+          "nl": "The datatype of language-tagged string values."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "uri",
+            "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+            "note": "null"
+          },
+          {
+            "key": "label-nl",
+            "value": "Language String",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "The datatype of language-tagged string values.",
+            "note": "null"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "name": "Language String"
+    },
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "inpackage": "OTHER_PACKAGE",
+      "definition": {
+        "nl": "The class of literal values, eg. textual strings and integers."
+      },
+      "label": {
+        "nl": "Literal"
+      },
+      "ap-label-nl": {
+        "nl": "Literal"
+      },
+      "ap-definition-nl": {
+        "nl": "The class of literal values, eg. textual strings and integers."
+      },
+      "extra": {
+        "EA-Name": "Literal",
+        "EA-Guid": "{20817C9A-8D39-48fa-85E1-6E0EDF68DF1F}",
+        "EA-Package": "skos",
+        "EA-Type": "DATATYPE",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "parentclasses": "",
+        "label": {
+          "nl": "Literal"
+        },
+        "definition": {
+          "nl": "The class of literal values, eg. textual strings and integers."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "Literal"
+        },
+        "ap-definition-nl": {
+          "nl": "The class of literal values, eg. textual strings and integers."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "uri",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The class of literal values, eg. textual strings and integers."
+          },
+          {
+            "key": "label-nl",
+            "value": "Literal",
+            "note": "null"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "name": "Literal"
+    }
+  ],
+  "externalproperties": [
+    {
+      "@id": "http://www.w3.org/ns/adms#status",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "status",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+      },
+      "label": {
+        "nl": "status"
+      },
+      "ap-label-nl": {
+        "nl": "status"
+      },
+      "ap-definition-nl": {
+        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+      },
+      "extra": {
+        "EA-Name": "status",
+        "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "Concept",
+        "RangeData": {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "sourceRole": "null",
+        "destRole": "status",
+        "label": {
+          "nl": "status"
+        },
+        "definition": {
+          "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "status"
+        },
+        "ap-definition-nl": {
+          "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "status"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#status"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "status"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#status"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "1"
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#status",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "status",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
+      },
+      "label": {
+        "nl": "status"
+      },
+      "ap-label-nl": {
+        "nl": "status"
+      },
+      "ap-definition-nl": {
+        "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
+      },
+      "extra": {
+        "EA-Name": "status",
+        "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "ConceptScheme",
+        "EA-Domain-Guid": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+        "EA-Range": "Concept",
+        "RangeData": {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "sourceRole": "null",
+        "destRole": "status",
+        "label": {
+          "nl": "status"
+        },
+        "definition": {
+          "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "status"
+        },
+        "ap-definition-nl": {
+          "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "status"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#status"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "status"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#status"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+          "EA-Name": "ConceptScheme"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "1"
+    }
+  ],
+  "name": "skos-ap",
+  "type": "ap",
+  "eap": "SKOS.eap",
+  "diagram": "skos",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "publication-date": "2023-02-01",
+  "contributors-file": "stakeholders.csv",
+  "contributors-column": "skos",
+  "site": "site-skeleton/skos",
+  "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "config": "config/config-ap.json",
+  "branchtag": "master",
+  "dummy": "dimi-6",
+  "filename": "config/skos-ap.json",
+  "navigation": {},
+  "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
+  "urlref": "/doc/applicatieprofiel/skos/2023-01-01",
+  "documentcommit": "faa92ee68cc96c0a37b2e5f2cc0b1e29f65ac03a",
+  "toolchaincommit": "8aed443fdde53ab19af3769ec6fd26482e52158d",
+  "hostname": "https://solid.data.vlaanderen.be/",
+  "translation": [
+    {
+      "language": "nl",
+      "title": "null",
+      "template": "null",
+      "translationjson": "skos-ap_nl.json",
+      "mergefile": "skos-ap_nl_merged.json"
+    }
+  ]
+}

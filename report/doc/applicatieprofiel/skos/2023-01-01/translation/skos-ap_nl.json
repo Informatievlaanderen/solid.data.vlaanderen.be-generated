@@ -1,0 +1,161 @@
+{
+  "baseURI": "http://www.w3.org/2004/02/skos/core#",
+  "classes": [
+    {
+      "EA-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+      "name": "Concept",
+      "label": {
+        "nl": "Concept"
+      },
+      "definition": {
+        "nl": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them."
+      }
+    },
+    {
+      "EA-Guid": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
+      "name": "Concept Scheme",
+      "label": {
+        "nl": "Concept Scheme"
+      },
+      "definition": {
+        "nl": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme."
+      }
+    }
+  ],
+  "properties": [
+    {
+      "EA-Guid": "{898187F0-E51D-4887-8255-A6EE3E292290}",
+      "name": "top concept of",
+      "label": {
+        "nl": "top concept of"
+      },
+      "definition": {
+        "nl": "Indicates that the concept is the most general concept of the concept scheme."
+      }
+    },
+    {
+      "EA-Guid": "{3B8C39F1-B4E1-42ff-93DC-0ECF4FCFEBB7}",
+      "name": "preferred label",
+      "label": {
+        "nl": "preferred label"
+      },
+      "definition": {
+        "nl": "A preferred lexical label for a resource."
+      }
+    },
+    {
+      "EA-Guid": "{1F6DF8A7-7746-4a07-858B-4BB3650BB398}",
+      "name": "note",
+      "label": {
+        "nl": "note"
+      },
+      "definition": {
+        "nl": "A property for general documentation purposes."
+      }
+    },
+    {
+      "EA-Guid": "{ED3C7374-C8AB-48e0-A433-336614BFC68D}",
+      "name": "notation",
+      "label": {
+        "nl": "notation"
+      },
+      "definition": {
+        "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
+      }
+    },
+    {
+      "EA-Guid": "{FCA9190D-1B1B-4239-A6DD-C6C418A0EC5A}",
+      "name": "narrower",
+      "label": {
+        "nl": "narrower"
+      },
+      "definition": {
+        "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
+      }
+    },
+    {
+      "EA-Guid": "{12149F9F-050D-4653-BD90-F7D68113E3D4}",
+      "name": "in scheme",
+      "label": {
+        "nl": "in scheme"
+      },
+      "definition": {
+        "nl": "Link to the concept scheme that contains the concept."
+      }
+    },
+    {
+      "EA-Guid": "{898187F0-E51D-4887-8255-A6EE3E292290}",
+      "name": "has top concept",
+      "label": {
+        "nl": "has top concept"
+      },
+      "definition": {
+        "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
+      }
+    },
+    {
+      "EA-Guid": "{C8224203-FC3F-40e8-8118-6E5945A1C2AC}",
+      "name": "definition",
+      "label": {
+        "nl": "definition"
+      },
+      "definition": {
+        "nl": "Supplies a complete explanation of the intended meaning of a concept."
+      }
+    },
+    {
+      "EA-Guid": "{743E5BA1-DDFB-4167-A406-576C858D0370}",
+      "name": "alternative label",
+      "label": {
+        "nl": "alternative label"
+      },
+      "definition": {
+        "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
+      }
+    }
+  ],
+  "externals": [
+    {
+      "EA-Guid": "{953A4149-2CF7-431e-8844-E01E51F0856D}",
+      "name": "Language String",
+      "label": {
+        "nl": "Language String"
+      },
+      "definition": {
+        "nl": "The datatype of language-tagged string values."
+      }
+    },
+    {
+      "EA-Guid": "{20817C9A-8D39-48fa-85E1-6E0EDF68DF1F}",
+      "name": "Literal",
+      "label": {
+        "nl": "Literal"
+      },
+      "definition": {
+        "nl": "The class of literal values, eg. textual strings and integers."
+      }
+    }
+  ],
+  "externalproperties": [
+    {
+      "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
+      "name": "status",
+      "label": {
+        "nl": "status"
+      },
+      "definition": {
+        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+      }
+    },
+    {
+      "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
+      "name": "status",
+      "label": {
+        "nl": "status"
+      },
+      "definition": {
+        "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
+      }
+    }
+  ]
+}

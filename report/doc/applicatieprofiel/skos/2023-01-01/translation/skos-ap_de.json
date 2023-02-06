@@ -9,19 +9,19 @@
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Een SKOS-concept kan worden gezien als een gedachte-eenheid, een idee, een notie, een betekenis of een (categorie van) objecten en gebeurtenissen - die ten grondslag ligt aan veel kennisorganisatiesystemen. Wat een gedachte-eenheid vormt, is echter subjectief, en deze definitie is eerder suggestief dan beperkend bedoeld. Als zodanig bestaan ??concepten in de geest als abstracte entiteiten die onafhankelijk zijn van de termen die worden gebruikt om ze te labelen.",
+        "nl": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{0517D09A-F006-409d-8C7C-DE2911C6D5FD}",
-      "name": "Conceptschema",
+      "name": "Concept Scheme",
       "label": {
-        "nl": "Conceptschema",
+        "nl": "Concept Scheme",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Een SKOS-conceptschema kan worden gezien als een aggregatie van één of meerdere SKOS-concepten. Semantische relaties (links) tussen die concepten kunnen ook worden gezien als onderdeel van een conceptschema.",
+        "nl": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme.",
         "de": "Enter your translation here"
       }
     }
@@ -29,109 +29,109 @@
   "properties": [
     {
       "EA-Guid": "{898187F0-E51D-4887-8255-A6EE3E292290}",
-      "name": "topconcept van",
+      "name": "top concept of",
       "label": {
-        "nl": "topconcept van",
+        "nl": "top concept of",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Geeft aan dat het concept het meest algemene concept van het conceptschema is.",
+        "nl": "Indicates that the concept is the most general concept of the concept scheme.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{3B8C39F1-B4E1-42ff-93DC-0ECF4FCFEBB7}",
-      "name": "geprefereerd label",
+      "name": "preferred label",
       "label": {
-        "nl": "geprefereerd label",
+        "nl": "preferred label",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Geprefereerd lexicaal label voor de resource.",
+        "nl": "A preferred lexical label for a resource.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{1F6DF8A7-7746-4a07-858B-4BB3650BB398}",
-      "name": "nota",
+      "name": "note",
       "label": {
-        "nl": "nota",
+        "nl": "note",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Een eigenschap voor algemene documentatiedoeleinden.",
+        "nl": "A property for general documentation purposes.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{ED3C7374-C8AB-48e0-A433-336614BFC68D}",
-      "name": "notatie",
+      "name": "notation",
       "label": {
-        "nl": "notatie",
+        "nl": "notation",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Met deze eigenschap kan een concept worden gekoppeld aan een RDF-getypeerde letterlijke waarde - een letterlijke waarde met een expliciet gegevenstype. Het gegevenstype van de letterlijke waarde specificeert een syntaxiscoderingsschema dat past bij het gebruik van notaties in de betreffende KOS. De waarde van de letterlijke waarde is de notatie zelf.",
+        "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{FCA9190D-1B1B-4239-A6DD-C6C418A0EC5A}",
-      "name": "enger",
+      "name": "narrower",
       "label": {
-        "nl": "enger",
+        "nl": "narrower",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Deze eigenschap wordt gebruikt om aan te duiden dat het ene concept enger van betekenis is (d.w.z. specifieker) dan het andere.",
+        "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{12149F9F-050D-4653-BD90-F7D68113E3D4}",
-      "name": "in schema",
+      "name": "in scheme",
       "label": {
-        "nl": "in schema",
+        "nl": "in scheme",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Link naar het conceptschema dat het concept bevat.",
+        "nl": "Link to the concept scheme that contains the concept.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{898187F0-E51D-4887-8255-A6EE3E292290}",
-      "name": "heeft topconcept",
+      "name": "has top concept",
       "label": {
-        "nl": "heeft topconcept",
+        "nl": "has top concept",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Deze eigenschap maakt het mogelijk om een conceptschema te koppelen aan de (mogelijk vele) meest algemene concepten die het bevat, om een efficiënte toegang te verschaffen tot de ingangspunten van bredere/engere concepthiërarchieën.",
+        "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{C8224203-FC3F-40e8-8118-6E5945A1C2AC}",
-      "name": "definitie",
+      "name": "definition",
       "label": {
-        "nl": "definitie",
+        "nl": "definition",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Geeft een volledige uitleg van de bedoelde betekenis van een concept.",
+        "nl": "Supplies a complete explanation of the intended meaning of a concept.",
         "de": "Enter your translation here"
       }
     },
     {
       "EA-Guid": "{743E5BA1-DDFB-4167-A406-576C858D0370}",
-      "name": "alternatief label",
+      "name": "alternative label",
       "label": {
-        "nl": "alternatief label",
+        "nl": "alternative label",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Een alternatief lexicaal label voor een concept. Dit is vooral handig bij het toewijzen van labels die verder gaan dan het voorkeurslabel voor het concept, bijvoorbeeld wanneer synoniemen moeten worden weergegeven.",
+        "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented.",
         "de": "Enter your translation here"
       }
     }
@@ -139,13 +139,13 @@
   "externals": [
     {
       "EA-Guid": "{953A4149-2CF7-431e-8844-E01E51F0856D}",
-      "name": "Taalstring",
+      "name": "Language String",
       "label": {
-        "nl": "Taalstring",
+        "nl": "Language String",
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld.",
+        "nl": "The datatype of language-tagged string values.",
         "de": "Enter your translation here"
       }
     },
@@ -157,24 +157,12 @@
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "De klasse van letterlijke waarden, bijv. tekstuele strings en integers.",
+        "nl": "The class of literal values, eg. textual strings and integers.",
         "de": "Enter your translation here"
       }
     }
   ],
   "externalproperties": [
-    {
-      "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
-      "name": "status",
-      "label": {
-        "nl": "status",
-        "de": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'.",
-        "de": "Enter your translation here"
-      }
-    },
     {
       "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
       "name": "status",
@@ -183,7 +171,19 @@
         "de": "Enter your translation here"
       },
       "definition": {
-        "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'.",
+        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'.",
+        "de": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
+      "name": "status",
+      "label": {
+        "nl": "status",
+        "de": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'.",
         "de": "Enter your translation here"
       }
     }
