@@ -1,0 +1,387 @@
+{
+  "@context": {
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "authors": {
+      "@id": "foaf:maker",
+      "@type": "foaf:Person"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "contributors": {
+      "@id": "dcterms:contributor",
+      "@type": "foaf:Person"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "editors": {
+      "@id": "rec:editor",
+      "@type": "foaf:Person"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "label": {
+      "@container": "@language",
+      "@id": "rdfs:label"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "person": "http://www.w3.org/ns/person#",
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "qb": "http://purl.org/linked-data/cube#",
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sh": "http://w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://solid.data.vlaanderen.be/ns/generic",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "authors": [],
+  "branchtag": "master",
+  "classes": [],
+  "config": "config/config-voc.json",
+  "contributors": [],
+  "contributors-column": "generic",
+  "contributors-file": "stakeholders.csv",
+  "diagram": "Generic",
+  "documentcommit": "faa92ee68cc96c0a37b2e5f2cc0b1e29f65ac03a",
+  "dummy": "dimi-1",
+  "eap": "Generic.eap",
+  "editors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:homepage": "https://www.vlaanderen.be/digitaal-vlaanderen",
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Solid Team",
+      "foaf:lastName": "MAGDA",
+      "foaf:mbox": "magda-teamsolid@vlaanderen.be"
+    }
+  ],
+  "externalproperties": [],
+  "externals": [
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+      "definition": {
+        "nl": "An Access Request or an Access Grant."
+      },
+      "definition-nl": {
+        "nl": "An Access Request or an Access Grant."
+      },
+      "extra": {
+        "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+        "EA-Name": "AccessRequestOrGrant",
+        "EA-Package": "Generic",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Access Request/Grant"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "An Access Request or an Access Grant."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "definition": {
+          "nl": "An Access Request or an Access Grant."
+        },
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "An Access Request or an Access Grant."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Access Request/Grant"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Access Request/Grant"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Access Request/Grant"
+      },
+      "label-nl": {
+        "nl": "Access Request/Grant"
+      },
+      "name": "Access Request/Grant"
+    },
+    {
+      "@id": "https://w3.org/2018/credentials#VerifiableCredential",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+      "definition": {
+        "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "definition-nl": {
+        "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "extra": {
+        "EA-Guid": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+        "EA-Name": "VerifiableCredential",
+        "EA-Package": "Generic",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Verifiable Credential"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://w3.org/2018/credentials#VerifiableCredential"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "definition": {
+          "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+        },
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+        },
+        "equivalent": "",
+        "label": {
+          "nl": "Verifiable Credential"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "Verifiable Credential"
+        },
+        "parentclasses": "",
+        "sameAs": "",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Verifiable Credential"
+      },
+      "label-nl": {
+        "nl": "Verifiable Credential"
+      },
+      "name": "Verifiable Credential"
+    }
+  ],
+  "extra": {
+    "EA-Guid": "{6C7BB44D-CF29-47b9-9AAF-B8D033ED36BE}",
+    "EA-Name": "Generic",
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "note": "null",
+        "value": "https://solid.data.vlaanderen.be/ns/generic#"
+      }
+    ],
+    "issued": "TODO",
+    "license": "TODO",
+    "title-nl": "TODO"
+  },
+  "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
+  "filename": "config/generic.json",
+  "hostname": "https://solid.data.vlaanderen.be/",
+  "issued": "TODO",
+  "label": {
+    "en": "generic",
+    "nl": "generic"
+  },
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "name": "generic",
+  "navigation": {},
+  "properties": [
+    {
+      "@id": "https://solid.data.vlaanderen.be/ns/generic#forPersonalData",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0F2EC574-5DBA-4fa4-9C0C-2076BEC81FC2}",
+      "codelist": [],
+      "definition": {
+        "nl": "The Verifiable Credential for/to which access is requested/granted."
+      },
+      "definition-nl": {
+        "nl": "The Verifiable Credential for/to which access is requested/granted."
+      },
+      "domain": [
+        {
+          "EA-Name": "AccessRequestOrGrant",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "note": "The Verifiable Credential for/to which access is requested/granted.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "for personal data",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "AccessRequestOrGrant",
+        "EA-Domain-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+        "EA-Guid": "{0F2EC574-5DBA-4fa4-9C0C-2076BEC81FC2}",
+        "EA-Name": "forPersonalData",
+        "EA-Package": "",
+        "EA-Range": "VerifiableCredential",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+          "EA-Name": "VerifiableCredential",
+          "EA-Package": "Generic",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "The Verifiable Credential for/to which access is requested/granted.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "for personal data",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "definition": {
+          "nl": "The Verifiable Credential for/to which access is requested/granted."
+        },
+        "definition-en": "",
+        "definition-nl": {
+          "nl": "The Verifiable Credential for/to which access is requested/granted."
+        },
+        "derived": "false",
+        "destRole": "forPersonalData",
+        "equivalent": "",
+        "label": {
+          "nl": "for personal data"
+        },
+        "label-en": "",
+        "label-nl": {
+          "nl": "for personal data"
+        },
+        "sameAs": "",
+        "sourceRole": "null",
+        "subclass": "",
+        "subclass1": "",
+        "usage": "",
+        "usageNote-en": "",
+        "usageNote-nl": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "for personal data"
+      },
+      "label-nl": {
+        "nl": "for personal data"
+      },
+      "name": "for personal data",
+      "range": [
+        {
+          "EA-GUID": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+          "EA-Name": "VerifiableCredential",
+          "EA-Package": "Generic",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+        }
+      ]
+    }
+  ],
+  "publication-date": "2023-02-01",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
+  "site": "site-skeleton/generic",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "title-nl": {
+    "nl": "TODO"
+  },
+  "toolchaincommit": "8e8769ead74e2895d9ef8621d5d88e49b13f0109",
+  "translation": [
+    {
+      "language": "nl",
+      "mergefile": "generic_nl_merged.json",
+      "template": "null",
+      "title": "null",
+      "translationjson": "generic_nl.json"
+    }
+  ],
+  "type": "voc",
+  "urlref": "/doc/vocabularium/generic/2023-02-01"
+}

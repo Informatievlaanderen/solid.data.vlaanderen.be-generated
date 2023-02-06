@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "uri": "https://solid.data.vlaanderen.be/ns/generic",
+    "issued": "2023-02-01",
+    "filename": "generic",
+    "navigation": {
+      "self": "https://solid.data.vlaanderen.be//doc/vocabularium/generic/2023-02-01"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "voc",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/faa92ee68cc96c0a37b2e5f2cc0b1e29f65ac03a",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/faa92ee68cc96c0a37b2e5f2cc0b1e29f65ac03a/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [],
+  "properties": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/generic#forPersonalData",
+      "name": "for personal data",
+      "label": {
+        "nl": "for personal data"
+      },
+      "sort": "for personal data",
+      "description": {
+        "nl": "The Verifiable Credential for/to which access is requested/granted."
+      },
+      "usage": {},
+      "domain": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ],
+      "range": [
+        "https://w3.org/2018/credentials#VerifiableCredential"
+      ],
+      "parents": []
+    }
+  ],
+  "contributors": [
+    {
+      "role": "E",
+      "first_name": "Solid Team",
+      "last_name": "MAGDA",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "magda-teamsolid@vlaanderen.be"
+    }
+  ],
+  "external_terms": [
+    {
+      "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "name": "Access Request/Grant",
+      "label": {
+        "nl": "Access Request/Grant"
+      },
+      "description": {
+        "nl": "An Access Request or an Access Grant."
+      },
+      "usage": {},
+      "sort": "Access Request/Grant",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "name": "Verifiable Credential",
+      "label": {
+        "nl": "Verifiable Credential"
+      },
+      "description": {
+        "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "usage": {},
+      "sort": "Verifiable Credential",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    }
+  ],
+  "documentroot": "/doc/vocabularium/generic/2023-02-01"
+}

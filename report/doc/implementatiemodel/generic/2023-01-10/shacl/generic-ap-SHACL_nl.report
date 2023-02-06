@@ -1,0 +1,10 @@
+start reading
+/tmp/workspace/report/doc/implementatiemodel/generic/2023-01-10/translation/generic-ap_nl_merged.json
+/tmp/workspace/target/doc/implementatiemodel/generic/2023-01-10/shacl/generic-ap-SHACL_nl.jsonld
+nl
+done
+start processing
+make shacl using individual mode
+add nodeKind constraint
+start writing
+Write complete, file saved to: /tmp/workspace/target/doc/implementatiemodel/generic/2023-01-10/shacl/generic-ap-SHACL_nl.jsonld

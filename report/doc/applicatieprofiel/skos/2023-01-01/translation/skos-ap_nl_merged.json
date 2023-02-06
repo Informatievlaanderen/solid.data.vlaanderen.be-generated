@@ -1362,7 +1362,7 @@
   "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
   "site": "site-skeleton/skos",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
-  "toolchaincommit": "8aed443fdde53ab19af3769ec6fd26482e52158d",
+  "toolchaincommit": "8e8769ead74e2895d9ef8621d5d88e49b13f0109",
   "translation": [
     {
       "language": "nl",
