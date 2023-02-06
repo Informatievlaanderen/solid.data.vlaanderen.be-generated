@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solid Leercredential",
+    "uri": "https://solid.data.vlaanderen.be/ns/leercredential",
+    "issued": "2023-02-01",
+    "filename": "leercredential",
+    "navigation": {
+      "self": "https://solid.data.vlaanderen.be//doc/vocabularium/leercredential/2023-02-01"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "voc",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/f5350721ebc8ed6c1eb15ee794e1062716ab3eb3",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/f5350721ebc8ed6c1eb15ee794e1062716ab3eb3/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [],
+  "properties": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
+      "name": "uitgever",
+      "label": {
+        "nl": "uitgever"
+      },
+      "sort": "uitgever",
+      "description": {
+        "nl": "De Agent die de claim maakt."
+      },
+      "usage": {},
+      "domain": [
+        "https://data.europa.eu/snb/model#Claim"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
+      "name": "authenticiteit",
+      "label": {
+        "nl": "authenticiteit"
+      },
+      "sort": "authenticiteit",
+      "description": {
+        "nl": "De authenticiteit van de leerclaim."
+      },
+      "usage": {},
+      "domain": [
+        "https://data.europa.eu/snb/model#Claim"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "parents": []
+    }
+  ],
+  "contributors": [
+    {
+      "role": "E",
+      "first_name": "Solid Team",
+      "last_name": "MAGDA",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "magda-teamsolid@vlaanderen.be"
+    }
+  ],
+  "external_terms": [],
+  "documentroot": "/doc/vocabularium/leercredential/2023-02-01"
+}
