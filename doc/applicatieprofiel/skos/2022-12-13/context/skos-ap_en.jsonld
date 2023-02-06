@@ -1,9 +1,0 @@
-{
-  "@context": {
-    "EnterYourTranslationHere": "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "EnterYourTranslationHere.enterYourTranslationHere": {
-      "@id": "http://www.w3.org/ns/adms#status",
-      "@type": "@id"
-    }
-  }
-}

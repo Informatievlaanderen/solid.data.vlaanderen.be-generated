@@ -1,58 +1,58 @@
 {
   "@context": {
     "Concept": "http://www.w3.org/2004/02/skos/core#Concept",
-    "Concept.alternatiefLabel": {
+    "Concept.alternativeLabel": {
       "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "Concept.definitie": {
+    "Concept.definition": {
       "@id": "http://www.w3.org/2004/02/skos/core#definition",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "Concept.enger": {
+    "Concept.inScheme": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "Concept.narrower": {
       "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#narrower",
       "@type": "@id"
     },
-    "Concept.geprefereerdLabel": {
+    "Concept.notation": {
       "@container": "@set",
-      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "Concept.inSchema": {
-      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
-      "@type": "@id"
-    },
-    "Concept.nota": {
+    "Concept.note": {
       "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#note",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "Concept.notatie": {
+    "Concept.preferredLabel": {
       "@container": "@set",
-      "@id": "http://www.w3.org/2004/02/skos/core#notation",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Concept.status": {
       "@id": "http://www.w3.org/ns/adms#status",
       "@type": "@id"
     },
-    "Concept.topconceptVan": {
+    "Concept.topConceptOf": {
       "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
       "@type": "@id"
     },
-    "Conceptschema": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
-    "Conceptschema.heeftTopconcept": {
+    "ConceptScheme": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "ConceptScheme.hasTopConcept": {
       "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
       "@type": "@id"
     },
-    "Conceptschema.status": {
+    "ConceptScheme.status": {
       "@id": "http://www.w3.org/ns/adms#status",
       "@type": "@id"
     },
-    "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "Taalstring": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    "LanguageString": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal"
   }
 }

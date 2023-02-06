@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Simple Knowledge Organization System (SKOS)",
+    "title": "null",
     "uri": "http://www.w3.org/2004/02/skos/core",
-    "issued": "2022-12-13",
+    "issued": "2023-02-01",
     "baseURI": "http://www.w3.org/2004/02/skos/core#",
     "filename": "skos-ap",
     "navigation": {
@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/71c268787efaec5426f2fb6000fbe5cd1592afce",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/71c268787efaec5426f2fb6000fbe5cd1592afce/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/f5d6c4f9bc2d9cdd519ae6782c9a2bd5a98e20c2",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/f5d6c4f9bc2d9cdd519ae6782c9a2bd5a98e20c2/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -29,20 +29,20 @@
       },
       "sort": "Concept",
       "description": {
-        "nl": "Een SKOS-concept kan worden gezien als een gedachte-eenheid, een idee, een notie, een betekenis of een (categorie van) objecten en gebeurtenissen - die ten grondslag ligt aan veel kennisorganisatiesystemen. Wat een gedachte-eenheid vormt, is echter subjectief, en deze definitie is eerder suggestief dan beperkend bedoeld. Als zodanig bestaan ??concepten in de geest als abstracte entiteiten die onafhankelijk zijn van de termen die worden gebruikt om ze te labelen."
+        "nl": "A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them."
       },
       "usage": {},
       "parents": [],
       "properties": [
         {
           "uri": "http://www.w3.org/2004/02/skos/core#topConceptOf",
-          "name": "topconcept van",
-          "sort": "topconcept van",
+          "name": "top concept of",
+          "sort": "top concept of",
           "label": {
-            "nl": "topconcept van"
+            "nl": "top concept of"
           },
           "description": {
-            "nl": "Geeft aan dat het concept het meest algemene concept van het conceptschema is."
+            "nl": "Indicates that the concept is the most general concept of the concept scheme."
           },
           "usage": {},
           "domain": [
@@ -59,10 +59,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Conceptschema",
+              "range_uri": "#Concept Scheme",
               "range_puri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
               "range_label": {
-                "nl": "Conceptschema"
+                "nl": "Concept Scheme"
               }
             }
           ],
@@ -71,13 +71,13 @@
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
-          "name": "geprefereerd label",
-          "sort": "geprefereerd label",
+          "name": "preferred label",
+          "sort": "preferred label",
           "label": {
-            "nl": "geprefereerd label"
+            "nl": "preferred label"
           },
           "description": {
-            "nl": "Geprefereerd lexicaal label voor de resource."
+            "nl": "A preferred lexical label for a resource."
           },
           "usage": {},
           "domain": [
@@ -94,10 +94,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Taalstring",
+              "range_uri": "#Language String",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
-                "nl": "Taalstring"
+                "nl": "Language String"
               }
             }
           ],
@@ -106,13 +106,13 @@
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#note",
-          "name": "nota",
-          "sort": "nota",
+          "name": "note",
+          "sort": "note",
           "label": {
-            "nl": "nota"
+            "nl": "note"
           },
           "description": {
-            "nl": "Een eigenschap voor algemene documentatiedoeleinden."
+            "nl": "A property for general documentation purposes."
           },
           "usage": {},
           "domain": [
@@ -129,10 +129,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Taalstring",
+              "range_uri": "#Language String",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
-                "nl": "Taalstring"
+                "nl": "Language String"
               }
             }
           ],
@@ -141,13 +141,13 @@
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#notation",
-          "name": "notatie",
-          "sort": "notatie",
+          "name": "notation",
+          "sort": "notation",
           "label": {
-            "nl": "notatie"
+            "nl": "notation"
           },
           "description": {
-            "nl": "Met deze eigenschap kan een concept worden gekoppeld aan een RDF-getypeerde letterlijke waarde - een letterlijke waarde met een expliciet gegevenstype. Het gegevenstype van de letterlijke waarde specificeert een syntaxiscoderingsschema dat past bij het gebruik van notaties in de betreffende KOS. De waarde van de letterlijke waarde is de notatie zelf."
+            "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
           },
           "usage": {},
           "domain": [
@@ -176,13 +176,13 @@
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#narrower",
-          "name": "enger",
-          "sort": "enger",
+          "name": "narrower",
+          "sort": "narrower",
           "label": {
-            "nl": "enger"
+            "nl": "narrower"
           },
           "description": {
-            "nl": "Deze eigenschap wordt gebruikt om aan te duiden dat het ene concept enger van betekenis is (d.w.z. specifieker) dan het andere."
+            "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
           },
           "usage": {},
           "domain": [
@@ -211,13 +211,13 @@
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#inScheme",
-          "name": "in schema",
-          "sort": "in schema",
+          "name": "in scheme",
+          "sort": "in scheme",
           "label": {
-            "nl": "in schema"
+            "nl": "in scheme"
           },
           "description": {
-            "nl": "Link naar het conceptschema dat het concept bevat."
+            "nl": "Link to the concept scheme that contains the concept."
           },
           "usage": {},
           "domain": [
@@ -234,10 +234,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Conceptschema",
+              "range_uri": "#Concept Scheme",
               "range_puri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
               "range_label": {
-                "nl": "Conceptschema"
+                "nl": "Concept Scheme"
               }
             }
           ],
@@ -246,13 +246,13 @@
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#definition",
-          "name": "definitie",
-          "sort": "definitie",
+          "name": "definition",
+          "sort": "definition",
           "label": {
-            "nl": "definitie"
+            "nl": "definition"
           },
           "description": {
-            "nl": "Geeft een volledige uitleg van de bedoelde betekenis van een concept."
+            "nl": "Supplies a complete explanation of the intended meaning of a concept."
           },
           "usage": {},
           "domain": [
@@ -269,10 +269,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Taalstring",
+              "range_uri": "#Language String",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
-                "nl": "Taalstring"
+                "nl": "Language String"
               }
             }
           ],
@@ -281,13 +281,13 @@
         },
         {
           "uri": "http://www.w3.org/2004/02/skos/core#altLabel",
-          "name": "alternatief label",
-          "sort": "alternatief label",
+          "name": "alternative label",
+          "sort": "alternative label",
           "label": {
-            "nl": "alternatief label"
+            "nl": "alternative label"
           },
           "description": {
-            "nl": "Een alternatief lexicaal label voor een concept. Dit is vooral handig bij het toewijzen van labels die verder gaan dan het voorkeurslabel voor het concept, bijvoorbeeld wanneer synoniemen moeten worden weergegeven."
+            "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
           },
           "usage": {},
           "domain": [
@@ -304,10 +304,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Taalstring",
+              "range_uri": "#Language String",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
-                "nl": "Taalstring"
+                "nl": "Language String"
               }
             }
           ],
@@ -322,7 +322,7 @@
             "nl": "status"
           },
           "description": {
-            "nl": "De status van het concept, bv. 'in gebruik' of 'verouderd'."
+            "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
           },
           "usage": {},
           "domain": [
@@ -353,26 +353,26 @@
     },
     {
       "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
-      "name": "Conceptschema",
+      "name": "Concept Scheme",
       "label": {
-        "nl": "Conceptschema"
+        "nl": "Concept Scheme"
       },
-      "sort": "Conceptschema",
+      "sort": "Concept Scheme",
       "description": {
-        "nl": "Een SKOS-conceptschema kan worden gezien als een aggregatie van één of meerdere SKOS-concepten. Semantische relaties (links) tussen die concepten kunnen ook worden gezien als onderdeel van een conceptschema."
+        "nl": "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme."
       },
       "usage": {},
       "parents": [],
       "properties": [
         {
           "uri": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-          "name": "heeft topconcept",
-          "sort": "heeft topconcept",
+          "name": "has top concept",
+          "sort": "has top concept",
           "label": {
-            "nl": "heeft topconcept"
+            "nl": "has top concept"
           },
           "description": {
-            "nl": "Deze eigenschap maakt het mogelijk om een conceptschema te koppelen aan de (mogelijk vele) meest algemene concepten die het bevat, om een efficiënte toegang te verschaffen tot de ingangspunten van bredere/engere concepthiërarchieën."
+            "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
           },
           "usage": {},
           "domain": [
@@ -407,7 +407,7 @@
             "nl": "status"
           },
           "description": {
-            "nl": "De status van het conceptschema, bv. 'in gebruik' of 'verouderd'."
+            "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
           },
           "usage": {},
           "domain": [
@@ -441,8 +441,8 @@
     {
       "uri": "http://www.w3.org/2004/02/skos/core#topConceptOf",
       "name": {
-        "nl": "topconcept van",
-        "undefined": "topconcept van"
+        "nl": "top concept of",
+        "undefined": "top concept of"
       },
       "description": {},
       "domain": [
@@ -456,8 +456,8 @@
     {
       "uri": "http://www.w3.org/2004/02/skos/core#narrower",
       "name": {
-        "nl": "enger",
-        "undefined": "enger"
+        "nl": "narrower",
+        "undefined": "narrower"
       },
       "description": {},
       "domain": [
@@ -471,8 +471,8 @@
     {
       "uri": "http://www.w3.org/2004/02/skos/core#inScheme",
       "name": {
-        "nl": "in schema",
-        "undefined": "in schema"
+        "nl": "in scheme",
+        "undefined": "in scheme"
       },
       "description": {},
       "domain": [
@@ -486,8 +486,8 @@
     {
       "uri": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
       "name": {
-        "nl": "heeft topconcept",
-        "undefined": "heeft topconcept"
+        "nl": "has top concept",
+        "undefined": "has top concept"
       },
       "description": {},
       "domain": [
@@ -514,13 +514,13 @@
   "datatypes": [
     {
       "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-      "name": "Taalstring",
+      "name": "Language String",
       "label": {
-        "nl": "Taalstring"
+        "nl": "Language String"
       },
-      "sort": "Taalstring",
+      "sort": "Language String",
       "description": {
-        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+        "nl": "The datatype of language-tagged string values."
       },
       "usage": {},
       "parents": [
@@ -542,7 +542,7 @@
       },
       "sort": "Literal",
       "description": {
-        "nl": "De klasse van letterlijke waarden, bijv. tekstuele strings en integers."
+        "nl": "The class of literal values, eg. textual strings and integers."
       },
       "usage": {},
       "parents": [],
