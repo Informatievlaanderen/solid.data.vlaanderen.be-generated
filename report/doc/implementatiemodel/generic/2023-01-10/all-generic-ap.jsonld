@@ -344,12 +344,12 @@
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "config": "config/config-ap.json",
     "branchtag": "master",
-    "dummy": "dimi-1",
+    "dummy": "dimi-2",
     "filename": "config/generic.json",
     "navigation": {},
     "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
     "urlref": "/doc/implementatiemodel/generic/2023-01-10",
     "documentcommit": "faa92ee68cc96c0a37b2e5f2cc0b1e29f65ac03a",
-    "toolchaincommit": "552b7a0a7b76b85c2671e2c0d8d83a4239d90f62",
+    "toolchaincommit": "be5d03f245aee6cc53b781643207a84851fb6fef",
     "hostname": "https://solid.data.vlaanderen.be/"
 }
