@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@vocab": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22",
+    "@vocab": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22",
     "qb": "http://purl.org/linked-data/cube#",
     "qb:codeList": {
       "@id": "qb:codeList",
@@ -89,16 +89,16 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "vl": "https://data.vlaanderen.be/ns/shacl#"
   },
-  "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22",
+  "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22",
   "shapes": [
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/5da9d86fb0295ae23eeaf343dc8c6e124f92e5b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
           },
@@ -113,8 +113,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6b0d5813153da700505d795c17d681878225c6d1",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6b0d5813153da700505d795c17d681878225c6d1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
           },
@@ -129,8 +129,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/97946cff2078edb9ca2ac80c0f29d9076260acca",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
           },
@@ -145,8 +145,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/a0b7156be408a447d937582d4d0c3cafea754f8b",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Acreatiedatum",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
@@ -161,8 +161,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/0addb769185db828aa4c44888f0aa906471c3d06",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/0addb769185db828aa4c44888f0aa906471c3d06",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:class": "http://www.w3.org/ns/person#Person",
           "sh:description": {
             "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
@@ -177,8 +177,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/1a866fa857b5fcbb72a9d7d921b514f32ccc7f75",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:description": {
             "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
@@ -193,8 +193,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ddc01720dea1db9a8e7835a723509db2560a8b40",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:description": {
             "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
@@ -209,8 +209,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/e8615f0a5d02411b4117dc143d6677ba72eb969a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aeigenaar",
           "sh:description": {
             "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
           },
@@ -225,8 +225,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/2684afaac1b70cddf22fab0b8e094b038a04df86",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
           },
@@ -241,8 +241,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/674397262772738dd4eb8cd1ddc03b405b6bdd18",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
@@ -257,8 +257,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/ad3e078d65ea115fd2ed7060419fea7ef618e4b6",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
           },
@@ -273,8 +273,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/f80e9d3afff556d446b86e426b446aa83a033b4c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Aindieningsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd ingediend."
           },
@@ -289,8 +289,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
           },
@@ -305,8 +305,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/6a51b2354ea38a815d6131b4e05f8587791de4e0",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
           },
@@ -321,8 +321,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/9e7585433d0896bc44cb41cdd8189793bd115cd0",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
@@ -337,8 +337,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#AlarmbelprocedureformulierShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Alarmbelprocedureformulier%3Awijzigingsdatum",
           "sh:description": {
             "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
           },
@@ -356,13 +356,13 @@
       "sh:targetClass": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/2dceec85e711413e199f2310746fff51134c2f0b",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/2dceec85e711413e199f2310746fff51134c2f0b",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
           "sh:description": {
             "nl": "Andere uitkeringen die de persoon ontvangt."
           },
@@ -377,8 +377,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/3e4e191946d81ac93ad76238ece32452a6f140ce",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/3e4e191946d81ac93ad76238ece32452a6f140ce",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Andere uitkeringen die de persoon ontvangt."
@@ -393,8 +393,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/82953315a4e10723c6cfce539c6104d626aee380",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/82953315a4e10723c6cfce539c6104d626aee380",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aandere%20uitkeringen",
           "sh:description": {
             "nl": "Andere uitkeringen die de persoon ontvangt."
           },
@@ -409,8 +409,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/0cd7973b4d47ba46e149826524b96018a9f55f42",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/0cd7973b4d47ba46e149826524b96018a9f55f42",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
@@ -425,8 +425,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/432230c8c439ce9268a4f67c451cfe047d40a4c6",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/432230c8c439ce9268a4f67c451cfe047d40a4c6",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
           "sh:description": {
             "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
           },
@@ -441,8 +441,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/e665b4b8d4da5e8c7fe46beca7729973dd48b745",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/e665b4b8d4da5e8c7fe46beca7729973dd48b745",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Abelastbare%20beroepsinkomsten",
           "sh:description": {
             "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
           },
@@ -457,8 +457,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/3f191e1bd2e887090a0b3cd4dbb82f465e9594f3",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/3f191e1bd2e887090a0b3cd4dbb82f465e9594f3",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
           "sh:description": {
             "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
           },
@@ -473,8 +473,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/4389a2a0bc01363636fcb3487fa77102f8fba00a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/4389a2a0bc01363636fcb3487fa77102f8fba00a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
           "sh:description": {
             "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
           },
@@ -489,8 +489,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/fbfa8d5dffe65537b3deb02e321a9234ed8767e4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/fbfa8d5dffe65537b3deb02e321a9234ed8767e4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aberoepsinkomsten%20als%20zelfstandige",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
@@ -505,8 +505,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/271c184975c88428fc8d7bbea035950bbcdfe06f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/271c184975c88428fc8d7bbea035950bbcdfe06f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
           "sh:description": {
             "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
           },
@@ -521,8 +521,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/88e10d20cb07cc9213759a5da3817360b50a1f52",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/88e10d20cb07cc9213759a5da3817360b50a1f52",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "sh:description": {
             "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
@@ -537,8 +537,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/fe6d4e57a608c0ece5a7e7584db6d7bad57695c6",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/fe6d4e57a608c0ece5a7e7584db6d7bad57695c6",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ageen%20inkomen",
           "sh:description": {
             "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
           },
@@ -553,8 +553,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/6ab306ce085b18c4d8c251289128bd4b3d5ad12a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/6ab306ce085b18c4d8c251289128bd4b3d5ad12a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
           "sh:description": {
             "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
           },
@@ -569,8 +569,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7ffe7ea54091b24237d28db32cd077720a309c40",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7ffe7ea54091b24237d28db32cd077720a309c40",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "sh:description": {
             "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
@@ -585,8 +585,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/d12a7327feef6cb0f6b504bd4cfafb29238cb289",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/d12a7327feef6cb0f6b504bd4cfafb29238cb289",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomensvervangende%20tegemoetkoming",
           "sh:description": {
             "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
           },
@@ -601,8 +601,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7556e22de5c4a3e7eed66ec01ac1508191e611af",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7556e22de5c4a3e7eed66ec01ac1508191e611af",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
@@ -617,8 +617,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/b252ef61f7c40466866656589e78c0afaad6ec17",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/b252ef61f7c40466866656589e78c0afaad6ec17",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
           "sh:description": {
             "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
           },
@@ -633,8 +633,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/f65b1a720fffeb74f70e30cb40a46d7dc807f225",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/f65b1a720fffeb74f70e30cb40a46d7dc807f225",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Ainkomsten%20als%20internationale%20ambtenaar",
           "sh:description": {
             "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
           },
@@ -649,8 +649,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/42f3494f8df7e97d02e4f99730f13f31399bafd2",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/42f3494f8df7e97d02e4f99730f13f31399bafd2",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
           "sh:description": {
             "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
@@ -665,8 +665,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/62ddff51b7343ff8c86e356985856eab3edfcc51",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/62ddff51b7343ff8c86e356985856eab3edfcc51",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
           "sh:description": {
             "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
           },
@@ -681,8 +681,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/9e4f7937e6321890abd18617680ef863acbbef33",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/9e4f7937e6321890abd18617680ef863acbbef33",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aleefloon%20of%20equivalent%20leefloon",
           "sh:description": {
             "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
           },
@@ -697,8 +697,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/281c6ff5c79aa0653f20fde909eb4ef44df47be5",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/281c6ff5c79aa0653f20fde909eb4ef44df47be5",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
           "sh:description": {
             "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
           },
@@ -713,8 +713,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7c47a7b8bd24fce5384f11943f22a79151fac91f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/7c47a7b8bd24fce5384f11943f22a79151fac91f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
@@ -729,8 +729,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/bbd6571978c7cf2cc4b93c183d54c748b469386f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/bbd6571978c7cf2cc4b93c183d54c748b469386f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Aontvangen%20onderhoudsgelden",
           "sh:description": {
             "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
           },
@@ -745,8 +745,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/02b3c503abfa6e0252d8f6276b05b62bd66029a2",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/02b3c503abfa6e0252d8f6276b05b62bd66029a2",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
           "sh:description": {
             "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
           },
@@ -761,8 +761,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/324ad6b915204eeff49449b90010fa6d42dc372e",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/324ad6b915204eeff49449b90010fa6d42dc372e",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
           "sh:description": {
             "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
           },
@@ -777,8 +777,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/59dd564a5b5636da896c90de080a7b4f0e1fd82f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/59dd564a5b5636da896c90de080a7b4f0e1fd82f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Apensioenen",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
@@ -793,8 +793,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/1b32c6dcf08745bcf56df3e438c8dfd7ac7d5086",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/1b32c6dcf08745bcf56df3e438c8dfd7ac7d5086",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
           "sh:description": {
             "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
           },
@@ -809,8 +809,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/527c21ad4cff55ef1b9eb7f666b36d6a66f7a4f7",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/527c21ad4cff55ef1b9eb7f666b36d6a66f7a4f7",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
           "sh:description": {
             "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
           },
@@ -825,8 +825,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/abd03506fc9dc41f9a9ff983c6054ee7438a438b",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenShape/abd03506fc9dc41f9a9ff983c6054ee7438a438b",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomsten%3Avervangingsinkomen",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
@@ -844,13 +844,13 @@
       "sh:targetClass": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/1c13c2c58d74345447cf0b3d1265be543b784bde",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20document",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/1c13c2c58d74345447cf0b3d1265be543b784bde",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20document",
           "sh:class": "http://xmlns.com/foaf/0.1/Document",
           "sh:description": {
             "nl": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
@@ -865,8 +865,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/643a0b46b5d7c295297393773ebd5afc1bebc022",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20document",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/643a0b46b5d7c295297393773ebd5afc1bebc022",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20document",
           "sh:description": {
             "nl": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
           },
@@ -881,8 +881,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/b03d3f88311ff9fc99d2c2e0b80ed96eb275f280",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20verifieerbare%20credential",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/b03d3f88311ff9fc99d2c2e0b80ed96eb275f280",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20verifieerbare%20credential",
           "sh:class": "https://w3.org/2018/credentials#VerifiableCredential",
           "sh:description": {
             "nl": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
@@ -897,8 +897,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/d3b6345b618496065b0eb4d4cfb618dda555e66a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20verifieerbare%20credential",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/d3b6345b618496065b0eb4d4cfb618dda555e66a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Abewijsstuk%20verifieerbare%20credential",
           "sh:description": {
             "nl": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
           },
@@ -913,8 +913,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/229e4a1618f47c05c2996009d5d9a0727c6a48f4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
           "sh:description": {
             "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
           },
@@ -929,8 +929,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/236818a46442d5839007629fc7515b884fd201ef",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/236818a46442d5839007629fc7515b884fd201ef",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
           "sh:class": "http://data.europa.eu/m8g/PeriodOfTime",
           "sh:description": {
             "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
@@ -945,8 +945,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/d24dc4466dfe62deb9dde81e9c24fb6ca9188b4c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/d24dc4466dfe62deb9dde81e9c24fb6ca9188b4c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
           "sh:description": {
             "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
           },
@@ -961,8 +961,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgavenShape/ead0140014ebf09954ecaa04a0b0da5f23bf732d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseInkomstenOfUitgaven%3Aperiode",
           "sh:description": {
             "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
           },
@@ -980,13 +980,13 @@
       "sh:targetClass": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/53ef4e0eca14dbdd2a9ab8235ce522b29ac33b02",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/53ef4e0eca14dbdd2a9ab8235ce522b29ac33b02",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
@@ -1001,8 +1001,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/6c66bb70c48197c6fb0b68e8fd3748b8c7ef17bd",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/6c66bb70c48197c6fb0b68e8fd3748b8c7ef17bd",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
           "sh:description": {
             "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
           },
@@ -1017,8 +1017,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/b9c5f83223ee8993b69b8d41ad6ec832a0022b74",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgavenShape/b9c5f83223ee8993b69b8d41ad6ec832a0022b74",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#MaandelijkseUitgaven%3Abetaalde%20onderhoudsgelden",
           "sh:description": {
             "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
           },
@@ -1036,13 +1036,13 @@
       "sh:targetClass": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/5ab022a03f954dd804aa9edb639fe9f45d0d99d4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/5ab022a03f954dd804aa9edb639fe9f45d0d99d4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
           "sh:description": {
             "nl": "Het doel van het Onroerend Goed."
           },
@@ -1057,8 +1057,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/91a08b43860869ba18c0168486d9bfd03befcb70",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/91a08b43860869ba18c0168486d9bfd03befcb70",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
           "sh:description": {
             "nl": "Het doel van het Onroerend Goed."
           },
@@ -1073,8 +1073,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/a2ea3a45fcf0d646366f5f809e30f9746239744c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/a2ea3a45fcf0d646366f5f809e30f9746239744c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
           "sh:description": {
             "nl": "Het doel van het Onroerend Goed."
           },
@@ -1089,8 +1089,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/dded78cb6f2b8c34d17d2b01917af9c00654bb31",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Adoel",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "Het doel van het Onroerend Goed."
@@ -1105,8 +1105,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/121e04bfe031523195697a7b78adeffe51a05d64",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/121e04bfe031523195697a7b78adeffe51a05d64",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
           "sh:description": {
             "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
           },
@@ -1121,8 +1121,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/2e0ec7e618b228ad77cebbe2403aec3d4bdcbbca",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/2e0ec7e618b228ad77cebbe2403aec3d4bdcbbca",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
           "sh:description": {
             "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
           },
@@ -1137,8 +1137,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/f041d260800f1fb491755b530f19c086cd1c7545",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/f041d260800f1fb491755b530f19c086cd1c7545",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
           "sh:class": "https://schema.org/MonetaryAmount",
           "sh:description": {
             "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
@@ -1153,8 +1153,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/f5d283522bfbedfefa0da4793bdb1f809d5182c2",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoedShape/f5d283522bfbedfefa0da4793bdb1f809d5182c2",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#OnroerendGoed%3Akadastraal%20inkomen",
           "sh:description": {
             "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
           },
@@ -1172,13 +1172,13 @@
       "sh:targetClass": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/004ac80561762856a407814131b0d26da5d40c48",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/004ac80561762856a407814131b0d26da5d40c48",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Aanvang van de tijdsduur."
@@ -1193,8 +1193,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/0314585b5499d6caa89e48fec0ef18394c773357",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/0314585b5499d6caa89e48fec0ef18394c773357",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
           "sh:description": {
             "nl": "Aanvang van de tijdsduur."
           },
@@ -1209,8 +1209,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/94b964ba7748a9bb7be30bc938891d43bdd37a2a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/94b964ba7748a9bb7be30bc938891d43bdd37a2a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
           "sh:description": {
             "nl": "Aanvang van de tijdsduur."
           },
@@ -1225,8 +1225,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/eaaf692287545f3e6d4e1f7d38a4a82f941b4861",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/eaaf692287545f3e6d4e1f7d38a4a82f941b4861",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Abegin",
           "sh:description": {
             "nl": "Aanvang van de tijdsduur."
           },
@@ -1241,8 +1241,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/06e0d98cc149845b9391bdde64f91d71cfdd104d",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/06e0d98cc149845b9391bdde64f91d71cfdd104d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
           "sh:description": {
             "nl": "Einde van de tijdsduur."
           },
@@ -1257,8 +1257,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/094dd18cc860a8e3f406bb1ddb361cdbf686a120",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/094dd18cc860a8e3f406bb1ddb361cdbf686a120",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
           "sh:description": {
             "nl": "Einde van de tijdsduur."
           },
@@ -1273,8 +1273,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/5b308a496d299ca5e844de2d3520c815a468d00b",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/5b308a496d299ca5e844de2d3520c815a468d00b",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:description": {
             "nl": "Einde van de tijdsduur."
@@ -1289,8 +1289,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/bce6139e94a794701cff8ee719d4289148b79381",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PeriodeShape/bce6139e94a794701cff8ee719d4289148b79381",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Periode%3Aeinde",
           "sh:description": {
             "nl": "Einde van de tijdsduur."
           },
@@ -1308,41 +1308,41 @@
       "sh:targetClass": "http://data.europa.eu/m8g/PeriodOfTime"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DoelOnroerendGoedShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DoelOnroerendGoedShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#FinancieleOmstandigheidShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#FinancieleOmstandigheidShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#SituationeleOmstandigheidShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#SituationeleOmstandigheidShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentTypeShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentTypeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/7d5d2dfe5ab00a5c5c7a2be9b89ba84e0a83b46b",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Afinanci%C3%ABle%20omstandigheid",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/7d5d2dfe5ab00a5c5c7a2be9b89ba84e0a83b46b",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Afinanci%C3%ABle%20omstandigheid",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "Financiële toestand waarin de Persoon zich bevindt."
@@ -1357,8 +1357,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/eb49e58252e501555eeda08e9e1147199012cdb7",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Afinanci%C3%ABle%20omstandigheid",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/eb49e58252e501555eeda08e9e1147199012cdb7",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Afinanci%C3%ABle%20omstandigheid",
           "sh:description": {
             "nl": "Financiële toestand waarin de Persoon zich bevindt."
           },
@@ -1373,8 +1373,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/3758ab198790b990c16c825367870cca641f7526",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/3758ab198790b990c16c825367870cca641f7526",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
           "sh:description": {
             "nl": "Instroom van gelden van de Persoon."
           },
@@ -1389,8 +1389,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/3f7d045598727666dfd3da060237d6cb1ba92372",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/3f7d045598727666dfd3da060237d6cb1ba92372",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
           "sh:class": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten",
           "sh:description": {
             "nl": "Instroom van gelden van de Persoon."
@@ -1405,8 +1405,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/83ac8ef13e051987b5b5e0a7791c6fae9a9b0fe4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/83ac8ef13e051987b5b5e0a7791c6fae9a9b0fe4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
           "sh:description": {
             "nl": "Instroom van gelden van de Persoon."
           },
@@ -1421,8 +1421,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/a0c0e23cfec432cc28f7e5348e3e22b95a8e57e4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/a0c0e23cfec432cc28f7e5348e3e22b95a8e57e4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Ainkomsten",
           "sh:description": {
             "nl": "Instroom van gelden van de Persoon."
           },
@@ -1437,8 +1437,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/494ea69d983b3ae4e631353abe4e3b564b450ca9",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Akocht",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/494ea69d983b3ae4e631353abe4e3b564b450ca9",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Akocht",
           "sh:description": {
             "nl": "Onroerend Goed aangekocht door de Persoon."
           },
@@ -1453,8 +1453,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/ed158a7d8d69077eacd680f6d9867f2273679daf",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Akocht",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/ed158a7d8d69077eacd680f6d9867f2273679daf",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Akocht",
           "sh:class": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed",
           "sh:description": {
             "nl": "Onroerend Goed aangekocht door de Persoon."
@@ -1469,8 +1469,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/1368b62a06a02ce3dd0a6b73e97630563bae5ac4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Asituationele%20omstandigheid",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/1368b62a06a02ce3dd0a6b73e97630563bae5ac4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Asituationele%20omstandigheid",
           "sh:description": {
             "nl": "Situatie waarin de Persoon zich bevindt."
           },
@@ -1485,8 +1485,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/8322fd98f92b459431908ea50c1589e41d93f925",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Asituationele%20omstandigheid",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/8322fd98f92b459431908ea50c1589e41d93f925",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Asituationele%20omstandigheid",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "Situatie waarin de Persoon zich bevindt."
@@ -1501,8 +1501,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/090c4a0f14dacdb7999eee7d3760ad074786931e",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Auitgaven",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/090c4a0f14dacdb7999eee7d3760ad074786931e",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Auitgaven",
           "sh:description": {
             "nl": "Uitstroom van gelden van de Persoon."
           },
@@ -1517,8 +1517,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/4699307d68ac6b5acb866a219e9c5c12e4007dd2",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Auitgaven",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/4699307d68ac6b5acb866a219e9c5c12e4007dd2",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Auitgaven",
           "sh:class": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven",
           "sh:description": {
             "nl": "Uitstroom van gelden van de Persoon."
@@ -1533,8 +1533,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/e7da746b2507b55fb7ae670acd16035b2d5670f4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Auitgaven",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/e7da746b2507b55fb7ae670acd16035b2d5670f4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Auitgaven",
           "sh:description": {
             "nl": "Uitstroom van gelden van de Persoon."
           },
@@ -1549,8 +1549,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/33f9424d9df1d7bf6b9f93953d9914959522809f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Averkocht",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/33f9424d9df1d7bf6b9f93953d9914959522809f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Averkocht",
           "sh:description": {
             "nl": "Onroerend Goed verkocht door de Persoon."
           },
@@ -1565,8 +1565,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#PersoonShape/5d66fab4df44e14ed1a43b79dbaa888e5dbfca06",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Persoon%3Averkocht",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#PersoonShape/5d66fab4df44e14ed1a43b79dbaa888e5dbfca06",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Persoon%3Averkocht",
           "sh:class": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed",
           "sh:description": {
             "nl": "Onroerend Goed verkocht door de Persoon."
@@ -1584,13 +1584,13 @@
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape/2219d3b8ff0d1e94d82d955d392f2420c7ea3ad1",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Document%3Aopmerking",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape/2219d3b8ff0d1e94d82d955d392f2420c7ea3ad1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Document%3Aopmerking",
           "sh:description": {
             "nl": "Een vrij tekstveld als nota bij het Document."
           },
@@ -1605,8 +1605,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape/28ce43c0d98cf13471dd86ec37040c2f4d08edf4",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Document%3Aopmerking",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape/28ce43c0d98cf13471dd86ec37040c2f4d08edf4",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Document%3Aopmerking",
           "sh:description": {
             "nl": "Een vrij tekstveld als nota bij het Document."
           },
@@ -1621,8 +1621,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape/d05ab9844cad2630aeb030a7b5d4885abbc972ae",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Document%3Aopmerking",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape/d05ab9844cad2630aeb030a7b5d4885abbc972ae",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Document%3Aopmerking",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:description": {
             "nl": "Een vrij tekstveld als nota bij het Document."
@@ -1637,8 +1637,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape/236f0210baaf149903750c43bbe7012c21debb2a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape/236f0210baaf149903750c43bbe7012c21debb2a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
           "sh:description": {
             "nl": "De aard van het Document."
           },
@@ -1653,8 +1653,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape/322371a77364a50f049d46180f6192532eea26dc",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape/322371a77364a50f049d46180f6192532eea26dc",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "De aard van het Document."
@@ -1669,8 +1669,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
           "sh:description": {
             "nl": "De aard van het Document."
           },
@@ -1685,8 +1685,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#DocumentShape/74feba662f4f65577bf45a8dd94f8faec0f03592",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#DocumentShape/74feba662f4f65577bf45a8dd94f8faec0f03592",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Document%3Atype",
           "sh:description": {
             "nl": "De aard van het Document."
           },
@@ -1704,13 +1704,13 @@
       "sh:targetClass": "http://xmlns.com/foaf/0.1/Document"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/2a3d253e5212175ae311d1d3236a2aea212a9d7c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/2a3d253e5212175ae311d1d3236a2aea212a9d7c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "De munteenheid."
@@ -1725,8 +1725,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/6bfa9ad1b7686584042e5f70df564759473eab3c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/6bfa9ad1b7686584042e5f70df564759473eab3c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
           "sh:description": {
             "nl": "De munteenheid."
           },
@@ -1741,8 +1741,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/7d3465d906346e8d430a4e6cf12cc16dd9d5f773",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/7d3465d906346e8d430a4e6cf12cc16dd9d5f773",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
           "sh:description": {
             "nl": "De munteenheid."
           },
@@ -1769,8 +1769,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/bc3d02b7e21d964b0d767f9d01880ca1d3fb7e9e",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/bc3d02b7e21d964b0d767f9d01880ca1d3fb7e9e",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
           "sh:description": {
             "nl": "De munteenheid."
           },
@@ -1785,8 +1785,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/c2a80e7127c55b170832bbfa2498de57d6cc323d",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/c2a80e7127c55b170832bbfa2498de57d6cc323d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Avaluta",
           "sh:description": {
             "nl": "De munteenheid."
           },
@@ -1801,8 +1801,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#double",
           "sh:description": {
             "nl": "De kwantitatieve waarde."
@@ -1817,8 +1817,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/162c171cbd4bc7d0de1ce10a2b30b128b5333889",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/162c171cbd4bc7d0de1ce10a2b30b128b5333889",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
           "sh:description": {
             "nl": "De kwantitatieve waarde."
           },
@@ -1833,8 +1833,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/762f5094731b213d88d8a29332598749ea0eaa46",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/762f5094731b213d88d8a29332598749ea0eaa46",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
           "sh:description": {
             "nl": "De kwantitatieve waarde."
           },
@@ -1849,8 +1849,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/ca4892872b345b4fe994128b7c31877979275399",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
+          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#GeldbedragShape/ca4892872b345b4fe994128b7c31877979275399",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#Geldbedrag%3Awaarde",
           "sh:description": {
             "nl": "De kwantitatieve waarde."
           },
@@ -1868,7 +1868,7 @@
       "sh:targetClass": "https://schema.org/MonetaryAmount"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22#VerifieerbareCredentialShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22#VerifieerbareCredentialShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
