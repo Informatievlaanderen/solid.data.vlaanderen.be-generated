@@ -86,7 +86,7 @@
   "contributors-column": "generic",
   "contributors-file": "stakeholders.csv",
   "diagram": "Generic",
-  "documentcommit": "faa92ee68cc96c0a37b2e5f2cc0b1e29f65ac03a",
+  "documentcommit": "804000c91b929c9527fbb985a7c39e452b383e0e",
   "dummy": "dimi-2",
   "eap": "Generic.eap",
   "editors": [
@@ -369,15 +369,16 @@
   "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
   "site": "site-skeleton/generic",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "template": "generic-voc.j2",
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "be5d03f245aee6cc53b781643207a84851fb6fef",
+  "toolchaincommit": "b41515af7a0a938e8b1d0cb0cfc071864e8d4d6c",
   "translation": [
     {
       "language": "nl",
       "mergefile": "generic_nl_merged.json",
-      "template": "null",
+      "template": "generic-voc.j2",
       "title": "null",
       "translationjson": "generic_nl.json"
     }

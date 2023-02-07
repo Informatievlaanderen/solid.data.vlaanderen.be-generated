@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@vocab": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10",
+    "@vocab": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01",
     "qb": "http://purl.org/linked-data/cube#",
     "qb:codeList": {
       "@id": "qb:codeList",
@@ -89,16 +89,16 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "vl": "https://data.vlaanderen.be/ns/shacl#"
   },
-  "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10",
+  "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01",
   "shapes": [
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10#AccessRequestOrGrantShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01#AccessRequestOrGrantShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10#AccessRequestOrGrantShape/d13b57ddbc7bef89df95be5d8468f81b655cd17a",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10#AccessRequestOrGrant%3Afor%20personal%20data",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01#AccessRequestOrGrantShape/d13b57ddbc7bef89df95be5d8468f81b655cd17a",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01#AccessRequestOrGrant%3Afor%20personal%20data",
           "sh:description": {
             "nl": "The Verifiable Credential for/to which access is requested/granted."
           },
@@ -113,8 +113,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10#AccessRequestOrGrantShape/db6f9c4907c309b394b04d65b53e3f76846ee591",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10#AccessRequestOrGrant%3Afor%20personal%20data",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01#AccessRequestOrGrantShape/db6f9c4907c309b394b04d65b53e3f76846ee591",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01#AccessRequestOrGrant%3Afor%20personal%20data",
           "sh:class": "https://w3.org/2018/credentials#VerifiableCredential",
           "sh:description": {
             "nl": "The Verifiable Credential for/to which access is requested/granted."
@@ -132,7 +132,7 @@
       "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-01-10#VerifiableCredentialShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/generic/2023-02-01#VerifiableCredentialShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],

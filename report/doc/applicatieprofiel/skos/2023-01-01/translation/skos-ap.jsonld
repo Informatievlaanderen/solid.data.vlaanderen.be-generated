@@ -1126,110 +1126,6 @@
       "name": "status",
       "inpackage": "ACTIVE_PACKAGE",
       "definition": {
-        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
-      },
-      "label": {
-        "nl": "status"
-      },
-      "ap-label-nl": {
-        "nl": "status"
-      },
-      "ap-definition-nl": {
-        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
-      },
-      "extra": {
-        "EA-Name": "status",
-        "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
-        "derived": "false",
-        "EA-Package": "",
-        "EA-Type": "connector",
-        "EA-Domain": "Concept",
-        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
-        "EA-Range": "Concept",
-        "RangeData": {
-          "EA-Name": "Concept",
-          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
-          "EA-Package": "skos",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        },
-        "sourceRole": "null",
-        "destRole": "status",
-        "label": {
-          "nl": "status"
-        },
-        "definition": {
-          "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
-        },
-        "usage": "",
-        "ap-label-nl": {
-          "nl": "status"
-        },
-        "ap-definition-nl": {
-          "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
-        },
-        "ap-usageNote-nl": "",
-        "ap-codelist": "",
-        "RawTags": [
-          {
-            "key": "label-nl",
-            "value": "NOTE",
-            "note": "status"
-          },
-          {
-            "key": "definition-nl",
-            "value": "NOTE",
-            "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://www.w3.org/ns/adms#status"
-          }
-        ],
-        "DestRoleTags": [
-          {
-            "key": "label-nl",
-            "value": "NOTE",
-            "note": "status"
-          },
-          {
-            "key": "definition-nl",
-            "value": "NOTE",
-            "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
-          },
-          {
-            "key": "uri",
-            "value": "NOTE",
-            "note": "http://www.w3.org/ns/adms#status"
-          }
-        ],
-        "Scope": "TRANSLATIONS_ONLY"
-      },
-      "codelist": [],
-      "domain": [
-        {
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
-          "EA-Name": "Concept"
-        }
-      ],
-      "range": [
-        {
-          "EA-Name": "Concept",
-          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
-          "EA-Package": "skos",
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "generalization": [],
-      "minCardinality": "0",
-      "maxCardinality": "1"
-    },
-    {
-      "@id": "http://www.w3.org/ns/adms#status",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "name": "status",
-      "inpackage": "ACTIVE_PACKAGE",
-      "definition": {
         "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
       },
       "label": {
@@ -1327,12 +1223,117 @@
       "generalization": [],
       "minCardinality": "0",
       "maxCardinality": "1"
+    },
+    {
+      "@id": "http://www.w3.org/ns/adms#status",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "status",
+      "inpackage": "ACTIVE_PACKAGE",
+      "definition": {
+        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+      },
+      "label": {
+        "nl": "status"
+      },
+      "ap-label-nl": {
+        "nl": "status"
+      },
+      "ap-definition-nl": {
+        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+      },
+      "extra": {
+        "EA-Name": "status",
+        "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "Concept",
+        "EA-Domain-Guid": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+        "EA-Range": "Concept",
+        "RangeData": {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "sourceRole": "null",
+        "destRole": "status",
+        "label": {
+          "nl": "status"
+        },
+        "definition": {
+          "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+        },
+        "usage": "",
+        "ap-label-nl": {
+          "nl": "status"
+        },
+        "ap-definition-nl": {
+          "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
+        },
+        "ap-usageNote-nl": "",
+        "ap-codelist": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "status"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#status"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "status"
+          },
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The status of the concept, e.g. 'in use' or 'deprecated'."
+          },
+          {
+            "key": "uri",
+            "value": "NOTE",
+            "note": "http://www.w3.org/ns/adms#status"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "EA-Name": "Concept"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Concept",
+          "EA-GUID": "{C18269FB-4B58-44a2-A9B8-8FA154FEEBBA}",
+          "EA-Package": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ],
+      "generalization": [],
+      "minCardinality": "0",
+      "maxCardinality": "1"
     }
   ],
   "name": "skos-ap",
   "type": "ap",
   "eap": "SKOS.eap",
   "diagram": "skos",
+  "template": "skos-ap_en.j2",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "publication-date": "2023-02-01",
   "contributors-file": "stakeholders.csv",
@@ -1347,14 +1348,14 @@
   "navigation": {},
   "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
   "urlref": "/doc/applicatieprofiel/skos/2023-01-01",
-  "documentcommit": "faa92ee68cc96c0a37b2e5f2cc0b1e29f65ac03a",
-  "toolchaincommit": "552b7a0a7b76b85c2671e2c0d8d83a4239d90f62",
+  "documentcommit": "804000c91b929c9527fbb985a7c39e452b383e0e",
+  "toolchaincommit": "b41515af7a0a938e8b1d0cb0cfc071864e8d4d6c",
   "hostname": "https://solid.data.vlaanderen.be/",
   "translation": [
     {
       "language": "nl",
       "title": "null",
-      "template": "null",
+      "template": "skos-ap_en.j2",
       "translationjson": "skos-ap_nl.json",
       "mergefile": "skos-ap_nl_merged.json"
     }
