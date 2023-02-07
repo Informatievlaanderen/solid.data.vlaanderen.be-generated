@@ -1,0 +1,3665 @@
+{
+  "@context": {
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "authors": {
+      "@id": "foaf:maker",
+      "@type": "foaf:Person"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "contributors": {
+      "@id": "dcterms:contributor",
+      "@type": "foaf:Person"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "editors": {
+      "@id": "rec:editor",
+      "@type": "foaf:Person"
+    },
+    "externals": {
+      "@id": "rdfs:seeAlso",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "label": {
+      "@container": "@language",
+      "@id": "rdfs:label"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "person": "http://www.w3.org/ns/person#",
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "qb": "http://purl.org/linked-data/cube#",
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sh": "http://w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "authors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:homepage": "https://auteurwebsiteurl",
+        "foaf:name": "AuteurAffiliatie"
+      },
+      "foaf:firstName": "AuteurVoornaam",
+      "foaf:lastName": "AuteurNaam",
+      "foaf:mbox": "auteurvoornaam.auteurnaam@auteurdomein"
+    }
+  ],
+  "baseURI": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#",
+  "branchtag": "master",
+  "classes": [
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
+      "ap-definition-nl": {
+        "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
+      },
+      "ap-label-nl": {
+        "nl": "Alarmbelprocedureformulier"
+      },
+      "definition": {
+        "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
+      },
+      "extra": {
+        "EA-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
+        "EA-Name": "Alarmbelprocedureformulier",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "VerifieerbareCredential",
+        "EA-Parents2": [
+          {
+            "label": "Verifieerbare Credential",
+            "name": "VerifieerbareCredential",
+            "package": "Alarmbelprocedure",
+            "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Alarmbelprocedureformulier"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
+        },
+        "ap-label-nl": {
+          "nl": "Alarmbelprocedureformulier"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Formulier waarmee de burger de manuele alarmbelprocedure kan opstarten om aan te tonen dat zijn inkomen voldoende is gedaald om in aanmerking te komen voor een sociale toeslag bovenop het Groeipakket."
+        },
+        "label": {
+          "nl": "Alarmbelprocedureformulier"
+        },
+        "parentclasses": "https://w3.org/2018/credentials#VerifiableCredential",
+        "usage": ""
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "Alarmbelprocedureformulier"
+      },
+      "name": "Alarmbelprocedureformulier",
+      "parents": [
+        "https://w3.org/2018/credentials#VerifiableCredential"
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+      "ap-definition-nl": {
+        "nl": "De beroepsinkomsten en/of uitkeringen in binnen- en buitenland van de Persoon."
+      },
+      "ap-label-nl": {
+        "nl": "Maandelijkse Inkomsten"
+      },
+      "definition": {
+        "nl": "De beroepsinkomsten en/of uitkeringen in binnen- en buitenland van de Persoon."
+      },
+      "extra": {
+        "EA-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Name": "MaandelijkseInkomsten",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "MaandelijkseInkomstenOfUitgaven",
+        "EA-Parents2": [
+          {
+            "label": "Maandelijkse Inkomsten of Uitgaven",
+            "name": "MaandelijkseInkomstenOfUitgaven",
+            "package": "Alarmbelprocedure",
+            "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De beroepsinkomsten en/of uitkeringen in binnen- en buitenland van de Persoon."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Maandelijkse Inkomsten"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De beroepsinkomsten en/of uitkeringen in binnen- en buitenland van de Persoon."
+        },
+        "ap-label-nl": {
+          "nl": "Maandelijkse Inkomsten"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De beroepsinkomsten en/of uitkeringen in binnen- en buitenland van de Persoon."
+        },
+        "label": {
+          "nl": "Maandelijkse Inkomsten"
+        },
+        "parentclasses": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
+        "usage": ""
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "Maandelijkse Inkomsten"
+      },
+      "name": "Maandelijkse Inkomsten",
+      "parents": [
+        "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{19A0BBCF-A72A-4578-AC92-E8F5E678310A}",
+      "ap-definition-nl": {
+        "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
+      },
+      "ap-label-nl": {
+        "nl": "Maandelijkse Inkomsten of Uitgaven"
+      },
+      "definition": {
+        "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
+      },
+      "extra": {
+        "EA-Guid": "{19A0BBCF-A72A-4578-AC92-E8F5E678310A}",
+        "EA-Name": "MaandelijkseInkomstenOfUitgaven",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Maandelijkse Inkomsten of Uitgaven"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
+        },
+        "ap-label-nl": {
+          "nl": "Maandelijkse Inkomsten of Uitgaven"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Abstracte klasse om de gemeenschappelijke eigenschappen van Maandelijke Inkomsten en Maandelijkse Uitgaven te groeperen."
+        },
+        "label": {
+          "nl": "Maandelijkse Inkomsten of Uitgaven"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "Maandelijkse Inkomsten of Uitgaven"
+      },
+      "name": "Maandelijkse Inkomsten of Uitgaven",
+      "parents": []
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{15E2F0DF-AD63-435f-A86D-856B26F4F7BB}",
+      "ap-definition-nl": {
+        "nl": "Uitstroom in geld van de Persoon."
+      },
+      "ap-label-nl": {
+        "nl": "Maandelijkse Uitgaven"
+      },
+      "definition": {
+        "nl": "Uitstroom in geld van de Persoon."
+      },
+      "extra": {
+        "EA-Guid": "{15E2F0DF-AD63-435f-A86D-856B26F4F7BB}",
+        "EA-Name": "MaandelijkseUitgaven",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "MaandelijkseInkomstenOfUitgaven",
+        "EA-Parents2": [
+          {
+            "label": "Maandelijkse Inkomsten of Uitgaven",
+            "name": "MaandelijkseInkomstenOfUitgaven",
+            "package": "Alarmbelprocedure",
+            "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+          }
+        ],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Maandelijkse Uitgaven"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Uitstroom in geld van de Persoon."
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Uitstroom in geld van de Persoon."
+        },
+        "ap-label-nl": {
+          "nl": "Maandelijkse Uitgaven"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Uitstroom in geld van de Persoon."
+        },
+        "label": {
+          "nl": "Maandelijkse Uitgaven"
+        },
+        "parentclasses": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
+        "usage": ""
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "Maandelijkse Uitgaven"
+      },
+      "name": "Maandelijkse Uitgaven",
+      "parents": [
+        "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+      "ap-definition-nl": {
+        "nl": "Goederen die onroerend zijn door hun aard, bestemming of het voorwerp waarop ze betrekking hebben."
+      },
+      "ap-label-nl": {
+        "nl": "Onroerend Goed"
+      },
+      "definition": {
+        "nl": "Goederen die onroerend zijn door hun aard, bestemming of het voorwerp waarop ze betrekking hebben."
+      },
+      "extra": {
+        "EA-Guid": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+        "EA-Name": "OnroerendGoed",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Onroerend Goed"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Goederen die onroerend zijn door hun aard, bestemming of het voorwerp waarop ze betrekking hebben."
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Goederen die onroerend zijn door hun aard, bestemming of het voorwerp waarop ze betrekking hebben."
+        },
+        "ap-label-nl": {
+          "nl": "Onroerend Goed"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Goederen die onroerend zijn door hun aard, bestemming of het voorwerp waarop ze betrekking hebben."
+        },
+        "label": {
+          "nl": "Onroerend Goed"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "Onroerend Goed"
+      },
+      "name": "Onroerend Goed",
+      "parents": []
+    }
+  ],
+  "config": "config/config-ap.json",
+  "contributors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:homepage": "https://medewerkerwebsiteurl",
+        "foaf:name": "MedewerkerAffiliatie"
+      },
+      "foaf:firstName": "MedewerkerVoornaam",
+      "foaf:lastName": "MedewerkerNaam",
+      "foaf:mbox": "medewerkervoornaam.medewerkernaam@medewerkerdomein"
+    }
+  ],
+  "contributors-column": "Alarmbelprocedureformulier",
+  "contributors-file": "stakeholders.csv",
+  "diagram": "Alarmbelprocedureformulier",
+  "documentcommit": "0a36485f569ba848369fc31142a60774796128be",
+  "dummy": "dimi-5",
+  "eap": "Alarmbelprocedureformulier.eap",
+  "editors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:homepage": "https://editorwebsiteurl",
+        "foaf:name": "EditorAffiliatie"
+      },
+      "foaf:firstName": "EditorVoornaam",
+      "foaf:lastName": "EditorNaam",
+      "foaf:mbox": "editorvoornaam.editornaam@editordomein"
+    }
+  ],
+  "externalproperties": [
+    {
+      "@id": "https://w3.org/2018/credentials#credentialSubject",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{48B78EDF-A92F-4e6c-927E-FE2DDB9FF229}",
+      "ap-definition-nl": {
+        "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
+      },
+      "ap-label-nl": {
+        "nl": "eigenaar"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
+      },
+      "domain": [
+        {
+          "EA-Name": "Alarmbelprocedureformulier",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "eigenaar",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "NOTE$ea_notes=De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://w3.org/2018/credentials#credentialSubject",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Alarmbelprocedureformulier",
+        "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
+        "EA-Guid": "{48B78EDF-A92F-4e6c-927E-FE2DDB9FF229}",
+        "EA-Name": "eigenaar",
+        "EA-Package": "",
+        "EA-Range": "Persoon",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{81723118-2AA3-4217-8911-443EAA408460}",
+          "EA-Name": "Persoon",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/ns/person#Person"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "eigenaar",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "NOTE$ea_notes=De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://w3.org/2018/credentials#credentialSubject",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
+        },
+        "ap-label-nl": {
+          "nl": "eigenaar"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De persoon over wie claims worden gedaan (onderwerp) en die de Alarmbeldprocedure manueel opstart."
+        },
+        "derived": "false",
+        "destRole": "eigenaar",
+        "label": {
+          "nl": "eigenaar"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "eigenaar"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "eigenaar",
+      "range": [
+        {
+          "EA-GUID": "{81723118-2AA3-4217-8911-443EAA408460}",
+          "EA-Name": "Persoon",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ]
+    },
+    {
+      "@id": "https://schema.org/value",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{F2C49024-79EE-4918-A47E-68D97A3B9FB8}",
+      "ap-definition-nl": {
+        "nl": "De kwantitatieve waarde."
+      },
+      "ap-label-nl": {
+        "nl": "waarde"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De kwantitatieve waarde."
+      },
+      "domain": [
+        {
+          "EA-Name": "Geldbedrag",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Geldbedrag",
+        "EA-Domain-Guid": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+        "EA-Guid": "{F2C49024-79EE-4918-A47E-68D97A3B9FB8}",
+        "EA-Name": "waarde",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Double",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Double",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#double"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://schema.org/value"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "waarde"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De kwantitatieve waarde."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De kwantitatieve waarde."
+        },
+        "ap-label-nl": {
+          "nl": "waarde"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De kwantitatieve waarde."
+        },
+        "label": {
+          "nl": "waarde"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "waarde"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "waarde",
+      "range": [
+        {
+          "EA-Name": "Double",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#double"
+        }
+      ]
+    },
+    {
+      "@id": "https://schema.org/currency",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{7003AB54-5F1D-4556-B001-3EE982A23221}",
+      "ap-codelist": "http://publications.europa.eu/mdr/authority/currency/",
+      "ap-definition-nl": {
+        "nl": "De munteenheid."
+      },
+      "ap-label-nl": {
+        "nl": "valuta"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De munteenheid."
+      },
+      "domain": [
+        {
+          "EA-Name": "Geldbedrag",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Geldbedrag",
+        "EA-Domain-Guid": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+        "EA-Guid": "{7003AB54-5F1D-4556-B001-3EE982A23221}",
+        "EA-Name": "valuta",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Valuta",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{EAABFD68-CEEF-49d3-A506-783EBE7B25A9}",
+          "EA-Name": "Valuta",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "ap-codelist",
+            "note": "null",
+            "value": "http://publications.europa.eu/mdr/authority/currency/"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://schema.org/currency"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "valuta"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De munteenheid."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "http://publications.europa.eu/mdr/authority/currency/",
+        "ap-definition-nl": {
+          "nl": "De munteenheid."
+        },
+        "ap-label-nl": {
+          "nl": "valuta"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De munteenheid."
+        },
+        "label": {
+          "nl": "valuta"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "valuta"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "valuta",
+      "range": [
+        {
+          "EA-GUID": "{EAABFD68-CEEF-49d3-A506-783EBE7B25A9}",
+          "EA-Name": "Valuta",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://data.vlaanderen.be/ns/loongegevens#inkomsten",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{B0230B37-FEBD-4647-AA44-D38D1FE30374}",
+      "ap-definition-nl": {
+        "nl": "Instroom van gelden van de Persoon."
+      },
+      "ap-label-nl": {
+        "nl": "inkomsten"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Instroom van gelden van de Persoon."
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "inkomsten",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Instroom van gelden van de Persoon.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/loongegevens#inkomsten",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+        "EA-Guid": "{B0230B37-FEBD-4647-AA44-D38D1FE30374}",
+        "EA-Name": "inkomsten",
+        "EA-Package": "",
+        "EA-Range": "MaandelijkseInkomsten",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+          "EA-Name": "MaandelijkseInkomsten",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "inkomsten",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Instroom van gelden van de Persoon.",
+            "value": "NOTE"
+          },
+          {
+            "key": "uri",
+            "note": "https://data.vlaanderen.be/ns/loongegevens#inkomsten",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Instroom van gelden van de Persoon."
+        },
+        "ap-label-nl": {
+          "nl": "inkomsten"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Instroom van gelden van de Persoon."
+        },
+        "derived": "false",
+        "destRole": "inkomsten",
+        "label": {
+          "nl": "inkomsten"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "inkomsten"
+      },
+      "maxCardinality": "6",
+      "minCardinality": "6",
+      "name": "inkomsten",
+      "range": [
+        {
+          "EA-GUID": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+          "EA-Name": "MaandelijkseInkomsten",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{87F2D608-C6DB-4379-A92D-33593F62F1C3}",
+      "ap-definition-nl": {
+        "nl": "Een vrij tekstveld als nota bij het Document."
+      },
+      "ap-label-nl": {
+        "nl": "opmerking"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Een vrij tekstveld als nota bij het Document."
+      },
+      "domain": [
+        {
+          "EA-Name": "Document",
+          "uri": "http://xmlns.com/foaf/0.1/Document"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Document",
+        "EA-Domain-Guid": "{FEBCB276-456D-456a-9947-00E3C5B91ADA}",
+        "EA-Guid": "{87F2D608-C6DB-4379-A92D-33593F62F1C3}",
+        "EA-Name": "opmerking",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "String",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2000/01/rdf-schema#comment"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "opmerking"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Een vrij tekstveld als nota bij het Document."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Een vrij tekstveld als nota bij het Document."
+        },
+        "ap-label-nl": {
+          "nl": "opmerking"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Een vrij tekstveld als nota bij het Document."
+        },
+        "label": {
+          "nl": "opmerking"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "opmerking"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "opmerking",
+      "range": [
+        {
+          "EA-Name": "String",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{BFE637DC-B70F-4af9-B617-7FD4CF101219}",
+      "ap-definition-nl": {
+        "nl": "De aard van het Document."
+      },
+      "ap-label-nl": {
+        "nl": "type"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De aard van het Document."
+      },
+      "domain": [
+        {
+          "EA-Name": "Document",
+          "uri": "http://xmlns.com/foaf/0.1/Document"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Document",
+        "EA-Domain-Guid": "{FEBCB276-456D-456a-9947-00E3C5B91ADA}",
+        "EA-Guid": "{BFE637DC-B70F-4af9-B617-7FD4CF101219}",
+        "EA-Name": "type",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "DocumentType",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{45621180-08CE-4450-8E33-1DDD64BC8705}",
+          "EA-Name": "DocumentType",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/type"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "type"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "De aard van het Document."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De aard van het Document."
+        },
+        "ap-label-nl": {
+          "nl": "type"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De aard van het Document."
+        },
+        "label": {
+          "nl": "type"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "type"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "type",
+      "range": [
+        {
+          "EA-GUID": "{45621180-08CE-4450-8E33-1DDD64BC8705}",
+          "EA-Name": "DocumentType",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{7C7C1A09-F16D-4d54-A825-63C5A12939B6}",
+      "ap-definition-nl": {
+        "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
+      },
+      "ap-label-nl": {
+        "nl": "wijzigingsdatum"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
+      },
+      "domain": [
+        {
+          "EA-Name": "Alarmbelprocedureformulier",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Alarmbelprocedureformulier",
+        "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
+        "EA-Guid": "{7C7C1A09-F16D-4d54-A825-63C5A12939B6}",
+        "EA-Name": "wijzigingsdatum",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/modified"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "wijzigingsdatum"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Datum waarop het Alarmbelformulier werd gewijzigd."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
+        },
+        "ap-label-nl": {
+          "nl": "wijzigingsdatum"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Datum waarop het Alarmbelformulier werd gewijzigd."
+        },
+        "label": {
+          "nl": "wijzigingsdatum"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "wijzigingsdatum"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "wijzigingsdatum",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/dateSubmitted",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{32775CC9-91A0-4bfc-B00E-029348876A78}",
+      "ap-definition-nl": {
+        "nl": "Datum waarop het Alarmbelformulier werd ingediend."
+      },
+      "ap-label-nl": {
+        "nl": "indieningsdatum"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Datum waarop het Alarmbelformulier werd ingediend."
+      },
+      "domain": [
+        {
+          "EA-Name": "Alarmbelprocedureformulier",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Alarmbelprocedureformulier",
+        "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
+        "EA-Guid": "{32775CC9-91A0-4bfc-B00E-029348876A78}",
+        "EA-Name": "indieningsdatum",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/dateSubmitted"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "indieningsdatum"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Datum waarop het Alarmbelformulier werd ingediend."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Datum waarop het Alarmbelformulier werd ingediend."
+        },
+        "ap-label-nl": {
+          "nl": "indieningsdatum"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Datum waarop het Alarmbelformulier werd ingediend."
+        },
+        "label": {
+          "nl": "indieningsdatum"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "indieningsdatum"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "indieningsdatum",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{ACC38C08-0857-4ca2-B058-80891C389179}",
+      "ap-definition-nl": {
+        "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
+      },
+      "ap-label-nl": {
+        "nl": "creatiedatum"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Alarmbelprocedureformulier",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Alarmbelprocedureformulier",
+        "EA-Domain-Guid": "{55C5C9D4-A331-4015-B4F3-8160AE934285}",
+        "EA-Guid": "{ACC38C08-0857-4ca2-B058-80891C389179}",
+        "EA-Name": "creatiedatum",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://purl.org/dc/terms/created"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "creatiedatum"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Datum waarop het Alarmbelformulier werd aangemaakt."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
+        },
+        "ap-label-nl": {
+          "nl": "creatiedatum"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Datum waarop het Alarmbelformulier werd aangemaakt."
+        },
+        "label": {
+          "nl": "creatiedatum"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "creatiedatum"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "creatiedatum",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/startTime",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{41E35E47-A9D6-4464-8527-B458FA36BDCF}",
+      "ap-definition-nl": {
+        "nl": "Aanvang van de tijdsduur."
+      },
+      "ap-label-nl": {
+        "nl": "begin"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Aanvang van de tijdsduur."
+      },
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://data.europa.eu/m8g/PeriodOfTime"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{314CBA67-0242-4340-934C-664376AAF0D1}",
+        "EA-Guid": "{41E35E47-A9D6-4464-8527-B458FA36BDCF}",
+        "EA-Name": "begin",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Aanvang van de tijdsduur."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/startTime"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "begin"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Aanvang van de tijdsduur."
+        },
+        "ap-label-nl": {
+          "nl": "begin"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Aanvang van de tijdsduur."
+        },
+        "label": {
+          "nl": "begin"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "begin"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "begin",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    },
+    {
+      "@id": "http://data.europa.eu/m8g/endTime",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{6AA47B3C-0C0C-4473-8682-BFC0C09AFC10}",
+      "ap-definition-nl": {
+        "nl": "Einde van de tijdsduur."
+      },
+      "ap-label-nl": {
+        "nl": "einde"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Einde van de tijdsduur."
+      },
+      "domain": [
+        {
+          "EA-Name": "Periode",
+          "uri": "http://data.europa.eu/m8g/PeriodOfTime"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Periode",
+        "EA-Domain-Guid": "{314CBA67-0242-4340-934C-664376AAF0D1}",
+        "EA-Guid": "{6AA47B3C-0C0C-4473-8682-BFC0C09AFC10}",
+        "EA-Name": "einde",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "DateTime",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Einde van de tijdsduur."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/endTime"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "einde"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Einde van de tijdsduur."
+        },
+        "ap-label-nl": {
+          "nl": "einde"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Einde van de tijdsduur."
+        },
+        "label": {
+          "nl": "einde"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "einde"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "einde",
+      "range": [
+        {
+          "EA-Name": "DateTime",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+        }
+      ]
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://data.europa.eu/m8g/PeriodOfTime",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{314CBA67-0242-4340-934C-664376AAF0D1}",
+      "ap-definition-nl": {
+        "nl": "Min of meer afgebakende tijdsduur."
+      },
+      "ap-label-nl": {
+        "nl": "Periode"
+      },
+      "definition": {
+        "nl": "Min of meer afgebakende tijdsduur."
+      },
+      "extra": {
+        "EA-Guid": "{314CBA67-0242-4340-934C-664376AAF0D1}",
+        "EA-Name": "Periode",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Min of meer afgebakende tijdsduur."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://data.europa.eu/m8g/PeriodOfTime"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Periode"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Min of meer afgebakende tijdsduur."
+        },
+        "ap-label-nl": {
+          "nl": "Periode"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Min of meer afgebakende tijdsduur."
+        },
+        "label": {
+          "nl": "Periode"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Periode"
+      },
+      "name": "Periode"
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{C3C61B8E-2E9F-40e5-B60C-D03FA7FBE968}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{C3C61B8E-2E9F-40e5-B60C-D03FA7FBE968}",
+        "EA-Name": "DoelOnroerendGoed",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{5EF98816-F69D-419f-98EB-C7BE89787593}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{5EF98816-F69D-419f-98EB-C7BE89787593}",
+        "EA-Name": "FinancieleOmstandigheid",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{56C437A8-E420-4b35-B00F-524170131894}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{56C437A8-E420-4b35-B00F-524170131894}",
+        "EA-Name": "SituationeleOmstandigheid",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    },
+    {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{45621180-08CE-4450-8E33-1DDD64BC8705}",
+      "ap-definition-nl": {
+        "nl": "TODO"
+      },
+      "extra": {
+        "EA-Guid": "{45621180-08CE-4450-8E33-1DDD64BC8705}",
+        "EA-Name": "DocumentType",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "ENUMERATION",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "TODO"
+        },
+        "ap-label-nl": "",
+        "ap-usageNote-nl": "",
+        "definition": "",
+        "label": "",
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "name": ""
+    },
+    {
+      "@id": "http://www.w3.org/ns/person#Person",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+      "ap-definition-nl": {
+        "nl": "Natuurlijk persoon."
+      },
+      "ap-label-nl": {
+        "nl": "Persoon"
+      },
+      "definition": {
+        "nl": "Natuurlijk persoon."
+      },
+      "extra": {
+        "EA-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+        "EA-Name": "Persoon",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/ns/person#Person"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Natuurlijk persoon."
+          },
+          {
+            "key": "usageNote-nl",
+            "note": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc).",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Persoon"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Natuurlijk persoon."
+        },
+        "ap-label-nl": {
+          "nl": "Persoon"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Natuurlijk persoon."
+        },
+        "label": {
+          "nl": "Persoon"
+        },
+        "parentclasses": "",
+        "usage": {
+          "nl": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc)."
+        }
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Persoon"
+      },
+      "name": "Persoon",
+      "usage": {
+        "nl": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc)."
+      }
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/Document",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{FEBCB276-456D-456a-9947-00E3C5B91ADA}",
+      "ap-definition-nl": {
+        "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
+      },
+      "ap-label-nl": {
+        "nl": "Document"
+      },
+      "definition": {
+        "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
+      },
+      "extra": {
+        "EA-Guid": "{FEBCB276-456D-456a-9947-00E3C5B91ADA}",
+        "EA-Name": "Document",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://xmlns.com/foaf/0.1/Document"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Document"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
+        },
+        "ap-label-nl": {
+          "nl": "Document"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Een origineel werk in de brede zin (een verslag, een opname, een boek ...)."
+        },
+        "label": {
+          "nl": "Document"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Document"
+      },
+      "name": "Document"
+    },
+    {
+      "@id": "https://schema.org/MonetaryAmount",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+      "ap-definition-nl": {
+        "nl": "Een geldwaarde of -bereik."
+      },
+      "ap-label-nl": {
+        "nl": "Geldbedrag"
+      },
+      "definition": {
+        "nl": "Een geldwaarde of -bereik."
+      },
+      "extra": {
+        "EA-Guid": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+        "EA-Name": "Geldbedrag",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "DATATYPE",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Geldbedrag"
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://schema.org/MonetaryAmount"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Een geldwaarde of -bereik."
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Een geldwaarde of -bereik."
+        },
+        "ap-label-nl": {
+          "nl": "Geldbedrag"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Een geldwaarde of -bereik."
+        },
+        "label": {
+          "nl": "Geldbedrag"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Geldbedrag"
+      },
+      "name": "Geldbedrag"
+    },
+    {
+      "@id": "https://w3.org/2018/credentials#VerifiableCredential",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "EA-Guid": "{CC7C1A64-5645-4123-AE54-D5656BFB785A}",
+      "ap-definition-nl": {
+        "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "ap-label-nl": {
+        "nl": "Verifieerbare Credential"
+      },
+      "definition": {
+        "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "extra": {
+        "EA-Guid": "{CC7C1A64-5645-4123-AE54-D5656BFB785A}",
+        "EA-Name": "VerifieerbareCredential",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "EA-Type": "CLASS",
+        "RawTags": [
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "https://w3.org/2018/credentials#VerifiableCredential"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "Verifieerbare Credential"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+        },
+        "ap-label-nl": {
+          "nl": "Verifieerbare Credential"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Een Verifieerbare Credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare Credentials kunnen worden gebruikt om Verifieerbare Presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+        },
+        "label": {
+          "nl": "Verifieerbare Credential"
+        },
+        "parentclasses": "",
+        "usage": ""
+      },
+      "inpackage": "OTHER_PACKAGE",
+      "label": {
+        "nl": "Verifieerbare Credential"
+      },
+      "name": "Verifieerbare Credential"
+    }
+  ],
+  "extra": {
+    "EA-Guid": "{7AFE2547-465B-4e8f-BC1A-699A46AF2997}",
+    "EA-Name": "Alarmbelprocedure",
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "note": "null",
+        "value": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#"
+      }
+    ],
+    "baseURI": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#",
+    "issued": "TODO",
+    "license": "TODO"
+  },
+  "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-looncredential/issues",
+  "filename": "config/alarmbelprocedureformulier.json",
+  "hostname": "https://solid.data.vlaanderen.be/",
+  "issued": "TODO",
+  "label": {
+    "en": "alarmbelprocedureformulier-ap",
+    "nl": "alarmbelprocedureformulier-ap"
+  },
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "name": "alarmbelprocedureformulier-ap",
+  "navigation": {},
+  "properties": [
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#vervangingsinkomen",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0CE5AF70-EC42-4a12-82EB-BD9F3CB6DDBB}",
+      "ap-definition-nl": {
+        "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
+      },
+      "ap-label-nl": {
+        "nl": "vervangingsinkomen"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{0CE5AF70-EC42-4a12-82EB-BD9F3CB6DDBB}",
+        "EA-Name": "vervangingsinkomen",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "vervangingsinkomen"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
+        },
+        "ap-label-nl": {
+          "nl": "vervangingsinkomen"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Uitkeringen voor werkloosheid of na faillissement, uitkeringen voor ziekte en voor bevallingsrust, uitkeringen voor loopbaanonderbreking of tijdskrediet, uitkeringen voor arbeidsongevallen en voor beroepsziekten, (brug)pensioenen envergoedingen uit groepsverzekeringen, overlevingspensioen en overgangsuitkering."
+        },
+        "label": {
+          "nl": "vervangingsinkomen"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "vervangingsinkomen"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "vervangingsinkomen",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{53007D8F-8623-4d91-867A-26A190D2CE8F}",
+      "ap-definition-nl": {
+        "nl": "Onroerend Goed verkocht door de Persoon."
+      },
+      "ap-label-nl": {
+        "nl": "verkocht"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Onroerend Goed verkocht door de Persoon."
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "verkocht",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Onroerend Goed verkocht door de Persoon.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+        "EA-Guid": "{53007D8F-8623-4d91-867A-26A190D2CE8F}",
+        "EA-Name": "verkocht",
+        "EA-Package": "",
+        "EA-Range": "OnroerendGoed",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+          "EA-Name": "OnroerendGoed",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "verkocht",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Onroerend Goed verkocht door de Persoon.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Onroerend Goed verkocht door de Persoon."
+        },
+        "ap-label-nl": {
+          "nl": "verkocht"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Onroerend Goed verkocht door de Persoon."
+        },
+        "derived": "false",
+        "destRole": "verkocht",
+        "label": {
+          "nl": "verkocht"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "verkocht"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "verkocht",
+      "range": [
+        {
+          "EA-GUID": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+          "EA-Name": "OnroerendGoed",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{AEBC7D28-D14B-4b86-B370-B107CB0687A3}",
+      "ap-definition-nl": {
+        "nl": "Uitstroom van gelden van de Persoon."
+      },
+      "ap-label-nl": {
+        "nl": "uitgaven"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Uitstroom van gelden van de Persoon."
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "note": "Uitstroom van gelden van de Persoon.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "uitgaven",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+        "EA-Guid": "{AEBC7D28-D14B-4b86-B370-B107CB0687A3}",
+        "EA-Name": "uitgaven",
+        "EA-Package": "",
+        "EA-Range": "MaandelijkseUitgaven",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{15E2F0DF-AD63-435f-A86D-856B26F4F7BB}",
+          "EA-Name": "MaandelijkseUitgaven",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "Uitstroom van gelden van de Persoon.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "uitgaven",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Uitstroom van gelden van de Persoon."
+        },
+        "ap-label-nl": {
+          "nl": "uitgaven"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Uitstroom van gelden van de Persoon."
+        },
+        "derived": "false",
+        "destRole": "uitgaven",
+        "label": {
+          "nl": "uitgaven"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "uitgaven"
+      },
+      "maxCardinality": "6",
+      "minCardinality": "0",
+      "name": "uitgaven",
+      "range": [
+        {
+          "EA-GUID": "{15E2F0DF-AD63-435f-A86D-856B26F4F7BB}",
+          "EA-Name": "MaandelijkseUitgaven",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0987191A-69CC-4cd4-B6E5-42C690ED74BC}",
+      "ap-definition-nl": {
+        "nl": "Situatie waarin de Persoon zich bevindt."
+      },
+      "ap-label-nl": {
+        "nl": "situationele omstandigheid"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Situatie waarin de Persoon zich bevindt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+        "EA-Guid": "{0987191A-69CC-4cd4-B6E5-42C690ED74BC}",
+        "EA-Name": "situationeleOmstandigheid",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "SituationeleOmstandigheid",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{56C437A8-E420-4b35-B00F-524170131894}",
+          "EA-Name": "SituationeleOmstandigheid",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "situationele omstandigheid"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Situatie waarin de Persoon zich bevindt."
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Situatie waarin de Persoon zich bevindt."
+        },
+        "ap-label-nl": {
+          "nl": "situationele omstandigheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Situatie waarin de Persoon zich bevindt."
+        },
+        "label": {
+          "nl": "situationele omstandigheid"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "situationele omstandigheid"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "situationele omstandigheid",
+      "range": [
+        {
+          "EA-GUID": "{56C437A8-E420-4b35-B00F-524170131894}",
+          "EA-Name": "SituationeleOmstandigheid",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{D2A76A98-19D6-49e1-98A3-DFC0DBDC7F85}",
+      "ap-definition-nl": {
+        "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
+      },
+      "ap-label-nl": {
+        "nl": "periode"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomstenOfUitgaven",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomstenOfUitgaven",
+        "EA-Domain-Guid": "{19A0BBCF-A72A-4578-AC92-E8F5E678310A}",
+        "EA-Guid": "{D2A76A98-19D6-49e1-98A3-DFC0DBDC7F85}",
+        "EA-Name": "periode",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Periode",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{314CBA67-0242-4340-934C-664376AAF0D1}",
+          "EA-Name": "Periode",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://data.europa.eu/m8g/PeriodOfTime"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "periode"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
+        },
+        "ap-label-nl": {
+          "nl": "periode"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Tijdspanne waarbinnen de Maandelijkse Inkomsten of Uitgaven werden gerealiseerd."
+        },
+        "label": {
+          "nl": "periode"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "periode"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "periode",
+      "range": [
+        {
+          "EA-GUID": "{314CBA67-0242-4340-934C-664376AAF0D1}",
+          "EA-Name": "Periode",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://data.europa.eu/m8g/PeriodOfTime"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#pensioenen",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{53CCE529-A248-47a6-A476-D02E386D427C}",
+      "ap-definition-nl": {
+        "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
+      },
+      "ap-label-nl": {
+        "nl": "pensioenen"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{53CCE529-A248-47a6-A476-D02E386D427C}",
+        "EA-Name": "pensioenen",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "pensioenen"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
+        },
+        "ap-label-nl": {
+          "nl": "pensioenen"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Periodieke uitkeringen (meestal maandelijks) die het inkomen vervangen in geval van ouderdom, maar ook bij overlijden of arbeidsongeschiktheid."
+        },
+        "label": {
+          "nl": "pensioenen"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "pensioenen"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "pensioenen",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#ontvangenOnderhoudsgelden",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{1521B469-82BC-4c65-A940-79F34BDF5F36}",
+      "ap-definition-nl": {
+        "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
+      },
+      "ap-label-nl": {
+        "nl": "ontvangen onderhoudsgelden"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{1521B469-82BC-4c65-A940-79F34BDF5F36}",
+        "EA-Name": "ontvangenOnderhoudsgelden",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "ontvangen onderhoudsgelden"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
+        },
+        "ap-label-nl": {
+          "nl": "ontvangen onderhoudsgelden"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Onderhoudsgeld van ex-partners, niet alimentatie voor kinderen."
+        },
+        "label": {
+          "nl": "ontvangen onderhoudsgelden"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "ontvangen onderhoudsgelden"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "ontvangen onderhoudsgelden",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#leefloonOfEquivalentLeefloon",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{6277317E-22E6-442b-9319-468251E4B2CC}",
+      "ap-definition-nl": {
+        "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
+      },
+      "ap-label-nl": {
+        "nl": "leefloon of equivalent leefloon"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{6277317E-22E6-442b-9319-468251E4B2CC}",
+        "EA-Name": "leefloonOfEquivalentLeefloon",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Boolean",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "leefloon of equivalent leefloon"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
+        },
+        "ap-label-nl": {
+          "nl": "leefloon of equivalent leefloon"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Indicator die aangeeft of de persoon ofwel (1) een leefloon krijgt, i.e. een zuiver financiële bijstand en één van de vormen die het recht op maatschappelijke integratie kan aannemen, ofwel (2) een equivalent leefloon krijgt, i.e. financiële steun toegekend door het OCMW aan personen die geen recht hebben op een leefloon (omdat ze niet aan de voorwaarden voldoen, bijvoorbeeld qua verblijfsstatus), maar die zich wel in een vergelijkbare noodsituatie bevinden."
+        },
+        "label": {
+          "nl": "leefloon of equivalent leefloon"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "leefloon of equivalent leefloon"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "leefloon of equivalent leefloon",
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{E95C66D8-F9C8-470c-89F7-3B7A970817C1}",
+      "ap-definition-nl": {
+        "nl": "Onroerend Goed aangekocht door de Persoon."
+      },
+      "ap-label-nl": {
+        "nl": "kocht"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Onroerend Goed aangekocht door de Persoon."
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "kocht",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Onroerend Goed aangekocht door de Persoon.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+        "EA-Guid": "{E95C66D8-F9C8-470c-89F7-3B7A970817C1}",
+        "EA-Name": "kocht",
+        "EA-Package": "",
+        "EA-Range": "OnroerendGoed",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+          "EA-Name": "OnroerendGoed",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "kocht",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Onroerend Goed aangekocht door de Persoon.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Onroerend Goed aangekocht door de Persoon."
+        },
+        "ap-label-nl": {
+          "nl": "kocht"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Onroerend Goed aangekocht door de Persoon."
+        },
+        "derived": "false",
+        "destRole": "kocht",
+        "label": {
+          "nl": "kocht"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "kocht"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "kocht",
+      "range": [
+        {
+          "EA-GUID": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+          "EA-Name": "OnroerendGoed",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kadastraalInkomen",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{A287C3E3-6DB1-4006-8444-307564A0F391}",
+      "ap-definition-nl": {
+        "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
+      },
+      "ap-label-nl": {
+        "nl": "kadastraal inkomen"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
+      },
+      "domain": [
+        {
+          "EA-Name": "OnroerendGoed",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "OnroerendGoed",
+        "EA-Domain-Guid": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+        "EA-Guid": "{A287C3E3-6DB1-4006-8444-307564A0F391}",
+        "EA-Name": "kadastraalInkomen",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Het niet-geindexeerd kadastraal inkomen bedrag."
+          },
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "kadastraal inkomen"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
+        },
+        "ap-label-nl": {
+          "nl": "kadastraal inkomen"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Het niet-geindexeerd kadastraal inkomen bedrag."
+        },
+        "label": {
+          "nl": "kadastraal inkomen"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "kadastraal inkomen"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "kadastraal inkomen",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomstenAlsInternationaleAmbtenaar",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{C9F1A4A1-A7ED-4c9d-A05E-066DAF8306BB}",
+      "ap-definition-nl": {
+        "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
+      },
+      "ap-label-nl": {
+        "nl": "inkomsten als internationale ambtenaar"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{C9F1A4A1-A7ED-4c9d-A05E-066DAF8306BB}",
+        "EA-Name": "inkomstenAlsInternationaleAmbtenaar",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "inkomsten als internationale ambtenaar"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
+        },
+        "ap-label-nl": {
+          "nl": "inkomsten als internationale ambtenaar"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Inkomsten die voortvloeien uit een tewerkstelling bij een Europese of internationale instelling, voor hun totaalbedrag verminderd met de persoonlijke bijdragen tegen de door hun instelling van internationaal publiek recht verzekerde socialezekerheidsrisico's."
+        },
+        "label": {
+          "nl": "inkomsten als internationale ambtenaar"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "inkomsten als internationale ambtenaar"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "inkomsten als internationale ambtenaar",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomensvervangendeTegemoetkoming",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{320B0D95-5821-462b-B6A7-9228D2398874}",
+      "ap-definition-nl": {
+        "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
+      },
+      "ap-label-nl": {
+        "nl": "inkomensvervangende tegemoetkoming"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{320B0D95-5821-462b-B6A7-9228D2398874}",
+        "EA-Name": "inkomensvervangendeTegemoetkoming",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Boolean",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "inkomensvervangende tegemoetkoming"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
+        },
+        "ap-label-nl": {
+          "nl": "inkomensvervangende tegemoetkoming"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Tegemoetkoming voor personen met een handicap die door hun handicap beperkt zijn in de mogelijkheden om te werken en die daardoor beschikken over een beperkt inkomen."
+        },
+        "label": {
+          "nl": "inkomensvervangende tegemoetkoming"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "inkomensvervangende tegemoetkoming"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "inkomensvervangende tegemoetkoming",
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#geenInkomen",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "EA-Guid": "{0A25E20A-9EFD-4e57-81FE-6BD3D52B96A9}",
+      "ap-definition-nl": {
+        "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
+      },
+      "ap-label-nl": {
+        "nl": "geen inkomen"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{0A25E20A-9EFD-4e57-81FE-6BD3D52B96A9}",
+        "EA-Name": "geenInkomen",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Boolean",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "geen inkomen"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Indicator die aangeeft dat de persoon geen inkomen ontvangt.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
+        },
+        "ap-label-nl": {
+          "nl": "geen inkomen"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Indicator die aangeeft dat de persoon geen inkomen ontvangt."
+        },
+        "label": {
+          "nl": "geen inkomen"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "geen inkomen"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "geen inkomen",
+      "range": [
+        {
+          "EA-Name": "Boolean",
+          "EA-Package": "",
+          "uri": "http://www.w3.org/2001/XMLSchema#boolean"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{0D5F5C2A-03CE-4ccb-BF0B-F664A060849A}",
+      "ap-definition-nl": {
+        "nl": "Financiële toestand waarin de Persoon zich bevindt."
+      },
+      "ap-label-nl": {
+        "nl": "financiële omstandigheid"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Financiële toestand waarin de Persoon zich bevindt."
+      },
+      "domain": [
+        {
+          "EA-Name": "Persoon",
+          "uri": "http://www.w3.org/ns/person#Person"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "Persoon",
+        "EA-Domain-Guid": "{81723118-2AA3-4217-8911-443EAA408460}",
+        "EA-Guid": "{0D5F5C2A-03CE-4ccb-BF0B-F664A060849A}",
+        "EA-Name": "financieleOmstandigheid",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "FinancieleOmstandigheid",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{5EF98816-F69D-419f-98EB-C7BE89787593}",
+          "EA-Name": "FinancieleOmstandigheid",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "financiële omstandigheid"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Financiële toestand waarin de Persoon zich bevindt."
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Financiële toestand waarin de Persoon zich bevindt."
+        },
+        "ap-label-nl": {
+          "nl": "financiële omstandigheid"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Financiële toestand waarin de Persoon zich bevindt."
+        },
+        "label": {
+          "nl": "financiële omstandigheid"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "financiële omstandigheid"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "financiële omstandigheid",
+      "range": [
+        {
+          "EA-GUID": "{5EF98816-F69D-419f-98EB-C7BE89787593}",
+          "EA-Name": "FinancieleOmstandigheid",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#doel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{8C77CDD6-2BF2-489b-BA9F-6A0CBAAA0276}",
+      "ap-definition-nl": {
+        "nl": "Het doel van het Onroerend Goed."
+      },
+      "ap-label-nl": {
+        "nl": "doel"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Het doel van het Onroerend Goed."
+      },
+      "domain": [
+        {
+          "EA-Name": "OnroerendGoed",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "OnroerendGoed",
+        "EA-Domain-Guid": "{C8B57812-D8A4-4525-93D2-9D1B2917347B}",
+        "EA-Guid": "{8C77CDD6-2BF2-489b-BA9F-6A0CBAAA0276}",
+        "EA-Name": "doel",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "DoelOnroerendGoed",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{C3C61B8E-2E9F-40e5-B60C-D03FA7FBE968}",
+          "EA-Name": "DoelOnroerendGoed",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "doel"
+          },
+          {
+            "key": "definition-nl",
+            "note": "null",
+            "value": "Het doel van het Onroerend Goed."
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Het doel van het Onroerend Goed."
+        },
+        "ap-label-nl": {
+          "nl": "doel"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Het doel van het Onroerend Goed."
+        },
+        "label": {
+          "nl": "doel"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "doel"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "1",
+      "name": "doel",
+      "range": [
+        {
+          "EA-GUID": "{C3C61B8E-2E9F-40e5-B60C-D03FA7FBE968}",
+          "EA-Name": "DoelOnroerendGoed",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{59A62E39-6401-491a-85B2-EA9EF6DF01E3}",
+      "ap-definition-nl": {
+        "nl": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+      },
+      "ap-label-nl": {
+        "nl": "bewijsstuk verifieerbare credential"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomstenOfUitgaven",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "label-nl",
+            "note": "bewijsstuk verifieerbare credential",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "MaandelijkseInkomstenOfUitgaven",
+        "EA-Domain-Guid": "{19A0BBCF-A72A-4578-AC92-E8F5E678310A}",
+        "EA-Guid": "{59A62E39-6401-491a-85B2-EA9EF6DF01E3}",
+        "EA-Name": "bewijsstukVerifieerbareCredential",
+        "EA-Package": "",
+        "EA-Range": "VerifieerbareCredential",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{CC7C1A64-5645-4123-AE54-D5656BFB785A}",
+          "EA-Name": "VerifieerbareCredential",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "bewijsstuk verifieerbare credential",
+            "value": "NOTE"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+        },
+        "ap-label-nl": {
+          "nl": "bewijsstuk verifieerbare credential"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Verifieerbare Credential die geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+        },
+        "derived": "false",
+        "destRole": "bewijsstukVerifieerbareCredential",
+        "label": {
+          "nl": "bewijsstuk verifieerbare credential"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "bewijsstuk verifieerbare credential"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "bewijsstuk verifieerbare credential",
+      "range": [
+        {
+          "EA-GUID": "{CC7C1A64-5645-4123-AE54-D5656BFB785A}",
+          "EA-Name": "VerifieerbareCredential",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{2BE16E6B-B1D1-4c35-AED9-A19FA9D13E24}",
+      "ap-definition-nl": {
+        "nl": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+      },
+      "ap-label-nl": {
+        "nl": "bewijsstuk document"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomstenOfUitgaven",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven"
+        }
+      ],
+      "extra": {
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "note": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "bewijsstuk document",
+            "value": "NOTE"
+          }
+        ],
+        "EA-Domain": "MaandelijkseInkomstenOfUitgaven",
+        "EA-Domain-Guid": "{19A0BBCF-A72A-4578-AC92-E8F5E678310A}",
+        "EA-Guid": "{2BE16E6B-B1D1-4c35-AED9-A19FA9D13E24}",
+        "EA-Name": "bewijsstukDocument",
+        "EA-Package": "",
+        "EA-Range": "Document",
+        "EA-Type": "connector",
+        "RangeData": {
+          "EA-GUID": "{FEBCB276-456D-456a-9947-00E3C5B91ADA}",
+          "EA-Name": "Document",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://xmlns.com/foaf/0.1/Document"
+        },
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "note": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven.",
+            "value": "NOTE"
+          },
+          {
+            "key": "label-nl",
+            "note": "bewijsstuk document",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+        },
+        "ap-label-nl": {
+          "nl": "bewijsstuk document"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Document dat geldt als bewijs voor de Maandelijkse Inkomsten of Uitgaven."
+        },
+        "derived": "false",
+        "destRole": "bewijsstukDocument",
+        "label": {
+          "nl": "bewijsstuk document"
+        },
+        "sourceRole": "null",
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "bewijsstuk document"
+      },
+      "maxCardinality": "*",
+      "minCardinality": "0",
+      "name": "bewijsstuk document",
+      "range": [
+        {
+          "EA-GUID": "{FEBCB276-456D-456a-9947-00E3C5B91ADA}",
+          "EA-Name": "Document",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "http://xmlns.com/foaf/0.1/Document"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#betaaldeOnderhoudsgelden",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{AAC31662-AAE5-4d5a-8532-78F484EAEE41}",
+      "ap-definition-nl": {
+        "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
+      },
+      "ap-label-nl": {
+        "nl": "betaalde onderhoudsgelden"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseUitgaven",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseUitgaven",
+        "EA-Domain-Guid": "{15E2F0DF-AD63-435f-A86D-856B26F4F7BB}",
+        "EA-Guid": "{AAC31662-AAE5-4d5a-8532-78F484EAEE41}",
+        "EA-Name": "betaaldeOnderhoudsgelden",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "betaalde onderhoudsgelden"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
+        },
+        "ap-label-nl": {
+          "nl": "betaalde onderhoudsgelden"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Onderhoudsgeld voor ex-partners, niet alimentatie voor kinderen."
+        },
+        "label": {
+          "nl": "betaalde onderhoudsgelden"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "betaalde onderhoudsgelden"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "betaalde onderhoudsgelden",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#beroepsinkomstenAlsZelfstandige",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{FC9071DE-7E0B-43f3-AEA5-F483CF06D909}",
+      "ap-definition-nl": {
+        "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
+      },
+      "ap-label-nl": {
+        "nl": "beroepsinkomsten als zelfstandige"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{FC9071DE-7E0B-43f3-AEA5-F483CF06D909}",
+        "EA-Name": "beroepsinkomstenAlsZelfstandige",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "beroepsinkomsten als zelfstandige"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
+        },
+        "ap-label-nl": {
+          "nl": "beroepsinkomsten als zelfstandige"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Beroepsinkomsten na aftrek van de beroepskosten en vermenigvuldigd met 100/80 (?)"
+        },
+        "label": {
+          "nl": "beroepsinkomsten als zelfstandige"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "beroepsinkomsten als zelfstandige"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "beroepsinkomsten als zelfstandige",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#belastbareBeroepsinkomstenAlsWerknemer",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{5F3FA040-6251-41a1-8CD1-DC6B9B8B5FBD}",
+      "ap-definition-nl": {
+        "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
+      },
+      "ap-label-nl": {
+        "nl": "belastbare beroepsinkomsten"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{5F3FA040-6251-41a1-8CD1-DC6B9B8B5FBD}",
+        "EA-Name": "belastbareBeroepsinkomstenAlsWerknemer",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "belastbare beroepsinkomsten"
+          },
+          {
+            "key": "definition-nl",
+            "note": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
+        },
+        "ap-label-nl": {
+          "nl": "belastbare beroepsinkomsten"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "De belastbare beroepsinkomsten, zoals aangegeven op je aanslagbiljet, verhoogd met de beroepskosten. Dit bedrag bestaat uit het belastbaar loon + belastbaar jaarlijks vakantiegeld + belastbare eindejaarstoelage + belastbare supplementen van de werkgever."
+        },
+        "label": {
+          "nl": "belastbare beroepsinkomsten"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "belastbare beroepsinkomsten"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "belastbare beroepsinkomsten",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#andereUitkeringen",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "EA-Guid": "{959E1A1C-CCD2-4b23-BD3E-F1BEE7A8066D}",
+      "ap-definition-nl": {
+        "nl": "Andere uitkeringen die de persoon ontvangt."
+      },
+      "ap-label-nl": {
+        "nl": "andere uitkeringen"
+      },
+      "codelist": [],
+      "definition": {
+        "nl": "Andere uitkeringen die de persoon ontvangt."
+      },
+      "domain": [
+        {
+          "EA-Name": "MaandelijkseInkomsten",
+          "uri": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten"
+        }
+      ],
+      "extra": {
+        "EA-Domain": "MaandelijkseInkomsten",
+        "EA-Domain-Guid": "{57AEB96E-F2E9-4800-AA07-EB9CB5727016}",
+        "EA-Guid": "{959E1A1C-CCD2-4b23-BD3E-F1BEE7A8066D}",
+        "EA-Name": "andereUitkeringen",
+        "EA-Package": "Alarmbelprocedure",
+        "EA-Range": "Geldbedrag",
+        "EA-Type": "attribute",
+        "RangeData": {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        },
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "note": "null",
+            "value": "andere uitkeringen"
+          },
+          {
+            "key": "definition-nl",
+            "note": "Andere uitkeringen die de persoon ontvangt.",
+            "value": "NOTE"
+          }
+        ],
+        "Scope": "FULL_DEFINITON",
+        "ap-codelist": "",
+        "ap-definition-nl": {
+          "nl": "Andere uitkeringen die de persoon ontvangt."
+        },
+        "ap-label-nl": {
+          "nl": "andere uitkeringen"
+        },
+        "ap-usageNote-nl": "",
+        "definition": {
+          "nl": "Andere uitkeringen die de persoon ontvangt."
+        },
+        "label": {
+          "nl": "andere uitkeringen"
+        },
+        "usage": ""
+      },
+      "generalization": [],
+      "inpackage": "ACTIVE_PACKAGE",
+      "label": {
+        "nl": "andere uitkeringen"
+      },
+      "maxCardinality": "1",
+      "minCardinality": "0",
+      "name": "andere uitkeringen",
+      "range": [
+        {
+          "EA-GUID": "{50AB6BD1-4C07-4bb6-9624-294F16E1AFCC}",
+          "EA-Name": "Geldbedrag",
+          "EA-Package": "Alarmbelprocedure",
+          "uri": "https://schema.org/MonetaryAmount"
+        }
+      ]
+    }
+  ],
+  "publication-date": "2022-11-21",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "repository": "https://github.com/Informatievlaanderen/SolidThema-looncredential",
+  "site": "site-skeleton/alarmbelprocedureformulier",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "template": "alarmbelprocedureformulier-ap.j2",
+  "title": "Alarmbelprocedureformulier",
+  "toolchaincommit": "ed7ac122ea02fb9dc3a643467bda04c53c0e459c",
+  "translation": [
+    {
+      "language": "nl",
+      "mergefile": "alarmbelprocedureformulier-ap_nl_merged.json",
+      "template": "alarmbelprocedureformulier-ap.j2",
+      "title": "Alarmbelprocedureformulier",
+      "translationjson": "alarmbelprocedureformulier-ap_nl.json"
+    }
+  ],
+  "type": "ap",
+  "urlref": "/doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22"
+}

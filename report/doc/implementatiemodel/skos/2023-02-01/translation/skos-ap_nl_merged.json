@@ -1363,7 +1363,7 @@
   "site": "site-skeleton/skos",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "skos-ap_en.j2",
-  "toolchaincommit": "65950ef4fe915b2b3df1adfa3a9abf163d34458a",
+  "toolchaincommit": "ed7ac122ea02fb9dc3a643467bda04c53c0e459c",
   "translation": [
     {
       "language": "nl",
