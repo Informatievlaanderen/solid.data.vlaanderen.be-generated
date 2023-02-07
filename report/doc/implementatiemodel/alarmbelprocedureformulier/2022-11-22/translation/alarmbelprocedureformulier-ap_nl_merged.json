@@ -423,7 +423,7 @@
   "contributors-file": "stakeholders.csv",
   "diagram": "Alarmbelprocedureformulier",
   "documentcommit": "0a36485f569ba848369fc31142a60774796128be",
-  "dummy": "dimi-4",
+  "dummy": "dimi-5",
   "eap": "Alarmbelprocedureformulier.eap",
   "editors": [
     {
@@ -3650,7 +3650,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "alarmbelprocedureformulier-ap.j2",
   "title": "Alarmbelprocedureformulier",
-  "toolchaincommit": "6c7c4eadff6579edd7bb1955ddd30c664345a0a5",
+  "toolchaincommit": "8dc76505cdfce147b3be7e0374986864fcdb2b6f",
   "translation": [
     {
       "language": "nl",
@@ -3661,5 +3661,5 @@
     }
   ],
   "type": "ap",
-  "urlref": "/doc/applicatieprofiel/alarmbelprocedureformulier/2022-11-22"
+  "urlref": "/doc/implementatiemodel/alarmbelprocedureformulier/2022-11-22"
 }

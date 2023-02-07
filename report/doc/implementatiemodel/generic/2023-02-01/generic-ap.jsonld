@@ -171,6 +171,11 @@
                         "note": "The Verifiable Credential for/to which access is requested/granted."
                     },
                     {
+                        "key": "name",
+                        "value": "NOTE",
+                        "note": "forPersonalData"
+                    },
+                    {
                         "key": "label-nl",
                         "value": "NOTE",
                         "note": "for personal data"
@@ -181,6 +186,11 @@
                         "key": "definition-nl",
                         "value": "NOTE",
                         "note": "The Verifiable Credential for/to which access is requested/granted."
+                    },
+                    {
+                        "key": "name",
+                        "value": "NOTE",
+                        "note": "forPersonalData"
                     },
                     {
                         "key": "label-nl",

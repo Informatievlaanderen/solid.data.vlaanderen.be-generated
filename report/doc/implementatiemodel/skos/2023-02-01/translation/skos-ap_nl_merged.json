@@ -202,7 +202,7 @@
   "contributors-column": "skos",
   "contributors-file": "stakeholders.csv",
   "diagram": "skos",
-  "documentcommit": "f78368df0f02bfd072711f791a9dc6a2989f11f7",
+  "documentcommit": "3292566061be882dd1a7b7db07ef14e155bcfe35",
   "dummy": "dimi-9",
   "eap": "SKOS.eap",
   "editors": [
@@ -1363,7 +1363,7 @@
   "site": "site-skeleton/skos",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "skos-ap_en.j2",
-  "toolchaincommit": "6c7c4eadff6579edd7bb1955ddd30c664345a0a5",
+  "toolchaincommit": "8dc76505cdfce147b3be7e0374986864fcdb2b6f",
   "translation": [
     {
       "language": "nl",
