@@ -1,7 +1,7 @@
 {
   "@context": {
-    "AccessRequest/grant": "http://www.w3.org/2000/01/rdf-schema#Resource",
-    "AccessRequest/grant.forPersonalData": {
+    "AccessRequestOrGrant": "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "AccessRequestOrGrant.forPersonalData": {
       "@container": "@set",
       "@id": "https://solid.data.vlaanderen.be/ns/generic#forPersonalData",
       "@type": "@id"

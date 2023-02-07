@@ -87,8 +87,8 @@
   "contributors-column": "generic",
   "contributors-file": "stakeholders.csv",
   "diagram": "Generic",
-  "documentcommit": "3292566061be882dd1a7b7db07ef14e155bcfe35",
-  "dummy": "dimi-5",
+  "documentcommit": "98c7874750161cf593b1a71bca3c9fc6249b9cfe",
+  "dummy": "dimi-6",
   "eap": "Generic.eap",
   "editors": [
     {
@@ -107,18 +107,18 @@
     {
       "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
       "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+      "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
       "ap-definition-nl": {
         "nl": "An Access Request or an Access Grant."
       },
       "ap-label-nl": {
-        "nl": "Access Request/Grant"
+        "nl": "Access Request or Grant"
       },
       "definition": {
         "nl": "An Access Request or an Access Grant."
       },
       "extra": {
-        "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+        "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
         "EA-Name": "AccessRequestOrGrant",
         "EA-Package": "Generic",
         "EA-Parents": "",
@@ -128,17 +128,17 @@
           {
             "key": "label-nl",
             "note": "null",
-            "value": "Access Request/Grant"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
+            "value": "Access Request or Grant"
           },
           {
             "key": "definition-nl",
             "note": "null",
             "value": "An Access Request or an Access Grant."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
           }
         ],
         "Scope": "TRANSLATIONS_ONLY",
@@ -147,23 +147,23 @@
           "nl": "An Access Request or an Access Grant."
         },
         "ap-label-nl": {
-          "nl": "Access Request/Grant"
+          "nl": "Access Request or Grant"
         },
         "ap-usageNote-nl": "",
         "definition": {
           "nl": "An Access Request or an Access Grant."
         },
         "label": {
-          "nl": "Access Request/Grant"
+          "nl": "Access Request or Grant"
         },
         "parentclasses": "",
         "usage": ""
       },
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "Access Request/Grant"
+        "nl": "Access Request or Grant"
       },
-      "name": "Access Request/Grant"
+      "name": "Access Request or Grant"
     },
     {
       "@id": "https://w3.org/2018/credentials#VerifiableCredential",
@@ -292,7 +292,7 @@
           }
         ],
         "EA-Domain": "AccessRequestOrGrant",
-        "EA-Domain-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+        "EA-Domain-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
         "EA-Guid": "{0F2EC574-5DBA-4fa4-9C0C-2076BEC81FC2}",
         "EA-Name": "forPersonalData",
         "EA-Package": "",
@@ -363,7 +363,7 @@
   "site": "site-skeleton/generic",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "generic-ap.j2",
-  "toolchaincommit": "33e496d16ea5b66c34acdd2aae7ac0a2cd1949b6",
+  "toolchaincommit": "5f6bef8f251f86919a459f7a3e4b1bfa34362238",
   "translation": [
     {
       "language": "nl",

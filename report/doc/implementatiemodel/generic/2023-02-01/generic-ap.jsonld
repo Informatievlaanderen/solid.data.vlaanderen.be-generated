@@ -139,7 +139,7 @@
                 "EA-Package": "",
                 "EA-Type": "connector",
                 "EA-Domain": "AccessRequestOrGrant",
-                "EA-Domain-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+                "EA-Domain-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
                 "EA-Range": "VerifiableCredential",
                 "RangeData": {
                     "EA-Name": "VerifiableCredential",
@@ -227,31 +227,31 @@
                 "nl": "An Access Request or an Access Grant."
             },
             "label": {
-                "nl": "Access Request/Grant"
+                "nl": "Access Request or Grant"
             },
             "ap-label-nl": {
-                "nl": "Access Request/Grant"
+                "nl": "Access Request or Grant"
             },
             "ap-definition-nl": {
                 "nl": "An Access Request or an Access Grant."
             },
             "extra": {
                 "EA-Name": "AccessRequestOrGrant",
-                "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+                "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
                 "EA-Package": "Generic",
                 "EA-Type": "CLASS",
                 "EA-Parents": "",
                 "EA-Parents2": [],
                 "parentclasses": "",
                 "label": {
-                    "nl": "Access Request/Grant"
+                    "nl": "Access Request or Grant"
                 },
                 "definition": {
                     "nl": "An Access Request or an Access Grant."
                 },
                 "usage": "",
                 "ap-label-nl": {
-                    "nl": "Access Request/Grant"
+                    "nl": "Access Request or Grant"
                 },
                 "ap-definition-nl": {
                     "nl": "An Access Request or an Access Grant."
@@ -261,23 +261,23 @@
                 "RawTags": [
                     {
                         "key": "label-nl",
-                        "value": "Access Request/Grant",
-                        "note": "null"
-                    },
-                    {
-                        "key": "uri",
-                        "value": "http://www.w3.org/2000/01/rdf-schema#Resource",
+                        "value": "Access Request or Grant",
                         "note": "null"
                     },
                     {
                         "key": "definition-nl",
                         "value": "An Access Request or an Access Grant.",
                         "note": "null"
+                    },
+                    {
+                        "key": "uri",
+                        "value": "http://www.w3.org/2000/01/rdf-schema#Resource",
+                        "note": "null"
                     }
                 ],
                 "Scope": "TRANSLATIONS_ONLY"
             },
-            "name": "Access Request/Grant"
+            "name": "Access Request or Grant"
         },
         {
             "@id": "https://w3.org/2018/credentials#VerifiableCredential",

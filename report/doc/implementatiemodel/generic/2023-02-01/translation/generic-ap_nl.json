@@ -15,10 +15,10 @@
   ],
   "externals": [
     {
-      "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
-      "name": "Access Request/Grant",
+      "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
+      "name": "Access Request or Grant",
       "label": {
-        "nl": "Access Request/Grant"
+        "nl": "Access Request or Grant"
       },
       "definition": {
         "nl": "An Access Request or an Access Grant."
