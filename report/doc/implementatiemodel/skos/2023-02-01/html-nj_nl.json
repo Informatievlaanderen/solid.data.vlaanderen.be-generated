@@ -5,7 +5,7 @@
     "baseURI": "http://www.w3.org/2004/02/skos/core#",
     "filename": "skos-ap",
     "navigation": {
-      "self": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01"
+      "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01"
     },
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "documenttype": "ap",
@@ -549,5 +549,5 @@
     }
   ],
   "parents": [],
-  "documentroot": "/doc/applicatieprofiel/skos/2023-01-01"
+  "documentroot": "/doc/implementatiemodel/skos/2023-02-01"
 }

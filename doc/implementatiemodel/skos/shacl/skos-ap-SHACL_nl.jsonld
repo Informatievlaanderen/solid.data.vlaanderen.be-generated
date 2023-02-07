@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@vocab": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01",
+    "@vocab": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01",
     "qb": "http://purl.org/linked-data/cube#",
     "qb:codeList": {
       "@id": "qb:codeList",
@@ -89,16 +89,16 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "vl": "https://data.vlaanderen.be/ns/shacl#"
   },
-  "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01",
+  "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01",
   "shapes": [
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/0505000dc192edd685f1d7977ad74385de6ba52f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Aalternative%20label",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/0505000dc192edd685f1d7977ad74385de6ba52f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Aalternative%20label",
           "sh:description": {
             "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
           },
@@ -113,8 +113,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/88b702e12401b15cdfbfb284e359477f384bce54",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Aalternative%20label",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/88b702e12401b15cdfbfb284e359477f384bce54",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Aalternative%20label",
           "sh:description": {
             "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
           },
@@ -129,8 +129,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/d94c14fe5ee5bbb147447229b6bae0a2668fffd6",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Aalternative%20label",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/d94c14fe5ee5bbb147447229b6bae0a2668fffd6",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Aalternative%20label",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
             "nl": "An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented."
@@ -145,8 +145,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/289912022d5c00507a139ae7f26b26610bb1a039",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Adefinition",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/289912022d5c00507a139ae7f26b26610bb1a039",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Adefinition",
           "sh:description": {
             "nl": "Supplies a complete explanation of the intended meaning of a concept."
           },
@@ -161,8 +161,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/33a30c3851be5c91eadb39bb00f2bfbcc5730451",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Adefinition",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/33a30c3851be5c91eadb39bb00f2bfbcc5730451",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Adefinition",
           "sh:description": {
             "nl": "Supplies a complete explanation of the intended meaning of a concept."
           },
@@ -177,8 +177,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/3e0a046965e7d33273185fa6f7a61e8fa6e7b9d0",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Adefinition",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/3e0a046965e7d33273185fa6f7a61e8fa6e7b9d0",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Adefinition",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
             "nl": "Supplies a complete explanation of the intended meaning of a concept."
@@ -193,8 +193,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/b29602ee73fd17320945933fad94551e97634999",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Adefinition",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/b29602ee73fd17320945933fad94551e97634999",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Adefinition",
           "sh:description": {
             "nl": "Supplies a complete explanation of the intended meaning of a concept."
           },
@@ -209,8 +209,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/1104e0ece492613e417535bd3b9f6b3698756369",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Ain%20scheme",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/1104e0ece492613e417535bd3b9f6b3698756369",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Ain%20scheme",
           "sh:description": {
             "nl": "Link to the concept scheme that contains the concept."
           },
@@ -225,8 +225,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/9608369ec58b205e687ec02ae31d9ec30eda49f5",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Ain%20scheme",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/9608369ec58b205e687ec02ae31d9ec30eda49f5",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Ain%20scheme",
           "sh:description": {
             "nl": "Link to the concept scheme that contains the concept."
           },
@@ -241,8 +241,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/d2f9757f8d9ed39a6cb2830c8dabff54359ae633",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Ain%20scheme",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/d2f9757f8d9ed39a6cb2830c8dabff54359ae633",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Ain%20scheme",
           "sh:class": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
           "sh:description": {
             "nl": "Link to the concept scheme that contains the concept."
@@ -257,8 +257,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/21d73b63c66425cfe415479cec5353710f236e8f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Anarrower",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/21d73b63c66425cfe415479cec5353710f236e8f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Anarrower",
           "sh:description": {
             "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
           },
@@ -273,8 +273,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/d220879118a2ef3f02db221d6ac7b1ed3fc5e382",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Anarrower",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/d220879118a2ef3f02db221d6ac7b1ed3fc5e382",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Anarrower",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another."
@@ -289,8 +289,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Anotation",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Anotation",
           "sh:description": {
             "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
           },
@@ -305,8 +305,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/540857eb5364e19b19192903edb3521c4ca629d8",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Anotation",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/540857eb5364e19b19192903edb3521c4ca629d8",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Anotation",
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:description": {
             "nl": "This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself."
@@ -321,8 +321,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/409ace3e7120dbef40091dc816d69eea5c14b8f0",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Anote",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/409ace3e7120dbef40091dc816d69eea5c14b8f0",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Anote",
           "sh:description": {
             "nl": "A property for general documentation purposes."
           },
@@ -337,8 +337,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/6b8030128ae72e7bc7146c2e380686b386f56b75",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Anote",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/6b8030128ae72e7bc7146c2e380686b386f56b75",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Anote",
           "sh:description": {
             "nl": "A property for general documentation purposes."
           },
@@ -353,8 +353,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/d1dfb924687c31954f084d183812104680ee37ba",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Anote",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/d1dfb924687c31954f084d183812104680ee37ba",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Anote",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
             "nl": "A property for general documentation purposes."
@@ -369,8 +369,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/322ac30abbb777e02239ab84ebf7d14ebde22688",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Apreferred%20label",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/322ac30abbb777e02239ab84ebf7d14ebde22688",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Apreferred%20label",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
             "nl": "A preferred lexical label for a resource."
@@ -385,8 +385,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/3b9cc6558bbf88b7fbaf0c2f3ab6ae7fb8c1b4b9",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Apreferred%20label",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/3b9cc6558bbf88b7fbaf0c2f3ab6ae7fb8c1b4b9",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Apreferred%20label",
           "sh:description": {
             "nl": "A preferred lexical label for a resource."
           },
@@ -401,8 +401,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/6cd0f0f5e19a1c8dce362ecbe8a196575b9cd85f",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Apreferred%20label",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/6cd0f0f5e19a1c8dce362ecbe8a196575b9cd85f",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Apreferred%20label",
           "sh:description": {
             "nl": "A preferred lexical label for a resource."
           },
@@ -417,8 +417,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/e4d44fb0d3c41df2a4042ee73fec8d83fc141a60",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Apreferred%20label",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/e4d44fb0d3c41df2a4042ee73fec8d83fc141a60",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Apreferred%20label",
           "sh:description": {
             "nl": "A preferred lexical label for a resource."
           },
@@ -433,8 +433,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Astatus",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Astatus",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
@@ -449,8 +449,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Astatus",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Astatus",
           "sh:description": {
             "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
           },
@@ -465,8 +465,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Astatus",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Astatus",
           "sh:description": {
             "nl": "The status of the concept, e.g. 'in use' or 'deprecated'."
           },
@@ -481,8 +481,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/5fe7a644aa0fbcaf86718e73ff95f8ed2fdcc199",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Atop%20concept%20of",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/5fe7a644aa0fbcaf86718e73ff95f8ed2fdcc199",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Atop%20concept%20of",
           "sh:description": {
             "nl": "Indicates that the concept is the most general concept of the concept scheme."
           },
@@ -497,8 +497,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/cdf485abd114e69a88d9253d2bda5cac5159f401",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Atop%20concept%20of",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/cdf485abd114e69a88d9253d2bda5cac5159f401",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Atop%20concept%20of",
           "sh:class": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
           "sh:description": {
             "nl": "Indicates that the concept is the most general concept of the concept scheme."
@@ -513,8 +513,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptShape/d6d1fa62ea59384af5255aeef21e306b921d33d3",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#Concept%3Atop%20concept%20of",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptShape/d6d1fa62ea59384af5255aeef21e306b921d33d3",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#Concept%3Atop%20concept%20of",
           "sh:description": {
             "nl": "Indicates that the concept is the most general concept of the concept scheme."
           },
@@ -532,13 +532,13 @@
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptSchemeShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptSchemeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptSchemeShape/5719d6b651172a215daa43adb8922b37ba02102d",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptScheme%3Ahas%20top%20concept",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptSchemeShape/5719d6b651172a215daa43adb8922b37ba02102d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptScheme%3Ahas%20top%20concept",
           "sh:description": {
             "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
           },
@@ -553,8 +553,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptSchemeShape/6fedca0d35fd32f6fdac8bb55c552b7d49e04963",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptScheme%3Ahas%20top%20concept",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptSchemeShape/6fedca0d35fd32f6fdac8bb55c552b7d49e04963",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptScheme%3Ahas%20top%20concept",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies."
@@ -569,8 +569,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptSchemeShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptScheme%3Astatus",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptSchemeShape/0f6cb927d0d26f3819cba3fb903a075cd426180d",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptScheme%3Astatus",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
@@ -585,8 +585,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptSchemeShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptScheme%3Astatus",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptSchemeShape/2bc917d85a4ffccfa9de4268bf84b517c322ce2c",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptScheme%3Astatus",
           "sh:description": {
             "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
           },
@@ -601,8 +601,8 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptSchemeShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
-          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#ConceptScheme%3Astatus",
+          "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptSchemeShape/3c1ab2e1170c5050c8b7742e97810027ddc104b1",
+          "rdfs:seeAlso": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#ConceptScheme%3Astatus",
           "sh:description": {
             "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'."
           },
@@ -620,14 +620,14 @@
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#LangStringShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#LangStringShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     {
-      "@id": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/skos/2023-01-01#LiteralShape",
+      "@id": "https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01#LiteralShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],

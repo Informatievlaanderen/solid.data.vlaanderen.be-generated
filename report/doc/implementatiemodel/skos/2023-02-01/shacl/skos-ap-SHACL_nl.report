@@ -1,6 +1,6 @@
 start reading
-/tmp/workspace/report/doc/applicatieprofiel/skos/2023-01-01/translation/skos-ap_nl_merged.json
-/tmp/workspace/target/doc/applicatieprofiel/skos/2023-01-01/shacl/skos-ap-SHACL_nl.jsonld
+/tmp/workspace/report/doc/implementatiemodel/skos/2023-02-01/translation/skos-ap_nl_merged.json
+/tmp/workspace/target/doc/implementatiemodel/skos/2023-02-01/shacl/skos-ap-SHACL_nl.jsonld
 nl
 done
 start processing
@@ -21,4 +21,4 @@ add nodeKind constraint
 add nodeKind constraint
 add nodeKind constraint
 start writing
-Write complete, file saved to: /tmp/workspace/target/doc/applicatieprofiel/skos/2023-01-01/shacl/skos-ap-SHACL_nl.jsonld
+Write complete, file saved to: /tmp/workspace/target/doc/implementatiemodel/skos/2023-02-01/shacl/skos-ap-SHACL_nl.jsonld
