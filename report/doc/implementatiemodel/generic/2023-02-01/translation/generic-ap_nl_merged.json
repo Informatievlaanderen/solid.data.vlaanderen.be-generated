@@ -353,7 +353,7 @@
   "site": "site-skeleton/generic",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "generic-ap.j2",
-  "toolchaincommit": "e5c6a1cedd73624e61e2927b6490153a9c950208",
+  "toolchaincommit": "85f92eec848bac982554e8f2594a6b5cc431b844",
   "translation": [
     {
       "language": "nl",
