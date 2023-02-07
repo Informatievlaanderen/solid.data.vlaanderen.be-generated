@@ -2,15 +2,15 @@ Load mapping config:config/config-voc.json
 WARNING:You shouldn't use 'user' reserved word as column name in the table t_datatypes (it refers to the database user).
  Escape it in your SQL! 
 (e.g. SELECT [USER] FROM TABLE WHERE [USER]='Joe')
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Generic".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Generic".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Generic".
-08:38:22 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Generic".
-08:38:22 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifiableCredential" .
-08:38:22 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessRequestOrGrant" .
-08:38:22 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Generic:AccessRequestOrGrant:forPersonalData" belongs to package "Generic" based on source and target definition.
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Generic".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Generic".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Generic".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Generic".
+08:39:28 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Generic".
+08:39:28 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifiableCredential" .
+08:39:28 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessRequestOrGrant" .
+08:39:28 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Generic:AccessRequestOrGrant:forPersonalData" belongs to package "Generic" based on source and target definition.

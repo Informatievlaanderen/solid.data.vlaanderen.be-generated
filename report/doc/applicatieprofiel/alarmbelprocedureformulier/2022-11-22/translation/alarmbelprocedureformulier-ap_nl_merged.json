@@ -3650,7 +3650,7 @@
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "alarmbelprocedureformulier-ap.j2",
   "title": "Alarmbelprocedureformulier",
-  "toolchaincommit": "6d0d0beade857687297503142739732433441c6d",
+  "toolchaincommit": "1f6769e436ea8bb7a72268822af969413d294993",
   "translation": [
     {
       "language": "nl",

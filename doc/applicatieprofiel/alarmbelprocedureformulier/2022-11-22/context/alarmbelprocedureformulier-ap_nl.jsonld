@@ -1,0 +1,154 @@
+{
+  "@context": {
+    "Alarmbelprocedureformulier": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#Alarmbelprocedureformulier",
+    "Alarmbelprocedureformulier.creatiedatum": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Alarmbelprocedureformulier.eigenaar": {
+      "@id": "https://w3.org/2018/credentials#credentialSubject",
+      "@type": "@id"
+    },
+    "Alarmbelprocedureformulier.indieningsdatum": {
+      "@id": "http://purl.org/dc/terms/dateSubmitted",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Alarmbelprocedureformulier.wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Document": "http://xmlns.com/foaf/0.1/Document",
+    "Document.opmerking": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Document.type": {
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "DocumentType": "http://www.w3.org/2004/02/skos/core#Concept",
+    "DoelOnroerendGoed": "http://www.w3.org/2004/02/skos/core#Concept",
+    "FinancieleOmstandigheid": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Geldbedrag": "https://schema.org/MonetaryAmount",
+    "Geldbedrag.valuta": {
+      "@id": "https://schema.org/currency",
+      "@type": "@id"
+    },
+    "Geldbedrag.waarde": {
+      "@id": "https://schema.org/value",
+      "@type": "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "MaandelijkseInkomsten": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomsten",
+    "MaandelijkseInkomsten.andereUitkeringen": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#andereUitkeringen",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomsten.belastbareBeroepsinkomsten": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#belastbareBeroepsinkomstenAlsWerknemer",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomsten.beroepsinkomstenAlsZelfstandige": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#beroepsinkomstenAlsZelfstandige",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomsten.geenInkomen": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#geenInkomen",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MaandelijkseInkomsten.inkomensvervangendeTegemoetkoming": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomensvervangendeTegemoetkoming",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MaandelijkseInkomsten.inkomstenAlsInternationaleAmbtenaar": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#inkomstenAlsInternationaleAmbtenaar",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomsten.leefloonOfEquivalentLeefloon": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#leefloonOfEquivalentLeefloon",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MaandelijkseInkomsten.ontvangenOnderhoudsgelden": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#ontvangenOnderhoudsgelden",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomsten.pensioenen": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#pensioenen",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomsten.vervangingsinkomen": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#vervangingsinkomen",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomstenOfUitgaven": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseInkomstenOfUitgaven",
+    "MaandelijkseInkomstenOfUitgaven.bewijsstukDocument": {
+      "@container": "@set",
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukDocument",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomstenOfUitgaven.bewijsstukVerifieerbareCredential": {
+      "@container": "@set",
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#bewijsstukVerifieerbareCredential",
+      "@type": "@id"
+    },
+    "MaandelijkseInkomstenOfUitgaven.periode": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#periode",
+      "@type": "@id"
+    },
+    "MaandelijkseUitgaven": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#MaandelijkseUitgaven",
+    "MaandelijkseUitgaven.betaaldeOnderhoudsgelden": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#betaaldeOnderhoudsgelden",
+      "@type": "@id"
+    },
+    "OnroerendGoed": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#OnroerendGoed",
+    "OnroerendGoed.doel": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#doel",
+      "@type": "@id"
+    },
+    "OnroerendGoed.kadastraalInkomen": {
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kadastraalInkomen",
+      "@type": "@id"
+    },
+    "Periode": "http://data.europa.eu/m8g/PeriodOfTime",
+    "Periode.begin": {
+      "@id": "http://data.europa.eu/m8g/startTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Periode.einde": {
+      "@id": "http://data.europa.eu/m8g/endTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Persoon": "http://www.w3.org/ns/person#Person",
+    "Persoon.financiëleOmstandigheid": {
+      "@container": "@set",
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#financieleOmstandigheid",
+      "@type": "@id"
+    },
+    "Persoon.inkomsten": {
+      "@container": "@set",
+      "@id": "https://data.vlaanderen.be/ns/loongegevens#inkomsten",
+      "@type": "@id"
+    },
+    "Persoon.kocht": {
+      "@container": "@set",
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#kocht",
+      "@type": "@id"
+    },
+    "Persoon.situationeleOmstandigheid": {
+      "@container": "@set",
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#situationeleOmstandigheid",
+      "@type": "@id"
+    },
+    "Persoon.uitgaven": {
+      "@container": "@set",
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#uitgaven",
+      "@type": "@id"
+    },
+    "Persoon.verkocht": {
+      "@container": "@set",
+      "@id": "https://solid.data.vlaanderen.be/loon/alarmbelprocedure#verkocht",
+      "@type": "@id"
+    },
+    "SituationeleOmstandigheid": "http://www.w3.org/2004/02/skos/core#Concept",
+    "VerifieerbareCredential": "https://w3.org/2018/credentials#VerifiableCredential"
+  }
+}
