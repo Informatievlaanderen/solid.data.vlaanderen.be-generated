@@ -3,7 +3,7 @@
 
 
 
-<html xml:lang="en" lang="en" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="en" prefix="dcterms: http://purl.org/dc/terms/ bibo: http://purl.org/ontology/bibo/ schema: http://schema.org/ w3p: http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
+<html xml:lang="nl" lang="nl" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="nl" prefix="dcterms: http://purl.org/dc/terms/ bibo: http://purl.org/ontology/bibo/ schema: http://schema.org/ w3p: http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
    
@@ -33,7 +33,7 @@
   <div class="page">
     <div class="layout layout--wide">
       <div class="skiplink">
-        <a rel="nofollow noreferrer" href="#main">Skip this section and go to general content</a>
+        <a rel="nofollow noreferrer" href="#main">Overslaan en naar de algemene inhoud gaan</a>
       </div>
     </div>
     <div class="page">
@@ -46,8 +46,8 @@
               <div class="head" role="status" id="status">
               <dl>
               <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
-              <dt>Published at</dt><dd>2023-02-01</dd>
-              <dt>This version</dt><dd><a href="https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01">https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01</a></dd>
+              <dt>Uitgegeven op</dt><dd>2023-02-01</dd>
+              <dt>Deze versie</dt><dd><a href="https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01">https://solid.data.vlaanderen.be//doc/implementatiemodel/skos/2023-02-01</a></dd>
               
               
               </dl>
@@ -82,12 +82,12 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Source</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/tree/3292566061be882dd1a7b7db07ef14e155bcfe35">https://github.com/Informatievlaanderen/SolidThema-generiek/tree/3292566061be882dd1a7b7db07ef14e155bcfe35</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/blob/3292566061be882dd1a7b7db07ef14e155bcfe35/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-generiek/blob/3292566061be882dd1a7b7db07ef14e155bcfe35/CHANGELOG</a></dd>
-              <dt>Feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/issues">https://github.com/Informatievlaanderen/SolidThema-generiek/issues</a></dd>
-              <dt>Registry of standards</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/tree/24b3767dd57865eda62e853cb7a1c89ffeab9b67">https://github.com/Informatievlaanderen/SolidThema-generiek/tree/24b3767dd57865eda62e853cb7a1c89ffeab9b67</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/blob/24b3767dd57865eda62e853cb7a1c89ffeab9b67/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-generiek/blob/24b3767dd57865eda62e853cb7a1c89ffeab9b67/CHANGELOG</a></dd>
+              <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-generiek/issues">https://github.com/Informatievlaanderen/SolidThema-generiek/issues</a></dd>
+              <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
 
-              <dt>Dependencies</dt><dd>
+              <dt>Afhankelijkheden</dt><dd>
                 
 		</dd>
               </dl>
@@ -107,62 +107,64 @@
             <div class="region" id="introduction">
               <div class="introduction typography">
               
-		<p>This document describes an<strong>application profile</strong>, in this case <strong></strong>.
-		The application profile specifies a semantic data model covering a set of usecases. 
-		The specification consists of terms with their constraints (cardinalities, codelists, usage guidelines).  
-		</p>
+                <p>Dit document beschrijft een <strong>applicatieprofiel</strong>, in dit geval <strong></strong>.
+                <!--Een applicatieprofiel is een specificatie die bestaande termen hergebruikt van verschillende basis-standaarden en daar meer specificiteit aan toevoegt.-->
+                <!-- Daarbij wordt het gebruik van de termen toegelicht voor de interbestuurlijke uitwisseling van overheidsinformatie.-->
+                Dit applicatieprofiel beantwoordt de vraag over hoe het corresponderende domeinmodel in de praktijk kan toegepast worden.
+                Daarbij worden de beperkingen (kardinaliteit, codelijsten) toegelicht en de overeenkomstige (RDF) termen opgelijst.
+                </p>
               
               </div>
             </div>
 
             <div class="region region--no-space-top typography" id="summary">
-                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Summary</h2>
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Samenvatting</h2>
                 
-<p>This specification implements the <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/">Simple Knowledge Organization System</a> (SKOS).</p>
+<p>Deze specificatie implementeert het <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/">Simple Knowledge Organization System</a> (SKOS).</p>
 
             </div>
 
             <div class="region region--no-space-top typography" id="status">
               <section class="introductory" id="sotd" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
-                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status of this document</h2>
+                <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status van dit document</h2>
                 
 
               </section>
             </div>
 
             <div class="region region--no-space-top typography" id="license">
-              <h2 class="h2">License</h2>
+              <h2 class="h2">Licentie</h2>
               
-              <p><span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">This specification</span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION</a> is published under <a href="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" rel="license">"CC0"</a>.</p>
+              <p><span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">Deze specificatie</span> van <a rel="cc:attributionURL" property="cc:attributionName" href="http://vlaanderen.be/informatievlaanderen" xmlns:cc="http://creativecommons.org/ns#">Informatie Vlaanderen</a> is gepubliceerd onder de <a href="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" rel="license">"Modellicentie Gratis Hergebruik - v1.0"</a>.</p>
               
             </div>
             <div class="region region--no-space-top typography" id="conformance">
               <h2 class="h2" id="conformance" aria-level="1" role="heading">Conformiteit</h2>
               
-              <p>An implementation is conformant with this application profile if it satifies <a href="/doc/conformance">these rules</a>.</p>
+              <p>De conformiteit voor applicatieprofielen is <a href="/doc/begeleidend/applicatieprofielen/conformiteit">hier</a> te vinden.</p>
               
             </div>
             <div class="region region--no-space-top" id="overview">
-              <h2 class="h2">Overview</h2>
+              <h2 class="h2">Overzicht</h2>
               <div class="grid">
                 <div class="col--9-12 col--1-1--s typography">
                   
                   <div class="region region--no-space-top">
-                    <p>This document describes the usage of the following entities for a correct usage of the Application Profile: 
+                    <p>In dit document wordt correct gebruik van de volgende entiteiten toegelicht:
                       <br />
                       |
-                      <a href="#Concept"></a> |
-                      <a href="#Concept Scheme"></a> |
+                      <a href="#Concept">Concept</a> |
+                      <a href="#Concept Scheme">Concept Scheme</a> |
                     </p>
                   </div>
                   
                   
                   <div class="region region--no-space-top">
-                    <p> This document describes the usage of the following datatypes for a correct usage of the Application Profile:
+                    <p> In dit document worden de volgende datatypes toegelicht:
                       <br />
                       |
-                      <a href="#Language String"></a> |
-                      <a href="#Literal"></a> |
+                      <a href="#Language String">Language String</a> |
+                      <a href="#Literal">Literal</a> |
                     </p>
                   </div>
                   
@@ -176,28 +178,28 @@
               </a>
             </div>
             <div class="region region--no-space-top">
-              <h2 class="h2">Entities</h2>
+              <h2 class="h2">Entiteiten</h2>
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Concept"><a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right"></a></h3>
+              <h3 class="h3" id="Concept"><a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Concept</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>A SKOS concept can be viewed as a unit of thought, an idea, a notion, a meaning, or (a category of) objects and events, which underlies many knowledge organization systems. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. As such, concepts exist in the mind as abstract entities which are independent of the terms used to label them.</dd>
                     
 		    
-                    <dt>Properties</dt>
+                    <dt>Eigenschappen</dt>
 		     
-                    <dd>For this entity the following properties are defined:
-                      <a href="#Concept%3Aalternative%20label"></a>, 
-                      <a href="#Concept%3Adefinition"></a>, 
-                      <a href="#Concept%3Ain%20scheme"></a>, 
-                      <a href="#Concept%3Anarrower"></a>, 
-                      <a href="#Concept%3Anotation"></a>, 
-                      <a href="#Concept%3Anote"></a>, 
-                      <a href="#Concept%3Apreferred%20label"></a>, 
-                      <a href="#Concept%3Astatus"></a>, 
-                      <a href="#Concept%3Atop%20concept%20of"></a>.</dd>
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Concept%3Aalternative%20label">alternative label</a>, 
+                      <a href="#Concept%3Adefinition">definition</a>, 
+                      <a href="#Concept%3Ain%20scheme">in scheme</a>, 
+                      <a href="#Concept%3Anarrower">narrower</a>, 
+                      <a href="#Concept%3Anotation">notation</a>, 
+                      <a href="#Concept%3Anote">note</a>, 
+                      <a href="#Concept%3Apreferred%20label">preferred label</a>, 
+                      <a href="#Concept%3Astatus">status</a>, 
+                      <a href="#Concept%3Atop%20concept%20of">top concept of</a>.</dd>
                     
                   </dl>
                 </div>
@@ -206,12 +208,12 @@
                   <table class="data-table">
                     <thead>
                       <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
-                        <th class="data-table__header-title--sortable">Expected Range</th>
-                        <th class="data-table__header-title--sortable">Cardinality</th>
-                        <th class="data-table__header-title--sortable">Description</th>
-                        <th class="data-table__header-title--sortable">Usage</th>
-                        <th class="data-table__header-title--sortable">Codelist</th>
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
                       </tr>
                     </thead>
 
@@ -221,18 +223,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#altLabel" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#altLabel" data-placement="right">
-                            </a>
+                            alternative label</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Language String" data-placement="right"></a>
+			    <a href="#Language String" data-placement="right">Language String</a>
 			    
                           
                         </td>
                         <td>0..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">An alternative lexical label to a concept. This is especially helpful when assigning labels beyond the one that is preferred for the concept, for instance when synonyms need to be represented.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -241,18 +243,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#definition" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#definition" data-placement="right">
-                            </a>
+                            definition</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Language String" data-placement="right"></a>
+			    <a href="#Language String" data-placement="right">Language String</a>
 			    
                           
                         </td>
                         <td>0..1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Supplies a complete explanation of the intended meaning of a concept.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -261,18 +263,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#inScheme" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#inScheme" data-placement="right">
-                            </a>
+                            in scheme</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Concept Scheme" data-placement="right"></a>
+			    <a href="#Concept Scheme" data-placement="right">Concept Scheme</a>
 			    
                           
                         </td>
                         <td>0..1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Link to the concept scheme that contains the concept.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -281,18 +283,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#narrower" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#narrower" data-placement="right">
-                            </a>
+                            narrower</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Concept" data-placement="right"></a>
+			    <a href="#Concept" data-placement="right">Concept</a>
 			    
                           
                         </td>
                         <td>0..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">This property is used to assert that one concept is narrower in meaning (i.e. more specific) than another.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -301,18 +303,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#notation" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#notation" data-placement="right">
-                            </a>
+                            notation</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Literal" data-placement="right"></a>
+			    <a href="#Literal" data-placement="right">Literal</a>
 			    
                           
                         </td>
                         <td>0..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">This property allows a concept to be attached to an RDF typed literala literal with an explicit datatype. The datatype of the literal specifies a syntax encoding scheme, which fits the usage of notations in the concerned KOS. The value of the literal is the notation itself.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -321,18 +323,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#note" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#note" data-placement="right">
-                            </a>
+                            note</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Language String" data-placement="right"></a>
+			    <a href="#Language String" data-placement="right">Language String</a>
 			    
                           
                         </td>
                         <td>0..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">A property for general documentation purposes.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -341,18 +343,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#prefLabel" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#prefLabel" data-placement="right">
-                            </a>
+                            preferred label</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Language String" data-placement="right"></a>
+			    <a href="#Language String" data-placement="right">Language String</a>
 			    
                           
                         </td>
                         <td>1..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">A preferred lexical label for a resource.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -361,18 +363,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/adms#status" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#status" data-placement="right">
-                            </a>
+                            status</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Concept" data-placement="right"></a>
+			    <a href="#Concept" data-placement="right">Concept</a>
 			    
                           
                         </td>
                         <td>0..1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">The status of the concept, e.g. &#39;in use&#39; or &#39;deprecated&#39;.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -381,18 +383,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#topConceptOf" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#topConceptOf" data-placement="right">
-                            </a>
+                            top concept of</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Concept Scheme" data-placement="right"></a>
+			    <a href="#Concept Scheme" data-placement="right">Concept Scheme</a>
 			    
                           
                         </td>
                         <td>0..1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Indicates that the concept is the most general concept of the concept scheme.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -404,17 +406,17 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Concept Scheme"><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#ConceptScheme" data-placement="right"></a></h3>
+              <h3 class="h3" id="Concept Scheme"><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#ConceptScheme" data-placement="right">Concept Scheme</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts. Semantic relationships (links) between those concepts may also be viewed as part of a concept scheme.</dd>
                     
 		    
-                    <dt>Properties</dt>
+                    <dt>Eigenschappen</dt>
 		     
-                    <dd>For this entity the following properties are defined:
-                      <a href="#Concept%20Scheme%3Ahas%20top%20concept"></a>, 
-                      <a href="#Concept%20Scheme%3Astatus"></a>.</dd>
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Concept%20Scheme%3Ahas%20top%20concept">has top concept</a>, 
+                      <a href="#Concept%20Scheme%3Astatus">status</a>.</dd>
                     
                   </dl>
                 </div>
@@ -423,12 +425,12 @@
                   <table class="data-table">
                     <thead>
                       <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
-                        <th class="data-table__header-title--sortable">Expected Range</th>
-                        <th class="data-table__header-title--sortable">Cardinality</th>
-                        <th class="data-table__header-title--sortable">Description</th>
-                        <th class="data-table__header-title--sortable">Usage</th>
-                        <th class="data-table__header-title--sortable">Codelist</th>
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
                       </tr>
                     </thead>
 
@@ -438,18 +440,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/2004/02/skos/core#hasTopConcept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#hasTopConcept" data-placement="right">
-                            </a>
+                            has top concept</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Concept" data-placement="right"></a>
+			    <a href="#Concept" data-placement="right">Concept</a>
 			    
                           
                         </td>
                         <td>0..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">This property allows one to link a concept scheme to the (possibly many) most general concepts it contains, in order to provide an efficient access to the entry points of broader/narrower concept hierarchies.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -458,18 +460,18 @@
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/adms#status" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#status" data-placement="right">
-                            </a>
+                            status</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#Concept" data-placement="right"></a>
+			    <a href="#Concept" data-placement="right">Concept</a>
 			    
                           
                         </td>
                         <td>0..1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">The status of the concept scheme, e.g. &#39;in use&#39; or &#39;deprecated&#39;.The status of the concept scheme, e.g. &#39;in use&#39; or &#39;deprecated&#39;.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -488,20 +490,20 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Language String"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right"></a></h3>
+              <h3 class="h3" id="Language String"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">Language String</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>The datatype of language-tagged string values.</dd>
                     
 		     
-		    <dt>Subclass of <dt><dd>
+		    <dt>Subklasse van <dt><dd>
                         <a href="#Literal">Literal</a>
 		   </dd>
                     
-                    <dt>Properties</dt>
+                    <dt>Eigenschappen</dt>
 		    
-                    <dd>There are no properties defined for this datatype.</dd>
+                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
                     
                   </dl>
                 </div>
@@ -510,16 +512,16 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right"></a></h3>
+              <h3 class="h3" id="Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">Literal</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>The class of literal values, eg. textual strings and integers.</dd>
                     
 		    
-                    <dt>Properties</dt>
+                    <dt>Eigenschappen</dt>
 		    
-                    <dd>There are no properties defined for this datatype.</dd>
+                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
                     
                   </dl>
                 </div>
@@ -531,14 +533,14 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (niet normatief)
                 
-                <p>A reusable JSON-LD context definition for this application profile is retrievable at: <a href="/doc/implementatiemodel/skos/2023-02-01/context/skos-ap.jsonld" target="_blank">/doc/implementatiemodel/skos/2023-02-01/context/skos-ap.jsonld</a></p>
+                <p>Een herbruikbare JSON-LD context definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/implementatiemodel/skos/2023-02-01/context/skos-ap.jsonld" target="_blank">/doc/implementatiemodel/skos/2023-02-01/context/skos-ap.jsonld</a></p>
                 
             </div>
             <div class="region region--no-space-top" id="shacl">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
-                (non-normative)
+                (niet normatief)
                 
-                <p>A reusable SHACL template for this application profile is retrievable at: <a href="/doc/implementatiemodel/skos/2023-02-01/shacl/skos-ap-SHACL.ttl" target="_blank">/doc/implementatiemodel/skos/2023-02-01/shacl/skos-ap-SHACL.ttl</a></p>
+                <p>Een herbruikbare SHACL template definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/implementatiemodel/skos/2023-02-01/shacl/skos-ap-SHACL.ttl" target="_blank">/doc/implementatiemodel/skos/2023-02-01/shacl/skos-ap-SHACL.ttl</a></p>
                 
             </div>
           </div>
@@ -548,22 +550,22 @@
                       <div class="side-navigation__group">
                           <ul>
                               <li class="side-navigation__item">
-                                  <a href="#introduction">Introduction</a>
+                                  <a href="#introduction">Inleiding</a>
                               </li>
                               <li class="side-navigation__item">
-                                  <a href="#summary">Summary</a>
+                                  <a href="#summary">Samenvatting</a>
                               </li>
                               <li class="side-navigation__item">
-                                  <a href="#status">Status of this document</a>
+                                  <a href="#status">Status van dit document</a>
                               </li>
                               <li class="side-navigation__item">
-                                  <a href="#license">License</a>
+                                  <a href="#license">Licentie</a>
                               </li>
                               <li class="side-navigation__item">
-                                  <a href="#conformance">Conformance</a>
+                                  <a href="#conformance">Conformiteit</a>
                               </li>
                               <li class="side-navigation__item">
-                                  <a href="#overview">Overview</a>
+                                  <a href="#overview">Overzicht</a>
                               </li>
                               <li class="side-navigation__item">
                                   <a href="#jsonld">JSON-LD Context</a>
