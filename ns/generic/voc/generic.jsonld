@@ -34,7 +34,7 @@
   "externals": [
     {
       "name": {
-        "nl": "Access Request/Grant"
+        "nl": "Access Request or Grant"
       },
       "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
       "@type": "rdfs:Class"

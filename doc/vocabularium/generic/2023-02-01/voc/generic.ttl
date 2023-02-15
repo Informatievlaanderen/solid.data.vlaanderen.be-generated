@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 rdfs:Resource a rdfs:Class;
-  rdfs:label "Access Request/Grant"@nl .
+  rdfs:label "Access Request or Grant"@nl .
 
 <https://w3.org/2018/credentials#VerifiableCredential> a rdfs:Class;
   rdfs:label "Verifiable Credential"@nl .

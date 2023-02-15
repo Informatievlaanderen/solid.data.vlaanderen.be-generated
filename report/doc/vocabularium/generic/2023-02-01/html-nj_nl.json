@@ -11,8 +11,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/3292566061be882dd1a7b7db07ef14e155bcfe35",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/3292566061be882dd1a7b7db07ef14e155bcfe35/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/24b3767dd57865eda62e853cb7a1c89ffeab9b67",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/24b3767dd57865eda62e853cb7a1c89ffeab9b67/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -55,15 +55,15 @@
   "external_terms": [
     {
       "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
-      "name": "Access Request/Grant",
+      "name": "Access Request or Grant",
       "label": {
-        "nl": "Access Request/Grant"
+        "nl": "Access Request or Grant"
       },
       "description": {
         "nl": "An Access Request or an Access Grant."
       },
       "usage": {},
-      "sort": "Access Request/Grant",
+      "sort": "Access Request or Grant",
       "indvl": false,
       "inpackage": false,
       "inscope": true,

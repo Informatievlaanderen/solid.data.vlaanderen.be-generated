@@ -86,8 +86,8 @@
   "contributors-column": "generic",
   "contributors-file": "stakeholders.csv",
   "diagram": "Generic",
-  "documentcommit": "3292566061be882dd1a7b7db07ef14e155bcfe35",
-  "dummy": "dimi-4",
+  "documentcommit": "24b3767dd57865eda62e853cb7a1c89ffeab9b67",
+  "dummy": "dimi-5",
   "eap": "Generic.eap",
   "editors": [
     {
@@ -106,7 +106,7 @@
     {
       "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
       "@type": "http://www.w3.org/2002/07/owl#Class",
-      "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+      "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
       "definition": {
         "nl": "An Access Request or an Access Grant."
       },
@@ -114,7 +114,7 @@
         "nl": "An Access Request or an Access Grant."
       },
       "extra": {
-        "EA-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+        "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
         "EA-Name": "AccessRequestOrGrant",
         "EA-Package": "Generic",
         "EA-Parents": "",
@@ -124,17 +124,17 @@
           {
             "key": "label-nl",
             "note": "null",
-            "value": "Access Request/Grant"
-          },
-          {
-            "key": "uri",
-            "note": "null",
-            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
+            "value": "Access Request or Grant"
           },
           {
             "key": "definition-nl",
             "note": "null",
             "value": "An Access Request or an Access Grant."
+          },
+          {
+            "key": "uri",
+            "note": "null",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource"
           }
         ],
         "Scope": "TRANSLATIONS_ONLY",
@@ -147,11 +147,11 @@
         },
         "equivalent": "",
         "label": {
-          "nl": "Access Request/Grant"
+          "nl": "Access Request or Grant"
         },
         "label-en": "",
         "label-nl": {
-          "nl": "Access Request/Grant"
+          "nl": "Access Request or Grant"
         },
         "parentclasses": "",
         "sameAs": "",
@@ -163,12 +163,12 @@
       },
       "inpackage": "OTHER_PACKAGE",
       "label": {
-        "nl": "Access Request/Grant"
+        "nl": "Access Request or Grant"
       },
       "label-nl": {
-        "nl": "Access Request/Grant"
+        "nl": "Access Request or Grant"
       },
-      "name": "Access Request/Grant"
+      "name": "Access Request or Grant"
     },
     {
       "@id": "https://w3.org/2018/credentials#VerifiableCredential",
@@ -300,7 +300,7 @@
           }
         ],
         "EA-Domain": "AccessRequestOrGrant",
-        "EA-Domain-Guid": "{429E979C-371E-4797-994D-FCD261E99999}",
+        "EA-Domain-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
         "EA-Guid": "{0F2EC574-5DBA-4fa4-9C0C-2076BEC81FC2}",
         "EA-Name": "forPersonalData",
         "EA-Package": "",
@@ -383,7 +383,7 @@
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "33e496d16ea5b66c34acdd2aae7ac0a2cd1949b6",
+  "toolchaincommit": "5d60bec52c3790717e022daa645091be22131962",
   "translation": [
     {
       "language": "nl",
