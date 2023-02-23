@@ -51,15 +51,16 @@
                 <div class="layout layout--wide">
                     <div class="grid">
                         <div class="col--5-6 col--1-1--s">
-							<div class="typography introduction">
-								Semantische afstemming zorgt ervoor dat informatiemodellen eenduidige termen gebruiken
-                                waarvoor een bijbehorende definitie kan worden opgezocht. Dit komt de interoperabiliteit
-                                tussen applicaties ten goede doordat dubbelzinnigheid en onduidelijkheid vermeden worden.
-                                Daarnaast zorgt het ervoor dat informatiemodellen breder gedragen worden door silo-denken
-                                te vermijden. Ontdek hier de beschikbare implementatiemodellen, vocabularia en codelijsten
-                                die gebruikt worden in de verschillende Solid-toepassingen van de Vlaamse overheid.
-							</div>
-						</div>
+				<div class="typography introduction">
+					Ontdek op deze pagina de beschikbare implementatiemodellen, vocabularia en codelijsten
+                                	die gebruikt worden in de verschillende Solid-toepassingen van de Vlaamse overheid.
+					Semantische afstemming zorgt ervoor dat informatiemodellen eenduidige termen gebruiken
+                                	waarvoor een bijbehorende definitie kan worden opgezocht. Dit komt de interoperabiliteit
+                                	tussen applicaties ten goede, doordat dubbelzinnigheid en onduidelijkheid vermeden worden.
+                                	Daarnaast zorgt het ervoor dat informatiemodellen breder gedragen worden door silo-denken
+                                	te vermijden. 
+				</div>
+			</div>
                         <div class="col--5-6 col--1-1--s">
                             <div class="js-scrollspy__content">
                                 <section class="info-block info-block--news" id="soliddatavlaanderen">
@@ -80,7 +81,8 @@
                                             </p>
                                             </br>
                                             <p>
-                                                Ook de <strong>vocabularia</strong> op deze pagina zijn op hun beurt uitbreidingen van bestaande vocabularia.
+                                                Ook de <strong>vocabularia</strong> op deze pagina zijn op hun beurt (mogelijks) uitbreidingen van bestaande vocabularia
+						of bevatten zelf gedefinieerde termen in de context van een specifieke use case of implementatie.
                                             </p>
                                             </br>
                                             <p>
@@ -362,7 +364,7 @@
                                         </li>
                                         <li class="side-navigation__item">
                                             <a class="side-navigation__toggle" href="#vocabularia" data-child="parent-3">
-                                                Standaarden
+                                                Vocabularia
                                             </a>
                                         </li>
                                         <li class="side-navigation__item">
@@ -406,6 +408,14 @@
         .content-header__entity-logo {
             background-color: #9A50BE !important;
             color: white
+	}
+	    
+	.content-header__entity-logo__prefix {
+            font-weight: 500
+        }
+	    
+	.content-header__entity-title {
+            font-weight: 200
         }
         
         a.content-header__entity-logo:focus,
@@ -414,13 +424,22 @@
 			color: #333332
 		}
 
-		.info-block__header:before {
-			color: white;
-			background-color: transparent;
-			background: -webkit-linear-gradient(200deg, transparent 20px, #9A50BE 20px);
-			background: linear-gradient(-110deg, transparent 20px, #9A50BE 20px);
-			width: 7rem
-		}
+	.info-block__header:before {
+		color: white;
+		background-color: transparent;
+		background: -webkit-linear-gradient(200deg, transparent 20px, #9A50BE 20px);
+		background: linear-gradient(-110deg, transparent 20px, #9A50BE 20px);
+		width: 7rem
+	}
+	    
+	.introduction {
+		margin-bottom: 6rem
+	}
+	    
+	.region {
+		padding-top: 0 !important;
+		padding-bottom 0 !important;
+	}
 
     </style>
 
