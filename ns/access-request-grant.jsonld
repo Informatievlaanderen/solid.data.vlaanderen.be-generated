@@ -1,0 +1,7 @@
+{
+    "@context": {
+        "forPersonalDataType": "https://solid.data.vlaanderen.be/ns/accessRequestGrant#forPersonalDataType",
+        "Leercredential": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+        "Looncredential": "https://solid.data.vlaanderen.be/ns/looncredential#Looncredential"
+    }
+}
