@@ -1,0 +1,40 @@
+<https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/" .
+<https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0> .
+<https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/mediator> _:g454720 .
+<https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2000/01/rdf-schema#label> "access"@en .
+<https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2000/01/rdf-schema#label> "access"@nl .
+<https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2001/02pd/rec54#editor> _:g454740 .
+<https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/issued> "TODO" .
+<https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://solid.data.vlaanderen.be/ns/access#AccessGrant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://solid.data.vlaanderen.be/ns/access> .
+<https://solid.data.vlaanderen.be/ns/access#AccessGrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://solid.data.vlaanderen.be/ns/access#AccessGrant> <http://www.w3.org/2000/01/rdf-schema#comment> "A grant for access."@nl .
+<https://solid.data.vlaanderen.be/ns/access#AccessGrant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@nl .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Access Request or Grant"@nl .
+<https://solid.data.vlaanderen.be/ns/access#AccessRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://solid.data.vlaanderen.be/ns/access> .
+<https://solid.data.vlaanderen.be/ns/access#AccessRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://solid.data.vlaanderen.be/ns/access#AccessRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "A request for access."@nl .
+<https://solid.data.vlaanderen.be/ns/access#AccessRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://solid.data.vlaanderen.be/ns/access#originalAccessRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://solid.data.vlaanderen.be/ns/access> .
+<https://solid.data.vlaanderen.be/ns/access#originalAccessRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://solid.data.vlaanderen.be/ns/access#originalAccessRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "The original Access Request to which the Access Grant refers."@nl .
+<https://solid.data.vlaanderen.be/ns/access#originalAccessRequest> <http://www.w3.org/2000/01/rdf-schema#domain> <https://solid.data.vlaanderen.be/ns/access#AccessGrant> .
+<https://solid.data.vlaanderen.be/ns/access#originalAccessRequest> <http://www.w3.org/2000/01/rdf-schema#range> <https://solid.data.vlaanderen.be/ns/access#AccessRequest> .
+<https://solid.data.vlaanderen.be/ns/access#forPersonalDataType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://solid.data.vlaanderen.be/ns/access> .
+<https://solid.data.vlaanderen.be/ns/access#forPersonalDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://solid.data.vlaanderen.be/ns/access#forPersonalDataType> <http://www.w3.org/2000/01/rdf-schema#comment> "The Resource type for/to which access is requested/granted."@nl .
+<https://solid.data.vlaanderen.be/ns/access#forPersonalDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://solid.data.vlaanderen.be/ns/access#forPersonalDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:g454720 <http://xmlns.com/foaf/0.1/homepage> <https://solid.data.vlaanderen.be> .
+_:g454720 <http://xmlns.com/foaf/0.1/mbox> <mailto:magda-teamsolid@vlaanderen.be> .
+_:g454720 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen - MAGDA Solid" .
+_:g454740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g454740 <http://schema.org/affiliation> _:g454760 .
+_:g454740 <http://xmlns.com/foaf/0.1/firstName> "Solid Team" .
+_:g454740 <http://xmlns.com/foaf/0.1/lastName> "MAGDA" .
+_:g454740 <http://xmlns.com/foaf/0.1/mbox> <mailto:magda-teamsolid@vlaanderen.be> .
+_:g454760 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:g454760 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .

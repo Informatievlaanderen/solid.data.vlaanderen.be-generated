@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "uri": "https://solid.data.vlaanderen.be/ns/access",
+    "issued": "2023-02-01",
+    "filename": "access",
+    "navigation": {
+      "self": "https://solid.data.vlaanderen.be//doc/vocabularium/access/2023-02-01"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "voc",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/2a4b2de3779e8089aecb8125c96cd0a3d03b5a4b",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/2a4b2de3779e8089aecb8125c96cd0a3d03b5a4b/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/access#AccessGrant",
+      "name": "Access Grant",
+      "label": {
+        "nl": "Access Grant"
+      },
+      "sort": "Access Grant",
+      "description": {
+        "nl": "A grant for access."
+      },
+      "usage": {},
+      "equivalent": [],
+      "parents": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ]
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/access#AccessRequest",
+      "name": "Access Request",
+      "label": {
+        "nl": "Access Request"
+      },
+      "sort": "Access Request",
+      "description": {
+        "nl": "A request for access."
+      },
+      "usage": {},
+      "equivalent": [],
+      "parents": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/access#originalAccessRequest",
+      "name": "original access request",
+      "label": {
+        "nl": "original access request"
+      },
+      "sort": "original access request",
+      "description": {
+        "nl": "The original Access Request to which the Access Grant refers."
+      },
+      "usage": {},
+      "domain": [
+        "https://solid.data.vlaanderen.be/ns/access#AccessGrant"
+      ],
+      "range": [
+        "https://solid.data.vlaanderen.be/ns/access#AccessRequest"
+      ],
+      "parents": []
+    },
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/access#forPersonalDataType",
+      "name": "for personal data type",
+      "label": {
+        "nl": "for personal data type"
+      },
+      "sort": "for personal data type",
+      "description": {
+        "nl": "The Resource type for/to which access is requested/granted."
+      },
+      "usage": {},
+      "domain": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ],
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ],
+      "parents": []
+    }
+  ],
+  "contributors": [
+    {
+      "role": "E",
+      "first_name": "Solid Team",
+      "last_name": "MAGDA",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "magda-teamsolid@vlaanderen.be"
+    }
+  ],
+  "external_terms": [
+    {
+      "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "name": "Resource",
+      "label": {
+        "nl": "Resource"
+      },
+      "description": {
+        "nl": "A resource."
+      },
+      "usage": {
+        "nl": "E.g. a class URI from a domain-specific ontology."
+      },
+      "sort": "Resource",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "name": "Access Request or Grant",
+      "label": {
+        "nl": "Access Request or Grant"
+      },
+      "description": {
+        "nl": "An Access Request or an Access Grant."
+      },
+      "usage": {},
+      "sort": "Access Request or Grant",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    }
+  ],
+  "documentroot": "/doc/vocabularium/access/2023-02-01"
+}

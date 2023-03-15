@@ -1,0 +1,651 @@
+{
+  "@context": {
+    "vlaanderen": "http://data.vlaanderen.be/ns/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "person": "http://www.w3.org/ns/person#",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "vann": "http://purl.org/vocab/vann/",
+    "sh": "http://w3.org/ns/shacl#",
+    "label": {
+      "@id": "rdfs:label",
+      "@container": "@language"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "issued": {
+      "@id": "dcterms:issued"
+    },
+    "authors": {
+      "@type": "foaf:Person",
+      "@id": "foaf:maker"
+    },
+    "editors": {
+      "@type": "foaf:Person",
+      "@id": "rec:editor"
+    },
+    "contributors": {
+      "@type": "foaf:Person",
+      "@id": "dcterms:contributor"
+    },
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "classes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "datatypes": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "name": {
+      "@id": "rdfs:label"
+    },
+    "properties": {
+      "@reverse": "rdfs:isDefinedBy"
+    },
+    "domain": {
+      "@id": "rdfs:domain"
+    },
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "minCardinality": {
+      "@id": "sh:minCount"
+    },
+    "maxCardinality": {
+      "@id": "sh:maxCount"
+    },
+    "generalization": {
+      "@id": "rdfs:subPropertyOf"
+    },
+    "externals": {
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "@id": "rdfs:seeAlso"
+    }
+  },
+  "@id": "https://solid.data.vlaanderen.be/ns/access",
+  "@type": "http://www.w3.org/2002/07/owl#Ontology",
+  "label": {
+    "nl": "access",
+    "en": "access"
+  },
+  "issued": "TODO",
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "title-nl": {
+    "nl": "TODO"
+  },
+  "extra": {
+    "EA-Name": "Access",
+    "EA-Guid": "{6C7BB44D-CF29-47b9-9AAF-B8D033ED36BE}",
+    "title-nl": "TODO",
+    "issued": "TODO",
+    "license": "TODO",
+    "RawTags": [
+      {
+        "key": "baseURI",
+        "value": "https://solid.data.vlaanderen.be/ns/access#",
+        "note": "null"
+      }
+    ]
+  },
+  "authors": [],
+  "editors": [
+    {
+      "foaf:firstName": "Solid Team",
+      "foaf:lastName": "MAGDA",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen",
+        "foaf:homepage": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "foaf:mbox": "magda-teamsolid@vlaanderen.be",
+      "@type": "foaf:Person"
+    }
+  ],
+  "contributors": [],
+  "classes": [
+    {
+      "@id": "https://solid.data.vlaanderen.be/ns/access#AccessGrant",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "label-nl": {
+        "nl": "Access Grant"
+      },
+      "definition": {
+        "nl": "A grant for access."
+      },
+      "label": {
+        "nl": "Access Grant"
+      },
+      "definition-nl": {
+        "nl": "A grant for access."
+      },
+      "extra": {
+        "EA-Name": "AccessGrant",
+        "EA-Guid": "{C2C399CB-F388-4c2a-B3A3-87964DB93800}",
+        "EA-Package": "Access",
+        "EA-Type": "CLASS",
+        "EA-Parents": "AccessRequestOrGrant",
+        "EA-Parents2": [
+          {
+            "name": "AccessRequestOrGrant",
+            "label": "Access Request or Grant",
+            "package": "Access",
+            "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          }
+        ],
+        "parentclasses": "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "label": {
+          "nl": "Access Grant"
+        },
+        "definition": {
+          "nl": "A grant for access."
+        },
+        "usage": "",
+        "label-nl": {
+          "nl": "Access Grant"
+        },
+        "definition-nl": {
+          "nl": "A grant for access."
+        },
+        "usageNote-nl": "",
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "Access Grant",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "A grant for access.",
+            "note": "null"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "name": "Access Grant",
+      "parents": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ]
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/ns/access#AccessRequest",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "label-nl": {
+        "nl": "Access Request"
+      },
+      "definition": {
+        "nl": "A request for access."
+      },
+      "label": {
+        "nl": "Access Request"
+      },
+      "definition-nl": {
+        "nl": "A request for access."
+      },
+      "extra": {
+        "EA-Name": "AccessRequest",
+        "EA-Guid": "{48D13C3F-6C78-4853-B5C0-7CEC8A0F3DFB}",
+        "EA-Package": "Access",
+        "EA-Type": "CLASS",
+        "EA-Parents": "AccessRequestOrGrant",
+        "EA-Parents2": [
+          {
+            "name": "AccessRequestOrGrant",
+            "label": "Access Request or Grant",
+            "package": "Access",
+            "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          }
+        ],
+        "parentclasses": "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "label": {
+          "nl": "Access Request"
+        },
+        "definition": {
+          "nl": "A request for access."
+        },
+        "usage": "",
+        "label-nl": {
+          "nl": "Access Request"
+        },
+        "definition-nl": {
+          "nl": "A request for access."
+        },
+        "usageNote-nl": "",
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "Access Request",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "A request for access.",
+            "note": "null"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "inpackage": "ACTIVE_PACKAGE",
+      "name": "Access Request",
+      "parents": [
+        "http://www.w3.org/2000/01/rdf-schema#Resource"
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "@id": "https://solid.data.vlaanderen.be/ns/access#originalAccessRequest",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "original access request",
+      "inpackage": "ACTIVE_PACKAGE",
+      "label-nl": {
+        "nl": "original access request"
+      },
+      "definition": {
+        "nl": "The original Access Request to which the Access Grant refers."
+      },
+      "label": {
+        "nl": "original access request"
+      },
+      "definition-nl": {
+        "nl": "The original Access Request to which the Access Grant refers."
+      },
+      "extra": {
+        "EA-Name": "originalAccessRequest",
+        "EA-Guid": "{547B789A-14BB-48a3-8633-D95F61709ECC}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "AccessGrant",
+        "EA-Domain-Guid": "{C2C399CB-F388-4c2a-B3A3-87964DB93800}",
+        "EA-Range": "AccessRequest",
+        "RangeData": {
+          "EA-Name": "AccessRequest",
+          "EA-GUID": "{48D13C3F-6C78-4853-B5C0-7CEC8A0F3DFB}",
+          "EA-Package": "Access",
+          "uri": "https://solid.data.vlaanderen.be/ns/access#AccessRequest"
+        },
+        "sourceRole": "null",
+        "destRole": "originalAccessRequest",
+        "label": {
+          "nl": "original access request"
+        },
+        "definition": {
+          "nl": "The original Access Request to which the Access Grant refers."
+        },
+        "usage": "",
+        "label-nl": {
+          "nl": "original access request"
+        },
+        "definition-nl": {
+          "nl": "The original Access Request to which the Access Grant refers."
+        },
+        "usageNote-nl": "",
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The original Access Request to which the Access Grant refers."
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "original access request"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The original Access Request to which the Access Grant refers."
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "original access request"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/access#AccessGrant",
+          "EA-Name": "AccessGrant"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "AccessRequest",
+          "EA-GUID": "{48D13C3F-6C78-4853-B5C0-7CEC8A0F3DFB}",
+          "EA-Package": "Access",
+          "uri": "https://solid.data.vlaanderen.be/ns/access#AccessRequest"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://solid.data.vlaanderen.be/ns/access#forPersonalDataType",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "name": "for personal data type",
+      "inpackage": "ACTIVE_PACKAGE",
+      "label-nl": {
+        "nl": "for personal data type"
+      },
+      "definition": {
+        "nl": "The Resource type for/to which access is requested/granted."
+      },
+      "label": {
+        "nl": "for personal data type"
+      },
+      "definition-nl": {
+        "nl": "The Resource type for/to which access is requested/granted."
+      },
+      "extra": {
+        "EA-Name": "forPersonalDataType",
+        "EA-Guid": "{0F2EC574-5DBA-4fa4-9C0C-2076BEC81FC2}",
+        "derived": "false",
+        "EA-Package": "",
+        "EA-Type": "connector",
+        "EA-Domain": "AccessRequestOrGrant",
+        "EA-Domain-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
+        "EA-Range": "Resource",
+        "RangeData": {
+          "EA-Name": "Resource",
+          "EA-GUID": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+          "EA-Package": "Access",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        },
+        "sourceRole": "null",
+        "destRole": "forPersonalDataType",
+        "label": {
+          "nl": "for personal data type"
+        },
+        "definition": {
+          "nl": "The Resource type for/to which access is requested/granted."
+        },
+        "usage": "",
+        "label-nl": {
+          "nl": "for personal data type"
+        },
+        "definition-nl": {
+          "nl": "The Resource type for/to which access is requested/granted."
+        },
+        "usageNote-nl": "",
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The Resource type for/to which access is requested/granted."
+          },
+          {
+            "key": "name",
+            "value": "NOTE",
+            "note": "forPersonalDataType"
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "for personal data type"
+          }
+        ],
+        "DestRoleTags": [
+          {
+            "key": "definition-nl",
+            "value": "NOTE",
+            "note": "The Resource type for/to which access is requested/granted."
+          },
+          {
+            "key": "name",
+            "value": "NOTE",
+            "note": "forPersonalDataType"
+          },
+          {
+            "key": "label-nl",
+            "value": "NOTE",
+            "note": "for personal data type"
+          }
+        ],
+        "Scope": "FULL_DEFINITON"
+      },
+      "codelist": [],
+      "domain": [
+        {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "EA-Name": "AccessRequestOrGrant"
+        }
+      ],
+      "range": [
+        {
+          "EA-Name": "Resource",
+          "EA-GUID": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+          "EA-Package": "Access",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        }
+      ],
+      "generalization": []
+    }
+  ],
+  "externals": [
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "inpackage": "OTHER_PACKAGE",
+      "label-nl": {
+        "nl": "Resource"
+      },
+      "usage": {
+        "nl": "E.g. a class URI from a domain-specific ontology."
+      },
+      "usageNote-nl": {
+        "nl": "E.g. a class URI from a domain-specific ontology."
+      },
+      "definition": {
+        "nl": "A resource."
+      },
+      "label": {
+        "nl": "Resource"
+      },
+      "definition-nl": {
+        "nl": "A resource."
+      },
+      "extra": {
+        "EA-Name": "Resource",
+        "EA-Guid": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+        "EA-Package": "Access",
+        "EA-Type": "CLASS",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "parentclasses": "",
+        "label": {
+          "nl": "Resource"
+        },
+        "definition": {
+          "nl": "A resource."
+        },
+        "usage": {
+          "nl": "E.g. a class URI from a domain-specific ontology."
+        },
+        "label-nl": {
+          "nl": "Resource"
+        },
+        "definition-nl": {
+          "nl": "A resource."
+        },
+        "usageNote-nl": {
+          "nl": "E.g. a class URI from a domain-specific ontology."
+        },
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "Resource",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "A resource.",
+            "note": "null"
+          },
+          {
+            "key": "usageNote-nl",
+            "value": "E.g. a class URI from a domain-specific ontology.",
+            "note": "null"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "name": "Resource"
+    },
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "inpackage": "OTHER_PACKAGE",
+      "label-nl": {
+        "nl": "Access Request or Grant"
+      },
+      "definition": {
+        "nl": "An Access Request or an Access Grant."
+      },
+      "label": {
+        "nl": "Access Request or Grant"
+      },
+      "definition-nl": {
+        "nl": "An Access Request or an Access Grant."
+      },
+      "extra": {
+        "EA-Name": "AccessRequestOrGrant",
+        "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
+        "EA-Package": "Access",
+        "EA-Type": "CLASS",
+        "EA-Parents": "",
+        "EA-Parents2": [],
+        "parentclasses": "",
+        "label": {
+          "nl": "Access Request or Grant"
+        },
+        "definition": {
+          "nl": "An Access Request or an Access Grant."
+        },
+        "usage": "",
+        "label-nl": {
+          "nl": "Access Request or Grant"
+        },
+        "definition-nl": {
+          "nl": "An Access Request or an Access Grant."
+        },
+        "usageNote-nl": "",
+        "label-en": "",
+        "definition-en": "",
+        "usageNote-en": "",
+        "equivalent": "",
+        "subclass": "",
+        "subclass1": "",
+        "sameAs": "",
+        "RawTags": [
+          {
+            "key": "label-nl",
+            "value": "Access Request or Grant",
+            "note": "null"
+          },
+          {
+            "key": "definition-nl",
+            "value": "An Access Request or an Access Grant.",
+            "note": "null"
+          },
+          {
+            "key": "uri",
+            "value": "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "note": "null"
+          }
+        ],
+        "Scope": "TRANSLATIONS_ONLY"
+      },
+      "name": "Access Request or Grant"
+    }
+  ],
+  "externalproperties": [],
+  "name": "access",
+  "type": "voc",
+  "eap": "Access.eap",
+  "diagram": "Access",
+  "template": "access-voc.j2",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "publication-date": "2023-02-01",
+  "contributors-file": "stakeholders.csv",
+  "contributors-column": "access",
+  "site": "site-skeleton/access",
+  "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
+  "config": "config/config-voc.json",
+  "branchtag": "master",
+  "dummy": "dimi-1",
+  "filename": "config/access.json",
+  "navigation": {},
+  "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
+  "urlref": "/doc/vocabularium/access/2023-02-01",
+  "documentcommit": "2a4b2de3779e8089aecb8125c96cd0a3d03b5a4b",
+  "toolchaincommit": "f1e0c452b78eb88b9e8d5dd2315ae6c3ca7d3ec5",
+  "hostname": "https://solid.data.vlaanderen.be/",
+  "translation": [
+    {
+      "language": "nl",
+      "title": "null",
+      "template": "access-voc.j2",
+      "translationjson": "access_nl.json",
+      "mergefile": "access_nl_merged.json"
+    }
+  ]
+}

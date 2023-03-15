@@ -1,0 +1,85 @@
+{
+  "classes": [
+    {
+      "EA-Guid": "{C2C399CB-F388-4c2a-B3A3-87964DB93800}",
+      "name": "Access Grant",
+      "label": {
+        "nl": "Access Grant",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "A grant for access.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{48D13C3F-6C78-4853-B5C0-7CEC8A0F3DFB}",
+      "name": "Access Request",
+      "label": {
+        "nl": "Access Request",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "A request for access.",
+        "en": "Enter your translation here"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "EA-Guid": "{547B789A-14BB-48a3-8633-D95F61709ECC}",
+      "name": "original access request",
+      "label": {
+        "nl": "original access request",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "The original Access Request to which the Access Grant refers.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{0F2EC574-5DBA-4fa4-9C0C-2076BEC81FC2}",
+      "name": "for personal data type",
+      "label": {
+        "nl": "for personal data type",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "The Resource type for/to which access is requested/granted.",
+        "en": "Enter your translation here"
+      }
+    }
+  ],
+  "externals": [
+    {
+      "EA-Guid": "{D5329F74-FF32-4f8b-86BF-99A8479326FC}",
+      "name": "Resource",
+      "label": {
+        "nl": "Resource",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "A resource.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "E.g. a class URI from a domain-specific ontology.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9C6B0550-11D7-4589-A46D-46FDAD30656B}",
+      "name": "Access Request or Grant",
+      "label": {
+        "nl": "Access Request or Grant",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "An Access Request or an Access Grant.",
+        "en": "Enter your translation here"
+      }
+    }
+  ],
+  "externalproperties": []
+}
