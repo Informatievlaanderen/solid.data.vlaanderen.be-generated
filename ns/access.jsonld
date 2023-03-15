@@ -30,28 +30,7 @@
   "navigation": {},
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "publication-date": "2023-02-01",
-  "classes": [
-    {
-      "@id": "https://solid.data.vlaanderen.be/ns/access#AccessGrant",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "nl": "A grant for access."
-      },
-      "parents": [
-        "http://www.w3.org/2000/01/rdf-schema#Resource"
-      ]
-    },
-    {
-      "@id": "https://solid.data.vlaanderen.be/ns/access#AccessRequest",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "nl": "A request for access."
-      },
-      "parents": [
-        "http://www.w3.org/2000/01/rdf-schema#Resource"
-      ]
-    }
-  ],
+  "classes": [],
   "externals": [
     {
       "name": {
@@ -66,6 +45,20 @@
       },
       "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
       "@type": "rdfs:Class"
+    },
+    {
+      "name": {
+        "nl": "Access Grant"
+      },
+      "@id": "http://www.w3.org/ns/solid/vc#SolidAccessGrant",
+      "@type": "rdfs:Class"
+    },
+    {
+      "name": {
+        "nl": "Access Request"
+      },
+      "@id": "http://www.w3.org/ns/solid/vc#SolidAccessRequest",
+      "@type": "rdfs:Class"
     }
   ],
   "properties": [
@@ -76,10 +69,10 @@
         "nl": "The original Access Request to which the Access Grant refers."
       },
       "domain": [
-        "https://solid.data.vlaanderen.be/ns/access#AccessGrant"
+        "http://www.w3.org/ns/solid/vc#SolidAccessGrant"
       ],
       "range": [
-        "https://solid.data.vlaanderen.be/ns/access#AccessRequest"
+        "http://www.w3.org/ns/solid/vc#SolidAccessRequest"
       ],
       "generalization": []
     },

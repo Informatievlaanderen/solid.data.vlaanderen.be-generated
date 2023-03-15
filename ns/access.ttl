@@ -10,6 +10,12 @@ rdfs:Resource a rdfs:Class;
   rdfs:label "Resource"@nl,
     "Access Request or Grant"@nl .
 
+<http://www.w3.org/ns/solid/vc#SolidAccessGrant> a rdfs:Class;
+  rdfs:label "Access Grant"@nl .
+
+<http://www.w3.org/ns/solid/vc#SolidAccessRequest> a rdfs:Class;
+  rdfs:label "Access Request"@nl .
+
 <https://solid.data.vlaanderen.be/ns/access#forPersonalDataType> a owl:ObjectProperty;
   rdfs:comment "The Resource type for/to which access is requested/granted."@nl;
   rdfs:domain rdfs:Resource;
@@ -18,19 +24,9 @@ rdfs:Resource a rdfs:Class;
 
 <https://solid.data.vlaanderen.be/ns/access#originalAccessRequest> a owl:ObjectProperty;
   rdfs:comment "The original Access Request to which the Access Grant refers."@nl;
-  rdfs:domain <https://solid.data.vlaanderen.be/ns/access#AccessGrant>;
+  rdfs:domain <http://www.w3.org/ns/solid/vc#SolidAccessGrant>;
   rdfs:isDefinedBy <https://solid.data.vlaanderen.be/ns/access>;
-  rdfs:range <https://solid.data.vlaanderen.be/ns/access#AccessRequest> .
-
-<https://solid.data.vlaanderen.be/ns/access#AccessGrant> a owl:Class;
-  rdfs:comment "A grant for access."@nl;
-  rdfs:isDefinedBy <https://solid.data.vlaanderen.be/ns/access>;
-  rdfs:subClassOf rdfs:Resource .
-
-<https://solid.data.vlaanderen.be/ns/access#AccessRequest> a owl:Class;
-  rdfs:comment "A request for access."@nl;
-  rdfs:isDefinedBy <https://solid.data.vlaanderen.be/ns/access>;
-  rdfs:subClassOf rdfs:Resource .
+  rdfs:range <http://www.w3.org/ns/solid/vc#SolidAccessRequest> .
 
 <https://solid.data.vlaanderen.be/ns/access> a owl:Ontology;
   rdfs:label "access"@en,
@@ -43,7 +39,9 @@ rdfs:Resource a rdfs:Class;
     foaf:mbox <mailto:magda-teamsolid@vlaanderen.be>;
     foaf:name "Digitaal Vlaanderen - MAGDA Solid"
   ];
-  rdfs:seeAlso rdfs:Resource;
+  rdfs:seeAlso rdfs:Resource,
+    <http://www.w3.org/ns/solid/vc#SolidAccessGrant>,
+    <http://www.w3.org/ns/solid/vc#SolidAccessRequest>;
   <http://www.w3.org/2001/02pd/rec54#editor> [
     a foaf:Person;
     schema:affiliation [

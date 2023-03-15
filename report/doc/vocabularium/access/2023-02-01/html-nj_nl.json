@@ -11,47 +11,14 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/2a4b2de3779e8089aecb8125c96cd0a3d03b5a4b",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/2a4b2de3779e8089aecb8125c96cd0a3d03b5a4b/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/7b67a978d219dbdd5bad2d3f1738909160a0127e",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/7b67a978d219dbdd5bad2d3f1738909160a0127e/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
     "usesAPs": []
   },
-  "classes": [
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/access#AccessGrant",
-      "name": "Access Grant",
-      "label": {
-        "nl": "Access Grant"
-      },
-      "sort": "Access Grant",
-      "description": {
-        "nl": "A grant for access."
-      },
-      "usage": {},
-      "equivalent": [],
-      "parents": [
-        "http://www.w3.org/2000/01/rdf-schema#Resource"
-      ]
-    },
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/access#AccessRequest",
-      "name": "Access Request",
-      "label": {
-        "nl": "Access Request"
-      },
-      "sort": "Access Request",
-      "description": {
-        "nl": "A request for access."
-      },
-      "usage": {},
-      "equivalent": [],
-      "parents": [
-        "http://www.w3.org/2000/01/rdf-schema#Resource"
-      ]
-    }
-  ],
+  "classes": [],
   "properties": [
     {
       "uri": "https://solid.data.vlaanderen.be/ns/access#originalAccessRequest",
@@ -65,10 +32,10 @@
       },
       "usage": {},
       "domain": [
-        "https://solid.data.vlaanderen.be/ns/access#AccessGrant"
+        "http://www.w3.org/ns/solid/vc#SolidAccessGrant"
       ],
       "range": [
-        "https://solid.data.vlaanderen.be/ns/access#AccessRequest"
+        "http://www.w3.org/ns/solid/vc#SolidAccessRequest"
       ],
       "parents": []
     },
@@ -134,6 +101,38 @@
       },
       "usage": {},
       "sort": "Access Request or Grant",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/ns/solid/vc#SolidAccessGrant",
+      "name": "Access Grant",
+      "label": {
+        "nl": "Access Grant"
+      },
+      "description": {
+        "nl": "A grant for access."
+      },
+      "usage": {},
+      "sort": "Access Grant",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/ns/solid/vc#SolidAccessRequest",
+      "name": "Access Request",
+      "label": {
+        "nl": "Access Request"
+      },
+      "description": {
+        "nl": "A request for access."
+      },
+      "usage": {},
+      "sort": "Access Request",
       "indvl": false,
       "inpackage": false,
       "inscope": true,

@@ -1,26 +1,5 @@
 {
-  "classes": [
-    {
-      "EA-Guid": "{C2C399CB-F388-4c2a-B3A3-87964DB93800}",
-      "name": "Access Grant",
-      "label": {
-        "nl": "Access Grant"
-      },
-      "definition": {
-        "nl": "A grant for access."
-      }
-    },
-    {
-      "EA-Guid": "{48D13C3F-6C78-4853-B5C0-7CEC8A0F3DFB}",
-      "name": "Access Request",
-      "label": {
-        "nl": "Access Request"
-      },
-      "definition": {
-        "nl": "A request for access."
-      }
-    }
-  ],
+  "classes": [],
   "properties": [
     {
       "EA-Guid": "{547B789A-14BB-48a3-8633-D95F61709ECC}",
@@ -65,6 +44,26 @@
       },
       "definition": {
         "nl": "An Access Request or an Access Grant."
+      }
+    },
+    {
+      "EA-Guid": "{C2C399CB-F388-4c2a-B3A3-87964DB93800}",
+      "name": "Access Grant",
+      "label": {
+        "nl": "Access Grant"
+      },
+      "definition": {
+        "nl": "A grant for access."
+      }
+    },
+    {
+      "EA-Guid": "{48D13C3F-6C78-4853-B5C0-7CEC8A0F3DFB}",
+      "name": "Access Request",
+      "label": {
+        "nl": "Access Request"
+      },
+      "definition": {
+        "nl": "A request for access."
       }
     }
   ],
