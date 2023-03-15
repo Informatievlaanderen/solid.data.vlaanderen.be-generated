@@ -86,8 +86,8 @@
   "contributors-column": "access",
   "contributors-file": "stakeholders.csv",
   "diagram": "Access",
-  "documentcommit": "7b67a978d219dbdd5bad2d3f1738909160a0127e",
-  "dummy": "dimi-2",
+  "documentcommit": "a221e25be3ae17fc527503e442b7640500be583b",
+  "dummy": "dimi-3",
   "eap": "Access.eap",
   "editors": [
     {
@@ -642,16 +642,17 @@
   "site": "site-skeleton/access",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
   "template": "access-voc.j2",
+  "title": "Solid Access",
   "title-nl": {
     "nl": "TODO"
   },
-  "toolchaincommit": "e8560c14fc410e81f259b66be9340a2f12cd9fec",
+  "toolchaincommit": "e7a22c198ce975d692db6b7338091ebc578c2828",
   "translation": [
     {
       "language": "nl",
       "mergefile": "access_nl_merged.json",
       "template": "access-voc.j2",
-      "title": "null",
+      "title": "Solid Access",
       "translationjson": "access_nl.json"
     }
   ],

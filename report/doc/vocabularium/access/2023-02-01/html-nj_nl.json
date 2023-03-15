@@ -1,5 +1,6 @@
 {
   "metadata": {
+    "title": "Solid Access",
     "uri": "https://solid.data.vlaanderen.be/ns/access",
     "issued": "2023-02-01",
     "filename": "access",
@@ -11,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/7b67a978d219dbdd5bad2d3f1738909160a0127e",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/7b67a978d219dbdd5bad2d3f1738909160a0127e/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/tree/a221e25be3ae17fc527503e442b7640500be583b",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/blob/a221e25be3ae17fc527503e442b7640500be583b/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-generiek/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
