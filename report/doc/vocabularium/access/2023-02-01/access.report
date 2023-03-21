@@ -2,19 +2,19 @@ Load mapping config:config/config-voc.json
 WARNING:You shouldn't use 'user' reserved word as column name in the table t_datatypes (it refers to the database user).
  Escape it in your SQL! 
 (e.g. SELECT [USER] FROM TABLE WHERE [USER]='Joe')
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
-07:19:43 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2000/01/rdf-schema#Resource): Model.Access:Resource, Model.Access:AccessRequestOrGrant
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Access".
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Access".
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Access".
-07:19:43 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Access".
-07:19:43 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Resource" .
-07:19:43 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessRequestOrGrant" .
-07:19:43 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessRequest" .
-07:19:43 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessGrant" .
-07:19:43 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Access:AccessGrant:originalAccessRequest" belongs to package "Access" based on source and target definition.
-07:19:43 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Access:AccessRequestOrGrant:forPersonalDataType" belongs to package "Access" based on source and target definition.
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
+07:21:56 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2000/01/rdf-schema#Resource): Model.Access:Resource, Model.Access:AccessRequestOrGrant
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Access".
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Access".
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "title-nl" tag for "Model.Access".
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Access".
+07:21:56 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Access".
+07:21:56 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Resource" .
+07:21:56 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessRequestOrGrant" .
+07:21:56 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessRequest" .
+07:21:56 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "AccessGrant" .
+07:21:56 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Access:AccessGrant:originalAccessRequest" belongs to package "Access" based on source and target definition.
+07:21:56 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Access:AccessRequestOrGrant:forPersonalDataType" belongs to package "Access" based on source and target definition.
