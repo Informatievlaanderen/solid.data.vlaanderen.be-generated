@@ -1333,6 +1333,7 @@
   "type": "ap",
   "eap": "SKOS.eap",
   "diagram": "skos",
+  "template": "skos-ap_nl.j2",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "publication-date": "2023-02-01",
   "contributors-file": "stakeholders.csv",
@@ -1347,14 +1348,14 @@
   "navigation": {},
   "repository": "https://github.com/Informatievlaanderen/SolidThema-generiek",
   "urlref": "/doc/applicatieprofiel/skos/2022-12-13",
-  "documentcommit": "f5d6c4f9bc2d9cdd519ae6782c9a2bd5a98e20c2",
-  "toolchaincommit": "968b0764c49785c0b37b1821010a9af59297aa11",
+  "documentcommit": "a221e25be3ae17fc527503e442b7640500be583b",
+  "toolchaincommit": "bdd147f5a14d1c2392775d5036025a3587b9535c",
   "hostname": "https://solid.data.vlaanderen.be/",
   "translation": [
     {
       "language": "nl",
       "title": "null",
-      "template": "null",
+      "template": "skos-ap_nl.j2",
       "translationjson": "skos-ap_nl.json",
       "mergefile": "skos-ap_nl_merged.json"
     }

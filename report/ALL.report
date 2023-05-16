@@ -3,262 +3,262 @@ Load mapping config:config/config-ap.json
 WARNING:You shouldn't use 'user' reserved word as column name in the table t_datatypes (it refers to the database user).
  Escape it in your SQL! 
 (e.g. SELECT [USER] FROM TABLE WHERE [USER]='Joe')
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Alarmbelprocedureformulier".
-15:01:27 WARN  c.g.i.o.c.UriAssigner - The following packages map to the same URI (http://fixme.com#): Model, Model.Alarmbelprocedureformulier
-15:01:27 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid, Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid, Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType, Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed, Model.Alarmbelprocedureformulier.Alarmbelprocedure:Valuta
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "MaandelijkseInkomsten" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "OnroerendGoed" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "DoelOnroerendGoed" .
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed".
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class DoelOnroerendGoed without label, further processing this class will be incoherent
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Geldbedrag" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "FinancieleOmstandigheid" .
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid".
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class FinancieleOmstandigheid without label, further processing this class will be incoherent
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Persoon" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "SituationeleOmstandigheid" .
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid".
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class SituationeleOmstandigheid without label, further processing this class will be incoherent
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Alarmbelprocedureformulier" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Document" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "DocumentType" .
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType".
-15:01:27 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType".
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class DocumentType without label, further processing this class will be incoherent
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifieerbareCredential" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "MaandelijkseUitgaven" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "MaandelijkseInkomstenOfUitgaven" .
-15:01:27 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Periode" .
-15:01:27 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:inkomsten" belongs to package "Alarmbelprocedure" based on source and target definition.
-15:01:27 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:MaandelijkseInkomstenOfUitgaven:bewijsstukDocument" belongs to package "Alarmbelprocedure" based on source and target definition.
-15:01:27 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:verkocht" belongs to package "Alarmbelprocedure" based on source and target definition.
-15:01:27 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:MaandelijkseInkomstenOfUitgaven:bewijsstukVerifieerbareCredential" belongs to package "Alarmbelprocedure" based on source and target definition.
-15:01:27 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:kocht" belongs to package "Alarmbelprocedure" based on source and target definition.
-15:01:27 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:uitgaven" belongs to package "Alarmbelprocedure" based on source and target definition.
-15:01:27 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Alarmbelprocedureformulier:eigenaar" belongs to package "Alarmbelprocedure" based on source and target definition.
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: eigenWoning - {E73AA80C-A25B-4200-A853-DBB8EB86BDAA}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: beroepsdoeleinden - {1D91FF91-408B-4df6-96F5-6EACC142831B}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtTegemoetkomingVoorHulpAanBejaarden - {386C199F-33E6-4170-BF8B-3ECAAA9F510D}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtIntegratietegemoetkoming - {D518C3C0-1FA0-41ab-A697-7CFB29B93BCA}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtPensioenAansluitendOpZiekteUitkeringen - {7B29FAA1-6AAD-4e79-A38B-DF0B48AABEDF}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtUitkeringenArbeidsongeval - {2213CD87-97C6-4be2-A56B-601C38D1C4E4}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtOverlevingspensioen - {FFCE2EA7-70AB-4b6b-B0DA-CD73537D9B08}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: isArbeidsongeschikt - {917DE719-FD04-43d3-BD11-15325F033E13}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: persoonInGezinOuderDan25EnInHogerOnderwijs - {31E9E3D5-BD9C-44e8-92AF-5D237A8D2F74}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: persoonInGezinFiscaalTenLasteEnErkendeHandicap - {96BD3DAF-6AA0-4028-BD47-0DB368415CDF}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: attestUitbetalingsinstelling - {6C38324B-B242-4084-A72F-04E03503A1C5}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: loonfiche - {C7457D27-158C-47ed-BBD0-E4ABE302D141}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: rekeninguittreksels - {B07222A4-6F2E-4163-B4D3-CE69F74F9396}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: verklaringBoekhouder - {EAC1C701-5442-480e-BBE5-77F86387D381}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: verklaringSociaalVerzekeringsfonds - {5BEDC1C8-EFAA-45d4-9B6C-A2BB46074FCE}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: attestWerkgever - {F9571728-5BBC-471f-A7E1-9ADE32ECDE5F}
-15:01:27 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: attestOCMW - {808DD691-0E67-46e7-83D2-F13E804939F9}
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Alarmbelprocedureformulier".
+06:53:08 WARN  c.g.i.o.c.UriAssigner - The following packages map to the same URI (http://fixme.com#): Model, Model.Alarmbelprocedureformulier
+06:53:08 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed, Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid, Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType, Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid, Model.Alarmbelprocedureformulier.Alarmbelprocedure:Valuta
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure".
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "MaandelijkseInkomsten" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "OnroerendGoed" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "DoelOnroerendGoed" .
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DoelOnroerendGoed".
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class DoelOnroerendGoed without label, further processing this class will be incoherent
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Geldbedrag" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "FinancieleOmstandigheid" .
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:FinancieleOmstandigheid".
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class FinancieleOmstandigheid without label, further processing this class will be incoherent
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Persoon" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "SituationeleOmstandigheid" .
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:SituationeleOmstandigheid".
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class SituationeleOmstandigheid without label, further processing this class will be incoherent
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Alarmbelprocedureformulier" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Document" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "DocumentType" .
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType".
+06:53:08 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Alarmbelprocedureformulier.Alarmbelprocedure:DocumentType".
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class DocumentType without label, further processing this class will be incoherent
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifieerbareCredential" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "MaandelijkseUitgaven" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "MaandelijkseInkomstenOfUitgaven" .
+06:53:08 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Periode" .
+06:53:08 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:MaandelijkseInkomstenOfUitgaven:bewijsstukVerifieerbareCredential" belongs to package "Alarmbelprocedure" based on source and target definition.
+06:53:08 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Alarmbelprocedureformulier:eigenaar" belongs to package "Alarmbelprocedure" based on source and target definition.
+06:53:08 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:inkomsten" belongs to package "Alarmbelprocedure" based on source and target definition.
+06:53:08 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:verkocht" belongs to package "Alarmbelprocedure" based on source and target definition.
+06:53:08 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:uitgaven" belongs to package "Alarmbelprocedure" based on source and target definition.
+06:53:08 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:Persoon:kocht" belongs to package "Alarmbelprocedure" based on source and target definition.
+06:53:08 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Alarmbelprocedureformulier.Alarmbelprocedure:MaandelijkseInkomstenOfUitgaven:bewijsstukDocument" belongs to package "Alarmbelprocedure" based on source and target definition.
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: eigenWoning - {E73AA80C-A25B-4200-A853-DBB8EB86BDAA}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: beroepsdoeleinden - {1D91FF91-408B-4df6-96F5-6EACC142831B}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtTegemoetkomingVoorHulpAanBejaarden - {386C199F-33E6-4170-BF8B-3ECAAA9F510D}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtIntegratietegemoetkoming - {D518C3C0-1FA0-41ab-A697-7CFB29B93BCA}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtPensioenAansluitendOpZiekteUitkeringen - {7B29FAA1-6AAD-4e79-A38B-DF0B48AABEDF}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtUitkeringenArbeidsongeval - {2213CD87-97C6-4be2-A56B-601C38D1C4E4}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: ontvangtOverlevingspensioen - {FFCE2EA7-70AB-4b6b-B0DA-CD73537D9B08}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: isArbeidsongeschikt - {917DE719-FD04-43d3-BD11-15325F033E13}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: persoonInGezinOuderDan25EnInHogerOnderwijs - {31E9E3D5-BD9C-44e8-92AF-5D237A8D2F74}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: persoonInGezinFiscaalTenLasteEnErkendeHandicap - {96BD3DAF-6AA0-4028-BD47-0DB368415CDF}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: attestUitbetalingsinstelling - {6C38324B-B242-4084-A72F-04E03503A1C5}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: loonfiche - {C7457D27-158C-47ed-BBD0-E4ABE302D141}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: rekeninguittreksels - {B07222A4-6F2E-4163-B4D3-CE69F74F9396}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: verklaringBoekhouder - {EAC1C701-5442-480e-BBE5-77F86387D381}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: verklaringSociaalVerzekeringsfonds - {5BEDC1C8-EFAA-45d4-9B6C-A2BB46074FCE}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: attestWerkgever - {F9571728-5BBC-471f-A7E1-9ADE32ECDE5F}
+06:53:08 WARN  c.g.i.o.c.JSONLDOutputHandler - INSTANCE NOT HANDLED: attestOCMW - {808DD691-0E67-46e7-83D2-F13E804939F9}
 /tmp/workspace/src/doc/applicatieprofiel/leercredential/2023-01-10
 Load mapping config:config/config-ap.json
 WARNING:You shouldn't use 'user' reserved word as column name in the table t_datatypes (it refers to the database user).
  Escape it in your SQL! 
 (e.g. SELECT [USER] FROM TABLE WHERE [USER]='Joe')
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model.OSLO-Generiek".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model.OSLO-Organisatie".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model.OSLO-Persoon".
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following packages map to the same URI (http://fixme.com#): Model, Model.Model, Model.Model.OSLO-Generiek, Model.Model.OSLO-Organisatie, Model.Model.OSLO-Persoon
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.Model.OSLO-Organisatie:OrganisatieClassificatie, Model.Model.OSLO-Diploma:Volledigheidtype, Model.Model.OSLO-Diploma:Assessmenttype, Model.Model.OSLO-Diploma:Doelgroep, Model.Model.OSLO-Diploma:Accreditatiestatus, Model.Model.OSLO-Diploma:Kwalificatieklasse, Model.Model.OSLO-Diploma:Studiegebied, Model.Model.OSLO-Persoon:Gender, Model.Model.OSLO-Diploma:Beroep, Model.Model.OSLO-Diploma:Toegekendrechttype, Model.Model.OSLO-Adres:AdministratiefNiveau, Model.Model.OSLO-Adres:Locatieaanduidingtype, Model.Model.OSLO-Diploma:Authenticiteit, Model.Model.OSLO-Diploma:Toegekendrechtstatus, Model.Model.OSLO-Diploma:Herbruikbaarheidsniveau, Model.Model.OSLO-Adres:Locatorniveauwaarde, Model.Model.OSLO-Diploma:Kredietpuntenframework, Model.Model.OSLO-Diploma:Leeractiviteittype, Model.Model.OSLO-Diploma:Accreditatietype, Model.Model.OSLO-Diploma:Credentialtype, Model.Model.OSLO-Diploma:Leeruitkomsttype, Model.Model.OSLO-Diploma:Assessmentvorm, Model.Model.OSLO-Diploma:Onderwijsvorm, Model.Model.OSLO-Diploma:Taal, Model.Model.OSLO-Diploma:Onderwijsniveau, Model.Model.OSLO-Diploma:Onderwerp, Model.Model.OSLO-Diploma:Verificatiestatus, Model.Model.OSLO-Diploma:Land, Model.Model.OSLO-Adres:Statuswaarde, Model.Model.OSLO-Organisatie:OrganisatieClassificatie, Model.Model.OSLO-Adres:Locatienaamtype, Model.Model.OSLO-Diploma:Mediaobjecttype, Model.Model.OSLO-Diploma:Kwalificatieniveau, Model.Model.OSLO-Diploma:Vaardigheidtype, Model.Model.OSLO-Diploma:Verificatiechecktype, Model.Model.OSLO-Diploma:Leerclaimtype, Model.Model.OSLO-Diploma:Mediacoderingtype, Model.Model.OSLO-Diploma:Leerprestatietype, Model.Model.OSLO-Diploma:Leersetting, Model.Model.OSLO-Diploma:Leercredentialtype
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#langString): Model.Model.OSLO-Generiek:TaalString, Model.Model.OSLO-Generiek:GeografischeNaam
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/ns/person#Person): Model.Model.OSLO-Persoon:Persoon, Model.Model.OSLO-Persoon:Persoon - Copy
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://www.w3.org/ns/adms#identifier): Model.Model.OSLO-Generiek:Plaats:identificator, Model.Model.OSLO-Diploma:Beoordelingsschema:identificator, Model.Model.OSLO-Organisatie:Organisatie:identificator, Model.Model.OSLO-Diploma:Toekenningsproces:identificator, Model.Model.OSLO-Diploma:Leerclaim:identificator, Model.Model.OSLO-Diploma:Leercredential:identificator, Model.Model.OSLO-Diploma:Accreditatie:identificator, Model.Model.OSLO-Diploma:Leeruitkomst:identificator, Model.Model.OSLO-Persoon:Persoon:identificator, Model.Model.OSLO-Diploma:Leerspecificatie:identificator
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://data.europa.eu/m8g/location): Model.Model.OSLO-Organisatie:Vestiging:locatie, Model.Model.OSLO-Generiek:Locatie:plaats
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/description): Model.Model.OSLO-Diploma:Resultaatverdeling:beschrijving, Model.Model.OSLO-Diploma:Accreditatie:beschrijving, Model.Model.OSLO-Diploma:Beoordelingsschema:beschrijving, Model.Model.OSLO-Diploma:Leeruitkomst:beschrijving, Model.Model.OSLO-Diploma:Verificatiecheck:beschrijving
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://www.w3.org/2000/01/rdf-schema#label): Model.Model.OSLO-Adres:Gemeentenaam:gemeentenaam, Model.Model.OSLO-Adres:Straatnaam:straatnaam, Model.Model.OSLO-Adres:Locatienaam:naam, Model.Model.OSLO-Generiek:Plaats:plaatsnaam
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/type): Model.Model.OSLO-Diploma:Assessmentspecificatie:type, Model.Model.OSLO-Diploma:Verificatiecheck:type, Model.Model.OSLO-Diploma:Leerprestatiespecificatie:type, Model.Model.OSLO-Diploma:Accreditatie:accreditatietype, Model.Model.OSLO-Diploma:Leerclaim:type, Model.Model.OSLO-Diploma:Mediaobject:type, Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:type, Model.Model.OSLO-Diploma:Leeruitkomst:type, Model.Model.OSLO-Generiek:GetypeerdeString:type
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/title): Model.Model.OSLO-Diploma:Leerspecificatie:titel, Model.Model.OSLO-Diploma:Webdocument:titel, Model.Model.OSLO-Diploma:Accreditatie:titel, Model.Model.OSLO-Diploma:Leeruitkomst:titel, Model.Model.OSLO-Diploma:Beoordelingsschema:titel, Model.Model.OSLO-Diploma:Leerclaim:titel
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#location): Model.Model.OSLO-Diploma:Leeractiviteit:locatie, Model.Model.OSLO-Diploma:Toekenningsproces:locatie
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/issued): Model.Model.OSLO-Diploma:Assessment:assessmentdatum, Model.Model.OSLO-Generiek:Identificator:uitgifteDatum, Model.Model.OSLO-Diploma:ToegekendRecht:uitgaveDatum, Model.Model.OSLO-Diploma:Accreditatie:uitgaveDatum
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#contentUrl): Model.Model.OSLO-Diploma:Mediaobject:contentURL, Model.Model.OSLO-Diploma:Webdocument:inhoud
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/language): Model.Model.OSLO-Diploma:Leerprestatiespecificatie:onderwijstaal, Model.Model.OSLO-Diploma:Leeractiviteitspecificatie:instructietaal, Model.Model.OSLO-Diploma:Assessmentspecificatie:assesmenttaal, Model.Model.OSLO-Diploma:Voorstelling:taal, Model.Model.OSLO-Diploma:Webdocument:taal
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#expiryDate): Model.Model.OSLO-Diploma:ToegekendRecht:vervaldatum, Model.Model.OSLO-Diploma:Accreditatie:vervaldatum
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#status): Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:status, Model.Model.OSLO-Diploma:Accreditatie:accreditatiestatus, Model.Model.OSLO-Diploma:Verificatiecheck:status
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#limitJurisdiction): Model.Model.OSLO-Diploma:Accreditatie:jurisdictie, Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:geldigBinnen
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#hasPart): Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:heeftDeel, Model.Model.OSLO-Diploma:Assessment:heeftDeel, Model.Model.OSLO-Diploma:Assessmentspecificatie:heeftDeel, Model.Model.OSLO-Diploma:ToegekendRecht:heeftDeel, Model.Model.OSLO-Diploma:Leeractiviteit:heeftDeel
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#supplementaryDocument): Model.Model.OSLO-Diploma:Accreditatie:aanvullendDocument, Model.Model.OSLO-Diploma:Beoordelingsschema:bijkomendDocument
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#specialisationOf): Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:specialisatieVan, Model.Model.OSLO-Diploma:Assessmentspecificatie:specialisatieVan
-15:01:30 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#specifiedBy): Model.Model.OSLO-Diploma:Assessment:specificatie, Model.Model.OSLO-Diploma:Leeractiviteit:specificatie, Model.Model.OSLO-Diploma:ToegekendRecht:specificatie, Model.Model.OSLO-Diploma:Leerprestatie:specificatie
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Model.Solid-Leercredential".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Model.Solid-Leercredential".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Model.Solid-Leercredential".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Model.Solid-Leercredential".
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Onderwerp".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Onderwerp" .
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Onderwijsniveau".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Onderwijsniveau" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Voorstelling" .
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Authenticiteit".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Authenticiteit" .
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Authenticiteit".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Authenticiteit".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Authenticiteit".
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Studiegebied".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Studiegebied" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerspecificatie" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Kwalificatie" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdeOrganisatie" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdPersoon" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GetypeerdeString" .
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Generiek:GetypeerdeString".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Generiek:GetypeerdeString".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Generiek:GetypeerdeString".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Locatie" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Identificator" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "TaalString" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Toekenningsproces" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerclaim" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerprestatie" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Bewijs" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Persoon" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leercredential" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Credential" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Organisatie" .
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Taal".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Taal" .
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Leercredentialtype".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leercredentialtype" .
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Leerprestatietype".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerprestatietype" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "EuropeesDigitaalCredential" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifieerbareCredential" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerprestatiespecificatie" .
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Adresvoorstelling" .
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Land".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Land" .
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Land".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Land".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Land".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leeractiviteitspecificatie" .
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "OrganisatieClassificatie" .
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
-15:01:30 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Leerclaimtype".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerclaimtype" .
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Leerclaimtype".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Leerclaimtype".
-15:01:30 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Leerclaimtype".
-15:01:30 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Agent" .
-15:01:30 WARN  c.g.i.o.c.Converter - Package for connector Model.Model.OSLO-Diploma:Leercredential:uitgever is unknown
-15:01:30 WARN  c.g.i.o.c.Converter - Package for connector Model.Model.OSLO-Diploma:Leercredential:eigenaar is unknown
-15:01:30 WARN  c.g.i.o.c.Converter - Package for connector Model.Model.OSLO-Diploma:Toekenningsproces:uitgevoerdDoor is unknown
-15:01:30 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leeractiviteitspecificatie:beinvloedt" belongs to package "OSLO-Diploma" based on source and target definition.
-15:01:30 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leerprestatiespecificatie:beinvloedDoor" belongs to package "OSLO-Diploma" based on source and target definition.
-15:01:30 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leerclaim:toegekendDoor" belongs to package "OSLO-Diploma" based on source and target definition.
-15:01:30 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Toekenningsproces:kentToe" belongs to package "OSLO-Diploma" based on source and target definition.
-15:01:30 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leercredential:bewijs" belongs to package "OSLO-Diploma" based on source and target definition.
-15:01:30 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Model.OSLO-Generiek:TaalString:string" since it is marked as ignored.
-15:01:30 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Model.OSLO-Generiek:TaalString:taal" since it is marked as ignored.
-15:01:30 WARN  c.g.i.o.c.Converter - Element authenticiteit has same prefix as package: simplify by removing the extra tag uri
-15:01:30 WARN  c.g.i.o.c.Converter - Ambiguous data type "OrganisatieClassificatie" for attribute "Model.Model.OSLO-Organisatie:Organisatie:classificatie": Model.Model.OSLO-Organisatie:OrganisatieClassificatie, Model.Model.OSLO-Organisatie:OrganisatieClassificatie.
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model.OSLO-Generiek".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model.OSLO-Organisatie".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Model.OSLO-Persoon".
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following packages map to the same URI (http://fixme.com#): Model, Model.Model, Model.Model.OSLO-Generiek, Model.Model.OSLO-Organisatie, Model.Model.OSLO-Persoon
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.Model.OSLO-Organisatie:OrganisatieClassificatie, Model.Model.OSLO-Diploma:Volledigheidtype, Model.Model.OSLO-Diploma:Assessmenttype, Model.Model.OSLO-Diploma:Doelgroep, Model.Model.OSLO-Diploma:Accreditatiestatus, Model.Model.OSLO-Diploma:Kwalificatieklasse, Model.Model.OSLO-Diploma:Studiegebied, Model.Model.OSLO-Persoon:Gender, Model.Model.OSLO-Diploma:Beroep, Model.Model.OSLO-Diploma:Toegekendrechttype, Model.Model.OSLO-Adres:AdministratiefNiveau, Model.Model.OSLO-Adres:Locatieaanduidingtype, Model.Model.OSLO-Diploma:Authenticiteit, Model.Model.OSLO-Diploma:Toegekendrechtstatus, Model.Model.OSLO-Diploma:Herbruikbaarheidsniveau, Model.Model.OSLO-Adres:Locatorniveauwaarde, Model.Model.OSLO-Diploma:Kredietpuntenframework, Model.Model.OSLO-Diploma:Leeractiviteittype, Model.Model.OSLO-Diploma:Accreditatietype, Model.Model.OSLO-Diploma:Credentialtype, Model.Model.OSLO-Diploma:Leeruitkomsttype, Model.Model.OSLO-Diploma:Assessmentvorm, Model.Model.OSLO-Diploma:Onderwijsvorm, Model.Model.OSLO-Diploma:Taal, Model.Model.OSLO-Diploma:Onderwijsniveau, Model.Model.OSLO-Diploma:Onderwerp, Model.Model.OSLO-Diploma:Verificatiestatus, Model.Model.OSLO-Diploma:Land, Model.Model.OSLO-Adres:Statuswaarde, Model.Model.OSLO-Organisatie:OrganisatieClassificatie, Model.Model.OSLO-Adres:Locatienaamtype, Model.Model.OSLO-Diploma:Mediaobjecttype, Model.Model.OSLO-Diploma:Kwalificatieniveau, Model.Model.OSLO-Diploma:Vaardigheidtype, Model.Model.OSLO-Diploma:Verificatiechecktype, Model.Model.OSLO-Diploma:Leerclaimtype, Model.Model.OSLO-Diploma:Mediacoderingtype, Model.Model.OSLO-Diploma:Leerprestatietype, Model.Model.OSLO-Diploma:Leersetting, Model.Model.OSLO-Diploma:Leercredentialtype
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#langString): Model.Model.OSLO-Generiek:TaalString, Model.Model.OSLO-Generiek:GeografischeNaam
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/ns/person#Person): Model.Model.OSLO-Persoon:Persoon, Model.Model.OSLO-Persoon:Persoon - Copy
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://www.w3.org/ns/adms#identifier): Model.Model.OSLO-Generiek:Plaats:identificator, Model.Model.OSLO-Diploma:Beoordelingsschema:identificator, Model.Model.OSLO-Organisatie:Organisatie:identificator, Model.Model.OSLO-Diploma:Toekenningsproces:identificator, Model.Model.OSLO-Diploma:Leerclaim:identificator, Model.Model.OSLO-Diploma:Leercredential:identificator, Model.Model.OSLO-Diploma:Accreditatie:identificator, Model.Model.OSLO-Diploma:Leeruitkomst:identificator, Model.Model.OSLO-Persoon:Persoon:identificator, Model.Model.OSLO-Diploma:Leerspecificatie:identificator
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://data.europa.eu/m8g/location): Model.Model.OSLO-Organisatie:Vestiging:locatie, Model.Model.OSLO-Generiek:Locatie:plaats
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/description): Model.Model.OSLO-Diploma:Resultaatverdeling:beschrijving, Model.Model.OSLO-Diploma:Accreditatie:beschrijving, Model.Model.OSLO-Diploma:Beoordelingsschema:beschrijving, Model.Model.OSLO-Diploma:Leeruitkomst:beschrijving, Model.Model.OSLO-Diploma:Verificatiecheck:beschrijving
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://www.w3.org/2000/01/rdf-schema#label): Model.Model.OSLO-Adres:Gemeentenaam:gemeentenaam, Model.Model.OSLO-Adres:Straatnaam:straatnaam, Model.Model.OSLO-Adres:Locatienaam:naam, Model.Model.OSLO-Generiek:Plaats:plaatsnaam
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/type): Model.Model.OSLO-Diploma:Assessmentspecificatie:type, Model.Model.OSLO-Diploma:Verificatiecheck:type, Model.Model.OSLO-Diploma:Leerprestatiespecificatie:type, Model.Model.OSLO-Diploma:Accreditatie:accreditatietype, Model.Model.OSLO-Diploma:Leerclaim:type, Model.Model.OSLO-Diploma:Mediaobject:type, Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:type, Model.Model.OSLO-Diploma:Leeruitkomst:type, Model.Model.OSLO-Generiek:GetypeerdeString:type
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/title): Model.Model.OSLO-Diploma:Leerspecificatie:titel, Model.Model.OSLO-Diploma:Webdocument:titel, Model.Model.OSLO-Diploma:Accreditatie:titel, Model.Model.OSLO-Diploma:Leeruitkomst:titel, Model.Model.OSLO-Diploma:Beoordelingsschema:titel, Model.Model.OSLO-Diploma:Leerclaim:titel
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#location): Model.Model.OSLO-Diploma:Leeractiviteit:locatie, Model.Model.OSLO-Diploma:Toekenningsproces:locatie
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/issued): Model.Model.OSLO-Diploma:Assessment:assessmentdatum, Model.Model.OSLO-Generiek:Identificator:uitgifteDatum, Model.Model.OSLO-Diploma:ToegekendRecht:uitgaveDatum, Model.Model.OSLO-Diploma:Accreditatie:uitgaveDatum
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#contentUrl): Model.Model.OSLO-Diploma:Mediaobject:contentURL, Model.Model.OSLO-Diploma:Webdocument:inhoud
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://purl.org/dc/terms/language): Model.Model.OSLO-Diploma:Leerprestatiespecificatie:onderwijstaal, Model.Model.OSLO-Diploma:Leeractiviteitspecificatie:instructietaal, Model.Model.OSLO-Diploma:Assessmentspecificatie:assesmenttaal, Model.Model.OSLO-Diploma:Voorstelling:taal, Model.Model.OSLO-Diploma:Webdocument:taal
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#expiryDate): Model.Model.OSLO-Diploma:ToegekendRecht:vervaldatum, Model.Model.OSLO-Diploma:Accreditatie:vervaldatum
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#status): Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:status, Model.Model.OSLO-Diploma:Accreditatie:accreditatiestatus, Model.Model.OSLO-Diploma:Verificatiecheck:status
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#limitJurisdiction): Model.Model.OSLO-Diploma:Accreditatie:jurisdictie, Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:geldigBinnen
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#hasPart): Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:heeftDeel, Model.Model.OSLO-Diploma:Assessment:heeftDeel, Model.Model.OSLO-Diploma:Assessmentspecificatie:heeftDeel, Model.Model.OSLO-Diploma:ToegekendRecht:heeftDeel, Model.Model.OSLO-Diploma:Leeractiviteit:heeftDeel
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#supplementaryDocument): Model.Model.OSLO-Diploma:Accreditatie:aanvullendDocument, Model.Model.OSLO-Diploma:Beoordelingsschema:bijkomendDocument
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#specialisationOf): Model.Model.OSLO-Diploma:ToegekendRechtspecificatie:specialisatieVan, Model.Model.OSLO-Diploma:Assessmentspecificatie:specialisatieVan
+06:53:10 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.europa.eu/snb/model#specifiedBy): Model.Model.OSLO-Diploma:Assessment:specificatie, Model.Model.OSLO-Diploma:Leeractiviteit:specificatie, Model.Model.OSLO-Diploma:ToegekendRecht:specificatie, Model.Model.OSLO-Diploma:Leerprestatie:specificatie
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Model.Solid-Leercredential".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Model.Solid-Leercredential".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Model.Solid-Leercredential".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Model.Solid-Leercredential".
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Onderwerp".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Onderwerp" .
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Onderwijsniveau".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Onderwijsniveau" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Voorstelling" .
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Authenticiteit".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Authenticiteit" .
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Authenticiteit".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Authenticiteit".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Authenticiteit".
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Studiegebied".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Studiegebied" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerspecificatie" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Kwalificatie" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdeOrganisatie" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdPersoon" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GetypeerdeString" .
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Generiek:GetypeerdeString".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Generiek:GetypeerdeString".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Generiek:GetypeerdeString".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Locatie" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Identificator" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "TaalString" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Toekenningsproces" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerclaim" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerprestatie" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Bewijs" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Persoon" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leercredential" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Credential" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Organisatie" .
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Taal".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Taal" .
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Leercredentialtype".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leercredentialtype" .
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Leerprestatietype".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerprestatietype" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "EuropeesDigitaalCredential" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifieerbareCredential" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerprestatiespecificatie" .
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Adresvoorstelling" .
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Land".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Land" .
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Land".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Land".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Land".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leeractiviteitspecificatie" .
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "OrganisatieClassificatie" .
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Organisatie:OrganisatieClassificatie".
+06:53:10 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Model.OSLO-Diploma:Leerclaimtype".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Leerclaimtype" .
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Leerclaimtype".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Leerclaimtype".
+06:53:10 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Model.OSLO-Diploma:Leerclaimtype".
+06:53:10 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Agent" .
+06:53:10 WARN  c.g.i.o.c.Converter - Package for connector Model.Model.OSLO-Diploma:Leercredential:uitgever is unknown
+06:53:10 WARN  c.g.i.o.c.Converter - Package for connector Model.Model.OSLO-Diploma:Leercredential:eigenaar is unknown
+06:53:10 WARN  c.g.i.o.c.Converter - Package for connector Model.Model.OSLO-Diploma:Toekenningsproces:uitgevoerdDoor is unknown
+06:53:10 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leeractiviteitspecificatie:beinvloedt" belongs to package "OSLO-Diploma" based on source and target definition.
+06:53:10 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leerprestatiespecificatie:beinvloedDoor" belongs to package "OSLO-Diploma" based on source and target definition.
+06:53:10 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leerclaim:toegekendDoor" belongs to package "OSLO-Diploma" based on source and target definition.
+06:53:10 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Toekenningsproces:kentToe" belongs to package "OSLO-Diploma" based on source and target definition.
+06:53:10 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Model.OSLO-Diploma:Leercredential:bewijs" belongs to package "OSLO-Diploma" based on source and target definition.
+06:53:10 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Model.OSLO-Generiek:TaalString:string" since it is marked as ignored.
+06:53:10 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Model.OSLO-Generiek:TaalString:taal" since it is marked as ignored.
+06:53:10 WARN  c.g.i.o.c.Converter - Element authenticiteit has same prefix as package: simplify by removing the extra tag uri
+06:53:10 WARN  c.g.i.o.c.Converter - Ambiguous data type "OrganisatieClassificatie" for attribute "Model.Model.OSLO-Organisatie:Organisatie:classificatie": Model.Model.OSLO-Organisatie:OrganisatieClassificatie, Model.Model.OSLO-Organisatie:OrganisatieClassificatie.
 /tmp/workspace/src/doc/applicatieprofiel/looncredential/2022-11-30
 Load mapping config:config/config-ap.json
 WARNING:You shouldn't use 'user' reserved word as column name in the table t_datatypes (it refers to the database user).
  Escape it in your SQL! 
 (e.g. SELECT [USER] FROM TABLE WHERE [USER]='Joe')
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Generiek".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Persoon".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Organisatie".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Adres".
-15:01:32 WARN  c.g.i.o.c.UriAssigner - The following packages map to the same URI (http://fixme.com#): Model.Looncredential, Model.Looncredential.OSLO-Persoon, Model, Model.Looncredential.OSLO-Adres, Model.Looncredential.OSLO-Generiek, Model.Looncredential.OSLO-Organisatie
-15:01:32 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.Looncredential.OSLO-Loongegevens:Overeenkomsttype, Model.Looncredential.OSLO-Loongegevens:Schuldenregelingstype, Model.Looncredential.OSLO-Organisatie:Rechtsvormtype, Model.Looncredential.OSLO-Loongegevens:Statuuttype, Model.Looncredential.OSLO-Generiek:Valuta, Model.Looncredential.OSLO-Loongegevens:Verloningstype
-15:01:32 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (https://data.vlaanderen.be/ns/loongegevens#Tewerkstellingsbreuk): Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk, Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk
-15:01:32 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://schema.org/value): Model.Looncredential.OSLO-Generiek:KwantitatieveWaarde:waarde, Model.Looncredential.OSLO-Generiek:Geldbedrag:waarde
-15:01:32 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://fixme.com#^datum): Model.Looncredential.OSLO-Persoon:Geboorte:^datum, Model.Looncredential.OSLO-Organisatie:Oprichting:^datum
-15:01:32 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.vlaanderen.be/ns/loongegevens#bankrekeningnummer): Model.Looncredential.OSLO-Loongegevens:Bankrekening:bankrekeningnummer, Model.Looncredential.OSLO-Loongegevens:Arbeidsrelatie:bankrekeningnummer
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Looncredential".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Looncredential".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Looncredential".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Looncredential".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Persoon" .
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Agent".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Arbeidsrelatie" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Periode" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Arbeidsloon" .
-15:01:32 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Organisatie:Rechtsvormtype".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Rechtsvormtype" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Gezin" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Inkomst" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdeOrganisatie" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Organisatie" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdPersoon" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Verblijfplaats" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Adresvoorstelling" .
-15:01:32 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Overeenkomsttype".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Overeenkomsttype" .
-15:01:32 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Statuuttype".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Statuuttype" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Bankrekening" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Tewerkstellingsbreuk" .
-15:01:32 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Verloningstype".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Verloningstype" .
-15:01:32 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Schuldenregelingstype".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Schuldenregelingstype" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Geldbedrag" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GetypeerdeString" .
-15:01:32 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Generiek:Valuta".
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Valuta" .
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Valuta".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Valuta".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Valuta".
-15:01:32 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class Valuta without label, further processing this class will be incoherent
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Looncredential" .
-15:01:32 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifieerbareCredential" .
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Organisatie:Organisatie:arbeidsrelatie".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Organisatie:Organisatie:arbeidsrelatie".
-15:01:32 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Organisatie:Organisatie:arbeidsrelatie".
-15:01:32 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Loongegevens:Arbeidsloon:arbeidsrelatie" belongs to package "OSLO-Loongegevens" based on source and target definition.
-15:01:32 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Loongegevens:Arbeidsrelatie:arbeidsloon" belongs to package "OSLO-Loongegevens" based on source and target definition.
-15:01:32 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Persoon:isHoofdVan" belongs to package "OSLO-Persoon" based on source and target definition.
-15:01:32 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Gezin:gezinshoofd" belongs to package "OSLO-Persoon" based on source and target definition.
-15:01:32 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Persoon:isLidVan" belongs to package "OSLO-Persoon" based on source and target definition.
-15:01:32 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Gezin:gezinslid" belongs to package "OSLO-Persoon" based on source and target definition.
-15:01:32 WARN  c.g.i.o.c.Converter - Ambiguous data type "Tewerkstellingsbreuk" for attribute "Model.Looncredential.OSLO-Loongegevens:Arbeidsrelatie:tewerkstellingsbreuk": Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk, Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk.
-15:01:32 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Organisatie:Organisatie:voorkeursnaam": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
-15:01:32 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Adres:Adresvoorstelling:straatnaam": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
-15:01:32 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Adres:Adresvoorstelling:gemeentenaam": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
-15:01:32 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Adres:Adresvoorstelling:land": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
-15:01:32 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Looncredential.OSLO-Generiek:GetypeerdeString:string" since it is marked as ignored.
-15:01:32 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Looncredential.OSLO-Generiek:GetypeerdeString:type" since it is marked as ignored.
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Generiek".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Persoon".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Organisatie".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model.Looncredential.OSLO-Adres".
+06:53:12 WARN  c.g.i.o.c.UriAssigner - The following packages map to the same URI (http://fixme.com#): Model.Looncredential.OSLO-Persoon, Model.Looncredential.OSLO-Adres, Model.Looncredential.OSLO-Organisatie, Model, Model.Looncredential.OSLO-Generiek, Model.Looncredential
+06:53:12 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.Looncredential.OSLO-Loongegevens:Overeenkomsttype, Model.Looncredential.OSLO-Loongegevens:Statuuttype, Model.Looncredential.OSLO-Loongegevens:Schuldenregelingstype, Model.Looncredential.OSLO-Loongegevens:Verloningstype, Model.Looncredential.OSLO-Organisatie:Rechtsvormtype, Model.Looncredential.OSLO-Generiek:Valuta
+06:53:12 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (https://data.vlaanderen.be/ns/loongegevens#Tewerkstellingsbreuk): Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk, Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk
+06:53:12 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (http://fixme.com#^datum): Model.Looncredential.OSLO-Organisatie:Oprichting:^datum, Model.Looncredential.OSLO-Persoon:Geboorte:^datum
+06:53:12 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://schema.org/value): Model.Looncredential.OSLO-Generiek:Geldbedrag:waarde, Model.Looncredential.OSLO-Generiek:KwantitatieveWaarde:waarde
+06:53:12 WARN  c.g.i.o.c.UriAssigner - The following properties (attribute or connector) map to the same URI (https://data.vlaanderen.be/ns/loongegevens#bankrekeningnummer): Model.Looncredential.OSLO-Loongegevens:Bankrekening:bankrekeningnummer, Model.Looncredential.OSLO-Loongegevens:Arbeidsrelatie:bankrekeningnummer
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Looncredential".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Looncredential".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.Looncredential".
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.Looncredential".
+06:53:12 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Persoon" .
+06:53:12 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Agent".
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Arbeidsrelatie" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Periode" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Arbeidsloon" .
+06:53:13 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Organisatie:Rechtsvormtype".
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Rechtsvormtype" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Gezin" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Inkomst" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdeOrganisatie" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Organisatie" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GeregistreerdPersoon" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Verblijfplaats" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Adresvoorstelling" .
+06:53:13 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Overeenkomsttype".
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Overeenkomsttype" .
+06:53:13 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Statuuttype".
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Statuuttype" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Bankrekening" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Tewerkstellingsbreuk" .
+06:53:13 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Verloningstype".
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Verloningstype" .
+06:53:13 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Loongegevens:Schuldenregelingstype".
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Schuldenregelingstype" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Geldbedrag" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "GetypeerdeString" .
+06:53:13 WARN  c.g.i.o.c.Converter - No possible values defined for enumeration "Model.Looncredential.OSLO-Generiek:Valuta".
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Valuta" .
+06:53:13 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Valuta".
+06:53:13 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Valuta".
+06:53:13 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Generiek:Valuta".
+06:53:13 WARN  c.g.i.o.c.JSONLDOutputHandler -  Class Valuta without label, further processing this class will be incoherent
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Looncredential" .
+06:53:13 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "VerifieerbareCredential" .
+06:53:13 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Persoon:isLidVan" belongs to package "OSLO-Persoon" based on source and target definition.
+06:53:13 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Gezin:gezinslid" belongs to package "OSLO-Persoon" based on source and target definition.
+06:53:13 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Organisatie:Organisatie:arbeidsrelatie".
+06:53:13 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Organisatie:Organisatie:arbeidsrelatie".
+06:53:13 WARN  c.g.i.o.c.TagHelper - Missing "ap-definition-nl" tag for "Model.Looncredential.OSLO-Organisatie:Organisatie:arbeidsrelatie".
+06:53:13 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Loongegevens:Arbeidsloon:arbeidsrelatie" belongs to package "OSLO-Loongegevens" based on source and target definition.
+06:53:13 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Loongegevens:Arbeidsrelatie:arbeidsloon" belongs to package "OSLO-Loongegevens" based on source and target definition.
+06:53:13 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Persoon:isHoofdVan" belongs to package "OSLO-Persoon" based on source and target definition.
+06:53:13 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.Looncredential.OSLO-Persoon:Gezin:gezinshoofd" belongs to package "OSLO-Persoon" based on source and target definition.
+06:53:13 WARN  c.g.i.o.c.Converter - Ambiguous data type "Tewerkstellingsbreuk" for attribute "Model.Looncredential.OSLO-Loongegevens:Arbeidsrelatie:tewerkstellingsbreuk": Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk, Model.Looncredential.OSLO-Loongegevens:Tewerkstellingsbreuk.
+06:53:13 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Organisatie:Organisatie:voorkeursnaam": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
+06:53:13 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Adres:Adresvoorstelling:straatnaam": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
+06:53:13 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Adres:Adresvoorstelling:gemeentenaam": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
+06:53:13 WARN  c.g.i.o.c.Converter - Ambiguous data type "TaalString" for attribute "Model.Looncredential.OSLO-Adres:Adresvoorstelling:land": Model.Looncredential.OSLO-Generiek:TaalString, Model.Looncredential.OSLO-Loongegevens:TaalString.
+06:53:13 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Looncredential.OSLO-Generiek:GetypeerdeString:string" since it is marked as ignored.
+06:53:13 INFO  c.g.i.o.c.Converter - Skipping attribute "Model.Looncredential.OSLO-Generiek:GetypeerdeString:type" since it is marked as ignored.
 /tmp/workspace/src/doc/applicatieprofiel/skos/2022-12-13
 Load mapping config:config/config-ap.json
 WARNING:You shouldn't use 'user' reserved word as column name in the table t_datatypes (it refers to the database user).
  Escape it in your SQL! 
 (e.g. SELECT [USER] FROM TABLE WHERE [USER]='Joe')
-15:01:34 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
-15:01:34 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.skos:Concept, Model.skos:Concept
-15:01:34 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.skos".
-15:01:34 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.skos".
-15:01:34 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.skos".
-15:01:34 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.skos".
-15:01:34 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Concept" .
-15:01:34 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "ConceptScheme" .
-15:01:34 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "LangString" .
-15:01:34 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Literal" .
-15:01:34 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:status" belongs to package "skos" based on source and target definition.
-15:01:34 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:narrower" belongs to package "skos" based on source and target definition.
-15:01:34 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:inScheme" belongs to package "skos" based on source and target definition.
-15:01:34 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:ConceptScheme:status" belongs to package "skos" based on source and target definition.
-15:01:34 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:topConceptOf" belongs to package "skos" based on source and target definition.
-15:01:34 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:ConceptScheme:hasTopConcept" belongs to package "skos" based on source and target definition.
+06:53:15 WARN  c.g.i.o.c.TagHelper - Missing "baseURI" tag for "Model".
+06:53:15 WARN  c.g.i.o.c.UriAssigner - The following elements map to the same URI (http://www.w3.org/2004/02/skos/core#Concept): Model.skos:Concept, Model.skos:Concept
+06:53:15 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.skos".
+06:53:15 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.skos".
+06:53:15 WARN  c.g.i.o.c.TagHelper - Missing "issued" tag for "Model.skos".
+06:53:15 WARN  c.g.i.o.c.TagHelper - Missing "license" tag for "Model.skos".
+06:53:15 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Concept" .
+06:53:15 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "ConceptScheme" .
+06:53:15 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "LangString" .
+06:53:15 INFO  c.g.i.o.c.JSONLDOutputHandler - handle class "Literal" .
+06:53:15 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:status" belongs to package "skos" based on source and target definition.
+06:53:15 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:ConceptScheme:status" belongs to package "skos" based on source and target definition.
+06:53:15 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:inScheme" belongs to package "skos" based on source and target definition.
+06:53:15 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:narrower" belongs to package "skos" based on source and target definition.
+06:53:15 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:Concept:topConceptOf" belongs to package "skos" based on source and target definition.
+06:53:15 INFO  c.g.i.o.c.UriAssigner - Assuming connector "Model.skos:ConceptScheme:hasTopConcept" belongs to package "skos" based on source and target definition.
