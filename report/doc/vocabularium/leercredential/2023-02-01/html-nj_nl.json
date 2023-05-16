@@ -12,8 +12,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/c96737a6276d5937654cb519d00e7bce7ae7029c",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/c96737a6276d5937654cb519d00e7bce7ae7029c/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/753602eef34654ab369c58d3111a249073018aae",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/753602eef34654ab369c58d3111a249073018aae/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
@@ -33,7 +33,7 @@
       },
       "usage": {},
       "domain": [
-        "https://data.europa.eu/snb/model#Claim"
+        "http://data.europa.eu/snb/model/elm/Claim"
       ],
       "range": [
         "http://purl.org/dc/terms/Agent"
@@ -52,7 +52,7 @@
       },
       "usage": {},
       "domain": [
-        "https://data.europa.eu/snb/model#Claim"
+        "http://data.europa.eu/snb/model/elm/Claim"
       ],
       "range": [
         "http://www.w3.org/2004/02/skos/core#Concept"

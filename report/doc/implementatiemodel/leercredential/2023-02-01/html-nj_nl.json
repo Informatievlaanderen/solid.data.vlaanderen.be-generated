@@ -6,6 +6,7 @@
     "baseURI": "https://solid.data.vlaanderen.be/ns/leercredential#",
     "filename": "leercredential-ap",
     "navigation": {
+      "next": "/doc/implementatiemodel/leercredential/2023-05-01",
       "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-02-01"
     },
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
@@ -13,8 +14,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/c96737a6276d5937654cb519d00e7bce7ae7029c",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/c96737a6276d5937654cb519d00e7bce7ae7029c/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/c9a964d1ae0c19fef9b32e40c864129b1c31c955",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/c9a964d1ae0c19fef9b32e40c864129b1c31c955/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
