@@ -164,18 +164,6 @@
   ],
   "externalproperties": [
     {
-      "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
-      "name": "status",
-      "label": {
-        "nl": "status",
-        "fr": "Enter your translation here"
-      },
-      "definition": {
-        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'.",
-        "fr": "Enter your translation here"
-      }
-    },
-    {
       "EA-Guid": "{DB2BBF2C-5C09-48f7-8226-3F0E1D1601DD}",
       "name": "status",
       "label": {
@@ -184,6 +172,18 @@
       },
       "definition": {
         "nl": "The status of the concept scheme, e.g. 'in use' or 'deprecated'.The status of the concept scheme, e.g. 'in use' or 'deprecated'.",
+        "fr": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{92B52964-7CDA-44f9-9070-77FC4931817E}",
+      "name": "status",
+      "label": {
+        "nl": "status",
+        "fr": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "The status of the concept, e.g. 'in use' or 'deprecated'.",
         "fr": "Enter your translation here"
       }
     }
