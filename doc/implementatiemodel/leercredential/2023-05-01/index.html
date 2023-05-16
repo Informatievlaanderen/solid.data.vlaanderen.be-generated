@@ -46,8 +46,8 @@
               <div class="head" role="status" id="status">
               <dl>
               <dt>Status</dt><dd><a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard</a></dd>
-              <dt>Uitgegeven op</dt><dd>2023-02-01</dd>
-              <dt>Deze versie</dt><dd><a href="https://solid.data.vlaanderen.be//doc/applicatieprofiel/leercredential/2023-01-10">https://solid.data.vlaanderen.be//doc/applicatieprofiel/leercredential/2023-01-10</a></dd>
+              <dt>Uitgegeven op</dt><dd>2023-05-01</dd>
+              <dt>Deze versie</dt><dd><a href="https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-05-01">https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-05-01</a></dd>
               
               
               </dl>
@@ -82,14 +82,9 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/c96737a6276d5937654cb519d00e7bce7ae7029c">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/c96737a6276d5937654cb519d00e7bce7ae7029c</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/c96737a6276d5937654cb519d00e7bce7ae7029c/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/c96737a6276d5937654cb519d00e7bce7ae7029c/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/9e9bb35dd613547c27447e71ef7cc5ff45c134d9">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/9e9bb35dd613547c27447e71ef7cc5ff45c134d9</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/9e9bb35dd613547c27447e71ef7cc5ff45c134d9/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/9e9bb35dd613547c27447e71ef7cc5ff45c134d9/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/issues">https://github.com/Informatievlaanderen/SolidThema-leercredential/issues</a></dd>
-              <dt>Standaardenregister</dt><dd><a href="https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html">https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html</a></dd>
-
-              <dt>Afhankelijkheden</dt><dd>
-                
-		</dd>
               </dl>
               </div>
 
@@ -107,11 +102,10 @@
             <div class="region" id="introduction">
               <div class="introduction typography">
               
-                <p>Dit document beschrijft een <strong>applicatieprofiel</strong>, in dit geval <strong>Leercredential (implementatiemodel)</strong>.
-                <!--Een applicatieprofiel is een specificatie die bestaande termen hergebruikt van verschillende basis-standaarden en daar meer specificiteit aan toevoegt.-->
-                <!-- Daarbij wordt het gebruik van de termen toegelicht voor de interbestuurlijke uitwisseling van overheidsinformatie.-->
-                Dit applicatieprofiel beantwoordt de vraag over hoe het corresponderende domeinmodel in de praktijk kan toegepast worden.
-                Daarbij worden de beperkingen (kardinaliteit, codelijsten) toegelicht en de overeenkomstige (RDF) termen opgelijst.
+                <p>
+                  Dit document beschrijft een <strong>implementatiemodel</strong>, in dit geval <strong>Leercredential (implementatiemodel)</strong>.
+                  Een implementatiemodel is een toepassing van vocabularia voor een concreet doel.
+                  Het beschrijft in detail (zoals kardinaliteiten, codelijsten, datatypes, ...) de gewenste datastructuur.
                 </p>
               
               </div>
@@ -120,7 +114,23 @@
             <div class="region region--no-space-top typography" id="summary">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Samenvatting</h2>
                 
-<p>Vul hier een samenvatting van mijn applicatieprofiel in.</p>
+<p>
+  Dit implementatiemodel is gebaseerd op <a href="https://data.vlaanderen.be/doc/applicatieprofiel/leercredential/">OSLO Leercredential</a>,
+  dat op zijn beurt gebaseerd is op het <a href="https://github.com/european-commission-empl/European-Learning-Model">European Learning Model</a>.
+  Die laatste gebruikt dan weer het <a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials Data Model</a> als overkoepelende structuur.
+</p>
+<p>
+  Deze specificatie beschrijft de concepten die nodig zijn om leer- en ervaringsbewijzen te modelleren,
+  zoals deze beschikbaar zijn in de <a href="https://leerenervaringsbewijzendatabank.be/">LED</a>. 
+</p>
+<p>
+  Dit model beschrijft hoe een Persoon eigenaar kan zijn van één of meerdere Leercredentials,
+  die uitgegeven zijn door een bepaalde Organisatie (zoals een overheidsinstantie, maar evenzeer ook private instanties).
+  Deze Persoon kan verschillende Leerclaims hebben (mogelijks uitgegeven door een andere Organisatie dan de Organisatie die de Leercredential uitgeeft).
+  Een Leerprestatie is een specifiek soort Leerclaim.
+  De algemene informatie over de Leerprestatie die gemeenschappelijk is aan de verschillende Personen die de Leerprestatie hebben behaald,
+  zitten vervat in de Leeprestatiespecificatie, terwijl de persoonsspecifieke informatie vervat zit in het Toekenningsproces.
+</p>
 
             </div>
 
@@ -128,23 +138,46 @@
               <section class="introductory" id="sotd" typeof="bibo:Chapter" resource="#ref" rel="bibo:Chapter">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status van dit document</h2>
                 
-<p>(Verwijder dit blok om een geautomatiseerde standaardparagraaf te laten verschijnen.)</p>
-
+                <p>
+                  Dit implementatiemodel heeft status <a href="https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard">Ontwerp Standaard</a> en werd uitgegeven op 2023-05-01.
+	              </p>
+                
               </section>
             </div>
 
             <div class="region region--no-space-top typography" id="license">
               <h2 class="h2">Licentie</h2>
               
-              <p><span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">Deze specificatie</span> van <a rel="cc:attributionURL" property="cc:attributionName" href="http://vlaanderen.be/informatievlaanderen" xmlns:cc="http://creativecommons.org/ns#">Informatie Vlaanderen</a> is gepubliceerd onder de <a href="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" rel="license">"Modellicentie Gratis Hergebruik - v1.0"</a>.</p>
+              <p><span rel="dct:type" property="dct:title" href="http://purl.org/dc/dcmitype/Text" xmlns:dct="http://purl.org/dc/terms/">Deze specificatie</span> van <a rel="cc:attributionURL" property="cc:attributionName" href="https://www.vlaanderen.be/digitaal-vlaanderen" xmlns:cc="http://creativecommons.org/ns#">Digitaal Vlaanderen</a> is gepubliceerd onder de <a href="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" rel="license">"Modellicentie Gratis Hergebruik - v1.0"</a>.</p>
               
             </div>
             <div class="region region--no-space-top typography" id="conformance">
               <h2 class="h2" id="conformance" aria-level="1" role="heading">Conformiteit</h2>
-              
-              <p>De conformiteit voor applicatieprofielen is <a href="/doc/begeleidend/applicatieprofielen/conformiteit">hier</a> te vinden.</p>
+                     
+                <p>
+                  Een implementatiemodel is een specificatie voor gegevensuitwisseling dat bijkomende beperkingen introduceert voor het toepassen van vocabularia.
+                  Dergelijke bijkomende beperkingen kunnen de volgende elementen bevatten:
+                 </p>
+                 <p></p>
+                 <ul>
+                   <li>verfijning van de terminologie (klassen en eigenschappen) consistent met de semantiek uit de betreffende specificaties met een welbepaald gebruik als doel;</li>
+                   <li>externe terminologie (klassen en eigenschappen) gebruikt voor nieuwe/extra termen die niet in de bestaande vocabularia voorkomen.</li>
+                 </ul>
+                 <p></p>
+                 <p>
+                  Om conform te zijn met dit implementatiemodel, geldt voor een implementatie dat ze:
+                 </p>
+                 <p></p>
+                 <ul>
+                  <li>MOET Voor elke klasse steeds de eigenschappen bevatten die als minimum kardinaliteit 1 hebben.</li>
+                  <li>MAG NIET meer dan 1 instantie bevatten van eigenschappen die 1 als maximum kardinaliteit hebben.</li>
+                  <li>MAG terminologie (klassen en eigenschappen) gebruiken op een manier die consistent is met haar semantiek (definitie, gebruik, domein en bereik).</li>
+                  <li>MAG NIET terminologie van andere gecontroleerde vocabularia gebruiken dan diegene die gedefinieerd wordt in dit implementatiemodel.</li>
+                  <li>MAG uitgebreid worden met klassen en eigenschappen van andere datamodellen (vocabularia) die niet overlappen met terminologie uit dit implementatiemodel.</li>
+                 </ul>
               
             </div>
+      
             <div class="region region--no-space-top" id="overview">
               <h2 class="h2">Overzicht</h2>
               <div class="grid">
@@ -193,8 +226,8 @@
             </div>
 
             <div class="region region--no-space-top">
-              <a href="/doc/applicatieprofiel/leercredential/2023-01-10/html/overview.jpg" target="_blank">
-                 <img src="/doc/applicatieprofiel/leercredential/2023-01-10/html/overview.jpg" />
+              <a href="/doc/implementatiemodel/leercredential/2023-05-01/html/overview.jpg" target="_blank">
+                 <img src="/doc/implementatiemodel/leercredential/2023-05-01/html/overview.jpg" />
               </a>
             </div>
             <div class="region region--no-space-top">
@@ -332,7 +365,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Europees Digitaal Credential"><a href="https://data.europa.eu/snb/model#EuropeanDigitalCredential" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#EuropeanDigitalCredential" data-placement="right">Europees Digitaal Credential</a></h3>
+              <h3 class="h3" id="Europees Digitaal Credential"><a href="http://data.europa.eu/snb/model/elm/EuropeanDigitalCredential" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/EuropeanDigitalCredential" data-placement="right">Europees Digitaal Credential</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Een reeks beweringen die door een uitgever in Europa worden gemaakt, gebruikmakend van Europese standaarden. Een Europees Digitaal Credential is een reeks van een of meer beweringen die kunnen worden gebruikt om aan te tonen dat de eigenaar bepaalde vaardigheden bezit of bepaalde leeruitkomsten heeft bereikt door middel van formeel, niet-formeel of informeel leren.</dd>
@@ -366,10 +399,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Europees%20Digitaal%20Credential%3Avoorstelling" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#displayParameter">
+                      <tr id="Europees%20Digitaal%20Credential%3Avoorstelling" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/displayParameter">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#displayParameter" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#displayParameter" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/displayParameter" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/displayParameter" data-placement="right">
                             voorstelling</a>
                           </code>
                         </td>
@@ -538,7 +571,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Kwalificatie"><a href="https://data.europa.eu/snb/model#Qualification" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#Qualification" data-placement="right">Kwalificatie</a></h3>
+              <h3 class="h3" id="Kwalificatie"><a href="http://data.europa.eu/snb/model/elm/Qualification" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/Qualification" data-placement="right">Kwalificatie</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Een specificatie van een beoordelings- en validatieproces dat wordt verkregen wanneer een bevoegde autoriteit vaststelt dat een individu leeruitkomsten volgens bepaalde normen heeft bereikt.</dd>
@@ -558,7 +591,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Leeractiviteitspecificatie"><a href="https://data.europa.eu/snb/model#LearningActivitySpecification" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#LearningActivitySpecification" data-placement="right">Leeractiviteitspecificatie</a></h3>
+              <h3 class="h3" id="Leeractiviteitspecificatie"><a href="http://data.europa.eu/snb/model/elm/LearningActivitySpecification" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/LearningActivitySpecification" data-placement="right">Leeractiviteitspecificatie</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>De specificatie van een proces dat leidt tot het verwerven van kennis, vaardigheden of verantwoordelijkheid en autonomie.</dd>
@@ -592,10 +625,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Leeractiviteitspecificatie%3Abeinvloedt" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#influences">
+                      <tr id="Leeractiviteitspecificatie%3Abeinvloedt" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/influences">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#influences" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#influences" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/influences" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/influences" data-placement="right">
                             beinvloedt</a>
                           </code>
                         </td>
@@ -639,7 +672,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Leerclaim"><a href="https://data.europa.eu/snb/model#Claim" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#Claim" data-placement="right">Leerclaim</a></h3>
+              <h3 class="h3" id="Leerclaim"><a href="http://data.europa.eu/snb/model/elm/Claim" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/Claim" data-placement="right">Leerclaim</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Een claim gemaakt door een uitgever.</dd>
@@ -733,10 +766,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Leerclaim%3Atoegekend%20door" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#awardedBy">
+                      <tr id="Leerclaim%3Atoegekend%20door" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/awardedBy">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#awardedBy" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#awardedBy" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/awardedBy" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/awardedBy" data-placement="right">
                             toegekend door</a>
                           </code>
                         </td>
@@ -748,8 +781,7 @@
                           
                         </td>
                         <td>0..1</td>
-                        <td property="rdfs:comment">De toekenningsdetails van de claim.
-</td>
+                        <td property="rdfs:comment">De toekenningsdetails van de claim.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -791,7 +823,7 @@
                         <td>0..1</td>
                         <td property="rdfs:comment">De Agent die de claim maakt.</td>
                         <td property="vann:usageNote"></td>
-                        <td><a href="https://solid.data.vlaanderen.be/id/conceptscheme/Leercredential/Leverancier">Link</a></td>
+                        <td></td>
                       </tr>
                     
                     </tbody>
@@ -924,7 +956,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Leerprestatie"><a href="https://data.europa.eu/snb/model#LearningAchievement" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#LearningAchievement" data-placement="right">Leerprestatie</a></h3>
+              <h3 class="h3" id="Leerprestatie"><a href="http://data.europa.eu/snb/model/elm/LearningAchievement" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/LearningAchievement" data-placement="right">Leerprestatie</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>De verwerving van kennis, vaardigheden of verantwoordelijkheid en zelfstandigheid. Een erkend en/of toegekend geheel van leeruitkomsten van een individu.</dd>
@@ -957,10 +989,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Leerprestatie%3Aspecificatie" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#specifiedBy">
+                      <tr id="Leerprestatie%3Aspecificatie" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/specifiedBy">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#specifiedBy" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#specifiedBy" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/specifiedBy" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/specifiedBy" data-placement="right">
                             specificatie</a>
                           </code>
                         </td>
@@ -984,7 +1016,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Leerprestatiespecificatie"><a href="https://data.europa.eu/snb/model#LearningAchievementSpecification" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#LearningAchievementSpecification" data-placement="right">Leerprestatiespecificatie</a></h3>
+              <h3 class="h3" id="Leerprestatiespecificatie"><a href="http://data.europa.eu/snb/model/elm/LearningAchievementSpecification" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/LearningAchievementSpecification" data-placement="right">Leerprestatiespecificatie</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Een beschrijving van wat een persoon kan leren door gebruik te maken van de leeropportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van leerprestaties.</dd>
@@ -1022,10 +1054,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Leerprestatiespecificatie%3Abeinvloed%20door" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#influencedBy">
+                      <tr id="Leerprestatiespecificatie%3Abeinvloed%20door" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/influencedBy">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#influencedBy" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#influencedBy" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/influencedBy" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/influencedBy" data-placement="right">
                             beinvloed door</a>
                           </code>
                         </td>
@@ -1042,10 +1074,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Leerprestatiespecificatie%3Aonderwerp" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#educationSubject">
+                      <tr id="Leerprestatiespecificatie%3Aonderwerp" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/educationSubject">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#educationSubject" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#educationSubject" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/educationSubject" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/educationSubject" data-placement="right">
                             onderwerp</a>
                           </code>
                         </td>
@@ -1062,10 +1094,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Leerprestatiespecificatie%3Aonderwijsniveau" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#educationLevel">
+                      <tr id="Leerprestatiespecificatie%3Aonderwijsniveau" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/educationLevel">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#educationLevel" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#educationLevel" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/educationLevel" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/educationLevel" data-placement="right">
                             onderwijsniveau</a>
                           </code>
                         </td>
@@ -1149,7 +1181,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Leerspecificatie"><a href="https://data.europa.eu/snb/model#Specification" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#Specification" data-placement="right">Leerspecificatie</a></h3>
+              <h3 class="h3" id="Leerspecificatie"><a href="http://data.europa.eu/snb/model/elm/Specification" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/Specification" data-placement="right">Leerspecificatie</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Een beschrijving van wat een persoon kan leren door gebruik te maken van de opportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van het leren.</dd>
@@ -1194,8 +1226,7 @@
                           
                         </td>
                         <td>0..*</td>
-                        <td property="rdfs:comment">Een identificator van de specificatie.
-</td>
+                        <td property="rdfs:comment">Een identificator van de specificatie.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1215,8 +1246,7 @@
                           
                         </td>
                         <td>1..*</td>
-                        <td property="rdfs:comment">De titel van de specificatie. Eén waarde per taal is toegestaan.
-</td>
+                        <td property="rdfs:comment">De titel van de specificatie. Eén waarde per taal is toegestaan.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1367,10 +1397,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Persoon%3Aheeft%20claim" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#hasClaim">
+                      <tr id="Persoon%3Aheeft%20claim" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/hasClaim">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#hasClaim" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#hasClaim" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/hasClaim" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/hasClaim" data-placement="right">
                             heeft claim</a>
                           </code>
                         </td>
@@ -1434,7 +1464,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Toekenningsproces"><a href="https://data.europa.eu/snb/model#AwardingProcess" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#AwardingProcess" data-placement="right">Toekenningsproces</a></h3>
+              <h3 class="h3" id="Toekenningsproces"><a href="http://data.europa.eu/snb/model/elm/AwardingProcess" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/AwardingProcess" data-placement="right">Toekenningsproces</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Het proces waarbij een organisatie een leerprestatie toekent aan een persoon op basis van een leerspecificatie (bv. een kwalificatie). Het wordt gebruikt om de organisatie te specificeren die de leerspecificatie aan de persoon heeft toegekend, het land of de regio waar de leerspecificatie werd toegekend, en optioneel de datum van toekenning.</dd>
@@ -1487,10 +1517,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Toekenningsproces%3Akent%20toe" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#awards">
+                      <tr id="Toekenningsproces%3Akent%20toe" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/awards">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#awards" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#awards" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/awards" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/awards" data-placement="right">
                             kent toe</a>
                           </code>
                         </td>
@@ -1507,10 +1537,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Toekenningsproces%3Alocatie" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#location">
+                      <tr id="Toekenningsproces%3Alocatie" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/location">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#location" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#location" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/location" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/location" data-placement="right">
                             locatie</a>
                           </code>
                         </td>
@@ -1527,10 +1557,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Toekenningsproces%3Atoekenningsdatum" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#awardingDate">
+                      <tr id="Toekenningsproces%3Atoekenningsdatum" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/awardingDate">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#awardingDate" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#awardingDate" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/awardingDate" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/awardingDate" data-placement="right">
                             toekenningsdatum</a>
                           </code>
                         </td>
@@ -1547,10 +1577,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Toekenningsproces%3Auitgevoerd%20door" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#awardingBody">
+                      <tr id="Toekenningsproces%3Auitgevoerd%20door" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/awardingBody">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#awardingBody" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#awardingBody" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/awardingBody" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/awardingBody" data-placement="right">
                             uitgevoerd door</a>
                           </code>
                         </td>
@@ -2055,7 +2085,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Voorstelling"><a href="https://data.europa.eu/snb/model#DisplayParameter" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#DisplayParameter" data-placement="right">Voorstelling</a></h3>
+              <h3 class="h3" id="Voorstelling"><a href="http://data.europa.eu/snb/model/elm/DisplayParameter" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/DisplayParameter" data-placement="right">Voorstelling</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2087,10 +2117,10 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Voorstelling%3Ahoofdtaal" typeof="rdfs:Property" resource="https://data.europa.eu/snb/model#primaryLanguage">
+                      <tr id="Voorstelling%3Ahoofdtaal" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/primaryLanguage">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/snb/model#primaryLanguage" data-toggle="tooltip" data-content="https://data.europa.eu/snb/model#primaryLanguage" data-placement="right">hoofdtaal</a>
+                            <a href="http://data.europa.eu/snb/model/elm/primaryLanguage" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/primaryLanguage" data-placement="right">hoofdtaal</a>
                           </code>
                         </td>
                         <td>
@@ -2155,14 +2185,14 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare JSON-LD context definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/applicatieprofiel/leercredential/2023-01-10/context/leercredential-ap.jsonld" target="_blank">/doc/applicatieprofiel/leercredential/2023-01-10/context/leercredential-ap.jsonld</a></p>
+                <p>Een herbruikbare JSON-LD context definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/leercredential/2023-05-01/context/leercredential-ap.jsonld" target="_blank">/doc/implementatiemodel/leercredential/2023-05-01/context/leercredential-ap.jsonld</a></p>
                 
             </div>
             <div class="region region--no-space-top" id="shacl">
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (niet normatief)
                 
-                <p>Een herbruikbare SHACL template definitie voor dit applicatieprofiel is terug te vinden op: <a href="/doc/applicatieprofiel/leercredential/2023-01-10/shacl/leercredential-ap-SHACL.ttl" target="_blank">/doc/applicatieprofiel/leercredential/2023-01-10/shacl/leercredential-ap-SHACL.ttl</a></p>
+                <p>Een herbruikbare SHACL template definitie voor dit implementatiemodel is terug te vinden op: <a href="/doc/implementatiemodel/leercredential/2023-05-01/shacl/leercredential-ap-SHACL.ttl" target="_blank">/doc/implementatiemodel/leercredential/2023-05-01/shacl/leercredential-ap-SHACL.ttl</a></p>
                 
             </div>
           </div>

@@ -2,25 +2,1003 @@
   "metadata": {
     "title": "Leercredential (implementatiemodel)",
     "uri": "https://solid.data.vlaanderen.be/ns/leercredential",
-    "issued": "2023-02-01",
+    "issued": "2023-05-01",
     "baseURI": "https://solid.data.vlaanderen.be/ns/leercredential#",
     "filename": "leercredential-ap",
     "navigation": {
-      "self": "https://solid.data.vlaanderen.be//doc/applicatieprofiel/leercredential/2023-01-10"
+      "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-05-01"
     },
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "documenttype": "ap",
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/c96737a6276d5937654cb519d00e7bce7ae7029c",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/c96737a6276d5937654cb519d00e7bce7ae7029c/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/9e9bb35dd613547c27447e71ef7cc5ff45c134d9",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/9e9bb35dd613547c27447e71ef7cc5ff45c134d9/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
-    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
     "usesAPs": []
   },
   "classes": [
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess",
+      "name": "Toekenningsproces",
+      "label": {
+        "nl": "Toekenningsproces"
+      },
+      "sort": "Toekenningsproces",
+      "description": {
+        "nl": "Het proces waarbij een organisatie een leerprestatie toekent aan een persoon op basis van een leerspecificatie (bv. een kwalificatie). Het wordt gebruikt om de organisatie te specificeren die de leerspecificatie aan de persoon heeft toegekend, het land of de regio waar de leerspecificatie werd toegekend, en optioneel de datum van toekenning."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Een alternatieve identificatie van het toekenningsproces."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Toekenningsproces",
+              "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/location",
+          "name": "locatie",
+          "sort": "locatie",
+          "label": {
+            "nl": "locatie"
+          },
+          "description": {
+            "nl": "De plaats waar de toekenningsactiviteit plaatsvond (land/regio waar de kwalificatie werd toegekend)."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Toekenningsproces",
+              "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Locatie",
+              "range_uri": "http://www.w3.org/ns/prov#Location"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Locatie",
+              "range_puri": "http://www.w3.org/ns/prov#Location",
+              "range_label": {
+                "nl": "Locatie"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/awards",
+          "name": "kent toe",
+          "sort": "kent toe",
+          "label": {
+            "nl": "kent toe"
+          },
+          "description": {
+            "nl": "De resulterende claim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Toekenningsproces",
+              "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerclaim",
+              "range_uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerclaim",
+              "range_puri": "http://data.europa.eu/snb/model/elm/Claim",
+              "range_label": {
+                "nl": "Leerclaim"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/awardingDate",
+          "name": "toekenningsdatum",
+          "sort": "toekenningsdatum",
+          "label": {
+            "nl": "toekenningsdatum"
+          },
+          "description": {
+            "nl": "De datum waarop de leerspecificatie werd toegekend. Indien niet gespecificeerd is deze ongedefinieerd (\"niet bekend\")."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Toekenningsproces",
+              "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/awardingBody",
+          "name": "uitgevoerd door",
+          "sort": "uitgevoerd door",
+          "label": {
+            "nl": "uitgevoerd door"
+          },
+          "description": {
+            "nl": "De uitreikende instantie die de prestatie aan de persoon heeft toegekend."
+          },
+          "usage": {
+            "nl": "Alleen in geval van co-awarding/co-graduation, waarbij een kwalificatie door twee of meer organisaties aan een persoon wordt toegekend, is de kardinaliteit groter dan 1."
+          },
+          "domain": [
+            {
+              "EA-Name": "Toekenningsproces",
+              "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Claim",
+      "name": "Leerclaim",
+      "label": {
+        "nl": "Leerclaim"
+      },
+      "sort": "Leerclaim",
+      "description": {
+        "nl": "Een claim gemaakt door een uitgever."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
+          "name": "uitgever",
+          "sort": "uitgever",
+          "label": {
+            "nl": "uitgever"
+          },
+          "description": {
+            "nl": "De Agent die de claim maakt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://purl.org/dc/terms/Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Agent",
+              "range_puri": "http://purl.org/dc/terms/Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
+          "name": "authenticiteit",
+          "sort": "authenticiteit",
+          "label": {
+            "nl": "authenticiteit"
+          },
+          "description": {
+            "nl": "De authenticiteit van de leerclaim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Authenticiteit",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Authenticiteit",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Authenticiteit"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": "https://solid.data.vlaanderen.be/id/conceptscheme/Leercredential/Authenticiteit"
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "De identificator van de leerclaim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Type van de leerclaim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerclaimtype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerclaimtype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Leerclaimtype"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/title",
+          "name": "titel",
+          "sort": "titel",
+          "label": {
+            "nl": "titel"
+          },
+          "description": {
+            "nl": "De titel van de claim. Eén waarde per taal is toegestaan."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/awardedBy",
+          "name": "toegekend door",
+          "sort": "toegekend door",
+          "label": {
+            "nl": "toegekend door"
+          },
+          "description": {
+            "nl": "De toekenningsdetails van de claim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Toekenningsproces",
+              "range_uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Toekenningsproces",
+              "range_puri": "http://data.europa.eu/snb/model/elm/AwardingProcess",
+              "range_label": {
+                "nl": "Toekenningsproces"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/EuropeanDigitalCredential",
+      "name": "Europees Digitaal Credential",
+      "label": {
+        "nl": "Europees Digitaal Credential"
+      },
+      "sort": "Europees Digitaal Credential",
+      "description": {
+        "nl": "Een reeks beweringen die door een uitgever in Europa worden gemaakt, gebruikmakend van Europese standaarden. Een Europees Digitaal Credential is een reeks van een of meer beweringen die kunnen worden gebruikt om aan te tonen dat de eigenaar bepaalde vaardigheden bezit of bepaalde leeruitkomsten heeft bereikt door middel van formeel, niet-formeel of informeel leren."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leercredential",
+          "name": "Leercredential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+          "scoped_uri": "#Leercredential"
+        },
+        {
+          "label": "Verifieerbare Credential",
+          "name": "VerifieerbareCredential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+          "scoped_uri": "#Verifieerbare Credential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/displayParameter",
+          "name": "voorstelling",
+          "sort": "voorstelling",
+          "label": {
+            "nl": "voorstelling"
+          },
+          "description": {
+            "nl": "Voorstellingdetails van de Europese Digitale Credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EuropeesDigitaalCredential",
+              "uri": "http://data.europa.eu/snb/model/elm/EuropeanDigitalCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Voorstelling",
+              "range_uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Voorstelling",
+              "range_puri": "http://data.europa.eu/snb/model/elm/DisplayParameter",
+              "range_label": {
+                "nl": "Voorstelling"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningAchievement",
+      "name": "Leerprestatie",
+      "label": {
+        "nl": "Leerprestatie"
+      },
+      "sort": "Leerprestatie",
+      "description": {
+        "nl": "De verwerving van kennis, vaardigheden of verantwoordelijkheid en zelfstandigheid. Een erkend en/of toegekend geheel van leeruitkomsten van een individu."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerclaim",
+          "name": "Leerclaim",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/Claim",
+          "scoped_uri": "#Leerclaim"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/specifiedBy",
+          "name": "specificatie",
+          "sort": "specificatie",
+          "label": {
+            "nl": "specificatie"
+          },
+          "description": {
+            "nl": "Wat er is geleerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievement"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerprestatiespecificatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerprestatiespecificatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+              "range_label": {
+                "nl": "Leerprestatiespecificatie"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+      "name": "Leerprestatiespecificatie",
+      "label": {
+        "nl": "Leerprestatiespecificatie"
+      },
+      "sort": "Leerprestatiespecificatie",
+      "description": {
+        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de leeropportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van leerprestaties."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerspecificatie",
+          "name": "Leerspecificatie",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/Specification",
+          "scoped_uri": "#Leerspecificatie"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.europa.eu/snb/model#ISCEDFCode",
+          "name": "studiegebied",
+          "sort": "studiegebied",
+          "label": {
+            "nl": "studiegebied"
+          },
+          "description": {
+            "nl": "Thematisch gebied volgens de ISCED-F 2013-classificatie."
+          },
+          "usage": {
+            "nl": "Het moet worden verstrekt met behulp van de ISCECD-F gecontroleerd vocabularium."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Studiegebied",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Studiegebied",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Studiegebied"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Het type specificatie van de leerprestatie."
+          },
+          "usage": {
+            "nl": "Het moet worden verstrekt met behulp van een gecontroleerde vocabularium."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerprestatietype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerprestatietype",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Leerprestatietype"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/language",
+          "name": "onderwijstaal",
+          "sort": "onderwijstaal",
+          "label": {
+            "nl": "onderwijstaal"
+          },
+          "description": {
+            "nl": "De taal van de leerprestatiespecificatie."
+          },
+          "usage": {
+            "nl": "Het moet worden verstrekt met behulp van de Language authority tabel."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "GetypeerdeString",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Getypeerde String",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "nl": "Getypeerde String"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/influencedBy",
+          "name": "beinvloed door",
+          "sort": "beinvloed door",
+          "label": {
+            "nl": "beinvloed door"
+          },
+          "description": {
+            "nl": "Activiteiten die een persoon kan uitvoeren om de verwachte leeruitkomsten te verkrijgen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leeractiviteitspecificatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leeractiviteitspecificatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification",
+              "range_label": {
+                "nl": "Leeractiviteitspecificatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/educationSubject",
+          "name": "onderwerp",
+          "sort": "onderwerp",
+          "label": {
+            "nl": "onderwerp"
+          },
+          "description": {
+            "nl": "Een bijbehorend onderwijsveld uit een ander semantisch kader dan de ISCED-classificatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Onderwerp",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Onderwerp",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Onderwerp"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/educationLevel",
+          "name": "onderwijsniveau",
+          "sort": "onderwijsniveau",
+          "label": {
+            "nl": "onderwijsniveau"
+          },
+          "description": {
+            "nl": "Een bijbehorend opleidingsniveau binnen een semantisch kader dat opleidingsniveaus beschrijft."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Onderwijsniveau",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Onderwijsniveau",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Onderwijsniveau"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification",
+      "name": "Leeractiviteitspecificatie",
+      "label": {
+        "nl": "Leeractiviteitspecificatie"
+      },
+      "sort": "Leeractiviteitspecificatie",
+      "description": {
+        "nl": "De specificatie van een proces dat leidt tot het verwerven van kennis, vaardigheden of verantwoordelijkheid en autonomie."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerspecificatie",
+          "name": "Leerspecificatie",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/Specification",
+          "scoped_uri": "#Leerspecificatie"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://purl.org/dc/terms/language",
+          "name": "instructietaal",
+          "sort": "instructietaal",
+          "label": {
+            "nl": "instructietaal"
+          },
+          "description": {
+            "nl": "De gebruikte instructietaal of -talen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteitspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taal",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taal",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Taal"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/influences",
+          "name": "beinvloedt",
+          "sort": "beinvloedt",
+          "label": {
+            "nl": "beinvloedt"
+          },
+          "description": {
+            "nl": "Wat kan worden geleerd door de activiteit te doen die wordt beschreven door de specificatie van deze leeractiviteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteitspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerprestatiespecificatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerprestatiespecificatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+              "range_label": {
+                "nl": "Leerprestatiespecificatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Qualification",
+      "name": "Kwalificatie",
+      "label": {
+        "nl": "Kwalificatie"
+      },
+      "sort": "Kwalificatie",
+      "description": {
+        "nl": "Een specificatie van een beoordelings- en validatieproces dat wordt verkregen wanneer een bevoegde autoriteit vaststelt dat een individu leeruitkomsten volgens bepaalde normen heeft bereikt."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerprestatiespecificatie",
+          "name": "Leerprestatiespecificatie",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+          "scoped_uri": "#Leerprestatiespecificatie"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Specification",
+      "name": "Leerspecificatie",
+      "label": {
+        "nl": "Leerspecificatie"
+      },
+      "sort": "Leerspecificatie",
+      "description": {
+        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de opportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van het leren."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Een identificator van de specificatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/Specification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/title",
+          "name": "titel",
+          "sort": "titel",
+          "label": {
+            "nl": "titel"
+          },
+          "description": {
+            "nl": "De titel van de specificatie. Eén waarde per taal is toegestaan."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/Specification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
     {
       "uri": "http://purl.org/dc/terms/Agent",
       "name": "Agent",
@@ -224,41 +1202,6 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.europa.eu/snb/model#hasClaim",
-          "name": "heeft claim",
-          "sort": "heeft claim",
-          "label": {
-            "nl": "heeft claim"
-          },
-          "description": {
-            "nl": "Een claim over de Persoon."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Persoon",
-              "uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerclaim",
-              "range_uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerclaim",
-              "range_puri": "https://data.europa.eu/snb/model#Claim",
-              "range_label": {
-                "nl": "Leerclaim"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
           "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identificator",
           "sort": "identificator",
@@ -291,6 +1234,41 @@
             }
           ],
           "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/hasClaim",
+          "name": "heeft claim",
+          "sort": "heeft claim",
+          "label": {
+            "nl": "heeft claim"
+          },
+          "description": {
+            "nl": "Een claim over de Persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerclaim",
+              "range_uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerclaim",
+              "range_puri": "http://data.europa.eu/snb/model/elm/Claim",
+              "range_label": {
+                "nl": "Leerclaim"
+              }
+            }
+          ],
+          "cardinality": "1..*",
           "codelist_uri": ""
         }
       ]
@@ -390,985 +1368,6 @@
             }
           ],
           "cardinality": "0..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#AwardingProcess",
-      "name": "Toekenningsproces",
-      "label": {
-        "nl": "Toekenningsproces"
-      },
-      "sort": "Toekenningsproces",
-      "description": {
-        "nl": "Het proces waarbij een organisatie een leerprestatie toekent aan een persoon op basis van een leerspecificatie (bv. een kwalificatie). Het wordt gebruikt om de organisatie te specificeren die de leerspecificatie aan de persoon heeft toegekend, het land of de regio waar de leerspecificatie werd toegekend, en optioneel de datum van toekenning."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": [
-        {
-          "uri": "https://data.europa.eu/snb/model#location",
-          "name": "locatie",
-          "sort": "locatie",
-          "label": {
-            "nl": "locatie"
-          },
-          "description": {
-            "nl": "De plaats waar de toekenningsactiviteit plaatsvond (land/regio waar de kwalificatie werd toegekend)."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Toekenningsproces",
-              "uri": "https://data.europa.eu/snb/model#AwardingProcess"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Locatie",
-              "range_uri": "http://www.w3.org/ns/prov#Location"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Locatie",
-              "range_puri": "http://www.w3.org/ns/prov#Location",
-              "range_label": {
-                "nl": "Locatie"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.europa.eu/snb/model#awards",
-          "name": "kent toe",
-          "sort": "kent toe",
-          "label": {
-            "nl": "kent toe"
-          },
-          "description": {
-            "nl": "De resulterende claim."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Toekenningsproces",
-              "uri": "https://data.europa.eu/snb/model#AwardingProcess"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerclaim",
-              "range_uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerclaim",
-              "range_puri": "https://data.europa.eu/snb/model#Claim",
-              "range_label": {
-                "nl": "Leerclaim"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.europa.eu/snb/model#awardingDate",
-          "name": "toekenningsdatum",
-          "sort": "toekenningsdatum",
-          "label": {
-            "nl": "toekenningsdatum"
-          },
-          "description": {
-            "nl": "De datum waarop de leerspecificatie werd toegekend. Indien niet gespecificeerd is deze ongedefinieerd (\"niet bekend\")."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Toekenningsproces",
-              "uri": "https://data.europa.eu/snb/model#AwardingProcess"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.europa.eu/snb/model#awardingBody",
-          "name": "uitgevoerd door",
-          "sort": "uitgevoerd door",
-          "label": {
-            "nl": "uitgevoerd door"
-          },
-          "description": {
-            "nl": "De uitreikende instantie die de prestatie aan de persoon heeft toegekend."
-          },
-          "usage": {
-            "nl": "Alleen in geval van co-awarding/co-graduation, waarbij een kwalificatie door twee of meer organisaties aan een persoon wordt toegekend, is de kardinaliteit groter dan 1."
-          },
-          "domain": [
-            {
-              "EA-Name": "Toekenningsproces",
-              "uri": "https://data.europa.eu/snb/model#AwardingProcess"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Organisatie",
-              "range_uri": "http://www.w3.org/ns/org#Organization"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Organisatie",
-              "range_puri": "http://www.w3.org/ns/org#Organization",
-              "range_label": {
-                "nl": "Organisatie"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://www.w3.org/ns/adms#identifier",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "Een alternatieve identificatie van het toekenningsproces."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Toekenningsproces",
-              "uri": "https://data.europa.eu/snb/model#AwardingProcess"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Identificator",
-              "range_uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Identificator",
-              "range_puri": "http://www.w3.org/ns/adms#Identifier",
-              "range_label": {
-                "nl": "Identificator"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#Claim",
-      "name": "Leerclaim",
-      "label": {
-        "nl": "Leerclaim"
-      },
-      "sort": "Leerclaim",
-      "description": {
-        "nl": "Een claim gemaakt door een uitgever."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": [
-        {
-          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
-          "name": "uitgever",
-          "sort": "uitgever",
-          "label": {
-            "nl": "uitgever"
-          },
-          "description": {
-            "nl": "De Agent die de claim maakt."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Agent",
-              "range_uri": "http://purl.org/dc/terms/Agent"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Agent",
-              "range_puri": "http://purl.org/dc/terms/Agent",
-              "range_label": {
-                "nl": "Agent"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "https://solid.data.vlaanderen.be/id/conceptscheme/Leercredential/Leverancier"
-        },
-        {
-          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
-          "name": "authenticiteit",
-          "sort": "authenticiteit",
-          "label": {
-            "nl": "authenticiteit"
-          },
-          "description": {
-            "nl": "De authenticiteit van de leerclaim."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Authenticiteit",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Authenticiteit",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Authenticiteit"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": "https://solid.data.vlaanderen.be/id/conceptscheme/Leercredential/Authenticiteit"
-        },
-        {
-          "uri": "https://data.europa.eu/snb/model#awardedBy",
-          "name": "toegekend door",
-          "sort": "toegekend door",
-          "label": {
-            "nl": "toegekend door"
-          },
-          "description": {
-            "nl": "De toekenningsdetails van de claim.\n"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Toekenningsproces",
-              "range_uri": "https://data.europa.eu/snb/model#AwardingProcess"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Toekenningsproces",
-              "range_puri": "https://data.europa.eu/snb/model#AwardingProcess",
-              "range_label": {
-                "nl": "Toekenningsproces"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://www.w3.org/ns/adms#identifier",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "De identificator van de leerclaim."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Identificator",
-              "range_uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Identificator",
-              "range_puri": "http://www.w3.org/ns/adms#Identifier",
-              "range_label": {
-                "nl": "Identificator"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "Type van de leerclaim."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerclaimtype",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerclaimtype",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Leerclaimtype"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/title",
-          "name": "titel",
-          "sort": "titel",
-          "label": {
-            "nl": "titel"
-          },
-          "description": {
-            "nl": "De titel van de claim. Eén waarde per taal is toegestaan."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "https://data.europa.eu/snb/model#Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "TaalString",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Taalstring",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "nl": "Taalstring"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#EuropeanDigitalCredential",
-      "name": "Europees Digitaal Credential",
-      "label": {
-        "nl": "Europees Digitaal Credential"
-      },
-      "sort": "Europees Digitaal Credential",
-      "description": {
-        "nl": "Een reeks beweringen die door een uitgever in Europa worden gemaakt, gebruikmakend van Europese standaarden. Een Europees Digitaal Credential is een reeks van een of meer beweringen die kunnen worden gebruikt om aan te tonen dat de eigenaar bepaalde vaardigheden bezit of bepaalde leeruitkomsten heeft bereikt door middel van formeel, niet-formeel of informeel leren."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Leercredential",
-          "name": "Leercredential",
-          "package": "OSLO-Diploma",
-          "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
-          "scoped_uri": "#Leercredential"
-        },
-        {
-          "label": "Verifieerbare Credential",
-          "name": "VerifieerbareCredential",
-          "package": "OSLO-Diploma",
-          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
-          "scoped_uri": "#Verifieerbare Credential"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://data.europa.eu/snb/model#displayParameter",
-          "name": "voorstelling",
-          "sort": "voorstelling",
-          "label": {
-            "nl": "voorstelling"
-          },
-          "description": {
-            "nl": "Voorstellingdetails van de Europese Digitale Credential."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "EuropeesDigitaalCredential",
-              "uri": "https://data.europa.eu/snb/model#EuropeanDigitalCredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Voorstelling",
-              "range_uri": "https://data.europa.eu/snb/model#DisplayParameter"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Voorstelling",
-              "range_puri": "https://data.europa.eu/snb/model#DisplayParameter",
-              "range_label": {
-                "nl": "Voorstelling"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#LearningAchievement",
-      "name": "Leerprestatie",
-      "label": {
-        "nl": "Leerprestatie"
-      },
-      "sort": "Leerprestatie",
-      "description": {
-        "nl": "De verwerving van kennis, vaardigheden of verantwoordelijkheid en zelfstandigheid. Een erkend en/of toegekend geheel van leeruitkomsten van een individu."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Leerclaim",
-          "name": "Leerclaim",
-          "package": "OSLO-Diploma",
-          "uri": "https://data.europa.eu/snb/model#Claim",
-          "scoped_uri": "#Leerclaim"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://data.europa.eu/snb/model#specifiedBy",
-          "name": "specificatie",
-          "sort": "specificatie",
-          "label": {
-            "nl": "specificatie"
-          },
-          "description": {
-            "nl": "Wat er is geleerd."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerprestatie",
-              "uri": "https://data.europa.eu/snb/model#LearningAchievement"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerprestatiespecificatie",
-              "range_uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerprestatiespecificatie",
-              "range_puri": "https://data.europa.eu/snb/model#LearningAchievementSpecification",
-              "range_label": {
-                "nl": "Leerprestatiespecificatie"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification",
-      "name": "Leerprestatiespecificatie",
-      "label": {
-        "nl": "Leerprestatiespecificatie"
-      },
-      "sort": "Leerprestatiespecificatie",
-      "description": {
-        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de leeropportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van leerprestaties."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Leerspecificatie",
-          "name": "Leerspecificatie",
-          "package": "OSLO-Diploma",
-          "uri": "https://data.europa.eu/snb/model#Specification",
-          "scoped_uri": "#Leerspecificatie"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://data.europa.eu/snb/model#influencedBy",
-          "name": "beinvloed door",
-          "sort": "beinvloed door",
-          "label": {
-            "nl": "beinvloed door"
-          },
-          "description": {
-            "nl": "Activiteiten die een persoon kan uitvoeren om de verwachte leeruitkomsten te verkrijgen."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leeractiviteitspecificatie",
-              "range_uri": "https://data.europa.eu/snb/model#LearningActivitySpecification"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leeractiviteitspecificatie",
-              "range_puri": "https://data.europa.eu/snb/model#LearningActivitySpecification",
-              "range_label": {
-                "nl": "Leeractiviteitspecificatie"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.europa.eu/snb/model#educationSubject",
-          "name": "onderwerp",
-          "sort": "onderwerp",
-          "label": {
-            "nl": "onderwerp"
-          },
-          "description": {
-            "nl": "Een bijbehorend onderwijsveld uit een ander semantisch kader dan de ISCED-classificatie."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Onderwerp",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Onderwerp",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Onderwerp"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.europa.eu/snb/model#educationLevel",
-          "name": "onderwijsniveau",
-          "sort": "onderwijsniveau",
-          "label": {
-            "nl": "onderwijsniveau"
-          },
-          "description": {
-            "nl": "Een bijbehorend opleidingsniveau binnen een semantisch kader dat opleidingsniveaus beschrijft."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Onderwijsniveau",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Onderwijsniveau",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Onderwijsniveau"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://data.europa.eu/snb/model#ISCEDFCode",
-          "name": "studiegebied",
-          "sort": "studiegebied",
-          "label": {
-            "nl": "studiegebied"
-          },
-          "description": {
-            "nl": "Thematisch gebied volgens de ISCED-F 2013-classificatie."
-          },
-          "usage": {
-            "nl": "Het moet worden verstrekt met behulp van de ISCECD-F gecontroleerd vocabularium."
-          },
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Studiegebied",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Studiegebied",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Studiegebied"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/type",
-          "name": "type",
-          "sort": "type",
-          "label": {
-            "nl": "type"
-          },
-          "description": {
-            "nl": "Het type specificatie van de leerprestatie."
-          },
-          "usage": {
-            "nl": "Het moet worden verstrekt met behulp van een gecontroleerde vocabularium."
-          },
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerprestatietype",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerprestatietype",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Leerprestatietype"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/language",
-          "name": "onderwijstaal",
-          "sort": "onderwijstaal",
-          "label": {
-            "nl": "onderwijstaal"
-          },
-          "description": {
-            "nl": "De taal van de leerprestatiespecificatie."
-          },
-          "usage": {
-            "nl": "Het moet worden verstrekt met behulp van de Language authority tabel."
-          },
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "GetypeerdeString",
-              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Getypeerde String",
-              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
-              "range_label": {
-                "nl": "Getypeerde String"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#LearningActivitySpecification",
-      "name": "Leeractiviteitspecificatie",
-      "label": {
-        "nl": "Leeractiviteitspecificatie"
-      },
-      "sort": "Leeractiviteitspecificatie",
-      "description": {
-        "nl": "De specificatie van een proces dat leidt tot het verwerven van kennis, vaardigheden of verantwoordelijkheid en autonomie."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Leerspecificatie",
-          "name": "Leerspecificatie",
-          "package": "OSLO-Diploma",
-          "uri": "https://data.europa.eu/snb/model#Specification",
-          "scoped_uri": "#Leerspecificatie"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://data.europa.eu/snb/model#influences",
-          "name": "beinvloedt",
-          "sort": "beinvloedt",
-          "label": {
-            "nl": "beinvloedt"
-          },
-          "description": {
-            "nl": "Wat kan worden geleerd door de activiteit te doen die wordt beschreven door de specificatie van deze leeractiviteit."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leeractiviteitspecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningActivitySpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerprestatiespecificatie",
-              "range_uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerprestatiespecificatie",
-              "range_puri": "https://data.europa.eu/snb/model#LearningAchievementSpecification",
-              "range_label": {
-                "nl": "Leerprestatiespecificatie"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/language",
-          "name": "instructietaal",
-          "sort": "instructietaal",
-          "label": {
-            "nl": "instructietaal"
-          },
-          "description": {
-            "nl": "De gebruikte instructietaal of -talen."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leeractiviteitspecificatie",
-              "uri": "https://data.europa.eu/snb/model#LearningActivitySpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Taal",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Taal",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Taal"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#Qualification",
-      "name": "Kwalificatie",
-      "label": {
-        "nl": "Kwalificatie"
-      },
-      "sort": "Kwalificatie",
-      "description": {
-        "nl": "Een specificatie van een beoordelings- en validatieproces dat wordt verkregen wanneer een bevoegde autoriteit vaststelt dat een individu leeruitkomsten volgens bepaalde normen heeft bereikt."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Leerprestatiespecificatie",
-          "name": "Leerprestatiespecificatie",
-          "package": "OSLO-Diploma",
-          "uri": "https://data.europa.eu/snb/model#LearningAchievementSpecification",
-          "scoped_uri": "#Leerprestatiespecificatie"
-        }
-      ],
-      "properties": []
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#Specification",
-      "name": "Leerspecificatie",
-      "label": {
-        "nl": "Leerspecificatie"
-      },
-      "sort": "Leerspecificatie",
-      "description": {
-        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de opportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van het leren."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": [
-        {
-          "uri": "http://www.w3.org/ns/adms#identifier",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "Een identificator van de specificatie.\n"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerspecificatie",
-              "uri": "https://data.europa.eu/snb/model#Specification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Identificator",
-              "range_uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Identificator",
-              "range_puri": "http://www.w3.org/ns/adms#Identifier",
-              "range_label": {
-                "nl": "Identificator"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/title",
-          "name": "titel",
-          "sort": "titel",
-          "label": {
-            "nl": "titel"
-          },
-          "description": {
-            "nl": "De titel van de specificatie. Eén waarde per taal is toegestaan.\n"
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerspecificatie",
-              "uri": "https://data.europa.eu/snb/model#Specification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "TaalString",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Taalstring",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "nl": "Taalstring"
-              }
-            }
-          ],
-          "cardinality": "1..*",
           "codelist_uri": ""
         }
       ]
@@ -1508,7 +1507,7 @@
         {
           "label": "Credential",
           "name": "Credential",
-          "package": "OSLO-Diploma",
+          "package": "OSLO-Leercredential",
           "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
           "scoped_uri": "#Credential"
         }
@@ -1733,7 +1732,7 @@
         {
           "label": "Credential",
           "name": "Credential",
-          "package": "OSLO-Diploma",
+          "package": "OSLO-Leercredential",
           "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
           "scoped_uri": "#Credential"
         }
@@ -1836,6 +1835,126 @@
     }
   ],
   "datatypes": [
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter",
+      "name": "Voorstelling",
+      "label": {
+        "nl": "Voorstelling"
+      },
+      "sort": "Voorstelling",
+      "description": {
+        "nl": "De parameters van de voorstelling."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://purl.org/dc/title",
+          "name": "titel",
+          "sort": "titel",
+          "label": {
+            "nl": "titel"
+          },
+          "description": {
+            "nl": "Tekstuele omschrijving van de credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Voorstelling",
+              "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/language",
+          "name": "taal",
+          "sort": "taal",
+          "label": {
+            "nl": "taal"
+          },
+          "description": {
+            "nl": "De lijst van talen waarin de voorstelling beschikbaar is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Voorstelling",
+              "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taal",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taal",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Taal"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/primaryLanguage",
+          "name": "hoofdtaal",
+          "sort": "hoofdtaal",
+          "label": {
+            "nl": "hoofdtaal"
+          },
+          "description": {
+            "nl": "De primaire taal van de credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Voorstelling",
+              "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taal",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taal",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Taal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
     {
       "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
       "name": "Taalstring",
@@ -2337,128 +2456,8 @@
           "codelist_uri": ""
         }
       ]
-    },
-    {
-      "uri": "https://data.europa.eu/snb/model#DisplayParameter",
-      "name": "Voorstelling",
-      "label": {
-        "nl": "Voorstelling"
-      },
-      "sort": "Voorstelling",
-      "description": {
-        "nl": "De parameters van de voorstelling."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": [
-        {
-          "uri": "https://data.europa.eu/snb/model#primaryLanguage",
-          "name": "hoofdtaal",
-          "sort": "hoofdtaal",
-          "label": {
-            "nl": "hoofdtaal"
-          },
-          "description": {
-            "nl": "De primaire taal van de credential."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Voorstelling",
-              "uri": "https://data.europa.eu/snb/model#DisplayParameter"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Taal",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Taal",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Taal"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/title",
-          "name": "titel",
-          "sort": "titel",
-          "label": {
-            "nl": "titel"
-          },
-          "description": {
-            "nl": "Tekstuele omschrijving van de credential."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Voorstelling",
-              "uri": "https://data.europa.eu/snb/model#DisplayParameter"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "TaalString",
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Taalstring",
-              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-              "range_label": {
-                "nl": "Taalstring"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://purl.org/dc/terms/language",
-          "name": "taal",
-          "sort": "taal",
-          "label": {
-            "nl": "taal"
-          },
-          "description": {
-            "nl": "De lijst van talen waarin de voorstelling beschikbaar is."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Voorstelling",
-              "uri": "https://data.europa.eu/snb/model#DisplayParameter"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Taal",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Taal",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Taal"
-              }
-            }
-          ],
-          "cardinality": "1..*",
-          "codelist_uri": ""
-        }
-      ]
     }
   ],
   "parents": [],
-  "documentroot": "/doc/applicatieprofiel/leercredential/2023-01-10"
+  "documentroot": "/doc/implementatiemodel/leercredential/2023-05-01"
 }
