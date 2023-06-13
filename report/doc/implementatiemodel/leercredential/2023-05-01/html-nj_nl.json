@@ -14,8 +14,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/753602eef34654ab369c58d3111a249073018aae",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/753602eef34654ab369c58d3111a249073018aae/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/6b424d34f8704bde24f0eaa04828aa1c7d8a08c6",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/6b424d34f8704bde24f0eaa04828aa1c7d8a08c6/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -583,43 +583,6 @@
       ],
       "properties": [
         {
-          "uri": "https://data.europa.eu/snb/model#ISCEDFCode",
-          "name": "studiegebied",
-          "sort": "studiegebied",
-          "label": {
-            "nl": "studiegebied"
-          },
-          "description": {
-            "nl": "Thematisch gebied volgens de ISCED-F 2013-classificatie."
-          },
-          "usage": {
-            "nl": "Het moet worden verstrekt met behulp van de ISCECD-F gecontroleerd vocabularium."
-          },
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Studiegebied",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Studiegebied",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Studiegebied"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
           "uri": "http://purl.org/dc/terms/type",
           "name": "type",
           "sort": "type",
@@ -796,6 +759,43 @@
             }
           ],
           "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model#ISCEDFCode",
+          "name": "studiegebied",
+          "sort": "studiegebied",
+          "label": {
+            "nl": "studiegebied"
+          },
+          "description": {
+            "nl": "Thematisch gebied volgens de ISCED-F 2013-classificatie."
+          },
+          "usage": {
+            "nl": "Het moet worden verstrekt met behulp van de ISCECD-F gecontroleerd vocabularium."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Studiegebied",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Studiegebied",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Studiegebied"
+              }
+            }
+          ],
+          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -1168,41 +1168,6 @@
       ],
       "properties": [
         {
-          "uri": "https://data.europa.eu/snb/model#hasCredential",
-          "name": "heeft credential",
-          "sort": "heeft credential",
-          "label": {
-            "nl": "heeft credential"
-          },
-          "description": {
-            "nl": "Leercredential van de persoon."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Persoon",
-              "uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leercredential",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leercredential",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
-              "range_label": {
-                "nl": "Leercredential"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
           "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identificator",
           "sort": "identificator",
@@ -1270,6 +1235,41 @@
             }
           ],
           "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model#hasCredential",
+          "name": "heeft credential",
+          "sort": "heeft credential",
+          "label": {
+            "nl": "heeft credential"
+          },
+          "description": {
+            "nl": "Leercredential van de persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leercredential",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leercredential",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+              "range_label": {
+                "nl": "Leercredential"
+              }
+            }
+          ],
+          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -1850,7 +1850,7 @@
       "parents": [],
       "properties": [
         {
-          "uri": "http://purl.org/dc/title",
+          "uri": "http://purl.org/dc/terms/title",
           "name": "titel",
           "sort": "titel",
           "label": {
@@ -2211,14 +2211,14 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://purl.org/dc/terms/conformsTo",
-          "name": "schema URI",
-          "sort": "schema URI",
+          "uri": "http://purl.org/dc/terms/creator",
+          "name": "uitgevende autoriteit URI",
+          "sort": "uitgevende autoriteit URI",
           "label": {
-            "nl": "schema URI"
+            "nl": "uitgevende autoriteit URI"
           },
           "description": {
-            "nl": "De URI van het schema."
+            "nl": "De URI van de uitgevende autoriteit."
           },
           "usage": {},
           "domain": [
@@ -2246,14 +2246,14 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://purl.org/dc/term/creator",
-          "name": "uitgevende autoriteit URI",
-          "sort": "uitgevende autoriteit URI",
+          "uri": "http://purl.org/dc/terms/conformsTo",
+          "name": "schema URI",
+          "sort": "schema URI",
           "label": {
-            "nl": "uitgevende autoriteit URI"
+            "nl": "schema URI"
           },
           "description": {
-            "nl": "De URI van de uitgevende autoriteit."
+            "nl": "De URI van het schema."
           },
           "usage": {},
           "domain": [
