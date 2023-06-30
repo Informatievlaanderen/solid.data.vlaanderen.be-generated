@@ -1,0 +1,1937 @@
+{
+  "metadata": {
+    "title": "PersoonCredential (implementatiemodel)",
+    "uri": "https://solid.data.vlaanderen.be/ns/persooncredential",
+    "issued": "2023-07-01",
+    "baseURI": "https://solid.data.vlaanderen.be/ns/persooncredential#",
+    "filename": "persooncredential-ap",
+    "navigation": {
+      "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/persooncredential/2023-07-01"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "ap",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/767b1685e953b9aa6907d58ecabaa295b609fbae",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/767b1685e953b9aa6907d58ecabaa295b609fbae/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/persooncredential#PersoonCredential",
+      "name": "Persoon Credential",
+      "label": {
+        "nl": "Persoon Credential"
+      },
+      "sort": "Persoon Credential",
+      "description": {
+        "nl": "Verifieerbare Credential die algemene gegevens over een Persoon bevat zoals namen, adressen, identificatoren, geboortegegevens, nationaliteiten, burgerlijke staat enzovoort."
+      },
+      "usage": {
+        "nl": "Deze Persoon Credential kan op zichzelf of in combinatie met een domeinspecifieke Credential (zoals Leercredential) gebruikt worden om die laatste te verrijken met persoon-identificerende gegevens. De koppeling tussen beide kan dan gemaakt worden op basis van een Identificator van de Persoon, bv. een WebID."
+      },
+      "parents": [
+        {
+          "label": "Verifieerbare Credential",
+          "name": "VerifieerbareCredential",
+          "package": "Solid-VC",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+          "scoped_uri": "#Verifieerbare Credential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://w3.org/2018/credentials#credentialSubject",
+          "name": "eigenaar",
+          "sort": "eigenaar",
+          "label": {
+            "nl": "eigenaar"
+          },
+          "description": {
+            "nl": "De persoon (onderwerp) over wie claims worden gedaan en die de Credential bezit."
+          },
+          "usage": {
+            "nl": "Deze eigenschap is geërfd van verifieerbare credentials."
+          },
+          "domain": [
+            {
+              "EA-Name": "PersoonCredential",
+              "uri": "https://solid.data.vlaanderen.be/ns/persooncredential#PersoonCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Persoon",
+              "range_uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Persoon",
+              "range_puri": "http://www.w3.org/ns/person#Person",
+              "range_label": {
+                "nl": "Persoon"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://purl.org/dc/terms/Jurisdiction",
+      "name": "Jurisdictie",
+      "label": {
+        "nl": "Jurisdictie"
+      },
+      "sort": "Jurisdictie",
+      "description": {
+        "nl": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt."
+      },
+      "usage": {
+        "nl": "Doorgaans een land of deelstaat."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+          "name": "naam",
+          "sort": "naam",
+          "label": {
+            "nl": "naam"
+          },
+          "description": {
+            "nl": "String van karakters die de Jurisdictie voorstelt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Jurisdictie",
+              "uri": "http://purl.org/dc/terms/Jurisdiction"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "TaalString"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/identifier",
+          "name": "id",
+          "sort": "id",
+          "label": {
+            "nl": "id"
+          },
+          "description": {
+            "nl": "Referentie in de vorm van een URI voor een Jurisdictie."
+          },
+          "usage": {
+            "nl": "Typisch een land."
+          },
+          "domain": [
+            {
+              "EA-Name": "Jurisdictie",
+              "uri": "http://purl.org/dc/terms/Jurisdiction"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://purl.org/dc/terms/Location",
+      "name": "Plaats",
+      "label": {
+        "nl": "Plaats"
+      },
+      "sort": "Plaats",
+      "description": {
+        "nl": "Een ruimtelijk gebied of benoemde plaats."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/locn#geographicName",
+          "name": "geografische naam",
+          "sort": "geografische naam",
+          "label": {
+            "nl": "geografische naam"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Plaats",
+              "uri": "http://purl.org/dc/terms/Location"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "GeografischeNaam",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#GeografischeNaam",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "GeografischeNaam"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "name": "geografische identificator",
+          "sort": "geografische identificator",
+          "label": {
+            "nl": "geografische identificator"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Plaats",
+              "uri": "http://purl.org/dc/terms/Location"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/person#Person",
+      "name": "Persoon",
+      "label": {
+        "nl": "Persoon"
+      },
+      "sort": "Persoon",
+      "description": {
+        "nl": "Natuurlijk persoon."
+      },
+      "usage": {
+        "nl": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc)."
+      },
+      "parents": [
+        {
+          "label": "Resource",
+          "name": "Object",
+          "package": "OSLO-Generiek",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "scoped_uri": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        },
+        {
+          "label": "Agent",
+          "name": "Agent",
+          "package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent",
+          "scoped_uri": "http://purl.org/dc/terms/Agent"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#volledigeNaam",
+          "name": "volledige naam",
+          "sort": "volledige naam",
+          "label": {
+            "nl": "volledige naam"
+          },
+          "description": {
+            "nl": "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#heeftStaatsburgerschap",
+          "name": "heeft staatsburgerschap",
+          "sort": "heeft staatsburgerschap",
+          "label": {
+            "nl": "heeft staatsburgerschap"
+          },
+          "description": {
+            "nl": "Staatsburgerschap vd persoon."
+          },
+          "usage": {
+            "nl": "De entiteit staatsburgerschap beschrijft het staatsburgerschap in meer detail (oa de jurisdictie waarbinnen het gedefinieerd is)."
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Staatsburgerschap",
+              "range_uri": "https://data.vlaanderen.be/ns/persoon#Staatsburgerschap"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Staatburgerschap",
+              "range_puri": "https://data.vlaanderen.be/ns/persoon#Staatsburgerschap",
+              "range_label": {
+                "nl": "Staatburgerschap"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#heeftNationaliteit",
+          "name": "heeft nationaliteit",
+          "sort": "heeft nationaliteit",
+          "label": {
+            "nl": "heeft nationaliteit"
+          },
+          "description": {
+            "nl": "Nationaliteit vd persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Nationaliteit",
+              "range_uri": "https://data.vlaanderen.be/ns/persoon#Nationaliteit"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Nationaliteit",
+              "range_puri": "https://data.vlaanderen.be/ns/persoon#Nationaliteit",
+              "range_label": {
+                "nl": "Nationaliteit"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#heeftInwonerschap",
+          "name": "heeft inwonerschap",
+          "sort": "heeft inwonerschap",
+          "label": {
+            "nl": "heeft inwonerschap"
+          },
+          "description": {
+            "nl": "Inwonerschap vd persoon."
+          },
+          "usage": {
+            "nl": "De entiteit inwonerschap beschrijft het inwonerschap in meer detail (oa de jurisdictie waarbinnen het gedefinieerd is)."
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Inwonerschap",
+              "range_uri": "https://data.vlaanderen.be/ns/persoon#Inwonerschap"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Inwonerschap",
+              "range_puri": "https://data.vlaanderen.be/ns/persoon#Inwonerschap",
+              "range_label": {
+                "nl": "Inwonerschap"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#heeftGeboorte",
+          "name": "heeft geboorte",
+          "sort": "heeft geboorte",
+          "label": {
+            "nl": "heeft geboorte"
+          },
+          "description": {
+            "nl": "Verwijst naar de geboortegegevens vd persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geboorte",
+              "range_uri": "https://data.vlaanderen.be/ns/persoon#Geboorte"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geboorte",
+              "range_puri": "https://data.vlaanderen.be/ns/persoon#Geboorte",
+              "range_label": {
+                "nl": "Geboorte"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#heeftBurgerlijkeStaat",
+          "name": "heeft burgerlijke staat",
+          "sort": "heeft burgerlijke staat",
+          "label": {
+            "nl": "heeft burgerlijke staat"
+          },
+          "description": {
+            "nl": "Burgerlijke Staat vd Persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "BurgerlijkeStaat",
+              "range_uri": "https://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Burgerlijke Staat",
+              "range_puri": "https://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat",
+              "range_label": {
+                "nl": "Burgerlijke Staat"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam",
+          "name": "gebruikte voornaam",
+          "sort": "gebruikte voornaam",
+          "label": {
+            "nl": "gebruikte voornaam"
+          },
+          "description": {
+            "nl": "Belangrijkste vd voornamen ve persoon."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://xmlns.com/foaf/0.1/givenName",
+          "name": "voornaam",
+          "sort": "voornaam",
+          "label": {
+            "nl": "voornaam"
+          },
+          "description": {
+            "nl": "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://xmlns.com/foaf/0.1/familyName",
+          "name": "achternaam",
+          "sort": "achternaam",
+          "label": {
+            "nl": "achternaam"
+          },
+          "description": {
+            "nl": "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie."
+          },
+          "usage": {
+            "nl": "Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt."
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/person#residency",
+          "name": "inwonerschap",
+          "sort": "inwonerschap",
+          "label": {
+            "nl": "inwonerschap"
+          },
+          "description": {
+            "nl": "Jurisdictie waarbinnen het Inwonerschap vd persoon is gedefinieerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Jurisdictie",
+              "range_uri": "http://purl.org/dc/terms/Jurisdiction"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Jurisdictie",
+              "range_puri": "http://purl.org/dc/terms/Jurisdiction",
+              "range_label": {
+                "nl": "Jurisdictie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/person#placeOfBirth",
+          "name": "geboorteplaats",
+          "sort": "geboorteplaats",
+          "label": {
+            "nl": "geboorteplaats"
+          },
+          "description": {
+            "nl": "Plaats waar de Persoon geboren is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Plaats",
+              "range_uri": "http://purl.org/dc/terms/Location"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Plaats",
+              "range_puri": "http://purl.org/dc/terms/Location",
+              "range_label": {
+                "nl": "Plaats"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/person#patronymicName",
+          "name": "patroniem",
+          "sort": "patroniem",
+          "label": {
+            "nl": "patroniem"
+          },
+          "description": {
+            "nl": "Achternaam gebaseerd op de voornaam vd vader ve persoon."
+          },
+          "usage": {
+            "nl": "Bv in Ijsland: Magnusdottir (dochter van Magnus)."
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/person#countryOfBirth",
+          "name": "geboorteland",
+          "sort": "geboorteland",
+          "label": {
+            "nl": "geboorteland"
+          },
+          "description": {
+            "nl": "Land waar de Persoon geboren is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Plaats",
+              "range_uri": "http://purl.org/dc/terms/Location"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Plaats",
+              "range_puri": "http://purl.org/dc/terms/Location",
+              "range_label": {
+                "nl": "Plaats"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/person#citizenship",
+          "name": "staatsburgerschap",
+          "sort": "staatsburgerschap",
+          "label": {
+            "nl": "staatsburgerschap"
+          },
+          "description": {
+            "nl": "Jurisdictie waarbinnen het staatsburgerschap vd persoon is gedefinieerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Jurisdictie",
+              "range_uri": "http://purl.org/dc/terms/Jurisdiction"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Jurisdictie",
+              "range_puri": "http://purl.org/dc/terms/Jurisdiction",
+              "range_label": {
+                "nl": "Jurisdictie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/person#birthName",
+          "name": "geboortenaam",
+          "sort": "geboortenaam",
+          "label": {
+            "nl": "geboortenaam"
+          },
+          "description": {
+            "nl": "Volledige naam vd persoon bij geboorte."
+          },
+          "usage": {
+            "nl": "De namen van een persoon kunnen id loop vd tijd wijzigen, bv kan de achternaam wijzigen door huwelijk. De oorspronkelijke naam wordt echter dikwijls ook nog gebruikt."
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/alternative",
+          "name": "alternatieve naam",
+          "sort": "alternatieve naam",
+          "label": {
+            "nl": "alternatieve naam"
+          },
+          "description": {
+            "nl": "Alternatief voor de volledige naam vd persoon."
+          },
+          "usage": {
+            "nl": "Bv pseudoniem, titel etc."
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/sex",
+          "name": "geslacht",
+          "sort": "geslacht",
+          "label": {
+            "nl": "geslacht"
+          },
+          "description": {
+            "nl": "Het feit of de persoon een man of een vrouw is."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Geslacht",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Geslacht",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Geslacht"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/domicile",
+          "name": "domicilie",
+          "sort": "domicilie",
+          "label": {
+            "nl": "domicilie"
+          },
+          "description": {
+            "nl": "Plaats die een Persoon beschouwt als zijn/haar hoofdverblijfplaats."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Adresvoorstelling",
+              "range_uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Adresvoorstelling",
+              "range_puri": "http://www.w3.org/ns/locn#Address",
+              "range_label": {
+                "nl": "Adresvoorstelling"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/birthDate",
+          "name": "geboortedatum",
+          "sort": "geboortedatum",
+          "label": {
+            "nl": "geboortedatum"
+          },
+          "description": {
+            "nl": "Datum waarop de Persoon geboren is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "nl": "Date"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat",
+      "name": "Burgerlijke Staat",
+      "label": {
+        "nl": "Burgerlijke Staat"
+      },
+      "sort": "Burgerlijke Staat",
+      "description": {
+        "nl": "Burgerrechtelijke toestand van een persoon."
+      },
+      "usage": {
+        "nl": "Slaat op huwelijk, partnerregistratie, afstamming, voogdij etc. Is maw de toestand van bepaalde verhoudingen tussen personen."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Aard vd burgerlijke staat."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "BurgerlijkeStaat",
+              "uri": "https://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "BurgerlijkeStaatType",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#BurgerlijkeStaatType",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "BurgerlijkeStaatType"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Domicilie",
+      "name": "Domicilie",
+      "label": {
+        "nl": "Domicilie"
+      },
+      "sort": "Domicilie",
+      "description": {
+        "nl": "Hoofdverblijfplaats ve persoon."
+      },
+      "usage": {
+        "nl": "Plaats waar de persoon het grootste deel vd tijd verblijft binnen de jurisdictie waarvan hij Inwoner is. Dit wordt doorgaans officieel vastgesteld en geregistreerd ih bevolkingsregister. Kan in praktijk verschillend vd feitelijke verblijfplaats."
+      },
+      "parents": [
+        {
+          "label": "Verblijfplaats",
+          "name": "Verblijfplaats",
+          "package": "OSLO-Persoon",
+          "uri": "https://data.vlaanderen.be/ns/persoon#Verblijfplaats",
+          "scoped_uri": "#Verblijfplaats"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Geboorte",
+      "name": "Geboorte",
+      "label": {
+        "nl": "Geboorte"
+      },
+      "sort": "Geboorte",
+      "description": {
+        "nl": "Het ter wereld komen vd persoon."
+      },
+      "usage": {
+        "nl": " "
+      },
+      "parents": [
+        {
+          "label": "Persoonsgebeurtenis",
+          "name": "Persoonsgebeurtenis",
+          "package": "OSLO-Persoon",
+          "uri": "https://data.vlaanderen.be/ns/persoon#Persoonsgebeurtenis",
+          "scoped_uri": "#Persoonsgebeurtenis"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon",
+      "name": "Geregistreerd Persoon",
+      "label": {
+        "nl": "Geregistreerd Persoon"
+      },
+      "sort": "Geregistreerd Persoon",
+      "description": {
+        "nl": "Persoon waarvan de gegevens zijn ingeschreven in een register."
+      },
+      "usage": {
+        "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb naam en voornaam) en de Verblijfplaats vd persoon en op belangrijke levensgebeurtenissen zoals geboorte, huwelijk, overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking."
+      },
+      "parents": [
+        {
+          "label": "Persoon",
+          "name": "Persoon",
+          "package": "OSLO-Persoon",
+          "uri": "http://www.w3.org/ns/person#Person",
+          "scoped_uri": "#Persoon"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#registratie",
+          "name": "registratie",
+          "sort": "registratie",
+          "label": {
+            "nl": "registratie"
+          },
+          "description": {
+            "nl": "Identificatiecode vd persoon ih register."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "GeregistreerdPersoon",
+              "uri": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Inwoner",
+      "name": "Inwoner",
+      "label": {
+        "nl": "Inwoner"
+      },
+      "sort": "Inwoner",
+      "description": {
+        "nl": "Persoon die in een bepaalde plaats of land woont."
+      },
+      "usage": {
+        "nl": "Plaats of land wordt hier vertegenwoordigd door de entiteit jurisdictie."
+      },
+      "parents": [
+        {
+          "label": "Inwonerschap",
+          "name": "Inwonerschap",
+          "package": "OSLO-Persoon",
+          "uri": "https://data.vlaanderen.be/ns/persoon#Inwonerschap",
+          "scoped_uri": "#Inwonerschap"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Inwonerschap",
+      "name": "Inwonerschap",
+      "label": {
+        "nl": "Inwonerschap"
+      },
+      "sort": "Inwonerschap",
+      "description": {
+        "nl": "Het feit dat een persoon verblijf houdt in een plaats of land."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#heeftVerblijfplaats",
+          "name": "heeft verblijfplaats",
+          "sort": "heeft verblijfplaats",
+          "label": {
+            "nl": "heeft verblijfplaats"
+          },
+          "description": {
+            "nl": "Plaats waar een persoon verblijft."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Inwonerschap",
+              "uri": "https://data.vlaanderen.be/ns/persoon#Inwonerschap"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Verblijfplaats",
+              "range_uri": "https://data.vlaanderen.be/ns/persoon#Verblijfplaats"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Verblijfplaats",
+              "range_puri": "https://data.vlaanderen.be/ns/persoon#Verblijfplaats",
+              "range_label": {
+                "nl": "Verblijfplaats"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#Inwonerschap.binnenJurisdictie",
+          "name": "binnen jurisdictie",
+          "sort": "binnen jurisdictie",
+          "label": {
+            "nl": "binnen jurisdictie"
+          },
+          "description": {
+            "nl": "Jurisdictie waarbinnen het inwonerschap (ve persoon) is gedefineerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Inwonerschap",
+              "uri": "https://data.vlaanderen.be/ns/persoon#Inwonerschap"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Jurisdictie",
+              "range_uri": "http://purl.org/dc/terms/Jurisdiction"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Jurisdictie",
+              "range_puri": "http://purl.org/dc/terms/Jurisdiction",
+              "range_label": {
+                "nl": "Jurisdictie"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Nationaliteit",
+      "name": "Nationaliteit",
+      "label": {
+        "nl": "Nationaliteit"
+      },
+      "sort": "Nationaliteit",
+      "description": {
+        "nl": "De relatie tussen een persoon en een staat, cultuur of loyaliteit."
+      },
+      "usage": {
+        "nl": "Merk op dat dit begrip ruimer is dan staatsburgerschap (dat zich beperkt tot de relatie met een staat). Wie de nationaliteit ve bepaald land heeft is er doorgaans ook automatisch staatsburger van. Nationaliteit wordt doorgaans autamatisch verkregen door geboorte: men krijgt hetzij de nationaliteit van zijn ouders of men krijgt deze vh land waar men Inwoner van is. Men kan een bepaalde nationaliteit ook verkrijgen door naturalisatie. In principe verliest men dan zijn oorspronkelijke nationaliteit, maar dat is niet altijd zo (meervoudige nationaliteit)."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#nationaliteit",
+          "name": "nationaliteit",
+          "sort": "nationaliteit",
+          "label": {
+            "nl": "nationaliteit"
+          },
+          "description": {
+            "nl": "De nationaliteit vd persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Nationaliteit",
+              "uri": "https://data.vlaanderen.be/ns/persoon#Nationaliteit"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Nationaliteitscode",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Nationaliteitscode",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Nationaliteitscode"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": "http://publications.europa.eu/mdr/authority/country/"
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Persoonsgebeurtenis",
+      "name": "Persoonsgebeurtenis",
+      "label": {
+        "nl": "Persoonsgebeurtenis"
+      },
+      "sort": "Persoonsgebeurtenis",
+      "description": {
+        "nl": "Belangrijke gebeurtenis ih leven ve persoon."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#plaats",
+          "name": "plaats",
+          "sort": "plaats",
+          "label": {
+            "nl": "plaats"
+          },
+          "description": {
+            "nl": "Plaats in het land waar de gebeurtenis plaatsvond."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoonsgebeurtenis",
+              "uri": "https://data.vlaanderen.be/ns/persoon#Persoonsgebeurtenis"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Plaats",
+              "range_uri": "http://purl.org/dc/terms/Location"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Plaats",
+              "range_puri": "http://purl.org/dc/terms/Location",
+              "range_label": {
+                "nl": "Plaats"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#land",
+          "name": "land",
+          "sort": "land",
+          "label": {
+            "nl": "land"
+          },
+          "description": {
+            "nl": "Land waar de gebeurtenis plaatsvond."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoonsgebeurtenis",
+              "uri": "https://data.vlaanderen.be/ns/persoon#Persoonsgebeurtenis"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Plaats",
+              "range_uri": "http://purl.org/dc/terms/Location"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Plaats",
+              "range_puri": "http://purl.org/dc/terms/Location",
+              "range_label": {
+                "nl": "Plaats"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#datum",
+          "name": "datum",
+          "sort": "datum",
+          "label": {
+            "nl": "datum"
+          },
+          "description": {
+            "nl": "Datum waarop de gebeurtenis plaatsvond."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Persoonsgebeurtenis",
+              "uri": "https://data.vlaanderen.be/ns/persoon#Persoonsgebeurtenis"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Staatsburger",
+      "name": "Staatsburger",
+      "label": {
+        "nl": "Staatsburger"
+      },
+      "sort": "Staatsburger",
+      "description": {
+        "nl": "Persoon die juridisch verbonden is met een staat."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Staatburgerschap",
+          "name": "Staatsburgerschap",
+          "package": "OSLO-Persoon",
+          "uri": "https://data.vlaanderen.be/ns/persoon#Staatsburgerschap",
+          "scoped_uri": "#Staatburgerschap"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Staatsburgerschap",
+      "name": "Staatburgerschap",
+      "label": {
+        "nl": "Staatburgerschap"
+      },
+      "sort": "Staatburgerschap",
+      "description": {
+        "nl": "Juridische band ve persoon met een staat, waaraan bepaalde rechten en plichten verbonden zijn"
+      },
+      "usage": {
+        "nl": "Vloeit meestal voort uit de nationaliteit ve persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering).  "
+      },
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#Verblijfplaats",
+      "name": "Verblijfplaats",
+      "label": {
+        "nl": "Verblijfplaats"
+      },
+      "sort": "Verblijfplaats",
+      "description": {
+        "nl": "Plaats waar een persoon al dan niet tijdelijk woont of logeert."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#verblijfsadres",
+          "name": "verblijfsadres",
+          "sort": "verblijfsadres",
+          "label": {
+            "nl": "verblijfsadres"
+          },
+          "description": {
+            "nl": "Plaats waar een persoon al dan niet tijdelijk woont of logeert."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Verblijfplaats",
+              "uri": "https://data.vlaanderen.be/ns/persoon#Verblijfplaats"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Adresvoorstelling",
+              "range_uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Adresvoorstelling",
+              "range_puri": "http://www.w3.org/ns/locn#Address",
+              "range_label": {
+                "nl": "Adresvoorstelling"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "name": "Verifieerbare Credential",
+      "label": {
+        "nl": "Verifieerbare Credential"
+      },
+      "sort": "Verifieerbare Credential",
+      "description": {
+        "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://www.w3.org/2018/credentials#validUntil",
+          "name": "vervaldatum",
+          "sort": "vervaldatum",
+          "label": {
+            "nl": "vervaldatum"
+          },
+          "description": {
+            "nl": "De vervaldatum."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "VerifieerbareCredential",
+              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://www.w3.org/2018/credentials#validFrom",
+          "name": "geldig van",
+          "sort": "geldig van",
+          "label": {
+            "nl": "geldig van"
+          },
+          "description": {
+            "nl": "De vroegste datum waarop de informatie geassocieerd met het onderwerp geldig wordt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "VerifieerbareCredential",
+              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://www.w3.org/2018/credentials#issuanceDate",
+          "name": "uitgiftedatum",
+          "sort": "uitgiftedatum",
+          "label": {
+            "nl": "uitgiftedatum"
+          },
+          "description": {
+            "nl": "De datum en tijd waarop het certificaat digitaal ondertekend is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "VerifieerbareCredential",
+              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://w3.org/2018/credentials#credentialSchema",
+          "name": "credentialschema",
+          "sort": "credentialschema",
+          "label": {
+            "nl": "credentialschema"
+          },
+          "description": {
+            "nl": "Het schema van de Verifieerbare Credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "VerifieerbareCredential",
+              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    }
+  ],
+  "properties": [],
+  "contributors": [
+    {
+      "role": "E",
+      "first_name": "Solid Team",
+      "last_name": "MAGDA",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "magda-teamsolid@vlaanderen.be"
+    }
+  ],
+  "datatypes": [
+    {
+      "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/ns/adms#Identifier",
+      "name": "Identificator",
+      "label": {
+        "nl": "Identificator"
+      },
+      "sort": "Identificator",
+      "description": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "usage": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#schemeAgency",
+          "name": "uitgevende autoriteit naam",
+          "sort": "uitgevende autoriteit naam",
+          "label": {
+            "nl": "uitgevende autoriteit naam"
+          },
+          "description": {
+            "nl": "De naam van de uitgevende autoriteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "TaalString"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#notation",
+          "name": "notatie",
+          "sort": "notatie",
+          "label": {
+            "nl": "notatie"
+          },
+          "description": {
+            "nl": "De notatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "nl": "Literal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2001/01/rdf-schema#label",
+          "name": "schema naam",
+          "sort": "schema naam",
+          "label": {
+            "nl": "schema naam"
+          },
+          "description": {
+            "nl": "De naam van het schema."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "TaalString"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/issued",
+          "name": "uitgiftedatum",
+          "sort": "uitgiftedatum",
+          "label": {
+            "nl": "uitgiftedatum"
+          },
+          "description": {
+            "nl": "De datum van uitgifte."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "nl": "Date"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/creator",
+          "name": "uitgevende autoriteit URI",
+          "sort": "uitgevende autoriteit URI",
+          "label": {
+            "nl": "uitgevende autoriteit URI"
+          },
+          "description": {
+            "nl": "De URI van de uitgevende autoriteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/conformsTo",
+          "name": "schema URI",
+          "sort": "schema URI",
+          "label": {
+            "nl": "schema URI"
+          },
+          "description": {
+            "nl": "De URI van het schema."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/locn#Address",
+      "name": "Adresvoorstelling",
+      "label": {
+        "nl": "Adresvoorstelling"
+      },
+      "sort": "Adresvoorstelling",
+      "description": {
+        "nl": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object."
+      },
+      "usage": {
+        "nl": "Bv als attribuut ve persoon of gebouw... De adresvoorstelling heeft niet enkel betrekking op Belgische adressen, ze kan gebruikt worden om buitenlandse adressen weer te geven (waar mogelijk andere adresaanduidingen dan huisnummer of busnummer worden gebruikt of waar adrescomponenten zoals adresgebieden voorkomen)."
+      },
+      "parents": [],
+      "properties": []
+    }
+  ],
+  "parents": [],
+  "documentroot": "/doc/implementatiemodel/persooncredential/2023-07-01"
+}
