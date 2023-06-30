@@ -7,7 +7,7 @@
 
 <head>
    
-  <title>PersoonCredential (implementatiemodel)</title>
+  <title>Persooncredential (implementatiemodel)</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,7 +41,7 @@
         <div class="layout layout--wide">
           <div class="grid u-hr">
             <div class="col--9-12 col--1-1--s">
-              <h1 class="h1">PersoonCredential (implementatiemodel)</h1>
+              <h1 class="h1">Persooncredential (implementatiemodel)</h1>
 
               <div class="head" role="status" id="status">
               <dl>
@@ -82,8 +82,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/767b1685e953b9aa6907d58ecabaa295b609fbae">https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/767b1685e953b9aa6907d58ecabaa295b609fbae</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/767b1685e953b9aa6907d58ecabaa295b609fbae/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/767b1685e953b9aa6907d58ecabaa295b609fbae/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/512b7eb9ff83a4a763d96f22af01a85ce1e1006b">https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/512b7eb9ff83a4a763d96f22af01a85ce1e1006b</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/512b7eb9ff83a4a763d96f22af01a85ce1e1006b/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/512b7eb9ff83a4a763d96f22af01a85ce1e1006b/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues">https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues</a></dd>
               </dl>
               </div>
@@ -103,7 +103,7 @@
               <div class="introduction typography">
               
                 <p>
-                  Dit document beschrijft een <strong>implementatiemodel</strong>, in dit geval <strong>PersoonCredential (implementatiemodel)</strong>.
+                  Dit document beschrijft een <strong>implementatiemodel</strong>, in dit geval <strong>Persooncredential (implementatiemodel)</strong>.
                   Een implementatiemodel is een toepassing van vocabularia voor een concreet doel.
                   Het beschrijft in detail (zoals kardinaliteiten, codelijsten, datatypes, ...) de gewenste datastructuur.
                 </p>
@@ -118,14 +118,14 @@
   Dit implementatiemodel is gebaseerd op
   het <a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials Data Model</a> alsook
   op <a href="https://data.vlaanderen.be/ns/persoon/">OSLO Persoon</a>,
-  dat op zijn beurt gebaseerd is op <a href="https://github.com/european-commission-empl/European-Learning-Model">SEMIC Core Person</a>.
+  dat op zijn beurt gebaseerd is op <a href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.0/">SEMIC Core Person</a>.
 </p>
 <p>
   Deze specificatie beschrijft de concepten die nodig zijn om persoonsgegevens te modelleren,
   zoals deze beschikbaar zijn in het Rijksregister. 
 </p>
 <p>
-  Dit model beschrijft hoe een Persoon eigenaar kan zijn van een PersoonCredential,
+  Dit model beschrijft hoe een Persoon eigenaar kan zijn van een Persooncredential,
   waarin persoonidentificerende gegevens vervat zitten zoals:
   identificatoren, namen, adressen, geboortedatum en -plaats, nationaliteiten, burgerlijke staat, inwonerschap en staatsburgerschap.
 </p>
@@ -194,7 +194,7 @@
                       <a href="#Jurisdictie">Jurisdictie</a> |
                       <a href="#Nationaliteit">Nationaliteit</a> |
                       <a href="#Persoon">Persoon</a> |
-                      <a href="#Persoon Credential">Persoon Credential</a> |
+                      <a href="#Persooncredential">Persooncredential</a> |
                       <a href="#Persoonsgebeurtenis">Persoonsgebeurtenis</a> |
                       <a href="#Plaats">Plaats</a> |
                       <a href="#Staatburgerschap">Staatburgerschap</a> |
@@ -209,8 +209,8 @@
                     <p> In dit document worden de volgende datatypes toegelicht:
                       <br />
                       |
-                      <a href="#"></a> |
                       <a href="#Adresvoorstelling">Adresvoorstelling</a> |
+                      <a href="#Geografische Naam">Geografische Naam</a> |
                       <a href="#Identificator">Identificator</a> |
                     </p>
                   </div>
@@ -276,8 +276,8 @@
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">Aard vd burgerlijke staat.</td>
-                        <td property="vann:usageNote"> </td>
-                        <td></td>
+                        <td property="vann:usageNote"></td>
+                        <td><a href="https://solid.data.vlaanderen.be/id/conceptscheme/Persooncredential-BurgerlijkeStaatType">Link</a></td>
                       </tr>
                     
                     </tbody>
@@ -1070,12 +1070,12 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Persoon Credential"><a href="https://solid.data.vlaanderen.be/ns/persooncredential#PersoonCredential" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/ns/persooncredential#PersoonCredential" data-placement="right">Persoon Credential</a></h3>
+              <h3 class="h3" id="Persooncredential"><a href="https://solid.data.vlaanderen.be/ns/persooncredential#Persooncredential" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/ns/persooncredential#Persooncredential" data-placement="right">Persooncredential</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>Verifieerbare Credential die algemene gegevens over een Persoon bevat zoals namen, adressen, identificatoren, geboortegegevens, nationaliteiten, burgerlijke staat enzovoort.</dd>
                     
-                    <dt>Gebruik</dt><dd>Deze Persoon Credential kan op zichzelf of in combinatie met een domeinspecifieke Credential (zoals Leercredential) gebruikt worden om die laatste te verrijken met persoon-identificerende gegevens. De koppeling tussen beide kan dan gemaakt worden op basis van een Identificator van de Persoon, bv. een WebID.</dd>
+                    <dt>Gebruik</dt><dd>Een Persooncredential kan op zichzelf of in combinatie met een domeinspecifieke Credential (zoals Leercredential) gebruikt worden om die laatste te verrijken met persoon-identificerende gegevens. De koppeling tussen beide kan dan gemaakt worden op basis van een Identificator van de Persoon, bv. een WebID.</dd>
                     
 		     
 		    <dt>Subklasse van <dt><dd>
@@ -1085,7 +1085,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Persoon%20Credential%3Aeigenaar">eigenaar</a>.</dd>
+                      <a href="#Persooncredential%3Aeigenaar">eigenaar</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1105,7 +1105,7 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Persoon%20Credential%3Aeigenaar" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
+                      <tr id="Persooncredential%3Aeigenaar" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://w3.org/2018/credentials#credentialSubject" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#credentialSubject" data-placement="right">
@@ -1290,7 +1290,7 @@
                         <td>
                           
 			    
-			    <a href="#GeografischeNaam" data-placement="right">GeografischeNaam</a>
+			    <a href="#Geografische Naam" data-placement="right">Geografische Naam</a>
 			    
                           
                         </td>
@@ -1527,11 +1527,13 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id=""><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right"></a></h3>
+              <h3 class="h3" id="Adresvoorstelling"><a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">Adresvoorstelling</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd></dd>
+                    <dt>Beschrijving</dt><dd>Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.</dd>
+                    
+                    <dt>Gebruik</dt><dd>Bv als attribuut ve persoon of gebouw... De adresvoorstelling heeft niet enkel betrekking op Belgische adressen, ze kan gebruikt worden om buitenlandse adressen weer te geven (waar mogelijk andere adresaanduidingen dan huisnummer of busnummer worden gebruikt of waar adrescomponenten zoals adresgebieden voorkomen).</dd>
                     
 		    
                     <dt>Eigenschappen</dt>
@@ -1545,13 +1547,11 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Adresvoorstelling"><a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">Adresvoorstelling</a></h3>
+              <h3 class="h3" id="Geografische Naam"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">Geografische Naam</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.</dd>
-                    
-                    <dt>Gebruik</dt><dd>Bv als attribuut ve persoon of gebouw... De adresvoorstelling heeft niet enkel betrekking op Belgische adressen, ze kan gebruikt worden om buitenlandse adressen weer te geven (waar mogelijk andere adresaanduidingen dan huisnummer of busnummer worden gebruikt of waar adrescomponenten zoals adresgebieden voorkomen).</dd>
+                    <dt>Beschrijving</dt><dd>Benaming toegekend aan of gebruikt voor een geografisch object.</dd>
                     
 		    
                     <dt>Eigenschappen</dt>
