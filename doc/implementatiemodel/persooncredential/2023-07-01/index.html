@@ -82,8 +82,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/a1495799f5a46ff9f250993feb5885f1a8606d11">https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/a1495799f5a46ff9f250993feb5885f1a8606d11</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/a1495799f5a46ff9f250993feb5885f1a8606d11/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/a1495799f5a46ff9f250993feb5885f1a8606d11/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/c6f6ad75199be548a7f6bfe45bf3b239264e0d78">https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/c6f6ad75199be548a7f6bfe45bf3b239264e0d78</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/c6f6ad75199be548a7f6bfe45bf3b239264e0d78/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/c6f6ad75199be548a7f6bfe45bf3b239264e0d78/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues">https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues</a></dd>
               </dl>
               </div>
@@ -380,7 +380,7 @@
 			    
                           
                         </td>
-                        <td>1</td>
+                        <td>1..*</td>
                         <td property="rdfs:comment">Identificatiecode vd persoon ih register.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
@@ -504,7 +504,8 @@
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                       <a href="#Jurisdictie%3Aid">id</a>, 
-                      <a href="#Jurisdictie%3Anaam">naam</a>.</dd>
+                      <a href="#Jurisdictie%3Anaam">naam</a>, 
+                      <a href="#Jurisdictie%3Aplaats">plaats</a>.</dd>
                     
                   </dl>
                 </div>
@@ -561,6 +562,26 @@
                         <td>1</td>
                         <td property="rdfs:comment">String van karakters die de Jurisdictie voorstelt.</td>
                         <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Jurisdictie%3Aplaats" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/generiek#plaats">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/generiek#plaats" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#plaats" data-placement="right">
+                            plaats</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Plaats" data-placement="right">Plaats</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Ruimtelijk gebied of benoemde plaats waarmee de Jurisdictie samenvalt.</td>
+                        <td property="vann:usageNote">Typisch een land.</td>
                         <td></td>
                       </tr>
                     
@@ -650,7 +671,6 @@
                       <a href="#Persoon%3Adomicilie">domicilie</a>, 
                       <a href="#Persoon%3Ageboortedatum">geboortedatum</a>, 
                       <a href="#Persoon%3Ageboorteland">geboorteland</a>, 
-                      <a href="#Persoon%3Ageboortenaam">geboortenaam</a>, 
                       <a href="#Persoon%3Ageboorteplaats">geboorteplaats</a>, 
                       <a href="#Persoon%3Agebruikte%20voornaam">gebruikte voornaam</a>, 
                       <a href="#Persoon%3Ageslacht">geslacht</a>, 
@@ -660,7 +680,6 @@
                       <a href="#Persoon%3Aheeft%20nationaliteit">heeft nationaliteit</a>, 
                       <a href="#Persoon%3Aheeft%20staatsburgerschap">heeft staatsburgerschap</a>, 
                       <a href="#Persoon%3Ainwonerschap">inwonerschap</a>, 
-                      <a href="#Persoon%3Apatroniem">patroniem</a>, 
                       <a href="#Persoon%3Astaatsburgerschap">staatsburgerschap</a>, 
                       <a href="#Persoon%3Avolledige%20naam">volledige naam</a>, 
                       <a href="#Persoon%3Avoornaam">voornaam</a>.</dd>
@@ -780,26 +799,6 @@
                         <td>1</td>
                         <td property="rdfs:comment">Land waar de Persoon geboren is.</td>
                         <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Persoon%3Ageboortenaam" typeof="rdfs:Property" resource="http://www.w3.org/ns/person#birthName">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/person#birthName" data-toggle="tooltip" data-content="http://www.w3.org/ns/person#birthName" data-placement="right">
-                            geboortenaam</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
-                          
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">Volledige naam vd persoon bij geboorte.</td>
-                        <td property="vann:usageNote">De namen van een persoon kunnen id loop vd tijd wijzigen, bv kan de achternaam wijzigen door huwelijk. De oorspronkelijke naam wordt echter dikwijls ook nog gebruikt.</td>
                         <td></td>
                       </tr>
                     
@@ -983,26 +982,6 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Persoon%3Apatroniem" typeof="rdfs:Property" resource="http://www.w3.org/ns/person#patronymicName">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/person#patronymicName" data-toggle="tooltip" data-content="http://www.w3.org/ns/person#patronymicName" data-placement="right">
-                            patroniem</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
-                            
-                          
-                        </td>
-                        <td>0..1</td>
-                        <td property="rdfs:comment">Achternaam gebaseerd op de voornaam vd vader ve persoon.</td>
-                        <td property="vann:usageNote">Bv in Ijsland: Magnusdottir (dochter van Magnus).</td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Persoon%3Astaatsburgerschap" typeof="rdfs:Property" resource="http://www.w3.org/ns/person#citizenship">
                         <td>
                           <code property="rdfs:label">
@@ -1085,7 +1064,8 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Persooncredential%3Aeigenaar">eigenaar</a>.</dd>
+                      <a href="#Persooncredential%3Aidentificator">identificator</a>, 
+                      <a href="#Persooncredential%3Aonderwerp">onderwerp</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1105,11 +1085,31 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Persooncredential%3Aeigenaar" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
+                      <tr id="Persooncredential%3Aidentificator" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#identifier">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/adms#identifier" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#identifier" data-placement="right">
+                            identificator</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Identificator" data-placement="right">Identificator</a>
+			    
+                          
+                        </td>
+                        <td>1..*</td>
+                        <td property="rdfs:comment">Identificator van de Persooncredential die doorgaans door de uitgevende organisatie aan de Credential wordt toegewezen.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Persooncredential%3Aonderwerp" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://w3.org/2018/credentials#credentialSubject" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#credentialSubject" data-placement="right">
-                            eigenaar</a>
+                            onderwerp</a>
                           </code>
                         </td>
                         <td>
@@ -1120,7 +1120,7 @@
                           
                         </td>
                         <td>1</td>
-                        <td property="rdfs:comment">De persoon (onderwerp) over wie claims worden gedaan en die de Credential bezit.</td>
+                        <td property="rdfs:comment">De persoon over wie claims worden gedaan en die de Credential bezit.</td>
                         <td property="vann:usageNote">Deze eigenschap is geërfd van verifieerbare credentials.</td>
                         <td></td>
                       </tr>
@@ -1537,12 +1537,311 @@
                     
 		    
                     <dt>Eigenschappen</dt>
-		    
-                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
+		     
+                    <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Adresvoorstelling%3Aadministratieve%20eenheid%20niveau%201">administratieve eenheid niveau 1</a>, 
+                      <a href="#Adresvoorstelling%3Aadministratieve%20eenheid%20niveau%202">administratieve eenheid niveau 2</a>, 
+                      <a href="#Adresvoorstelling%3Aadresgebied">adresgebied</a>, 
+                      <a href="#Adresvoorstelling%3Abusnummer">busnummer</a>, 
+                      <a href="#Adresvoorstelling%3Agemeentenaam">gemeentenaam</a>, 
+                      <a href="#Adresvoorstelling%3Ahuisnummer">huisnummer</a>, 
+                      <a href="#Adresvoorstelling%3Aland">land</a>, 
+                      <a href="#Adresvoorstelling%3Alocatieaanduiding">locatieaanduiding</a>, 
+                      <a href="#Adresvoorstelling%3Alocatienaam">locatienaam</a>, 
+                      <a href="#Adresvoorstelling%3Apostbus">postbus</a>, 
+                      <a href="#Adresvoorstelling%3Apostcode">postcode</a>, 
+                      <a href="#Adresvoorstelling%3Apostnaam">postnaam</a>, 
+                      <a href="#Adresvoorstelling%3Astraatnaam">straatnaam</a>, 
+                      <a href="#Adresvoorstelling%3Avolledig%20adres">volledig adres</a>.</dd>
                     
                   </dl>
                 </div>
-		
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="Adresvoorstelling%3Aadministratieve%20eenheid%20niveau%201" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#adminUnitL1">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#adminUnitL1" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#adminUnitL1" data-placement="right">administratieve eenheid niveau 1</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Aadministratieve%20eenheid%20niveau%202" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#adminUnitL2">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#adminUnitL2" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#adminUnitL2" data-placement="right">administratieve eenheid niveau 2</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Aadresgebied" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#addressArea">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#addressArea" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#addressArea" data-placement="right">adresgebied</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Abusnummer" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer" data-placement="right">busnummer</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Agemeentenaam" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#gemeentenaam">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/adres#gemeentenaam" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#gemeentenaam" data-placement="right">gemeentenaam</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Ahuisnummer" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer" data-placement="right">huisnummer</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote">Bv als attribuut ve persoon of gebouw... De adresvoorstelling heeft niet enkel betrekking op Belgische adressen, ze kan gebruikt worden om buitenlandse adressen weer te geven (waar mogelijk andere adresaanduidingen dan huisnummer of busnummer worden gebruikt of waar adrescomponenten zoals adresgebieden voorkomen).</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Aland" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#land">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/adres#land" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#land" data-placement="right">land</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Alocatieaanduiding" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorDesignator">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#locatorDesignator" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorDesignator" data-placement="right">locatieaanduiding</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Alocatienaam" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorName">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#locatorName" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorName" data-placement="right">locatienaam</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Apostbus" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#poBox">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#poBox" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#poBox" data-placement="right">postbus</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Apostcode" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postCode">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#postCode" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#postCode" data-placement="right">postcode</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Apostnaam" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postName">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#postName" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#postName" data-placement="right">postnaam</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Astraatnaam" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#thoroughfare">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#thoroughfare" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#thoroughfare" data-placement="right">straatnaam</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Adresvoorstelling%3Avolledig%20adres" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#fullAddress">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#fullAddress" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#fullAddress" data-placement="right">volledig adres</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
+                            
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
             </div>
             
             <div class="region region--no-space-top">
