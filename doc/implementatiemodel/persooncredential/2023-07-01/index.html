@@ -82,8 +82,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/c6f6ad75199be548a7f6bfe45bf3b239264e0d78">https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/c6f6ad75199be548a7f6bfe45bf3b239264e0d78</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/c6f6ad75199be548a7f6bfe45bf3b239264e0d78/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/c6f6ad75199be548a7f6bfe45bf3b239264e0d78/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/719aded045cea0932a88aa9dd079d54debf4de92">https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/719aded045cea0932a88aa9dd079d54debf4de92</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/719aded045cea0932a88aa9dd079d54debf4de92/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/719aded045cea0932a88aa9dd079d54debf4de92/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues">https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues</a></dd>
               </dl>
               </div>
@@ -197,8 +197,8 @@
                       <a href="#Persooncredential">Persooncredential</a> |
                       <a href="#Persoonsgebeurtenis">Persoonsgebeurtenis</a> |
                       <a href="#Plaats">Plaats</a> |
-                      <a href="#Staatburgerschap">Staatburgerschap</a> |
                       <a href="#Staatsburger">Staatsburger</a> |
+                      <a href="#Staatsburgerschap">Staatsburgerschap</a> |
                       <a href="#Verblijfplaats">Verblijfplaats</a> |
                       <a href="#Verifieerbare Credential">Verifieerbare Credential</a> |
                     </p>
@@ -209,6 +209,7 @@
                     <p> In dit document worden de volgende datatypes toegelicht:
                       <br />
                       |
+                      <a href="#"></a> |
                       <a href="#Adresvoorstelling">Adresvoorstelling</a> |
                       <a href="#Geografische Naam">Geografische Naam</a> |
                       <a href="#Identificator">Identificator</a> |
@@ -554,9 +555,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>1</td>
@@ -772,7 +773,7 @@
                         <td>
                           
 			     
-			    <a href="http://www.w3.org/2001/XMLSchema#date" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#date" data-placement="right">Date</a>
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
                             
                           
                         </td>
@@ -952,7 +953,7 @@
                         <td>
                           
 			    
-			    <a href="#Staatburgerschap" data-placement="right">Staatburgerschap</a>
+			    <a href="#Staatsburgerschap" data-placement="right">Staatsburgerschap</a>
 			    
                           
                         </td>
@@ -1307,14 +1308,16 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Staatburgerschap"><a href="https://data.vlaanderen.be/ns/persoon#Staatsburgerschap" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/persoon#Staatsburgerschap" data-placement="right">Staatburgerschap</a></h3>
+              <h3 class="h3" id="Staatsburger"><a href="https://data.vlaanderen.be/ns/persoon#Staatsburger" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/persoon#Staatsburger" data-placement="right">Staatsburger</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>Juridische band ve persoon met een staat, waaraan bepaalde rechten en plichten verbonden zijn</dd>
+                    <dt>Beschrijving</dt><dd>Persoon die juridisch verbonden is met een staat.</dd>
                     
-                    <dt>Gebruik</dt><dd>Vloeit meestal voort uit de nationaliteit ve persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering).  </dd>
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Staatsburgerschap">Staatsburgerschap</a>
+		   </dd>
                     
-		    
                     <dt>Eigenschappen</dt>
 		    
                     <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
@@ -1325,16 +1328,14 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Staatsburger"><a href="https://data.vlaanderen.be/ns/persoon#Staatsburger" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/persoon#Staatsburger" data-placement="right">Staatsburger</a></h3>
+              <h3 class="h3" id="Staatsburgerschap"><a href="https://data.vlaanderen.be/ns/persoon#Staatsburgerschap" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/persoon#Staatsburgerschap" data-placement="right">Staatsburgerschap</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Beschrijving</dt><dd>Persoon die juridisch verbonden is met een staat.</dd>
+                    <dt>Beschrijving</dt><dd>Juridische band ve persoon met een staat, waaraan bepaalde rechten en plichten verbonden zijn</dd>
                     
-		     
-		    <dt>Subklasse van <dt><dd>
-                        <a href="#Staatburgerschap">Staatburgerschap</a>
-		   </dd>
+                    <dt>Gebruik</dt><dd>Vloeit meestal voort uit de nationaliteit ve persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering).  </dd>
                     
+		    
                     <dt>Eigenschappen</dt>
 		    
                     <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
@@ -1527,6 +1528,24 @@
             
             <div class="region region--no-space-top">
               
+              <h3 class="h3" id=""><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right"></a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd></dd>
+                    
+		    
+                    <dt>Eigenschappen</dt>
+		    
+                    <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
               <h3 class="h3" id="Adresvoorstelling"><a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">Adresvoorstelling</a></h3>
 	      
                 <div class="region region--no-space-top">
@@ -1580,9 +1599,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1599,9 +1618,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1618,9 +1637,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1656,9 +1675,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1694,9 +1713,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1732,9 +1751,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..*</td>
@@ -1789,9 +1808,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1808,9 +1827,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1827,9 +1846,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1928,9 +1947,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>
@@ -1966,9 +1985,9 @@
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">TaalString</a>
-                            
+			    
+			    <a href="#TaalString" data-placement="right">TaalString</a>
+			    
                           
                         </td>
                         <td>0..1</td>

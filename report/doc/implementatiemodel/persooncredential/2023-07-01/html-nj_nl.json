@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/c6f6ad75199be548a7f6bfe45bf3b239264e0d78",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/c6f6ad75199be548a7f6bfe45bf3b239264e0d78/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/tree/719aded045cea0932a88aa9dd079d54debf4de92",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/blob/719aded045cea0932a88aa9dd079d54debf4de92/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-persooncredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -194,7 +194,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -418,10 +418,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Staatburgerschap",
+              "range_uri": "#Staatsburgerschap",
               "range_puri": "https://data.vlaanderen.be/ns/persoon#Staatsburgerschap",
               "range_label": {
-                "nl": "Staatburgerschap"
+                "nl": "Staatsburgerschap"
               }
             }
           ],
@@ -949,16 +949,16 @@
           ],
           "range": [
             {
-              "range_label": "Date",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
               "range_label": {
-                "nl": "Date"
+                "nl": "DateTime"
               }
             }
           ],
@@ -1427,22 +1427,22 @@
       "usage": {},
       "parents": [
         {
-          "label": "Staatburgerschap",
+          "label": "Staatsburgerschap",
           "name": "Staatsburgerschap",
           "package": "OSLO-Persoon",
           "uri": "https://data.vlaanderen.be/ns/persoon#Staatsburgerschap",
-          "scoped_uri": "#Staatburgerschap"
+          "scoped_uri": "#Staatsburgerschap"
         }
       ],
       "properties": []
     },
     {
       "uri": "https://data.vlaanderen.be/ns/persoon#Staatsburgerschap",
-      "name": "Staatburgerschap",
+      "name": "Staatsburgerschap",
       "label": {
-        "nl": "Staatburgerschap"
+        "nl": "Staatsburgerschap"
       },
-      "sort": "Staatburgerschap",
+      "sort": "Staatsburgerschap",
       "description": {
         "nl": "Juridische band ve persoon met een staat, waaraan bepaalde rechten en plichten verbonden zijn"
       },
@@ -1689,6 +1689,16 @@
       "properties": []
     },
     {
+      "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": []
+    },
+    {
       "uri": "http://www.w3.org/ns/adms#Identifier",
       "name": "Identificator",
       "label": {
@@ -1728,7 +1738,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -1798,7 +1808,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -1953,7 +1963,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -1986,7 +1996,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2087,7 +2097,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2120,7 +2130,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2219,7 +2229,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2285,7 +2295,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2318,7 +2328,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2351,7 +2361,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
@@ -2384,7 +2394,7 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_uri": "#TaalString",
               "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
               "range_label": {
                 "nl": "TaalString"
