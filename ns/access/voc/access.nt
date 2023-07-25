@@ -1,10 +1,10 @@
 <https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/" .
 <https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0> .
-<https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/mediator> _:g454460 .
+<https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/mediator> _:g454540 .
 <https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2000/01/rdf-schema#label> "access"@en .
 <https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2000/01/rdf-schema#label> "access"@nl .
-<https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2001/02pd/rec54#editor> _:g454480 .
+<https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2001/02pd/rec54#editor> _:g454560 .
 <https://solid.data.vlaanderen.be/ns/access> <http://purl.org/dc/terms/issued> "TODO" .
 <https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <https://solid.data.vlaanderen.be/ns/access> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/solid/vc#SolidAccessGrant> .
@@ -26,13 +26,13 @@
 <http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@nl .
 <http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Access Request or Grant"@nl .
-_:g454460 <http://xmlns.com/foaf/0.1/homepage> <https://solid.data.vlaanderen.be> .
-_:g454460 <http://xmlns.com/foaf/0.1/mbox> <mailto:magda-teamsolid@vlaanderen.be> .
-_:g454460 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen - MAGDA Solid" .
-_:g454480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-_:g454480 <http://schema.org/affiliation> _:g454500 .
-_:g454480 <http://xmlns.com/foaf/0.1/firstName> "Solid Team" .
-_:g454480 <http://xmlns.com/foaf/0.1/lastName> "MAGDA" .
-_:g454480 <http://xmlns.com/foaf/0.1/mbox> <mailto:magda-teamsolid@vlaanderen.be> .
-_:g454500 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
-_:g454500 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:g454540 <http://xmlns.com/foaf/0.1/homepage> <https://solid.data.vlaanderen.be> .
+_:g454540 <http://xmlns.com/foaf/0.1/mbox> <mailto:magda-teamsolid@vlaanderen.be> .
+_:g454540 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen - MAGDA Solid" .
+_:g454560 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g454560 <http://schema.org/affiliation> _:g454580 .
+_:g454560 <http://xmlns.com/foaf/0.1/firstName> "Solid Team" .
+_:g454560 <http://xmlns.com/foaf/0.1/lastName> "MAGDA" .
+_:g454560 <http://xmlns.com/foaf/0.1/mbox> <mailto:magda-teamsolid@vlaanderen.be> .
+_:g454580 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:g454580 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
