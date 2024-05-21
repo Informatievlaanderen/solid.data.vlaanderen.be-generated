@@ -1,0 +1,3572 @@
+{
+  "metadata": {
+    "title": "Leerinschrijfcredential (implementatiemodel)",
+    "uri": "https://solid.data.vlaanderen.be/ns/leercredential",
+    "issued": "2024-06-01",
+    "baseURI": "https://solid.data.vlaanderen.be/ns/leercredential#",
+    "filename": "leerinschrijfcredential-ap",
+    "navigation": {
+      "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/leerinschrijfcredential/2024-06-01"
+    },
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "documenttype": "ap",
+    "documentconfig": {},
+    "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "statuslabel": "Ontwerp Standaard",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/61a84764a3230ce573b6ee2aa93a617f4ed32ced",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/61a84764a3230ce573b6ee2aa93a617f4ed32ced/CHANGELOG",
+    "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
+    "usesVocs": [],
+    "usesAPs": []
+  },
+  "classes": [
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess",
+      "name": "Toekenningsproces",
+      "label": {
+        "nl": "Toekenningsproces"
+      },
+      "sort": "Toekenningsproces",
+      "description": {
+        "nl": "Het proces waarbij een organisatie een leerprestatie toekent aan een persoon op basis van een leerspecificatie (bv. een kwalificatie). Het wordt gebruikt om de organisatie te specificeren die de leerspecificatie aan de persoon heeft toegekend, het land of de regio waar de leerspecificatie werd toegekend, en optioneel de datum van toekenning."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/awards",
+          "name": "kent toe",
+          "sort": "kent toe",
+          "label": {
+            "nl": "kent toe"
+          },
+          "description": {
+            "nl": "De resulterende claim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Toekenningsproces",
+              "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerclaim",
+              "range_uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerclaim",
+              "range_puri": "http://data.europa.eu/snb/model/elm/Claim",
+              "range_label": {
+                "nl": "Leerclaim"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/awardingBody",
+          "name": "uitgevoerd door",
+          "sort": "uitgevoerd door",
+          "label": {
+            "nl": "uitgevoerd door"
+          },
+          "description": {
+            "nl": "De uitreikende instantie die de prestatie aan de persoon heeft toegekend."
+          },
+          "usage": {
+            "nl": "Alleen in geval van co-awarding/co-graduation, waarbij een kwalificatie door twee of meer organisaties aan een persoon wordt toegekend, is de kardinaliteit groter dan 1."
+          },
+          "domain": [
+            {
+              "EA-Name": "Toekenningsproces",
+              "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Claim",
+      "name": "Leerclaim",
+      "label": {
+        "nl": "Leerclaim"
+      },
+      "sort": "Leerclaim",
+      "description": {
+        "nl": "Een claim gemaakt door een uitgever."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "De identificator van de leerclaim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/title",
+          "name": "titel",
+          "sort": "titel",
+          "label": {
+            "nl": "titel"
+          },
+          "description": {
+            "nl": "De titel van de claim. Eén waarde per taal is toegestaan."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/awardedBy",
+          "name": "toegekend door",
+          "sort": "toegekend door",
+          "label": {
+            "nl": "toegekend door"
+          },
+          "description": {
+            "nl": "De toekenningsdetails van de claim."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Toekenningsproces",
+              "range_uri": "http://data.europa.eu/snb/model/elm/AwardingProcess"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Toekenningsproces",
+              "range_puri": "http://data.europa.eu/snb/model/elm/AwardingProcess",
+              "range_label": {
+                "nl": "Toekenningsproces"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/EuropeanDigitalCredential",
+      "name": "Europees Digitaal Credential",
+      "label": {
+        "nl": "Europees Digitaal Credential"
+      },
+      "sort": "Europees Digitaal Credential",
+      "description": {
+        "nl": "Een reeks beweringen die door een uitgever in Europa worden gemaakt, gebruikmakend van Europese standaarden. Een Europees Digitaal Credential is een reeks van een of meer beweringen die kunnen worden gebruikt om aan te tonen dat de eigenaar bepaalde vaardigheden bezit of bepaalde leeruitkomsten heeft bereikt door middel van formeel, niet-formeel of informeel leren."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leercredential",
+          "name": "Leercredential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+          "scoped_uri": "#Leercredential"
+        },
+        {
+          "label": "Verifieerbare Credential",
+          "name": "VerifieerbareCredential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+          "scoped_uri": "#Verifieerbare Credential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/displayParameter",
+          "name": "voorstelling",
+          "sort": "voorstelling",
+          "label": {
+            "nl": "voorstelling"
+          },
+          "description": {
+            "nl": "Voorstellingdetails van de Europese Digitale Credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "EuropeesDigitaalCredential",
+              "uri": "http://data.europa.eu/snb/model/elm/EuropeanDigitalCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Voorstelling",
+              "range_uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Voorstelling",
+              "range_puri": "http://data.europa.eu/snb/model/elm/DisplayParameter",
+              "range_label": {
+                "nl": "Voorstelling"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningAchievement",
+      "name": "Leerprestatie",
+      "label": {
+        "nl": "Leerprestatie"
+      },
+      "sort": "Leerprestatie",
+      "description": {
+        "nl": "De verwerving van kennis, vaardigheden of verantwoordelijkheid en zelfstandigheid. Een erkend en/of toegekend geheel van leeruitkomsten van een individu."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerclaim",
+          "name": "Leerclaim",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/Claim",
+          "scoped_uri": "#Leerclaim"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/specifiedBy",
+          "name": "specificatie",
+          "sort": "specificatie",
+          "label": {
+            "nl": "specificatie"
+          },
+          "description": {
+            "nl": "Wat er is geleerd."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievement"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerprestatiespecificatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerprestatiespecificatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+              "range_label": {
+                "nl": "Leerprestatiespecificatie"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+      "name": "Leerprestatiespecificatie",
+      "label": {
+        "nl": "Leerprestatiespecificatie"
+      },
+      "sort": "Leerprestatiespecificatie",
+      "description": {
+        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de leeropportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van leerprestaties."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerspecificatie",
+          "name": "Leerspecificatie",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/Specification",
+          "scoped_uri": "#Leerspecificatie"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/influencedBy",
+          "name": "beinvloed door",
+          "sort": "beinvloed door",
+          "label": {
+            "nl": "beinvloed door"
+          },
+          "description": {
+            "nl": "Activiteiten die een persoon kan uitvoeren om de verwachte leeruitkomsten te verkrijgen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leeractiviteitspecificatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leeractiviteitspecificatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification",
+              "range_label": {
+                "nl": "Leeractiviteitspecificatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/educationLevel",
+          "name": "onderwijsniveau",
+          "sort": "onderwijsniveau",
+          "label": {
+            "nl": "onderwijsniveau"
+          },
+          "description": {
+            "nl": "Een bijbehorend opleidingsniveau binnen een semantisch kader dat opleidingsniveaus beschrijft."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Onderwijsniveau",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Onderwijsniveau",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Onderwijsniveau"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningActivity",
+      "name": "Leeractiviteit",
+      "label": {
+        "nl": "Leeractiviteit"
+      },
+      "sort": "Leeractiviteit",
+      "description": {
+        "nl": "Elk proces dat leidt tot het verwerven van kennis, vaardigheden of verantwoordelijkheid en zelfstandigheid."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerclaim",
+          "name": "Leerclaim",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/Claim",
+          "scoped_uri": "#Leerclaim"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#uitschrijving",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Uitschrijving",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Uitschrijving"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Uitschrijving",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Uitschrijving",
+              "range_label": {
+                "nl": "Uitschrijving"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#toereikendeStudieomvang",
+          "name": "toereikende studieomvang",
+          "sort": "toereikende studieomvang",
+          "label": {
+            "nl": "toereikende studieomvang"
+          },
+          "description": {
+            "nl": "Binair veld dat aangeeft of de student (al dan niet in de toekomst) ingeschreven zal zijn voor meer dan 27 studiepunten."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#studiebewijsHaalbaar",
+          "name": "studiebewijs haalbaar",
+          "sort": "studiebewijs haalbaar",
+          "label": {
+            "nl": "studiebewijs haalbaar"
+          },
+          "description": {
+            "nl": "Binair veld dat aangeeft of de student in het huidig academiejaar zijn diploma kan behalen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#locatie",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Locatie",
+              "range_uri": "http://www.w3.org/ns/prov#Location"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Locatie",
+              "range_puri": "http://www.w3.org/ns/prov#Location",
+              "range_label": {
+                "nl": "Locatie"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#leeropportuniteit",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leeropportuniteit",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leeropportuniteit"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leeropportuniteit",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leeropportuniteit",
+              "range_label": {
+                "nl": "Leeropportuniteit"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#kredietpunten",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Kredietpunten",
+              "range_uri": "https://data.europa.eu/snb/model#CreditPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Kredietpunten",
+              "range_puri": "https://data.europa.eu/snb/model#CreditPoint",
+              "range_label": {
+                "nl": "Kredietpunten"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#inschrijving",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Inschrijving",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Inschrijving"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Inschrijving",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Inschrijving",
+              "range_label": {
+                "nl": "Inschrijving"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#gewezenAnderstaligeNieuwkomer",
+          "name": "gewezen anderstalige nieuwkomer",
+          "sort": "gewezen anderstalige nieuwkomer",
+          "label": {
+            "nl": "gewezen anderstalige nieuwkomer"
+          },
+          "description": {
+            "nl": "Geeft aan of de Persoon een gewezen anderstalige nieuwkomer is wat betreft deze Leeractiviteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#anderstaligeNieuwkomer",
+          "name": "anderstalige nieuwkomer",
+          "sort": "anderstalige nieuwkomer",
+          "label": {
+            "nl": "anderstalige nieuwkomer"
+          },
+          "description": {
+            "nl": "Geeft aan of de Persoon een anderstalige nieuwkomer is wat betreft deze Leeractiviteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Boolean",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#boolean",
+              "range_label": {
+                "nl": "Boolean"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/temporal",
+          "name": "periode",
+          "sort": "periode",
+          "label": {
+            "nl": "periode"
+          },
+          "description": {
+            "nl": "Periode van de leeractiviteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Periode",
+              "range_uri": "http://www.w3.org/2006/time#ProperInterval"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Periode",
+              "range_puri": "http://www.w3.org/2006/time#ProperInterval",
+              "range_label": {
+                "nl": "Periode"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/specifiedBy",
+          "name": "specificatie",
+          "sort": "specificatie",
+          "label": {
+            "nl": "specificatie"
+          },
+          "description": {
+            "nl": "De specificatie van de Leeractiviteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leeractiviteitspecificatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leeractiviteitspecificatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification",
+              "range_label": {
+                "nl": "Leeractiviteitspecificatie"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification",
+      "name": "Leeractiviteitspecificatie",
+      "label": {
+        "nl": "Leeractiviteitspecificatie"
+      },
+      "sort": "Leeractiviteitspecificatie",
+      "description": {
+        "nl": "De specificatie van een proces dat leidt tot het verwerven van kennis, vaardigheden of verantwoordelijkheid en autonomie."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerspecificatie",
+          "name": "Leerspecificatie",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/Specification",
+          "scoped_uri": "#Leerspecificatie"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://purl.org/dc/terms/type",
+          "name": "type",
+          "sort": "type",
+          "label": {
+            "nl": "type"
+          },
+          "description": {
+            "nl": "Het type leeractiviteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteitspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leeractiviteittype",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Leeractiviteittype"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/influences",
+          "name": "beinvloedt",
+          "sort": "beinvloedt",
+          "label": {
+            "nl": "beinvloedt"
+          },
+          "description": {
+            "nl": "Wat kan worden geleerd door de activiteit te doen die wordt beschreven door de specificatie van deze leeractiviteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteitspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerprestatiespecificatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerprestatiespecificatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+              "range_label": {
+                "nl": "Leerprestatiespecificatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Qualification",
+      "name": "Kwalificatie",
+      "label": {
+        "nl": "Kwalificatie"
+      },
+      "sort": "Kwalificatie",
+      "description": {
+        "nl": "Een specificatie van een beoordelings- en validatieproces dat wordt verkregen wanneer een bevoegde autoriteit vaststelt dat een individu leeruitkomsten volgens bepaalde normen heeft bereikt."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leerprestatiespecificatie",
+          "name": "Leerprestatiespecificatie",
+          "package": "OSLO-Leercredential",
+          "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+          "scoped_uri": "#Leerprestatiespecificatie"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Specification",
+      "name": "Leerspecificatie",
+      "label": {
+        "nl": "Leerspecificatie"
+      },
+      "sort": "Leerspecificatie",
+      "description": {
+        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de opportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van het leren."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Een identificator van de specificatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/Specification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/title",
+          "name": "titel",
+          "sort": "titel",
+          "label": {
+            "nl": "titel"
+          },
+          "description": {
+            "nl": "De titel van de specificatie. Eén waarde per taal is toegestaan."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerspecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/Specification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://purl.org/dc/terms/Agent",
+      "name": "Agent",
+      "label": {
+        "nl": "Agent"
+      },
+      "sort": "Agent",
+      "description": {
+        "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/ns/org#Organization",
+      "name": "Organisatie",
+      "label": {
+        "nl": "Organisatie"
+      },
+      "sort": "Organisatie",
+      "description": {
+        "nl": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een organisatie heeft dikwijls een hiërarchische structuur."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Agent",
+          "name": "Agent",
+          "package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent",
+          "scoped_uri": "#Agent"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/org#hasRegisteredSite",
+          "name": "heeft geregistreerde vestiging",
+          "sort": "heeft geregistreerde vestiging",
+          "label": {
+            "nl": "heeft geregistreerde vestiging"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Vestiging",
+              "range_uri": "http://www.w3.org/ns/org#Site"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Vestiging",
+              "range_puri": "http://www.w3.org/ns/org#Site",
+              "range_label": {
+                "nl": "Vestiging"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Identificator van de organisatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "name": "voorkeursnaam",
+          "sort": "voorkeursnaam",
+          "label": {
+            "nl": "voorkeursnaam"
+          },
+          "description": {
+            "nl": "Naam waarmee de organisatie bij voorkeur wordt aangeduid."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://fixme.com#type",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "OrganisatieType",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#OrganisatieType",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "OrganisatieType"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://fixme.com#contactinfo",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Organisatie",
+              "uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactInfo",
+              "range_uri": "http://schema.org/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contactinfo",
+              "range_puri": "http://schema.org/ContactPoint",
+              "range_label": {
+                "nl": "Contactinfo"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/org#Site",
+      "name": "Vestiging",
+      "label": {
+        "nl": "Vestiging"
+      },
+      "sort": "Vestiging",
+      "description": {
+        "nl": "Een kantoor of ander pand waar een organisatie gevestigd is. Organisaties kunnen over meerdere vestigingen verspreid zijn en vestigingen kunnen op meerdere locaties slaan."
+      },
+      "usage": {
+        "nl": "Meestal zal de vestiging een fysieke locatie zijn. Niet-fysieke locaties worden echter niet uitgesloten,bv een virtueel kantoor met bijbehorend postnummer en telefonische receptie."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/org#siteAddress",
+          "name": "vestigingsadres",
+          "sort": "vestigingsadres",
+          "label": {
+            "nl": "vestigingsadres"
+          },
+          "description": {
+            "nl": "Adres van de vestiging."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Vestiging",
+              "uri": "http://www.w3.org/ns/org#Site"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "ContactInfo",
+              "range_uri": "http://schema.org/ContactPoint"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Contactinfo",
+              "range_puri": "http://schema.org/ContactPoint",
+              "range_label": {
+                "nl": "Contactinfo"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/person#Person",
+      "name": "Persoon",
+      "label": {
+        "nl": "Persoon"
+      },
+      "sort": "Persoon",
+      "description": {
+        "nl": "Natuurlijk persoon."
+      },
+      "usage": {
+        "nl": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc)."
+      },
+      "parents": [
+        {
+          "label": "Agent",
+          "name": "Agent",
+          "package": "OSLO-Generiek",
+          "uri": "http://purl.org/dc/terms/Agent",
+          "scoped_uri": "#Agent"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Identificator van de persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/hasClaim",
+          "name": "heeft claim",
+          "sort": "heeft claim",
+          "label": {
+            "nl": "heeft claim"
+          },
+          "description": {
+            "nl": "Een claim over de Persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerclaim",
+              "range_uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerclaim",
+              "range_puri": "http://data.europa.eu/snb/model/elm/Claim",
+              "range_label": {
+                "nl": "Leerclaim"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model#hasCredential",
+          "name": "heeft credential",
+          "sort": "heeft credential",
+          "label": {
+            "nl": "heeft credential"
+          },
+          "description": {
+            "nl": "Leercredential van de persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerinschrijfcredential",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerinschrijfcredential",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential",
+              "range_label": {
+                "nl": "Leerinschrijfcredential"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization",
+      "name": "Geregistreerde Organisatie",
+      "label": {
+        "nl": "Geregistreerde Organisatie"
+      },
+      "sort": "Geregistreerde Organisatie",
+      "description": {
+        "nl": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een formele organisatie waarbij dit statuut ook op een andere manier verkregen kan zijn."
+      },
+      "usage": {
+        "nl": "In België moeten oa volgende organisaties zich registreren: vennootschap (nv,bvba etc),eenmanszaak,overheidsorgaan,stichting? Bij registratie krijgt de organisatie een ondernemingsnummer en worden zijn gegevens ingevoerd in de KBO."
+      },
+      "parents": [
+        {
+          "label": "Organisatie",
+          "name": "Organisatie",
+          "package": "OSLO-Organisatie",
+          "uri": "http://www.w3.org/ns/org#Organization",
+          "scoped_uri": "#Organisatie"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/regorg#registration",
+          "name": "registratie",
+          "sort": "registratie",
+          "label": {
+            "nl": "registratie"
+          },
+          "description": {
+            "nl": "Identificator dat de organisatie verkreeg bij registratie."
+          },
+          "usage": {
+            "nl": "In de KBO is dit het ondernemingsnummer."
+          },
+          "domain": [
+            {
+              "EA-Name": "GeregistreerdeOrganisatie",
+              "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/regorg#legalName",
+          "name": "wettelijke naam",
+          "sort": "wettelijke naam",
+          "label": {
+            "nl": "wettelijke naam"
+          },
+          "description": {
+            "nl": "Wettelijk geregistreerde naam vd organisatie."
+          },
+          "usage": {
+            "nl": "Evt in verschillende talen."
+          },
+          "domain": [
+            {
+              "EA-Name": "GeregistreerdeOrganisatie",
+              "uri": "http://www.w3.org/ns/regorg#RegisteredOrganization"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
+      "name": "Credential",
+      "label": {
+        "nl": "Credential"
+      },
+      "sort": "Credential",
+      "description": {
+        "nl": "Een credential is een reeks van een of meer beweringen gemaakt door een uitgever."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://www.w3.org/2018/credentials#validUntil",
+          "name": "vervaldatum",
+          "sort": "vervaldatum",
+          "label": {
+            "nl": "vervaldatum"
+          },
+          "description": {
+            "nl": "De vervaldatum."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Credential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://www.w3.org/2018/credentials#validFrom",
+          "name": "geldig van",
+          "sort": "geldig van",
+          "label": {
+            "nl": "geldig van"
+          },
+          "description": {
+            "nl": "De vroegste datum waarop de informatie geassocieerd met het onderwerp geldig wordt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Credential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://www.w3.org/2018/credentials#issuanceDate",
+          "name": "uitgiftedatum",
+          "sort": "uitgiftedatum",
+          "label": {
+            "nl": "uitgiftedatum"
+          },
+          "description": {
+            "nl": "De datum en tijd waarop het certificaat digitaal ondertekend is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Credential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Inschrijving",
+      "name": "Inschrijving",
+      "label": {
+        "nl": "Inschrijving"
+      },
+      "sort": "Inschrijving",
+      "description": {
+        "nl": "Inschrijving."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#inschrijvingsdatum",
+          "name": "inschrijvingsdatum",
+          "sort": "inschrijvingsdatum",
+          "label": {
+            "nl": "inschrijvingsdatum"
+          },
+          "description": {
+            "nl": "Datum waarop de persoon zich ingeschreven heeft aan de instelling. Persoon en instelling hebben op die dag een toetredingsovereenkomst afgesloten."
+          },
+          "usage": {
+            "nl": "Bv. Als de ouders op 6 juni 2016 het inschrijvingsregister ondertekenden om de leerling op 1 september 2016 te laten starten, staat hier 2016-06-06."
+          },
+          "domain": [
+            {
+              "EA-Name": "Inschrijving",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Inschrijving"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "nl": "Date"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#status",
+          "name": "status",
+          "sort": "status",
+          "label": {
+            "nl": "status"
+          },
+          "description": {
+            "nl": "Status van de Inschrijving."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Inschrijving",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Inschrijving"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Status",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Status",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Status"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/type",
+          "name": "contract type",
+          "sort": "contract type",
+          "label": {
+            "nl": "contract type"
+          },
+          "description": {
+            "nl": "Het type contract."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Inschrijving",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Inschrijving"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "SoortContract",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#SoortContract",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "SoortContract"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+      "name": "Leercredential",
+      "label": {
+        "nl": "Leercredential"
+      },
+      "sort": "Leercredential",
+      "description": {
+        "nl": "Een reeks van een of meer beweringen over leerervaringen, gemaakt door een uitgever."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Credential",
+          "name": "Credential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
+          "scoped_uri": "#Credential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Een alternatieve identificatie van de Europese Digitale Leercredential die doorgaans door de uitgifteorganisatie aan de Credential zijn toegewezen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leercredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leercredential",
+          "name": "Leercredential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+          "scoped_uri": "#Leercredential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://w3id.org/security#proof",
+          "name": "bewijs",
+          "sort": "bewijs",
+          "label": {
+            "nl": "bewijs"
+          },
+          "description": {
+            "nl": "Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerinschrijfcredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Bewijs",
+              "range_uri": "https://w3id.org/security#Proof"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Bewijs",
+              "range_puri": "https://w3id.org/security#Proof",
+              "range_label": {
+                "nl": "Bewijs"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://w3.org/2018/credentials#issuer",
+          "name": "uitgever",
+          "sort": "uitgever",
+          "label": {
+            "nl": "uitgever"
+          },
+          "description": {
+            "nl": "De organisatie die de Credential heeft uitgegeven en heeft verzegeld met zijn digitale eSeal. Deze eigenschap is geërfd van verifieerbare credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerinschrijfcredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Organisatie",
+              "range_uri": "http://www.w3.org/ns/org#Organization"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Organisatie",
+              "range_puri": "http://www.w3.org/ns/org#Organization",
+              "range_label": {
+                "nl": "Organisatie"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://w3.org/2018/credentials#credentialSubject",
+          "name": "eigenaar",
+          "sort": "eigenaar",
+          "label": {
+            "nl": "eigenaar"
+          },
+          "description": {
+            "nl": "De persoon (onderwerp) over wie claims worden gedaan en die de Credential bezit."
+          },
+          "usage": {
+            "nl": "Deze eigenschap is geërfd van verifieerbare credentials."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leerinschrijfcredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Persoon",
+              "range_uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Persoon",
+              "range_puri": "http://www.w3.org/ns/person#Person",
+              "range_label": {
+                "nl": "Persoon"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Leeropportuniteit",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#studieomvang",
+          "name": "studieomvang",
+          "sort": "studieomvang",
+          "label": {
+            "nl": "studieomvang"
+          },
+          "description": {
+            "nl": "De totale studieomvang van een opleiding uitgedrukt in studiepunten."
+          },
+          "usage": {
+            "nl": "De student moet deze verwerven om zijn diploma in de opleiding te behalen. Bv. voor een Bachelor-diploma zal dit 180 studiepunten zijn."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leeropportuniteit",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leeropportuniteit"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#leerschema",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeropportuniteit",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leeropportuniteit"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "SoortProgramma",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#SoortProgramma",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "SoortProgramma"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#academiejaar",
+          "name": "academiejaar/schooljaar",
+          "sort": "academiejaar/schooljaar",
+          "label": {
+            "nl": "academiejaar/schooljaar"
+          },
+          "description": {
+            "nl": "Het beginjaar van het academiejaar van de inschrijving."
+          },
+          "usage": {
+            "nl": "Bv. voor academiejaar 2016-2017 is dit 2016."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leeropportuniteit",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leeropportuniteit"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Year",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#gYear"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#gYear",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#gYear",
+              "range_label": {
+                "nl": "Year"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/temporal",
+          "name": "periode",
+          "sort": "periode",
+          "label": {
+            "nl": "periode"
+          },
+          "description": {
+            "nl": "Periode van de leeropportuniteit."
+          },
+          "usage": {
+            "nl": "Het school- of academiejaar."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leeropportuniteit",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leeropportuniteit"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Periode",
+              "range_uri": "http://www.w3.org/2006/time#ProperInterval"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Periode",
+              "range_puri": "http://www.w3.org/2006/time#ProperInterval",
+              "range_label": {
+                "nl": "Periode"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Uitschrijving",
+      "name": "Uitschrijving",
+      "label": {
+        "nl": "Uitschrijving"
+      },
+      "sort": "Uitschrijving",
+      "description": {
+        "nl": "Uitschrijving."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "situatie na",
+          "name": "",
+          "sort": "",
+          "label": {},
+          "description": {
+            "nl": "Geeft aan wat de aanleiding was van een uitschrijving die plaatsvindt voor het einde van het schooljaar."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Uitschrijving",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Uitschrijving"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "SituatieNa",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#SituatieNa",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "SituatieNa"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#uitschrijvingsdatum",
+          "name": "uitschrijvingsdatum",
+          "sort": "uitschrijvingsdatum",
+          "label": {
+            "nl": "uitschrijvingsdatum"
+          },
+          "description": {
+            "nl": "Datum van de Uitschrijving."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Uitschrijving",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Uitschrijving"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "nl": "Date"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#aanleiding",
+          "name": "aanleiding",
+          "sort": "aanleiding",
+          "label": {
+            "nl": "aanleiding"
+          },
+          "description": {
+            "nl": "Geeft aan wat de aanleiding was van een uitschrijving die plaatsvindt voor het einde van het schooljaar."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Uitschrijving",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Uitschrijving"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Aanleiding",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Aanleiding",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Aanleiding"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon",
+      "name": "Geregistreerd Persoon",
+      "label": {
+        "nl": "Geregistreerd Persoon"
+      },
+      "sort": "Geregistreerd Persoon",
+      "description": {
+        "nl": "Persoon waarvan de gegevens zijn ingeschreven in een register."
+      },
+      "usage": {
+        "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb Naam en Voornaam) en de Verblijfplaats vd Persoon en op belangrijke levensgebeurtenissen zoals Geboorte, Huwelijk, Overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven Persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking."
+      },
+      "parents": [
+        {
+          "label": "Persoon",
+          "name": "Persoon",
+          "package": "OSLO-Persoon",
+          "uri": "http://www.w3.org/ns/person#Person",
+          "scoped_uri": "#Persoon"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/persoon#registratie",
+          "name": "registratie",
+          "sort": "registratie",
+          "label": {
+            "nl": "registratie"
+          },
+          "description": {
+            "nl": "Identificatiecode vd persoon ih register."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "GeregistreerdPersoon",
+              "uri": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "name": "Verifieerbare Credential",
+      "label": {
+        "nl": "Verifieerbare Credential"
+      },
+      "sort": "Verifieerbare Credential",
+      "description": {
+        "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Credential",
+          "name": "Credential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
+          "scoped_uri": "#Credential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "https://w3.org/2018/credentials#credentialSchema",
+          "name": "credentialschema",
+          "sort": "credentialschema",
+          "label": {
+            "nl": "credentialschema"
+          },
+          "description": {
+            "nl": "Het schema van de Verifieerbare Credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "VerifieerbareCredential",
+              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://w3id.org/security#Proof",
+      "name": "Bewijs",
+      "label": {
+        "nl": "Bewijs"
+      },
+      "sort": "Bewijs",
+      "description": {
+        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
+    }
+  ],
+  "properties": [],
+  "contributors": [
+    {
+      "role": "E",
+      "first_name": "Solid Team",
+      "last_name": "MAGDA",
+      "affiliation": {
+        "name": "Digitaal Vlaanderen",
+        "website": "https://www.vlaanderen.be/digitaal-vlaanderen"
+      },
+      "email": "magda-teamsolid@vlaanderen.be"
+    }
+  ],
+  "datatypes": [
+    {
+      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten",
+      "name": "",
+      "label": {},
+      "sort": "",
+      "description": {},
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#vrijgesteld",
+          "name": "vrijgesteld",
+          "sort": "vrijgesteld",
+          "label": {
+            "nl": "vrijgesteld"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving voor inschrijvingsonderdelen waarvoor de student een vrijstelling heeft gekregen a.d.h.v. eerder verworven kwalificaties of competenties."
+          },
+          "usage": {
+            "nl": "Dit betekent dat de student voor deze inschrijvingsonderdelen geen lessen moet volgen of geen examens moet afleggen. Deze studiepunten tellen niet mee als opgenomen."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#verworven",
+          "name": "verworven",
+          "sort": "verworven",
+          "label": {
+            "nl": "verworven"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor de student een positief resultaat heeft verworven op het einde van het academiejaar."
+          },
+          "usage": {
+            "nl": "Dit kan variëren afhankelijk van het moment van raadpleging via de dienst, de examens of beoordeling kunnen immers plaatsvinden in verschillende examenperiodes."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgeschreven",
+          "name": "uitgeschreven",
+          "sort": "uitgeschreven",
+          "label": {
+            "nl": "uitgeschreven"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor de student zich heeft laten uitschrijven."
+          },
+          "usage": {
+            "nl": "Afhankelijk van de beslissing van de instelling kunnen deze echter nog steeds opgenomen blijven. Dit kan variëren afhankelijk van het moment van raadpleging via de dienst."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#opgenomen",
+          "name": "opgenomen",
+          "sort": "opgenomen",
+          "label": {
+            "nl": "opgenomen"
+          },
+          "description": {
+            "nl": "Het totaal aantal opgenomen studiepunten van de inschrijving."
+          },
+          "usage": {
+            "nl": "Een student die zich inschrijft voor een modeltraject neemt 60 studiepunten op. Het minimum is 0 studiepunten, maar studenten kunnen ook meer dan 60 studiepunten opnemen. De waarde kan soms hoger dan 100 liggen. Indien de instelling, bij uitschrijving van een student, de studiepunten van bepaalde opleidingsonderdelen niet terug geeft, dan tellen deze ook mee als opgenomen. Indien de student vrijstellingen heeft, tellen deze studiepunten niet mee als opgenomen."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#nietVerworven",
+          "name": "niet verworven",
+          "sort": "niet verworven",
+          "label": {
+            "nl": "niet verworven"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor de student geen positief resultaat heeft verworven op het einde van het academiejaar."
+          },
+          "usage": {
+            "nl": "Dit kan variëren afhankelijk van het moment van raadpleging via de dienst, de examens of beoordeling kunnen immers plaatsvinden in verschillende examenperiodes."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#nietGeslaagd",
+          "name": "niet geslaagd",
+          "sort": "niet geslaagd",
+          "label": {
+            "nl": "niet geslaagd"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor de student geen positief resultaat heeft verworven op het einde van het academiejaar na deelname aan het examen of een ander evaluatiemoment."
+          },
+          "usage": {
+            "nl": "TODO"
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#nietDeelgenomen",
+          "name": "niet deelgenomen",
+          "sort": "niet deelgenomen",
+          "label": {
+            "nl": "niet deelgenomen"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor de student geen positief resultaat heeft verworven op het einde van het academiejaar omdat de student niet heeft deelgenomen aan het examen of een ander evaluatiemoment."
+          },
+          "usage": {
+            "nl": "De niet deelgenomen studiepunten vormen samen met de niet geslaagde studiepunten de niet verworven studiepunten."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#geenResultaat",
+          "name": "geen resultaat",
+          "sort": "geen resultaat",
+          "label": {
+            "nl": "geen resultaat"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor nog geen resultaat is geregistreerd door de instelling."
+          },
+          "usage": {
+            "nl": "Dit kan variëren afhankelijk van het moment van raadpleging via de dienst, de examens of beoordeling kunnen immers plaatsvinden in verschillende examenperiodes."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#gedelibereerd",
+          "name": "gedelibereerd",
+          "sort": "gedelibereerd",
+          "label": {
+            "nl": "gedelibereerd"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor de instelling de student gedelibereerd heeft na het behalen van een negatief resultaat."
+          },
+          "usage": {
+            "nl": "Voor de inschrijvingsonderdelen gelinkt aan deze studiepunten moet de student geen examens meer maken. Dit kan variëren afhankelijk van het moment van raadpleging via de dienst, de examens of beoordeling kunnen immers plaatsvinden in verschillende examenperiodes."
+          },
+          "domain": [
+            {
+              "EA-Name": "Kredietpunten",
+              "uri": "https://solid.data.vlaanderen.be/ns/leercredential#Kredietpunten"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter",
+      "name": "Voorstelling",
+      "label": {
+        "nl": "Voorstelling"
+      },
+      "sort": "Voorstelling",
+      "description": {
+        "nl": "De parameters van de voorstelling."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://purl.org/dc/terms/title",
+          "name": "titel",
+          "sort": "titel",
+          "label": {
+            "nl": "titel"
+          },
+          "description": {
+            "nl": "Tekstuele omschrijving van de credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Voorstelling",
+              "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/language",
+          "name": "taal",
+          "sort": "taal",
+          "label": {
+            "nl": "taal"
+          },
+          "description": {
+            "nl": "De lijst van talen waarin de voorstelling beschikbaar is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Voorstelling",
+              "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taal",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Taal"
+              }
+            }
+          ],
+          "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/primaryLanguage",
+          "name": "hoofdtaal",
+          "sort": "hoofdtaal",
+          "label": {
+            "nl": "hoofdtaal"
+          },
+          "description": {
+            "nl": "De primaire taal van de credential."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Voorstelling",
+              "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Taal",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Taal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://schema.org/ContactPoint",
+      "name": "Contactinfo",
+      "label": {
+        "nl": "Contactinfo"
+      },
+      "sort": "Contactinfo",
+      "description": {
+        "nl": "Informatie zoals email,telefoon,adres die toelaat om iemand of iets te contacteren."
+      },
+      "usage": {
+        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen,mailen etc."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://xmlns.com/foaf/0.1/page",
+          "name": "website",
+          "sort": "website",
+          "label": {
+            "nl": "website"
+          },
+          "description": {
+            "nl": "Website waarnaar men kan surfen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "ContactInfo",
+              "uri": "http://schema.org/ContactPoint"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/locn#address",
+          "name": "adres",
+          "sort": "adres",
+          "label": {
+            "nl": "adres"
+          },
+          "description": {
+            "nl": "Adres dat men kan aanschrijven of bezoeken."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "ContactInfo",
+              "uri": "http://schema.org/ContactPoint"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Adresvoorstelling",
+              "range_uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Adresvoorstelling",
+              "range_puri": "http://www.w3.org/ns/locn#Address",
+              "range_label": {
+                "nl": "Adresvoorstelling"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "name": "Taalstring",
+      "label": {
+        "nl": "Taalstring"
+      },
+      "sort": "Taalstring",
+      "description": {
+        "nl": "Combinatie van een string en de taal waarin de inhoud ervan is gesteld."
+      },
+      "usage": {
+        "nl": "Bvb 'Rue Mercator' als string en 'fr' als taal."
+      },
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "http://www.w3.org/2006/time#ProperInterval",
+      "name": "Periode",
+      "label": {
+        "nl": "Periode"
+      },
+      "sort": "Periode",
+      "description": {
+        "nl": "Min of meer afgebakende tijdsduur."
+      },
+      "usage": {
+        "nl": "Typisch volgt de duur uit het opgeven ve begin- en eindtijdstip. CONSTRAINT: begin OF duur verplicht."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/2006/time#hasEnd",
+          "name": "einde",
+          "sort": "einde",
+          "label": {
+            "nl": "einde"
+          },
+          "description": {
+            "nl": "Einde vd tijdsduur."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Periode",
+              "uri": "http://www.w3.org/2006/time#ProperInterval"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2006/time#hasDuration",
+          "name": "duur",
+          "sort": "duur",
+          "label": {
+            "nl": "duur"
+          },
+          "description": {},
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Periode",
+              "uri": "http://www.w3.org/2006/time#ProperInterval"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Duration",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#duration"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#duration",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#duration",
+              "range_label": {
+                "nl": "Duration"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2006/time#hasBeginning",
+          "name": "begin",
+          "sort": "begin",
+          "label": {
+            "nl": "begin"
+          },
+          "description": {
+            "nl": "Aanvang van de tijdsduur."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Periode",
+              "uri": "http://www.w3.org/2006/time#ProperInterval"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/adms#Identifier",
+      "name": "Identificator",
+      "label": {
+        "nl": "Identificator"
+      },
+      "sort": "Identificator",
+      "description": {
+        "nl": "Informatie gebruikt om een object uniek te identificeren."
+      },
+      "usage": {
+        "nl": "Uitgangspunt hier is dat deze string door een organisatie wordt toegekend en dat dit gebeurt volgens een welbepaald systeem."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#schemeAgency",
+          "name": "uitgevende autoriteit naam",
+          "sort": "uitgevende autoriteit naam",
+          "label": {
+            "nl": "uitgevende autoriteit naam"
+          },
+          "description": {
+            "nl": "De naam van de uitgevende autoriteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#notation",
+          "name": "notatie",
+          "sort": "notatie",
+          "label": {
+            "nl": "notatie"
+          },
+          "description": {
+            "nl": "De notatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Literal",
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_puri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "range_label": {
+                "nl": "Literal"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/2001/01/rdf-schema#label",
+          "name": "schema naam",
+          "sort": "schema naam",
+          "label": {
+            "nl": "schema naam"
+          },
+          "description": {
+            "nl": "De naam van het schema."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/issued",
+          "name": "uitgiftedatum",
+          "sort": "uitgiftedatum",
+          "label": {
+            "nl": "uitgiftedatum"
+          },
+          "description": {
+            "nl": "De datum van uitgifte."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Date",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#date",
+              "range_label": {
+                "nl": "Date"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/creator",
+          "name": "uitgevende autoriteit URI",
+          "sort": "uitgevende autoriteit URI",
+          "label": {
+            "nl": "uitgevende autoriteit URI"
+          },
+          "description": {
+            "nl": "De URI van de uitgevende autoriteit."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://purl.org/dc/terms/conformsTo",
+          "name": "schema URI",
+          "sort": "schema URI",
+          "label": {
+            "nl": "schema URI"
+          },
+          "description": {
+            "nl": "De URI van het schema."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Identificator",
+              "uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "URI",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
+              "range_label": {
+                "nl": "URI"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/locn#Address",
+      "name": "Adresvoorstelling",
+      "label": {
+        "nl": "Adresvoorstelling"
+      },
+      "sort": "Adresvoorstelling",
+      "description": {
+        "nl": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object."
+      },
+      "usage": {
+        "nl": "Bv als attribuut ve persoon of gebouw... De adresvoorstelling heeft niet enkel betrekking op Belgische adressen, ze kan gebruikt worden om buitenlandse adressen weer te geven (waar mogelijk andere adresaanduidingen dan huisnummer of busnummer worden gebruikt of waar adrescomponenten zoals adresgebieden voorkomen)."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/adres#land",
+          "name": "land",
+          "sort": "land",
+          "label": {
+            "nl": "land"
+          },
+          "description": {
+            "nl": "Land waarin het adres gelegen is."
+          },
+          "usage": {
+            "nl": " "
+          },
+          "domain": [
+            {
+              "EA-Name": "Adresvoorstelling",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/adres#gemeentenaam",
+          "name": "gemeentenaam",
+          "sort": "gemeentenaam",
+          "label": {
+            "nl": "gemeentenaam"
+          },
+          "description": {
+            "nl": "Gemeentenaam van het adres."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Adresvoorstelling",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [],
+          "scopedrange": [],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
+          "name": "huisnummer",
+          "sort": "huisnummer",
+          "label": {
+            "nl": "huisnummer"
+          },
+          "description": {
+            "nl": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Adresvoorstelling",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
+          "name": "busnummer",
+          "sort": "busnummer",
+          "label": {
+            "nl": "busnummer"
+          },
+          "description": {
+            "nl": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Adresvoorstelling",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/locn#thoroughfare",
+          "name": "straatnaam",
+          "sort": "straatnaam",
+          "label": {
+            "nl": "straatnaam"
+          },
+          "description": {
+            "nl": "Straatnaam van het adres."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Adresvoorstelling",
+              "uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "String",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#string",
+              "range_label": {
+                "nl": "String"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "http://www.w3.org/ns/prov#Location",
+      "name": "Locatie",
+      "label": {
+        "nl": "Locatie"
+      },
+      "sort": "Locatie",
+      "description": {
+        "nl": "Aanduiding van een geografische positie,dmv coordinaten,een toponiem,een adreslabel,een verwijzing naar een plaats/regio of verwijzing naar een adres."
+      },
+      "usage": {
+        "nl": "Te gebruiken als de manier waarop de geografische positie wordt aangeduid pas zal worden vastgelegd bij implementatie. Is deze manier nu al gekend dan moet direct gewerkt worden met Geometrie, GeografischeNaam, Adres etc."
+      },
+      "parents": [],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/locn#geographicName",
+          "name": "naam",
+          "sort": "naam",
+          "label": {
+            "nl": "naam"
+          },
+          "description": {
+            "nl": "Geografische naam van de locatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Locatie",
+              "uri": "http://www.w3.org/ns/prov#Location"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "TaalString",
+              "range_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Taalstring",
+              "range_puri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "range_label": {
+                "nl": "Taalstring"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Identificator van de Locatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Locatie",
+              "uri": "http://www.w3.org/ns/prov#Location"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/m8g/address",
+          "name": "adres",
+          "sort": "adres",
+          "label": {
+            "nl": "adres"
+          },
+          "description": {
+            "nl": "Adres van de locatie."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Locatie",
+              "uri": "http://www.w3.org/ns/prov#Location"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Adresvoorstelling",
+              "range_uri": "http://www.w3.org/ns/locn#Address"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Adresvoorstelling",
+              "range_puri": "http://www.w3.org/ns/locn#Address",
+              "range_label": {
+                "nl": "Adresvoorstelling"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        }
+      ]
+    }
+  ],
+  "parents": [],
+  "documentroot": "/doc/implementatiemodel/leerinschrijfcredential/2024-06-01"
+}
