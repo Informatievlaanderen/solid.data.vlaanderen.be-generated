@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/2751e3ff4ac5bd97e90cf2e065dea0840958760c",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/2751e3ff4ac5bd97e90cf2e065dea0840958760c/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/a2140138f5baf5a7a91f5a8910be49d4bc724850",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/a2140138f5baf5a7a91f5a8910be49d4bc724850/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
