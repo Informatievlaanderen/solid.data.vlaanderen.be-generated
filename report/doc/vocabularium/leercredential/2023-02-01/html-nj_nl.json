@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Solid Leercredential",
-    "uri": "https://solid.data.vlaanderen.be/ns/leercredential",
+    "uri": "http://fixme.com",
     "issued": "2023-02-01",
     "filename": "leercredential",
     "navigation": {
@@ -12,54 +12,15 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/6b424d34f8704bde24f0eaa04828aa1c7d8a08c6",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/6b424d34f8704bde24f0eaa04828aa1c7d8a08c6/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0294f1667b2d815e152dd58e7d482db457dc4265",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0294f1667b2d815e152dd58e7d482db457dc4265/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
     "usesAPs": []
   },
   "classes": [],
-  "properties": [
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
-      "name": "uitgever",
-      "label": {
-        "nl": "uitgever"
-      },
-      "sort": "uitgever",
-      "description": {
-        "nl": "De Agent die de claim maakt."
-      },
-      "usage": {},
-      "domain": [
-        "http://data.europa.eu/snb/model/elm/Claim"
-      ],
-      "range": [
-        "http://purl.org/dc/terms/Agent"
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
-      "name": "authenticiteit",
-      "label": {
-        "nl": "authenticiteit"
-      },
-      "sort": "authenticiteit",
-      "description": {
-        "nl": "De authenticiteit van de leerclaim."
-      },
-      "usage": {},
-      "domain": [
-        "http://data.europa.eu/snb/model/elm/Claim"
-      ],
-      "range": [
-        "http://www.w3.org/2004/02/skos/core#Concept"
-      ],
-      "parents": []
-    }
-  ],
+  "properties": [],
   "contributors": [
     {
       "role": "E",

@@ -1,9 +1,8 @@
 {
   "metadata": {
     "title": "Leercredential (implementatiemodel)",
-    "uri": "https://solid.data.vlaanderen.be/ns/leercredential",
+    "uri": "http://fixme.com",
     "issued": "2023-05-01",
-    "baseURI": "https://solid.data.vlaanderen.be/ns/leercredential#",
     "filename": "leercredential-ap",
     "navigation": {
       "prev": "/doc/implementatiemodel/leercredential/2023-02-01",
@@ -14,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/6b424d34f8704bde24f0eaa04828aa1c7d8a08c6",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/6b424d34f8704bde24f0eaa04828aa1c7d8a08c6/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0294f1667b2d815e152dd58e7d482db457dc4265",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0294f1667b2d815e152dd58e7d482db457dc4265/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -226,41 +225,6 @@
       "usage": {},
       "parents": [],
       "properties": [
-        {
-          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
-          "name": "uitgever",
-          "sort": "uitgever",
-          "label": {
-            "nl": "uitgever"
-          },
-          "description": {
-            "nl": "De Agent die de claim maakt."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "http://data.europa.eu/snb/model/elm/Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Agent",
-              "range_uri": "http://purl.org/dc/terms/Agent"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Agent",
-              "range_puri": "http://purl.org/dc/terms/Agent",
-              "range_label": {
-                "nl": "Agent"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
         {
           "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
           "name": "authenticiteit",
@@ -1791,38 +1755,7 @@
       "properties": []
     }
   ],
-  "properties": [
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
-      "name": {
-        "nl": "uitgever",
-        "undefined": "uitgever"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
-      "name": {
-        "nl": "authenticiteit",
-        "undefined": "authenticiteit"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    }
-  ],
+  "properties": [],
   "contributors": [
     {
       "role": "E",
