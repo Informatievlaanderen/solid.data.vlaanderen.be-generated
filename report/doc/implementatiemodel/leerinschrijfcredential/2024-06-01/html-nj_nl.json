@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/a2140138f5baf5a7a91f5a8910be49d4bc724850",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/a2140138f5baf5a7a91f5a8910be49d4bc724850/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/b0758f76f6d4132e69601a4072ff4e6acc845062",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/b0758f76f6d4132e69601a4072ff4e6acc845062/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -346,6 +346,43 @@
             }
           ],
           "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/creditReceived",
+          "name": "verworven kredietpunten",
+          "sort": "verworven kredietpunten",
+          "label": {
+            "nl": "verworven kredietpunten"
+          },
+          "description": {
+            "nl": "Het aantal studiepunten van de inschrijving waarvoor de student een positief resultaat heeft verworven op het einde van het academiejaar."
+          },
+          "usage": {
+            "nl": "Dit kan variëren afhankelijk van het moment van raadpleging via de dienst, de examens of beoordeling kunnen immers plaatsvinden in verschillende examenperiodes."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leerprestatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievement"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Integer",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#integer",
+              "range_label": {
+                "nl": "Integer"
+              }
+            }
+          ],
+          "cardinality": "1",
           "codelist_uri": ""
         }
       ]
