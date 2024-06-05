@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Solid Leercredential",
-    "uri": "http://fixme.com",
+    "uri": "https://data.vlaanderen.be/ns/leercredential",
     "issued": "2023-02-01",
     "filename": "leercredential",
     "navigation": {
@@ -12,14 +12,45 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0294f1667b2d815e152dd58e7d482db457dc4265",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0294f1667b2d815e152dd58e7d482db457dc4265/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/5e5ded07ade5653a38410e37d22e7cde387bbc8e",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/5e5ded07ade5653a38410e37d22e7cde387bbc8e/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html",
     "usesVocs": [],
     "usesAPs": []
   },
-  "classes": [],
+  "classes": [
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
+      "name": "Credential",
+      "label": {
+        "nl": "Credential"
+      },
+      "sort": "Credential",
+      "description": {
+        "nl": "Een credential is een reeks van een of meer beweringen gemaakt door een uitgever."
+      },
+      "usage": {},
+      "equivalent": [],
+      "parents": []
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+      "name": "Leercredential",
+      "label": {
+        "nl": "Leercredential"
+      },
+      "sort": "Leercredential",
+      "description": {
+        "nl": "Een reeks van een of meer beweringen over leerervaringen, gemaakt door een uitgever."
+      },
+      "usage": {},
+      "equivalent": [],
+      "parents": [
+        "https://data.vlaanderen.be/ns/leercredential#Credential"
+      ]
+    }
+  ],
   "properties": [],
   "contributors": [
     {
@@ -33,6 +64,791 @@
       "email": "magda-teamsolid@vlaanderen.be"
     }
   ],
-  "external_terms": [],
+  "external_terms": [
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess",
+      "name": "Toekenningsproces",
+      "label": {
+        "nl": "Toekenningsproces"
+      },
+      "description": {
+        "nl": "Het proces waarbij een organisatie een leerprestatie toekent aan een persoon op basis van een leerspecificatie (bv. een kwalificatie). Het wordt gebruikt om de organisatie te specificeren die de leerspecificatie aan de persoon heeft toegekend, het land of de regio waar de leerspecificatie werd toegekend, en optioneel de datum van toekenning."
+      },
+      "usage": {},
+      "sort": "Toekenningsproces",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Claim",
+      "name": "Leerclaim",
+      "label": {
+        "nl": "Leerclaim"
+      },
+      "description": {
+        "nl": "Een claim gemaakt door een uitgever."
+      },
+      "usage": {},
+      "sort": "Leerclaim",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/DisplayParameter",
+      "name": "Voorstelling",
+      "label": {
+        "nl": "Voorstelling"
+      },
+      "description": {
+        "nl": "De parameters van de voorstelling."
+      },
+      "usage": {},
+      "sort": "Voorstelling",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/EuropeanDigitalCredential",
+      "name": "Europees Digitaal Credential",
+      "label": {
+        "nl": "Europees Digitaal Credential"
+      },
+      "description": {
+        "nl": "Een reeks beweringen die door een uitgever in Europa worden gemaakt, gebruikmakend van Europese standaarden. Een Europees Digitaal Credential is een reeks van een of meer beweringen die kunnen worden gebruikt om aan te tonen dat de eigenaar bepaalde vaardigheden bezit of bepaalde leeruitkomsten heeft bereikt door middel van formeel, niet-formeel of informeel leren."
+      },
+      "usage": {},
+      "sort": "Europees Digitaal Credential",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningAchievement",
+      "name": "Leerprestatie",
+      "label": {
+        "nl": "Leerprestatie"
+      },
+      "description": {
+        "nl": "De verwerving van kennis, vaardigheden of verantwoordelijkheid en zelfstandigheid. Een erkend en/of toegekend geheel van leeruitkomsten van een individu."
+      },
+      "usage": {},
+      "sort": "Leerprestatie",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification",
+      "name": "Leerprestatiespecificatie",
+      "label": {
+        "nl": "Leerprestatiespecificatie"
+      },
+      "description": {
+        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de leeropportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van leerprestaties."
+      },
+      "usage": {},
+      "sort": "Leerprestatiespecificatie",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/LearningActivitySpecification",
+      "name": "Leeractiviteitspecificatie",
+      "label": {
+        "nl": "Leeractiviteitspecificatie"
+      },
+      "description": {
+        "nl": "De specificatie van een proces dat leidt tot het verwerven van kennis, vaardigheden of verantwoordelijkheid en autonomie."
+      },
+      "usage": {},
+      "sort": "Leeractiviteitspecificatie",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Qualification",
+      "name": "Kwalificatie",
+      "label": {
+        "nl": "Kwalificatie"
+      },
+      "description": {
+        "nl": "Een specificatie van een beoordelings- en validatieproces dat wordt verkregen wanneer een bevoegde autoriteit vaststelt dat een individu leeruitkomsten volgens bepaalde normen heeft bereikt."
+      },
+      "usage": {},
+      "sort": "Kwalificatie",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/Specification",
+      "name": "Leerspecificatie",
+      "label": {
+        "nl": "Leerspecificatie"
+      },
+      "description": {
+        "nl": "Een beschrijving van wat een persoon kan leren door gebruik te maken van de opportuniteit, uitgedrukt als leeruitkomsten. Een specificatie van het leren."
+      },
+      "usage": {},
+      "sort": "Leerspecificatie",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Leerclaimtype",
+      "label": {
+        "nl": "Leerclaimtype"
+      },
+      "description": {},
+      "usage": {},
+      "sort": "Leerclaimtype",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Land",
+      "label": {
+        "nl": "Land"
+      },
+      "description": {},
+      "usage": {},
+      "sort": "Land",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Authenticiteit",
+      "label": {
+        "nl": "Authenticiteit"
+      },
+      "description": {},
+      "usage": {},
+      "sort": "Authenticiteit",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Leerprestatietype",
+      "label": {
+        "nl": "Leerprestatietype"
+      },
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "sort": "Leerprestatietype",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Leercredentialtype",
+      "label": {
+        "nl": "Leercredentialtype"
+      },
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "sort": "Leercredentialtype",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Onderwerp",
+      "label": {
+        "nl": "Onderwerp"
+      },
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "sort": "Onderwerp",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Taal",
+      "label": {
+        "nl": "Taal"
+      },
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "sort": "Taal",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Onderwijsniveau",
+      "label": {
+        "nl": "Onderwijsniveau"
+      },
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "sort": "Onderwijsniveau",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+      "name": "Studiegebied",
+      "label": {
+        "nl": "Studiegebied"
+      },
+      "description": {
+        "nl": "TODO"
+      },
+      "usage": {},
+      "sort": "Studiegebied",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "name": "Verifieerbare Credential",
+      "label": {
+        "nl": "Verifieerbare Credential"
+      },
+      "description": {
+        "nl": "Een verifieerbare credential is een fraudebestendige credential met auteurschap dat cryptografisch kan worden geverifieerd. Verifieerbare credentials kunnen worden gebruikt om verifieerbare presentaties te maken, die ook cryptografisch kunnen worden geverifieerd. De claims in een credential kunnen over verschillende onderwerpen gaan."
+      },
+      "usage": {},
+      "sort": "Verifieerbare Credential",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "https://w3id.org/security#Proof",
+      "name": "Bewijs",
+      "label": {
+        "nl": "Bewijs"
+      },
+      "description": {
+        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
+      },
+      "usage": {},
+      "sort": "Bewijs",
+      "indvl": false,
+      "inpackage": false,
+      "inscope": true,
+      "show": true
+    },
+    {
+      "uri": "https://www.w3.org/2018/credentials#validUntil",
+      "name": "vervaldatum",
+      "label": {
+        "nl": "vervaldatum"
+      },
+      "description": {
+        "nl": "De vervaldatum."
+      },
+      "usage": {},
+      "sort": "vervaldatum",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "https://www.w3.org/2018/credentials#validFrom",
+      "name": "geldig van",
+      "label": {
+        "nl": "geldig van"
+      },
+      "description": {
+        "nl": "De vroegste datum waarop de informatie geassocieerd met het onderwerp geldig wordt."
+      },
+      "usage": {},
+      "sort": "geldig van",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "https://www.w3.org/2018/credentials#issuanceDate",
+      "name": "uitgiftedatum",
+      "label": {
+        "nl": "uitgiftedatum"
+      },
+      "description": {
+        "nl": "De datum en tijd waarop het certificaat digitaal ondertekend is."
+      },
+      "usage": {},
+      "sort": "uitgiftedatum",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "https://w3id.org/security#proof",
+      "name": "bewijs",
+      "label": {
+        "nl": "bewijs"
+      },
+      "description": {
+        "nl": "Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials."
+      },
+      "usage": {},
+      "sort": "bewijs",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "https://w3.org/2018/credentials#credentialSchema",
+      "name": "credentialschema",
+      "label": {
+        "nl": "credentialschema"
+      },
+      "description": {
+        "nl": "Het schema van de Verifieerbare Credential."
+      },
+      "usage": {},
+      "sort": "credentialschema",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/ns/adms#identifier",
+      "name": "identificator",
+      "label": {
+        "nl": "identificator"
+      },
+      "description": {
+        "nl": "Een identificator van de specificatie."
+      },
+      "usage": {},
+      "sort": "identificator",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/ns/adms#identifier",
+      "name": "identificator",
+      "label": {
+        "nl": "identificator"
+      },
+      "description": {
+        "nl": "Een alternatieve identificatie van het toekenningsproces."
+      },
+      "usage": {},
+      "sort": "identificator",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/ns/adms#identifier",
+      "name": "identificator",
+      "label": {
+        "nl": "identificator"
+      },
+      "description": {
+        "nl": "De identificator van de leerclaim."
+      },
+      "usage": {},
+      "sort": "identificator",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://www.w3.org/ns/adms#identifier",
+      "name": "identificator",
+      "label": {
+        "nl": "identificator"
+      },
+      "description": {
+        "nl": "Een alternatieve identificatie van de Europese Digitale Leercredential die doorgaans door de uitgifteorganisatie aan de Credential zijn toegewezen."
+      },
+      "usage": {},
+      "sort": "identificator",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/type",
+      "name": "type",
+      "label": {
+        "nl": "type"
+      },
+      "description": {
+        "nl": "Het type specificatie van de leerprestatie."
+      },
+      "usage": {
+        "nl": "Het moet worden verstrekt met behulp van een gecontroleerde vocabularium."
+      },
+      "sort": "type",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/type",
+      "name": "type",
+      "label": {
+        "nl": "type"
+      },
+      "description": {
+        "nl": "Type van de leerclaim."
+      },
+      "usage": {},
+      "sort": "type",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/title",
+      "name": "titel",
+      "label": {
+        "nl": "titel"
+      },
+      "description": {
+        "nl": "Tekstuele omschrijving van de credential."
+      },
+      "usage": {},
+      "sort": "titel",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/title",
+      "name": "titel",
+      "label": {
+        "nl": "titel"
+      },
+      "description": {
+        "nl": "De titel van de specificatie. Eén waarde per taal is toegestaan."
+      },
+      "usage": {},
+      "sort": "titel",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/title",
+      "name": "titel",
+      "label": {
+        "nl": "titel"
+      },
+      "description": {
+        "nl": "De titel van de claim. Eén waarde per taal is toegestaan."
+      },
+      "usage": {},
+      "sort": "titel",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/language",
+      "name": "taal",
+      "label": {
+        "nl": "taal"
+      },
+      "description": {
+        "nl": "De lijst van talen waarin de voorstelling beschikbaar is."
+      },
+      "usage": {},
+      "sort": "taal",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/language",
+      "name": "onderwijstaal",
+      "label": {
+        "nl": "onderwijstaal"
+      },
+      "description": {
+        "nl": "De taal van de leerprestatiespecificatie."
+      },
+      "usage": {
+        "nl": "Het moet worden verstrekt met behulp van de Language authority tabel."
+      },
+      "sort": "onderwijstaal",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://purl.org/dc/terms/language",
+      "name": "instructietaal",
+      "label": {
+        "nl": "instructietaal"
+      },
+      "description": {
+        "nl": "De gebruikte instructietaal of -talen."
+      },
+      "usage": {},
+      "sort": "instructietaal",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/specifiedBy",
+      "name": "specificatie",
+      "label": {
+        "nl": "specificatie"
+      },
+      "description": {
+        "nl": "Wat er is geleerd."
+      },
+      "usage": {},
+      "sort": "specificatie",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/primaryLanguage",
+      "name": "hoofdtaal",
+      "label": {
+        "nl": "hoofdtaal"
+      },
+      "description": {
+        "nl": "De primaire taal van de credential."
+      },
+      "usage": {},
+      "sort": "hoofdtaal",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/location",
+      "name": "locatie",
+      "label": {
+        "nl": "locatie"
+      },
+      "description": {
+        "nl": "De plaats waar de toekenningsactiviteit plaatsvond (land/regio waar de kwalificatie werd toegekend)."
+      },
+      "usage": {},
+      "sort": "locatie",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/influences",
+      "name": "beinvloedt",
+      "label": {
+        "nl": "beinvloedt"
+      },
+      "description": {
+        "nl": "Wat kan worden geleerd door de activiteit te doen die wordt beschreven door de specificatie van deze leeractiviteit."
+      },
+      "usage": {},
+      "sort": "beinvloedt",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/influencedBy",
+      "name": "beinvloed door",
+      "label": {
+        "nl": "beinvloed door"
+      },
+      "description": {
+        "nl": "Activiteiten die een persoon kan uitvoeren om de verwachte leeruitkomsten te verkrijgen."
+      },
+      "usage": {},
+      "sort": "beinvloed door",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/educationSubject",
+      "name": "onderwerp",
+      "label": {
+        "nl": "onderwerp"
+      },
+      "description": {
+        "nl": "Een bijbehorend onderwijsveld uit een ander semantisch kader dan de ISCED-classificatie."
+      },
+      "usage": {},
+      "sort": "onderwerp",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/educationLevel",
+      "name": "onderwijsniveau",
+      "label": {
+        "nl": "onderwijsniveau"
+      },
+      "description": {
+        "nl": "Een bijbehorend opleidingsniveau binnen een semantisch kader dat opleidingsniveaus beschrijft."
+      },
+      "usage": {},
+      "sort": "onderwijsniveau",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/displayParameter",
+      "name": "voorstelling",
+      "label": {
+        "nl": "voorstelling"
+      },
+      "description": {
+        "nl": "Voorstellingdetails van de Europese Digitale Credential."
+      },
+      "usage": {},
+      "sort": "voorstelling",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/awards",
+      "name": "kent toe",
+      "label": {
+        "nl": "kent toe"
+      },
+      "description": {
+        "nl": "De resulterende claim."
+      },
+      "usage": {},
+      "sort": "kent toe",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/awardingDate",
+      "name": "toekenningsdatum",
+      "label": {
+        "nl": "toekenningsdatum"
+      },
+      "description": {
+        "nl": "De datum waarop de leerspecificatie werd toegekend. Indien niet gespecificeerd is deze ongedefinieerd (\"niet bekend\")."
+      },
+      "usage": {},
+      "sort": "toekenningsdatum",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model/elm/awardedBy",
+      "name": "toegekend door",
+      "label": {
+        "nl": "toegekend door"
+      },
+      "description": {
+        "nl": "De toekenningsdetails van de claim."
+      },
+      "usage": {},
+      "sort": "toegekend door",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    },
+    {
+      "uri": "http://data.europa.eu/snb/model#ISCEDFCode",
+      "name": "studiegebied",
+      "label": {
+        "nl": "studiegebied"
+      },
+      "description": {
+        "nl": "Thematisch gebied volgens de ISCED-F 2013-classificatie."
+      },
+      "usage": {
+        "nl": "Het moet worden verstrekt met behulp van de ISCECD-F gecontroleerd vocabularium."
+      },
+      "sort": "studiegebied",
+      "inscope": true,
+      "indvl": false,
+      "inpackage": false,
+      "show": true
+    }
+  ],
   "documentroot": "/doc/vocabularium/leercredential/2023-02-01"
 }
