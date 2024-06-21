@@ -14,8 +14,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0294f1667b2d815e152dd58e7d482db457dc4265",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0294f1667b2d815e152dd58e7d482db457dc4265/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/be85e36e4eedf52fb77e1aed7a6d6329ce13a757",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/be85e36e4eedf52fb77e1aed7a6d6329ce13a757/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -1221,16 +1221,16 @@
           ],
           "range": [
             {
-              "range_label": "Leercredential",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+              "range_label": "Leerprestatiecredential",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
             }
           ],
           "scopedrange": [
             {
-              "range_uri": "#Leercredential",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+              "range_uri": "#Leerprestatiecredential",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential",
               "range_label": {
-                "nl": "Leercredential"
+                "nl": "Leerprestatiecredential"
               }
             }
           ],
@@ -1480,6 +1480,64 @@
       ],
       "properties": [
         {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Een alternatieve identificatie van de Europese Digitale Leercredential die doorgaans door de uitgifteorganisatie aan de Credential zijn toegewezen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leercredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential",
+      "name": "Leerprestatiecredential",
+      "label": {
+        "nl": "Leerprestatiecredential"
+      },
+      "sort": "Leerprestatiecredential",
+      "description": {
+        "nl": "Leercredential van een Leerprestatie."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Leercredential",
+          "name": "Leercredential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+          "scoped_uri": "#Leercredential"
+        }
+      ],
+      "properties": [
+        {
           "uri": "https://w3id.org/security#proof",
           "name": "bewijs",
           "sort": "bewijs",
@@ -1492,8 +1550,8 @@
           "usage": {},
           "domain": [
             {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+              "EA-Name": "Leerprestatiecredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
             }
           ],
           "range": [
@@ -1527,8 +1585,8 @@
           "usage": {},
           "domain": [
             {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+              "EA-Name": "Leerprestatiecredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
             }
           ],
           "range": [
@@ -1564,8 +1622,8 @@
           },
           "domain": [
             {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+              "EA-Name": "Leerprestatiecredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
             }
           ],
           "range": [
@@ -1584,41 +1642,6 @@
             }
           ],
           "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://www.w3.org/ns/adms#identifier",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "Een alternatieve identificatie van de Europese Digitale Leercredential die doorgaans door de uitgifteorganisatie aan de Credential zijn toegewezen."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Identificator",
-              "range_uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Identificator",
-              "range_puri": "http://www.w3.org/ns/adms#Identifier",
-              "range_label": {
-                "nl": "Identificator"
-              }
-            }
-          ],
-          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]

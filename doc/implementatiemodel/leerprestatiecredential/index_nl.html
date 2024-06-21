@@ -84,8 +84,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0294f1667b2d815e152dd58e7d482db457dc4265">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/0294f1667b2d815e152dd58e7d482db457dc4265</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0294f1667b2d815e152dd58e7d482db457dc4265/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/0294f1667b2d815e152dd58e7d482db457dc4265/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/be85e36e4eedf52fb77e1aed7a6d6329ce13a757">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/be85e36e4eedf52fb77e1aed7a6d6329ce13a757</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/be85e36e4eedf52fb77e1aed7a6d6329ce13a757/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/be85e36e4eedf52fb77e1aed7a6d6329ce13a757/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/issues">https://github.com/Informatievlaanderen/SolidThema-leercredential/issues</a></dd>
               </dl>
               </div>
@@ -200,6 +200,7 @@
                       <a href="#Leerclaim">Leerclaim</a> |
                       <a href="#Leercredential">Leercredential</a> |
                       <a href="#Leerprestatie">Leerprestatie</a> |
+                      <a href="#Leerprestatiecredential">Leerprestatiecredential</a> |
                       <a href="#Leerprestatiespecificatie">Leerprestatiespecificatie</a> |
                       <a href="#Leerspecificatie">Leerspecificatie</a> |
                       <a href="#Organisatie">Organisatie</a> |
@@ -827,10 +828,7 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Leercredential%3Abewijs">bewijs</a>, 
-                      <a href="#Leercredential%3Aeigenaar">eigenaar</a>, 
-                      <a href="#Leercredential%3Aidentificator">identificator</a>, 
-                      <a href="#Leercredential%3Auitgever">uitgever</a>.</dd>
+                      <a href="#Leercredential%3Aidentificator">identificator</a>.</dd>
                     
                   </dl>
                 </div>
@@ -850,46 +848,6 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Leercredential%3Abewijs" typeof="rdfs:Property" resource="https://w3id.org/security#proof">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://w3id.org/security#proof" data-toggle="tooltip" data-content="https://w3id.org/security#proof" data-placement="right">
-                            bewijs</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Bewijs" data-placement="right">Bewijs</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Leercredential%3Aeigenaar" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://w3.org/2018/credentials#credentialSubject" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#credentialSubject" data-placement="right">
-                            eigenaar</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Persoon" data-placement="right">Persoon</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">De persoon (onderwerp) over wie claims worden gedaan en die de Credential bezit.</td>
-                        <td property="vann:usageNote">Deze eigenschap is geërfd van verifieerbare credentials.</td>
-                        <td></td>
-                      </tr>
-                    
                       <tr id="Leercredential%3Aidentificator" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#identifier">
                         <td>
                           <code property="rdfs:label">
@@ -906,26 +864,6 @@
                         </td>
                         <td>0..*</td>
                         <td property="rdfs:comment">Een alternatieve identificatie van de Europese Digitale Leercredential die doorgaans door de uitgifteorganisatie aan de Credential zijn toegewezen.</td>
-                        <td property="vann:usageNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Leercredential%3Auitgever" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#issuer">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://w3.org/2018/credentials#issuer" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#issuer" data-placement="right">
-                            uitgever</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Organisatie" data-placement="right">Organisatie</a>
-			    
-                          
-                        </td>
-                        <td>1</td>
-                        <td property="rdfs:comment">De organisatie die de Credential heeft uitgegeven en heeft verzegeld met zijn digitale eSeal. Deze eigenschap is geërfd van verifieerbare credential.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -986,6 +924,108 @@
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">Wat er is geleerd.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Leerprestatiecredential"><a href="https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential" data-placement="right">Leerprestatiecredential</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Beschrijving</dt><dd>Leercredential van een Leerprestatie.</dd>
+                    
+		     
+		    <dt>Subklasse van <dt><dd>
+                        <a href="#Leercredential">Leercredential</a>
+		   </dd>
+                    
+                    <dt>Eigenschappen</dt>
+		     
+                    <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
+                      <a href="#Leerprestatiecredential%3Abewijs">bewijs</a>, 
+                      <a href="#Leerprestatiecredential%3Aeigenaar">eigenaar</a>, 
+                      <a href="#Leerprestatiecredential%3Auitgever">uitgever</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Eigenschap</th>
+                        <th class="data-table__header-title--sortable">Verwacht Type</th>
+                        <th class="data-table__header-title--sortable">Kardinaliteit</th>
+                        <th class="data-table__header-title--sortable">Beschrijving</th>
+                        <th class="data-table__header-title--sortable">Gebruik</th>
+                        <th class="data-table__header-title--sortable">Codelijst</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Leerprestatiecredential%3Abewijs" typeof="rdfs:Property" resource="https://w3id.org/security#proof">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://w3id.org/security#proof" data-toggle="tooltip" data-content="https://w3id.org/security#proof" data-placement="right">
+                            bewijs</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Bewijs" data-placement="right">Bewijs</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Leerprestatiecredential%3Aeigenaar" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#credentialSubject">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://w3.org/2018/credentials#credentialSubject" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#credentialSubject" data-placement="right">
+                            eigenaar</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Persoon" data-placement="right">Persoon</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">De persoon (onderwerp) over wie claims worden gedaan en die de Credential bezit.</td>
+                        <td property="vann:usageNote">Deze eigenschap is geërfd van verifieerbare credentials.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Leerprestatiecredential%3Auitgever" typeof="rdfs:Property" resource="https://w3.org/2018/credentials#issuer">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://w3.org/2018/credentials#issuer" data-toggle="tooltip" data-content="https://w3.org/2018/credentials#issuer" data-placement="right">
+                            uitgever</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Organisatie" data-placement="right">Organisatie</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">De organisatie die de Credential heeft uitgegeven en heeft verzegeld met zijn digitale eSeal. Deze eigenschap is geërfd van verifieerbare credential.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1408,7 +1448,7 @@
                         <td>
                           
 			    
-			    <a href="#Leercredential" data-placement="right">Leercredential</a>
+			    <a href="#Leerprestatiecredential" data-placement="right">Leerprestatiecredential</a>
 			    
                           
                         </td>
