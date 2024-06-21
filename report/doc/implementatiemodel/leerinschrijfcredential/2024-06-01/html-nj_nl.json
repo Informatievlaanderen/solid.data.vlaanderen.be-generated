@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/b0758f76f6d4132e69601a4072ff4e6acc845062",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/b0758f76f6d4132e69601a4072ff4e6acc845062/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/16895e05c54da64fd368db67cdfa05b6d422113b",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/16895e05c54da64fd368db67cdfa05b6d422113b/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -2186,7 +2186,7 @@
       "parents": [],
       "properties": [
         {
-          "uri": "situatie na",
+          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#situatieNa",
           "name": "situatie na",
           "sort": "situatie na",
           "label": {
