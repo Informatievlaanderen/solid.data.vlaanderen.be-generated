@@ -82,8 +82,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/16895e05c54da64fd368db67cdfa05b6d422113b">https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/16895e05c54da64fd368db67cdfa05b6d422113b</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/16895e05c54da64fd368db67cdfa05b6d422113b/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/16895e05c54da64fd368db67cdfa05b6d422113b/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/0e8e9263fe84b6e0e32101f468412c0309305d36">https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/0e8e9263fe84b6e0e32101f468412c0309305d36</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/0e8e9263fe84b6e0e32101f468412c0309305d36/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/0e8e9263fe84b6e0e32101f468412c0309305d36/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues">https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues</a></dd>
               </dl>
               </div>
@@ -221,7 +221,7 @@
                       <a href="#Adresvoorstelling">Adresvoorstelling</a> |
                       <a href="#Contactinfo">Contactinfo</a> |
                       <a href="#Identificator">Identificator</a> |
-                      <a href="#Krediepunten">Krediepunten</a> |
+                      <a href="#Kredietpunten">Kredietpunten</a> |
                       <a href="#Locatie">Locatie</a> |
                       <a href="#Periode">Periode</a> |
                       <a href="#Taalstring">Taalstring</a> |
@@ -711,6 +711,7 @@
 		     
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                       <a href="#Leeractiviteit%3Aanderstalige%20nieuwkomer">anderstalige nieuwkomer</a>, 
+                      <a href="#Leeractiviteit%3Abeinvloedt">beinvloedt</a>, 
                       <a href="#Leeractiviteit%3Agewezen%20anderstalige%20nieuwkomer">gewezen anderstalige nieuwkomer</a>, 
                       <a href="#Leeractiviteit%3Ainschrijving">inschrijving</a>, 
                       <a href="#Leeractiviteit%3Akredietpunten">kredietpunten</a>, 
@@ -756,6 +757,26 @@
                         </td>
                         <td>0..1</td>
                         <td property="rdfs:comment">Geeft aan of de Persoon een anderstalige nieuwkomer is wat betreft deze Leeractiviteit.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Leeractiviteit%3Abeinvloedt" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/influences">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://data.europa.eu/snb/model/elm/influences" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/influences" data-placement="right">
+                            beinvloedt</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Leerprestatie" data-placement="right">Leerprestatie</a>
+			    
+                          
+                        </td>
+                        <td>0..*</td>
+                        <td property="rdfs:comment">Het uitvoeren van deze activiteit heeft bijgedragen tot het verwerven van deze gerelateerde leerprestaties.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -810,7 +831,7 @@
                         <td>
                           
 			    
-			    <a href="#Krediepunten" data-placement="right">Krediepunten</a>
+			    <a href="#Kredietpunten" data-placement="right">Kredietpunten</a>
 			    
                           
                         </td>
@@ -1059,7 +1080,8 @@
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                       <a href="#Leerclaim%3Aidentificator">identificator</a>, 
                       <a href="#Leerclaim%3Atitel">titel</a>, 
-                      <a href="#Leerclaim%3Atoegekend%20door">toegekend door</a>.</dd>
+                      <a href="#Leerclaim%3Atoegekend%20door">toegekend door</a>, 
+                      <a href="#Leerclaim%3Auitgever">uitgever</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1135,6 +1157,26 @@
                         </td>
                         <td>1</td>
                         <td property="rdfs:comment">De toekenningsdetails van de claim.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Leerclaim%3Auitgever" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#uitgever">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/leercredential#uitgever" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#uitgever" data-placement="right">
+                            uitgever</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Agent" data-placement="right">Agent</a>
+			    
+                          
+                        </td>
+                        <td>1</td>
+                        <td property="rdfs:comment">De Agent die de claim maakt.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1633,7 +1675,7 @@
 			    
                           
                         </td>
-                        <td>1..*</td>
+                        <td>0..*</td>
                         <td property="rdfs:comment">Een identificator van de specificatie.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
@@ -2591,7 +2633,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Krediepunten"><a href="http://data.europa.eu/snb/model/elm/CreditPoint" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/CreditPoint" data-placement="right">Krediepunten</a></h3>
+              <h3 class="h3" id="Kredietpunten"><a href="http://data.europa.eu/snb/model/elm/CreditPoint" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/CreditPoint" data-placement="right">Kredietpunten</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2601,15 +2643,15 @@
                     <dt>Eigenschappen</dt>
 		     
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
-                      <a href="#Krediepunten%3Agedelibereerd">gedelibereerd</a>, 
-                      <a href="#Krediepunten%3Ageen%20resultaat">geen resultaat</a>, 
-                      <a href="#Krediepunten%3Aniet%20deelgenomen">niet deelgenomen</a>, 
-                      <a href="#Krediepunten%3Aniet%20geslaagd">niet geslaagd</a>, 
-                      <a href="#Krediepunten%3Aniet%20verworven">niet verworven</a>, 
-                      <a href="#Krediepunten%3Aopgenomen">opgenomen</a>, 
-                      <a href="#Krediepunten%3Auitgeschreven">uitgeschreven</a>, 
-                      <a href="#Krediepunten%3Averworven">verworven</a>, 
-                      <a href="#Krediepunten%3Avrijgesteld">vrijgesteld</a>.</dd>
+                      <a href="#Kredietpunten%3Agedelibereerd">gedelibereerd</a>, 
+                      <a href="#Kredietpunten%3Ageen%20resultaat">geen resultaat</a>, 
+                      <a href="#Kredietpunten%3Aniet%20deelgenomen">niet deelgenomen</a>, 
+                      <a href="#Kredietpunten%3Aniet%20geslaagd">niet geslaagd</a>, 
+                      <a href="#Kredietpunten%3Aniet%20verworven">niet verworven</a>, 
+                      <a href="#Kredietpunten%3Aopgenomen">opgenomen</a>, 
+                      <a href="#Kredietpunten%3Auitgeschreven">uitgeschreven</a>, 
+                      <a href="#Kredietpunten%3Averworven">verworven</a>, 
+                      <a href="#Kredietpunten%3Avrijgesteld">vrijgesteld</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2629,7 +2671,7 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="Krediepunten%3Agedelibereerd" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#gedelibereerd">
+                      <tr id="Kredietpunten%3Agedelibereerd" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#gedelibereerd">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#gedelibereerd" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#gedelibereerd" data-placement="right">gedelibereerd</a>
@@ -2648,7 +2690,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Ageen%20resultaat" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#geenResultaat">
+                      <tr id="Kredietpunten%3Ageen%20resultaat" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#geenResultaat">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#geenResultaat" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#geenResultaat" data-placement="right">geen resultaat</a>
@@ -2667,7 +2709,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Aniet%20deelgenomen" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#nietDeelgenomen">
+                      <tr id="Kredietpunten%3Aniet%20deelgenomen" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#nietDeelgenomen">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#nietDeelgenomen" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#nietDeelgenomen" data-placement="right">niet deelgenomen</a>
@@ -2686,7 +2728,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Aniet%20geslaagd" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#nietGeslaagd">
+                      <tr id="Kredietpunten%3Aniet%20geslaagd" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#nietGeslaagd">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#nietGeslaagd" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#nietGeslaagd" data-placement="right">niet geslaagd</a>
@@ -2705,7 +2747,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Aniet%20verworven" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#nietVerworven">
+                      <tr id="Kredietpunten%3Aniet%20verworven" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#nietVerworven">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#nietVerworven" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#nietVerworven" data-placement="right">niet verworven</a>
@@ -2724,7 +2766,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Aopgenomen" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#opgenomen">
+                      <tr id="Kredietpunten%3Aopgenomen" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#opgenomen">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#opgenomen" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#opgenomen" data-placement="right">opgenomen</a>
@@ -2743,7 +2785,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Auitgeschreven" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#uitgeschreven">
+                      <tr id="Kredietpunten%3Auitgeschreven" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#uitgeschreven">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#uitgeschreven" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#uitgeschreven" data-placement="right">uitgeschreven</a>
@@ -2762,7 +2804,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Averworven" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#verworven">
+                      <tr id="Kredietpunten%3Averworven" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#verworven">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#verworven" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#verworven" data-placement="right">verworven</a>
@@ -2781,7 +2823,7 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="Krediepunten%3Avrijgesteld" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#vrijgesteld">
+                      <tr id="Kredietpunten%3Avrijgesteld" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#vrijgesteld">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.vlaanderen.be/ns/leercredential#vrijgesteld" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#vrijgesteld" data-placement="right">vrijgesteld</a>

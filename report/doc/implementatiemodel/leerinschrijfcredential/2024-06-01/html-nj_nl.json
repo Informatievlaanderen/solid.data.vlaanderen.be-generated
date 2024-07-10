@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/16895e05c54da64fd368db67cdfa05b6d422113b",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/16895e05c54da64fd368db67cdfa05b6d422113b/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/0e8e9263fe84b6e0e32101f468412c0309305d36",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/0e8e9263fe84b6e0e32101f468412c0309305d36/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -120,6 +120,41 @@
       "usage": {},
       "parents": [],
       "properties": [
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#uitgever",
+          "name": "uitgever",
+          "sort": "uitgever",
+          "label": {
+            "nl": "uitgever"
+          },
+          "description": {
+            "nl": "De Agent die de claim maakt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://purl.org/dc/terms/Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Agent",
+              "range_puri": "http://purl.org/dc/terms/Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
         {
           "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identificator",
@@ -666,10 +701,10 @@
           ],
           "scopedrange": [
             {
-              "range_uri": "#Krediepunten",
+              "range_uri": "#Kredietpunten",
               "range_puri": "https://data.europa.eu/snb/model#CreditPoint",
               "range_label": {
-                "nl": "Krediepunten"
+                "nl": "Kredietpunten"
               }
             }
           ],
@@ -884,6 +919,41 @@
             }
           ],
           "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/influences",
+          "name": "beinvloedt",
+          "sort": "beinvloedt",
+          "label": {
+            "nl": "beinvloedt"
+          },
+          "description": {
+            "nl": "Het uitvoeren van deze activiteit heeft bijgedragen tot het verwerven van deze gerelateerde leerprestaties."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leeractiviteit",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerprestatie",
+              "range_uri": "http://data.europa.eu/snb/model/elm/LearningAchievement"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerprestatie",
+              "range_puri": "http://data.europa.eu/snb/model/elm/LearningAchievement",
+              "range_label": {
+                "nl": "Leerprestatie"
+              }
+            }
+          ],
+          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -1209,7 +1279,7 @@
               }
             }
           ],
-          "cardinality": "1..*",
+          "cardinality": "0..*",
           "codelist_uri": ""
         },
         {
@@ -2441,11 +2511,11 @@
   "datatypes": [
     {
       "uri": "http://data.europa.eu/snb/model/elm/CreditPoint",
-      "name": "Krediepunten",
+      "name": "Kredietpunten",
       "label": {
-        "nl": "Krediepunten"
+        "nl": "Kredietpunten"
       },
-      "sort": "Krediepunten",
+      "sort": "Kredietpunten",
       "description": {
         "nl": "De kredietpunten."
       },
