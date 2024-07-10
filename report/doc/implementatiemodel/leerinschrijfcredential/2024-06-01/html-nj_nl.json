@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/5e94740ebade5598378bb311f4a596e81eec3afb",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/5e94740ebade5598378bb311f4a596e81eec3afb/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/683cd31750bc2d7859389b5562c6c851c3a1c6b6",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/683cd31750bc2d7859389b5562c6c851c3a1c6b6/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -417,7 +417,7 @@
               }
             }
           ],
-          "cardinality": "1",
+          "cardinality": "0..1",
           "codelist_uri": ""
         }
       ]
@@ -1102,14 +1102,14 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#academiejaar/schooljaar",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#academiejaar",
           "name": "academiejaar",
           "sort": "academiejaar",
           "label": {
             "nl": "academiejaar"
           },
           "description": {
-            "nl": "Het beginjaar van het academiejaar van de inschrijving."
+            "nl": "Het beginjaar van het academiejaar/schooljaar van de inschrijving."
           },
           "usage": {
             "nl": "Bv. voor academiejaar 2016-2017 is dit 2016."
