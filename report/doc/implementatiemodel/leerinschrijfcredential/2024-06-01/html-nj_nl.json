@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/683cd31750bc2d7859389b5562c6c851c3a1c6b6",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/683cd31750bc2d7859389b5562c6c851c3a1c6b6/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/820ede64a591e9401a3e561eb144253c50c3e522",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/820ede64a591e9401a3e561eb144253c50c3e522/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -285,7 +285,7 @@
           "label": "Verifieerbare Credential",
           "name": "VerifieerbareCredential",
           "package": "OSLO-Leercredential",
-          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+          "uri": "https://www.w3.org/2018/credentials#VerifiableCredential",
           "scoped_uri": "#Verifieerbare Credential"
         }
       ],
@@ -1642,6 +1642,41 @@
           "codelist_uri": ""
         },
         {
+          "uri": "http://data.europa.eu/snb/model/elm/hasCredential",
+          "name": "heeft credential",
+          "sort": "heeft credential",
+          "label": {
+            "nl": "heeft credential"
+          },
+          "description": {
+            "nl": "Leercredential van de persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerinschrijfcredential",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerinschrijfcredential",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential",
+              "range_label": {
+                "nl": "Leerinschrijfcredential"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
           "uri": "http://data.europa.eu/snb/model/elm/hasClaim",
           "name": "heeft claim",
           "sort": "heeft claim",
@@ -1674,41 +1709,6 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://data.europa.eu/snb/model#hasCredential",
-          "name": "heeft credential",
-          "sort": "heeft credential",
-          "label": {
-            "nl": "heeft credential"
-          },
-          "description": {
-            "nl": "Leercredential van de persoon."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Persoon",
-              "uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerinschrijfcredential",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerinschrijfcredential",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential",
-              "range_label": {
-                "nl": "Leerinschrijfcredential"
-              }
-            }
-          ],
-          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -2134,42 +2134,7 @@
       ],
       "properties": [
         {
-          "uri": "https://w3id.org/security#proof",
-          "name": "bewijs",
-          "sort": "bewijs",
-          "label": {
-            "nl": "bewijs"
-          },
-          "description": {
-            "nl": "Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerinschrijfcredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Bewijs",
-              "range_uri": "https://w3id.org/security#Proof"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Bewijs",
-              "range_puri": "https://w3id.org/security#Proof",
-              "range_label": {
-                "nl": "Bewijs"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://w3.org/2018/credentials#issuer",
+          "uri": "https://www.w3.org/2018/credentials#issuer",
           "name": "uitgever",
           "sort": "uitgever",
           "label": {
@@ -2204,7 +2169,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://w3.org/2018/credentials#credentialSubject",
+          "uri": "https://www.w3.org/2018/credentials#credentialSubject",
           "name": "eigenaar",
           "sort": "eigenaar",
           "label": {
@@ -2234,6 +2199,41 @@
               "range_puri": "http://www.w3.org/ns/person#Person",
               "range_label": {
                 "nl": "Persoon"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://w3id.org/security#proof",
+          "name": "bewijs",
+          "sort": "bewijs",
+          "label": {
+            "nl": "bewijs"
+          },
+          "description": {
+            "nl": "Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerinschrijfcredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerinschrijfcredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Bewijs",
+              "range_uri": "https://w3id.org/security#Proof"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Bewijs",
+              "range_puri": "https://w3id.org/security#Proof",
+              "range_label": {
+                "nl": "Bewijs"
               }
             }
           ],
@@ -2423,7 +2423,21 @@
       ]
     },
     {
-      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "uri": "https://w3id.org/security#Proof",
+      "name": "Bewijs",
+      "label": {
+        "nl": "Bewijs"
+      },
+      "sort": "Bewijs",
+      "description": {
+        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "https://www.w3.org/2018/credentials#VerifiableCredential",
       "name": "Verifieerbare Credential",
       "label": {
         "nl": "Verifieerbare Credential"
@@ -2444,7 +2458,7 @@
       ],
       "properties": [
         {
-          "uri": "https://w3.org/2018/credentials#credentialSchema",
+          "uri": "https://www.w3.org/2018/credentials#credentialSchema",
           "name": "credentialschema",
           "sort": "credentialschema",
           "label": {
@@ -2457,7 +2471,7 @@
           "domain": [
             {
               "EA-Name": "VerifieerbareCredential",
-              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+              "uri": "https://www.w3.org/2018/credentials#VerifiableCredential"
             }
           ],
           "range": [
@@ -2479,20 +2493,6 @@
           "codelist_uri": ""
         }
       ]
-    },
-    {
-      "uri": "https://w3id.org/security#Proof",
-      "name": "Bewijs",
-      "label": {
-        "nl": "Bewijs"
-      },
-      "sort": "Bewijs",
-      "description": {
-        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": []
     }
   ],
   "properties": [],
