@@ -14,8 +14,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/be85e36e4eedf52fb77e1aed7a6d6329ce13a757",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/be85e36e4eedf52fb77e1aed7a6d6329ce13a757/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -227,7 +227,42 @@
       "parents": [],
       "properties": [
         {
-          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#uitgever",
+          "name": "uitgever",
+          "sort": "uitgever",
+          "label": {
+            "nl": "uitgever"
+          },
+          "description": {
+            "nl": "De Agent die de claim maakt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://purl.org/dc/terms/Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Agent",
+              "range_puri": "http://purl.org/dc/terms/Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#authenticiteit",
           "name": "authenticiteit",
           "sort": "authenticiteit",
           "label": {
@@ -727,7 +762,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://data.europa.eu/snb/model#ISCEDFCode",
+          "uri": "http://data.europa.eu/snb/model/elm/ISCEDFCode",
           "name": "studiegebied",
           "sort": "studiegebied",
           "label": {
@@ -1168,6 +1203,41 @@
           "codelist_uri": ""
         },
         {
+          "uri": "http://data.europa.eu/snb/model/elm/hasCredential",
+          "name": "heeft credential",
+          "sort": "heeft credential",
+          "label": {
+            "nl": "heeft credential"
+          },
+          "description": {
+            "nl": "Leercredential van de persoon."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Persoon",
+              "uri": "http://www.w3.org/ns/person#Person"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Leerprestatiecredential",
+              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Leerprestatiecredential",
+              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential",
+              "range_label": {
+                "nl": "Leerprestatiecredential"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        },
+        {
           "uri": "http://data.europa.eu/snb/model/elm/hasClaim",
           "name": "heeft claim",
           "sort": "heeft claim",
@@ -1200,41 +1270,6 @@
             }
           ],
           "cardinality": "1..*",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://data.europa.eu/snb/model#hasCredential",
-          "name": "heeft credential",
-          "sort": "heeft credential",
-          "label": {
-            "nl": "heeft credential"
-          },
-          "description": {
-            "nl": "Leercredential van de persoon."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Persoon",
-              "uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leerprestatiecredential",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leerprestatiecredential",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential",
-              "range_label": {
-                "nl": "Leerprestatiecredential"
-              }
-            }
-          ],
-          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -1779,23 +1814,7 @@
       "properties": []
     }
   ],
-  "properties": [
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
-      "name": {
-        "nl": "authenticiteit",
-        "undefined": "authenticiteit"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    }
-  ],
+  "properties": [],
   "contributors": [
     {
       "role": "E",

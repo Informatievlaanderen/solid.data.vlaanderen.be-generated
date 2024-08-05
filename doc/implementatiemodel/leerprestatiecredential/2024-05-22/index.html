@@ -84,8 +84,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/be85e36e4eedf52fb77e1aed7a6d6329ce13a757">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/be85e36e4eedf52fb77e1aed7a6d6329ce13a757</a></dd>
-              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/be85e36e4eedf52fb77e1aed7a6d6329ce13a757/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/be85e36e4eedf52fb77e1aed7a6d6329ce13a757/CHANGELOG</a></dd>
+              <dt>Brondata</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe">https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe</a></dd>
+              <dt>Changelog</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe/CHANGELOG">https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe/CHANGELOG</a></dd>
               <dt>Opmerkingen en feedback</dt><dd><a href="https://github.com/Informatievlaanderen/SolidThema-leercredential/issues">https://github.com/Informatievlaanderen/SolidThema-leercredential/issues</a></dd>
               </dl>
               </div>
@@ -688,7 +688,8 @@
                       <a href="#Leerclaim%3Aidentificator">identificator</a>, 
                       <a href="#Leerclaim%3Atitel">titel</a>, 
                       <a href="#Leerclaim%3Atoegekend%20door">toegekend door</a>, 
-                      <a href="#Leerclaim%3Atype">type</a>.</dd>
+                      <a href="#Leerclaim%3Atype">type</a>, 
+                      <a href="#Leerclaim%3Auitgever">uitgever</a>.</dd>
                     
                   </dl>
                 </div>
@@ -708,10 +709,10 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Leerclaim%3Aauthenticiteit" typeof="rdfs:Property" resource="https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit">
+                      <tr id="Leerclaim%3Aauthenticiteit" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#authenticiteit">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit" data-toggle="tooltip" data-content="https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit" data-placement="right">
+                            <a href="https://data.vlaanderen.be/ns/leercredential#authenticiteit" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#authenticiteit" data-placement="right">
                             authenticiteit</a>
                           </code>
                         </td>
@@ -804,6 +805,26 @@
                         </td>
                         <td>1..*</td>
                         <td property="rdfs:comment">Type van de leerclaim.</td>
+                        <td property="vann:usageNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Leerclaim%3Auitgever" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/leercredential#uitgever">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/leercredential#uitgever" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/leercredential#uitgever" data-placement="right">
+                            uitgever</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Agent" data-placement="right">Agent</a>
+			    
+                          
+                        </td>
+                        <td>0..1</td>
+                        <td property="rdfs:comment">De Agent die de claim maakt.</td>
                         <td property="vann:usageNote"></td>
                         <td></td>
                       </tr>
@@ -1155,10 +1176,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Leerprestatiespecificatie%3Astudiegebied" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model#ISCEDFCode">
+                      <tr id="Leerprestatiespecificatie%3Astudiegebied" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/ISCEDFCode">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://data.europa.eu/snb/model#ISCEDFCode" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model#ISCEDFCode" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/ISCEDFCode" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/ISCEDFCode" data-placement="right">
                             studiegebied</a>
                           </code>
                         </td>
@@ -1438,10 +1459,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Persoon%3Aheeft%20credential" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model#hasCredential">
+                      <tr id="Persoon%3Aheeft%20credential" typeof="rdfs:Property" resource="http://data.europa.eu/snb/model/elm/hasCredential">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://data.europa.eu/snb/model#hasCredential" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model#hasCredential" data-placement="right">
+                            <a href="http://data.europa.eu/snb/model/elm/hasCredential" data-toggle="tooltip" data-content="http://data.europa.eu/snb/model/elm/hasCredential" data-placement="right">
                             heeft credential</a>
                           </code>
                         </td>
