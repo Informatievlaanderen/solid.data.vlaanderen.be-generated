@@ -14,8 +14,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/fb7cd264823b3e143b25c5fa3ba0e5c41ee06cbe/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/b5cc841ed3650ec315bfc7a7af3bb7fb0bf9ce0b",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/b5cc841ed3650ec315bfc7a7af3bb7fb0bf9ce0b/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -461,7 +461,7 @@
           "label": "Verifieerbare Credential",
           "name": "VerifieerbareCredential",
           "package": "OSLO-Leercredential",
-          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+          "uri": "https://www.w3.org/2018/credentials#VerifiableCredential",
           "scoped_uri": "#Verifieerbare Credential"
         }
       ],
@@ -1573,42 +1573,7 @@
       ],
       "properties": [
         {
-          "uri": "https://w3id.org/security#proof",
-          "name": "bewijs",
-          "sort": "bewijs",
-          "label": {
-            "nl": "bewijs"
-          },
-          "description": {
-            "nl": "Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiecredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Bewijs",
-              "range_uri": "https://w3id.org/security#Proof"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Bewijs",
-              "range_puri": "https://w3id.org/security#Proof",
-              "range_label": {
-                "nl": "Bewijs"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://w3.org/2018/credentials#issuer",
+          "uri": "https://www.w3.org/2018/credentials#issuer",
           "name": "uitgever",
           "sort": "uitgever",
           "label": {
@@ -1643,7 +1608,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://w3.org/2018/credentials#credentialSubject",
+          "uri": "https://www.w3.org/2018/credentials#credentialSubject",
           "name": "eigenaar",
           "sort": "eigenaar",
           "label": {
@@ -1673,6 +1638,41 @@
               "range_puri": "http://www.w3.org/ns/person#Person",
               "range_label": {
                 "nl": "Persoon"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://w3id.org/security#proof",
+          "name": "bewijs",
+          "sort": "bewijs",
+          "label": {
+            "nl": "bewijs"
+          },
+          "description": {
+            "nl": "Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiecredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leerprestatiecredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Bewijs",
+              "range_uri": "https://w3id.org/security#Proof"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Bewijs",
+              "range_puri": "https://w3id.org/security#Proof",
+              "range_label": {
+                "nl": "Bewijs"
               }
             }
           ],
@@ -1742,7 +1742,21 @@
       ]
     },
     {
-      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "uri": "https://w3id.org/security#Proof",
+      "name": "Bewijs",
+      "label": {
+        "nl": "Bewijs"
+      },
+      "sort": "Bewijs",
+      "description": {
+        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "https://www.w3.org/2018/credentials#VerifiableCredential",
       "name": "Verifieerbare Credential",
       "label": {
         "nl": "Verifieerbare Credential"
@@ -1763,7 +1777,7 @@
       ],
       "properties": [
         {
-          "uri": "https://w3.org/2018/credentials#credentialSchema",
+          "uri": "https://www.w3.org/2018/credentials#credentialSchema",
           "name": "credentialschema",
           "sort": "credentialschema",
           "label": {
@@ -1776,7 +1790,7 @@
           "domain": [
             {
               "EA-Name": "VerifieerbareCredential",
-              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
+              "uri": "https://www.w3.org/2018/credentials#VerifiableCredential"
             }
           ],
           "range": [
@@ -1798,20 +1812,6 @@
           "codelist_uri": ""
         }
       ]
-    },
-    {
-      "uri": "https://w3id.org/security#Proof",
-      "name": "Bewijs",
-      "label": {
-        "nl": "Bewijs"
-      },
-      "sort": "Bewijs",
-      "description": {
-        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": []
     }
   ],
   "properties": [],
