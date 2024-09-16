@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/820ede64a591e9401a3e561eb144253c50c3e522",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/820ede64a591e9401a3e561eb144253c50c3e522/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/7c52dee0a1c9ad24edba7e3cdc7df24008b15cef",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/7c52dee0a1c9ad24edba7e3cdc7df24008b15cef/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -65,7 +65,7 @@
               }
             }
           ],
-          "cardinality": "1..*",
+          "cardinality": "0..*",
           "codelist_uri": ""
         },
         {
@@ -2456,43 +2456,7 @@
           "scoped_uri": "#Credential"
         }
       ],
-      "properties": [
-        {
-          "uri": "https://www.w3.org/2018/credentials#credentialSchema",
-          "name": "credentialschema",
-          "sort": "credentialschema",
-          "label": {
-            "nl": "credentialschema"
-          },
-          "description": {
-            "nl": "Het schema van de Verifieerbare Credential."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "VerifieerbareCredential",
-              "uri": "https://www.w3.org/2018/credentials#VerifiableCredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "URI",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
-              "range_label": {
-                "nl": "URI"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
+      "properties": []
     }
   ],
   "properties": [],
