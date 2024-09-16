@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/7c52dee0a1c9ad24edba7e3cdc7df24008b15cef",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/7c52dee0a1c9ad24edba7e3cdc7df24008b15cef/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/695c86035bedac0b5cb85d275d7240c5e894c3c9",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/695c86035bedac0b5cb85d275d7240c5e894c3c9/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -2487,7 +2487,7 @@
       "parents": [],
       "properties": [
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#vrijgesteld",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#vrijgesteld",
           "name": "vrijgesteld",
           "sort": "vrijgesteld",
           "label": {
@@ -2524,7 +2524,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#verworven",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#verworven",
           "name": "verworven",
           "sort": "verworven",
           "label": {
@@ -2561,7 +2561,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#uitgeschreven",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#uitgeschreven",
           "name": "uitgeschreven",
           "sort": "uitgeschreven",
           "label": {
@@ -2598,7 +2598,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#opgenomen",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#opgenomen",
           "name": "opgenomen",
           "sort": "opgenomen",
           "label": {
@@ -2635,7 +2635,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#nietVerworven",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#nietVerworven",
           "name": "niet verworven",
           "sort": "niet verworven",
           "label": {
@@ -2672,7 +2672,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#nietGeslaagd",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#nietGeslaagd",
           "name": "niet geslaagd",
           "sort": "niet geslaagd",
           "label": {
@@ -2709,7 +2709,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#nietDeelgenomen",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#nietDeelgenomen",
           "name": "niet deelgenomen",
           "sort": "niet deelgenomen",
           "label": {
@@ -2746,7 +2746,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#geenResultaat",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#geenResultaat",
           "name": "geen resultaat",
           "sort": "geen resultaat",
           "label": {
@@ -2783,7 +2783,7 @@
           "codelist_uri": ""
         },
         {
-          "uri": "https://data.vlaanderen.be/ns/leercredential#gedelibereerd",
+          "uri": "https://solid.data.vlaanderen.be/ns/leerinschrijfcredential#gedelibereerd",
           "name": "gedelibereerd",
           "sort": "gedelibereerd",
           "label": {
