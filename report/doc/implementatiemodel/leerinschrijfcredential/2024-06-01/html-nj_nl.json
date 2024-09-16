@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/695c86035bedac0b5cb85d275d7240c5e894c3c9",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/695c86035bedac0b5cb85d275d7240c5e894c3c9/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/351b839041cc0cdff087d74523c2b39098ae8070",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/351b839041cc0cdff087d74523c2b39098ae8070/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -684,7 +684,7 @@
             "nl": "kredietpunten"
           },
           "description": {
-            "nl": "De kredietpunten verbonden aan de leeractiviteit."
+            "nl": "De kredietpunten van de leeractiviteit."
           },
           "usage": {},
           "domain": [
