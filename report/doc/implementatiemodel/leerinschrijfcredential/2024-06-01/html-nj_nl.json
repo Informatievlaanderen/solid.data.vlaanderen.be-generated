@@ -13,8 +13,8 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/9369d7baf9f55f1e694c81119005e6a4bd7b3063",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/9369d7baf9f55f1e694c81119005e6a4bd7b3063/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/tree/897b04f035710780acbfa28fc642c5facd92e4f9",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/blob/897b04f035710780acbfa28fc642c5facd92e4f9/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leerinschrijfcredential/issues",
     "usesVocs": [],
     "usesAPs": []
@@ -693,21 +693,8 @@
               "uri": "http://data.europa.eu/snb/model/elm/LearningActivity"
             }
           ],
-          "range": [
-            {
-              "range_label": "Kredietpunten",
-              "range_uri": "https://data.europa.eu/snb/model/CreditPoint"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Kredietpunten",
-              "range_puri": "https://data.europa.eu/snb/model/CreditPoint",
-              "range_label": {
-                "nl": "Kredietpunten"
-              }
-            }
-          ],
+          "range": [],
+          "scopedrange": [],
           "cardinality": "0..1",
           "codelist_uri": ""
         },
