@@ -1,9 +1,9 @@
 {
   "metadata": {
     "title": "Leercredential (implementatiemodel)",
-    "uri": "https://solid.data.vlaanderen.be/ns/leercredential",
+    "uri": "https://data.vlaanderen.be/ns/leercredential",
     "issued": "2023-05-01",
-    "baseURI": "https://solid.data.vlaanderen.be/ns/leercredential#",
+    "baseURI": "https://data.vlaanderen.be/ns/leercredential#",
     "filename": "leercredential-ap",
     "navigation": {
       "self": "https://solid.data.vlaanderen.be//doc/implementatiemodel/leercredential/2023-05-01"
@@ -13,13 +13,191 @@
     "documentconfig": {},
     "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "statuslabel": "Ontwerp Standaard",
-    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/9e9bb35dd613547c27447e71ef7cc5ff45c134d9",
-    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/9e9bb35dd613547c27447e71ef7cc5ff45c134d9/CHANGELOG",
+    "repositoryurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/043f43fe6859c6a9e6165ea9947e99e434c6fdde",
+    "changelogurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/blob/043f43fe6859c6a9e6165ea9947e99e434c6fdde/CHANGELOG",
     "feedbackurl": "https://github.com/Informatievlaanderen/SolidThema-leercredential/issues",
     "usesVocs": [],
     "usesAPs": []
   },
   "classes": [
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
+      "name": "Credential",
+      "label": {
+        "nl": "Credential"
+      },
+      "sort": "Credential",
+      "description": {
+        "nl": "Een credential is een reeks van een of meer beweringen gemaakt door een uitgever."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": [
+        {
+          "uri": "https://www.w3.org/2018/credentials#validUntil",
+          "name": "vervaldatum",
+          "sort": "vervaldatum",
+          "label": {
+            "nl": "vervaldatum"
+          },
+          "description": {
+            "nl": "De vervaldatum."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Credential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://www.w3.org/2018/credentials#validFrom",
+          "name": "geldig van",
+          "sort": "geldig van",
+          "label": {
+            "nl": "geldig van"
+          },
+          "description": {
+            "nl": "De vroegste datum waarop de informatie geassocieerd met het onderwerp geldig wordt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Credential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "https://www.w3.org/2018/credentials#issuanceDate",
+          "name": "uitgiftedatum",
+          "sort": "uitgiftedatum",
+          "label": {
+            "nl": "uitgiftedatum"
+          },
+          "description": {
+            "nl": "De datum en tijd waarop het certificaat digitaal ondertekend is."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Credential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "DateTime",
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "range_label": {
+                "nl": "DateTime"
+              }
+            }
+          ],
+          "cardinality": "1",
+          "codelist_uri": ""
+        }
+      ]
+    },
+    {
+      "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
+      "name": "Leercredential",
+      "label": {
+        "nl": "Leercredential"
+      },
+      "sort": "Leercredential",
+      "description": {
+        "nl": "Een reeks van een of meer beweringen over leerervaringen, gemaakt door een uitgever."
+      },
+      "usage": {},
+      "parents": [
+        {
+          "label": "Credential",
+          "name": "Credential",
+          "package": "OSLO-Leercredential",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
+          "scoped_uri": "#Credential"
+        }
+      ],
+      "properties": [
+        {
+          "uri": "http://www.w3.org/ns/adms#identifier",
+          "name": "identificator",
+          "sort": "identificator",
+          "label": {
+            "nl": "identificator"
+          },
+          "description": {
+            "nl": "Een alternatieve identificatie van de Europese Digitale Leercredential die doorgaans door de uitgifteorganisatie aan de Credential zijn toegewezen."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leercredential",
+              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Identificator",
+              "range_uri": "http://www.w3.org/ns/adms#Identifier"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Identificator",
+              "range_puri": "http://www.w3.org/ns/adms#Identifier",
+              "range_label": {
+                "nl": "Identificator"
+              }
+            }
+          ],
+          "cardinality": "0..*",
+          "codelist_uri": ""
+        }
+      ]
+    },
     {
       "uri": "http://data.europa.eu/snb/model/elm/AwardingProcess",
       "name": "Toekenningsproces",
@@ -226,42 +404,7 @@
       "parents": [],
       "properties": [
         {
-          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
-          "name": "uitgever",
-          "sort": "uitgever",
-          "label": {
-            "nl": "uitgever"
-          },
-          "description": {
-            "nl": "De Agent die de claim maakt."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leerclaim",
-              "uri": "http://data.europa.eu/snb/model/elm/Claim"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Agent",
-              "range_uri": "http://purl.org/dc/terms/Agent"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Agent",
-              "range_puri": "http://purl.org/dc/terms/Agent",
-              "range_label": {
-                "nl": "Agent"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
+          "uri": "https://data.vlaanderen.be/ns/leercredential#authenticiteit",
           "name": "authenticiteit",
           "sort": "authenticiteit",
           "label": {
@@ -294,6 +437,41 @@
           ],
           "cardinality": "0..1",
           "codelist_uri": "https://solid.data.vlaanderen.be/id/conceptscheme/Leercredential/Authenticiteit"
+        },
+        {
+          "uri": "https://data.vlaanderen.be/ns/leercredential#uitgever",
+          "name": "uitgever",
+          "sort": "uitgever",
+          "label": {
+            "nl": "uitgever"
+          },
+          "description": {
+            "nl": "De Agent die de claim maakt."
+          },
+          "usage": {},
+          "domain": [
+            {
+              "EA-Name": "Leerclaim",
+              "uri": "http://data.europa.eu/snb/model/elm/Claim"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Agent",
+              "range_uri": "http://purl.org/dc/terms/Agent"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Agent",
+              "range_puri": "http://purl.org/dc/terms/Agent",
+              "range_label": {
+                "nl": "Agent"
+              }
+            }
+          ],
+          "cardinality": "0..1",
+          "codelist_uri": ""
         },
         {
           "uri": "http://www.w3.org/ns/adms#identifier",
@@ -460,7 +638,7 @@
           "label": "Verifieerbare Credential",
           "name": "VerifieerbareCredential",
           "package": "OSLO-Leercredential",
-          "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+          "uri": "https://www.w3.org/2018/credentials#VerifiableCredential",
           "scoped_uri": "#Verifieerbare Credential"
         }
       ],
@@ -581,43 +759,6 @@
         }
       ],
       "properties": [
-        {
-          "uri": "https://data.europa.eu/snb/model#ISCEDFCode",
-          "name": "studiegebied",
-          "sort": "studiegebied",
-          "label": {
-            "nl": "studiegebied"
-          },
-          "description": {
-            "nl": "Thematisch gebied volgens de ISCED-F 2013-classificatie."
-          },
-          "usage": {
-            "nl": "Het moet worden verstrekt met behulp van de ISCECD-F gecontroleerd vocabularium."
-          },
-          "domain": [
-            {
-              "EA-Name": "Leerprestatiespecificatie",
-              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Studiegebied",
-              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Studiegebied",
-              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
-              "range_label": {
-                "nl": "Studiegebied"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
         {
           "uri": "http://purl.org/dc/terms/type",
           "name": "type",
@@ -795,6 +936,43 @@
             }
           ],
           "cardinality": "1..*",
+          "codelist_uri": ""
+        },
+        {
+          "uri": "http://data.europa.eu/snb/model/elm/ISCEDFCode",
+          "name": "studiegebied",
+          "sort": "studiegebied",
+          "label": {
+            "nl": "studiegebied"
+          },
+          "description": {
+            "nl": "Thematisch gebied volgens de ISCED-F 2013-classificatie."
+          },
+          "usage": {
+            "nl": "Het moet worden verstrekt met behulp van de ISCECD-F gecontroleerd vocabularium."
+          },
+          "domain": [
+            {
+              "EA-Name": "Leerprestatiespecificatie",
+              "uri": "http://data.europa.eu/snb/model/elm/LearningAchievementSpecification"
+            }
+          ],
+          "range": [
+            {
+              "range_label": "Studiegebied",
+              "range_uri": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ],
+          "scopedrange": [
+            {
+              "range_uri": "#Studiegebied",
+              "range_puri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "range_label": {
+                "nl": "Studiegebied"
+              }
+            }
+          ],
+          "cardinality": "0..*",
           "codelist_uri": ""
         }
       ]
@@ -1167,41 +1345,6 @@
       ],
       "properties": [
         {
-          "uri": "https://data.europa.eu/snb/model#hasCredential",
-          "name": "heeft credential",
-          "sort": "heeft credential",
-          "label": {
-            "nl": "heeft credential"
-          },
-          "description": {
-            "nl": "Leercredential van de persoon."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Persoon",
-              "uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Leercredential",
-              "range_uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Leercredential",
-              "range_puri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
-              "range_label": {
-                "nl": "Leercredential"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        },
-        {
           "uri": "http://www.w3.org/ns/adms#identifier",
           "name": "identificator",
           "sort": "identificator",
@@ -1373,291 +1516,6 @@
       ]
     },
     {
-      "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
-      "name": "Credential",
-      "label": {
-        "nl": "Credential"
-      },
-      "sort": "Credential",
-      "description": {
-        "nl": "Een credential is een reeks van een of meer beweringen gemaakt door een uitgever."
-      },
-      "usage": {},
-      "parents": [],
-      "properties": [
-        {
-          "uri": "https://www.w3.org/2018/credentials#validUntil",
-          "name": "vervaldatum",
-          "sort": "vervaldatum",
-          "label": {
-            "nl": "vervaldatum"
-          },
-          "description": {
-            "nl": "De vervaldatum."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Credential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "0..1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://www.w3.org/2018/credentials#validFrom",
-          "name": "geldig van",
-          "sort": "geldig van",
-          "label": {
-            "nl": "geldig van"
-          },
-          "description": {
-            "nl": "De vroegste datum waarop de informatie geassocieerd met het onderwerp geldig wordt."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Credential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://www.w3.org/2018/credentials#issuanceDate",
-          "name": "uitgiftedatum",
-          "sort": "uitgiftedatum",
-          "label": {
-            "nl": "uitgiftedatum"
-          },
-          "description": {
-            "nl": "De datum en tijd waarop het certificaat digitaal ondertekend is."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Credential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Credential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "DateTime",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "range_label": {
-                "nl": "DateTime"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential",
-      "name": "Leercredential",
-      "label": {
-        "nl": "Leercredential"
-      },
-      "sort": "Leercredential",
-      "description": {
-        "nl": "Een reeks van een of meer beweringen over leerervaringen, gemaakt door een uitgever."
-      },
-      "usage": {},
-      "parents": [
-        {
-          "label": "Credential",
-          "name": "Credential",
-          "package": "OSLO-Leercredential",
-          "uri": "https://data.vlaanderen.be/ns/leercredential#Credential",
-          "scoped_uri": "#Credential"
-        }
-      ],
-      "properties": [
-        {
-          "uri": "https://w3id.org/security#proof",
-          "name": "bewijs",
-          "sort": "bewijs",
-          "label": {
-            "nl": "bewijs"
-          },
-          "description": {
-            "nl": "Het cryptografische bewijs dat kan worden gebruikt om fraude te detecteren en het auteurschap van een Credential of Presentatie te verifiëren. Deze eigenschap is geërfd van verifieerbare credentials."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Bewijs",
-              "range_uri": "https://w3id.org/security#Proof"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Bewijs",
-              "range_puri": "https://w3id.org/security#Proof",
-              "range_label": {
-                "nl": "Bewijs"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://w3.org/2018/credentials#issuer",
-          "name": "uitgever",
-          "sort": "uitgever",
-          "label": {
-            "nl": "uitgever"
-          },
-          "description": {
-            "nl": "De organisatie die de Credential heeft uitgegeven en heeft verzegeld met zijn digitale eSeal. Deze eigenschap is geërfd van verifieerbare credential."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Organisatie",
-              "range_uri": "http://www.w3.org/ns/org#Organization"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Organisatie",
-              "range_puri": "http://www.w3.org/ns/org#Organization",
-              "range_label": {
-                "nl": "Organisatie"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "https://w3.org/2018/credentials#credentialSubject",
-          "name": "eigenaar",
-          "sort": "eigenaar",
-          "label": {
-            "nl": "eigenaar"
-          },
-          "description": {
-            "nl": "De persoon (onderwerp) over wie claims worden gedaan en die de Credential bezit."
-          },
-          "usage": {
-            "nl": "Deze eigenschap is geërfd van verifieerbare credentials."
-          },
-          "domain": [
-            {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Persoon",
-              "range_uri": "http://www.w3.org/ns/person#Person"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Persoon",
-              "range_puri": "http://www.w3.org/ns/person#Person",
-              "range_label": {
-                "nl": "Persoon"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        },
-        {
-          "uri": "http://www.w3.org/ns/adms#identifier",
-          "name": "identificator",
-          "sort": "identificator",
-          "label": {
-            "nl": "identificator"
-          },
-          "description": {
-            "nl": "Een alternatieve identificatie van de Europese Digitale Leercredential die doorgaans door de uitgifteorganisatie aan de Credential zijn toegewezen."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "Leercredential",
-              "uri": "https://data.vlaanderen.be/ns/leercredential#Leercredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "Identificator",
-              "range_uri": "http://www.w3.org/ns/adms#Identifier"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "#Identificator",
-              "range_puri": "http://www.w3.org/ns/adms#Identifier",
-              "range_label": {
-                "nl": "Identificator"
-              }
-            }
-          ],
-          "cardinality": "0..*",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
       "uri": "https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon",
       "name": "Geregistreerd Persoon",
       "label": {
@@ -1718,7 +1576,21 @@
       ]
     },
     {
-      "uri": "https://w3.org/2018/credentials#VerifiableCredential",
+      "uri": "https://w3id.org/security#Proof",
+      "name": "Bewijs",
+      "label": {
+        "nl": "Bewijs"
+      },
+      "sort": "Bewijs",
+      "description": {
+        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
+      },
+      "usage": {},
+      "parents": [],
+      "properties": []
+    },
+    {
+      "uri": "https://www.w3.org/2018/credentials#VerifiableCredential",
       "name": "Verifieerbare Credential",
       "label": {
         "nl": "Verifieerbare Credential"
@@ -1737,77 +1609,12 @@
           "scoped_uri": "#Credential"
         }
       ],
-      "properties": [
-        {
-          "uri": "https://w3.org/2018/credentials#credentialSchema",
-          "name": "credentialschema",
-          "sort": "credentialschema",
-          "label": {
-            "nl": "credentialschema"
-          },
-          "description": {
-            "nl": "Het schema van de Verifieerbare Credential."
-          },
-          "usage": {},
-          "domain": [
-            {
-              "EA-Name": "VerifieerbareCredential",
-              "uri": "https://w3.org/2018/credentials#VerifiableCredential"
-            }
-          ],
-          "range": [
-            {
-              "range_label": "URI",
-              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI"
-            }
-          ],
-          "scopedrange": [
-            {
-              "range_uri": "http://www.w3.org/2001/XMLSchema#anyURI",
-              "range_puri": "http://www.w3.org/2001/XMLSchema#anyURI",
-              "range_label": {
-                "nl": "URI"
-              }
-            }
-          ],
-          "cardinality": "1",
-          "codelist_uri": ""
-        }
-      ]
-    },
-    {
-      "uri": "https://w3id.org/security#Proof",
-      "name": "Bewijs",
-      "label": {
-        "nl": "Bewijs"
-      },
-      "sort": "Bewijs",
-      "description": {
-        "nl": "Een bewijs dat aantoont dat een persoon een bepaalde opleiding voltooid heeft of relevante beroepservaring heeft."
-      },
-      "usage": {},
-      "parents": [],
       "properties": []
     }
   ],
   "properties": [
     {
-      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#uitgever",
-      "name": {
-        "nl": "uitgever",
-        "undefined": "uitgever"
-      },
-      "description": {},
-      "domain": [
-        null
-      ],
-      "range": [
-        null
-      ],
-      "parents": []
-    },
-    {
-      "uri": "https://solid.data.vlaanderen.be/ns/leercredential#authenticiteit",
+      "uri": "https://data.vlaanderen.be/ns/leercredential#authenticiteit",
       "name": {
         "nl": "authenticiteit",
         "undefined": "authenticiteit"
@@ -1849,7 +1656,7 @@
       "parents": [],
       "properties": [
         {
-          "uri": "http://purl.org/dc/title",
+          "uri": "http://purl.org/dc/terms/title",
           "name": "titel",
           "sort": "titel",
           "label": {
@@ -2210,14 +2017,14 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://purl.org/dc/terms/conformsTo",
-          "name": "schema URI",
-          "sort": "schema URI",
+          "uri": "http://purl.org/dc/terms/creator",
+          "name": "uitgevende autoriteit URI",
+          "sort": "uitgevende autoriteit URI",
           "label": {
-            "nl": "schema URI"
+            "nl": "uitgevende autoriteit URI"
           },
           "description": {
-            "nl": "De URI van het schema."
+            "nl": "De URI van de uitgevende autoriteit."
           },
           "usage": {},
           "domain": [
@@ -2245,14 +2052,14 @@
           "codelist_uri": ""
         },
         {
-          "uri": "http://purl.org/dc/term/creator",
-          "name": "uitgevende autoriteit URI",
-          "sort": "uitgevende autoriteit URI",
+          "uri": "http://purl.org/dc/terms/conformsTo",
+          "name": "schema URI",
+          "sort": "schema URI",
           "label": {
-            "nl": "uitgevende autoriteit URI"
+            "nl": "schema URI"
           },
           "description": {
-            "nl": "De URI van de uitgevende autoriteit."
+            "nl": "De URI van het schema."
           },
           "usage": {},
           "domain": [
