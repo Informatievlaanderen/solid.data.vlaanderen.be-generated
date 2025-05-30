@@ -6,7 +6,7 @@
         <dc:license>https://creativecommons.org/publicdomain/zero/1.0/</dc:license>
         <dc:license rdf:resource="https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"/>
         <dc:mediator>
-          <rdf:Description rdf:nodeID="g454720">
+          <rdf:Description rdf:nodeID="g459360">
             <foaf:homepage rdf:resource="https://solid.data.vlaanderen.be"/>
             <foaf:mbox rdf:resource="mailto:magda-teamsolid@vlaanderen.be"/>
             <foaf:name>Digitaal Vlaanderen - MAGDA Solid</foaf:name>
@@ -15,9 +15,9 @@
         <rdfs:label xml:lang="en">access</rdfs:label>
         <rdfs:label xml:lang="nl">access</rdfs:label>
         <ns0:editor>
-          <foaf:Person rdf:nodeID="g454740">
+          <foaf:Person rdf:nodeID="g459380">
             <schema:affiliation>
-              <rdf:Description rdf:nodeID="g454760">
+              <rdf:Description rdf:nodeID="g459400">
                 <foaf:homepage rdf:resource="https://www.vlaanderen.be/digitaal-vlaanderen"/>
                 <foaf:name>Digitaal Vlaanderen</foaf:name>
               </rdf:Description>
